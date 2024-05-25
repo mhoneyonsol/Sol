@@ -162,12 +162,17 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     transition: 0.1s;
     width: 100%;
     webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 47px 5px 15px 39px rgba(0,0,0,0); box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 47px 5px 15px 39px rgba(0,0,0,0); 
+    
+}
+
+div#app {
     background-image: url(https://i.imgur.com/f7B6pf7.png);
-    background-position: bottom left;
+    background-position: left;
     background-size: 45%;
-    background-color: #ffffffe8;
+    background-color: #ffffff00;
     background-repeat: no-repeat;
 }
+
 
 col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
     transform: scale(2) translateX(-150px);
@@ -308,6 +313,10 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+.flex.flex-col.lg\:w-1\/2.justify-center.items-center.w-full {
+    margin-top: -350px;
+}
 
 *,
 ::before,
