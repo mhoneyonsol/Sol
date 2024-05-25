@@ -307,6 +307,8 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 *,
 ::before,
 ::after {
@@ -358,7 +360,7 @@ html,
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
-  background-image: url(https://i.imgur.com/jnnz3sZ.jpeg);
+  background-image: radial-gradient(circle at 20% 100%, rgba(184, 184, 184, 0.1) 0%, rgba(184, 184, 184, 0.1) 33%, rgba(96, 96, 96, 0.1) 33%, rgba(96, 96, 96, 0.1) 66%, rgba(7, 7, 7, 0.1) 66%, rgba(7, 7, 7, 0.1) 99%), linear-gradient(345deg, #040a22, #1EED93, #9242F2, #41A8C0);
    
 }
 
