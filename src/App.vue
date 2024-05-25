@@ -161,6 +161,12 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     font-family: monospace;
 }
 
+.flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
+    transition: 2s;
+    margin-right: 20%;
+    width: 100%;
+}
+
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
     transform: scale(1.7) translateX(-200px);
     transition: 0.1s;
