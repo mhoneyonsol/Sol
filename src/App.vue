@@ -42,32 +42,34 @@ initWallet({ wallets, autoConnect: true })
     <h1>Frequently Asked Questions</h1>
     <div class="accordion-item">
         <input type="checkbox" id="accordion1">
-        <label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is SEO, and why is it important for online businesses?</label>
-        <div class="accordion-item-desc">SEO, or Search Engine Optimization, is the practice of optimizing a website to improve its visibility on search engines like Google. It involves various techniques to enhance a site's ranking in search results. SEO is crucial for online businesses as it helps drive organic traffic, increases visibility, and ultimately leads to higher conversions.</div>
+        <label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is an SPL token?</label>
+        <div class="accordion-item-desc">An SPL (Solana Program Library) token is a digital asset built on the Solana blockchain that adheres to the SPL token standard. It allows for the creation, transfer, and management of custom tokens on the Solana network.</div>
     </div>
 
     <div class="accordion-item">
         <input type="checkbox" id="accordion2">
-        <label for="accordion2" class="accordion-item-title"><span class="icon"></span>How long does it take to see results from SEO efforts?</label>
-        <div class="accordion-item-desc">The timeline for seeing results from SEO can vary based on several factors, such as the competitiveness of keywords, the current state of the website, and the effectiveness of the SEO strategy. Generally, it may take several weeks to months before noticeable improvements occur. However, long-term commitment to SEO is essential for sustained success.</div>
+        <label for="accordion2" class="accordion-item-title"><span class="icon"></span>How do I create an SPL token?</label>
+        <div class="accordion-item-desc">To create an SPL token, you can use our secured tool.</div>
     </div>
 
     <div class="accordion-item">
         <input type="checkbox" id="accordion3">
-        <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What are the key components of a successful SEO strategy?</label>
-        <div class="accordion-item-desc">A successful SEO strategy involves various components, including keyword research, on-page optimization, quality content creation, link building, technical SEO, and user experience optimization. These elements work together to improve a website's relevance and authority in the eyes of search engines.</div>
+        <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What are the advantages of using SPL tokens?</label>
+        <div class="accordion-item-desc">SPL tokens offer several advantages including high transaction throughput, low fees, fast confirmation times, and seamless integration with other Solana-based applications. They also benefit from Solana's robust infrastructure and growing ecosystem.
+
+</div>
     </div>
 
     <div class="accordion-item">
         <input type="checkbox" id="accordion4">
-        <label for="accordion4" class="accordion-item-title"><span class="icon"></span>How does mobile optimization impact SEO?</label>
-        <div class="accordion-item-desc">Mobile optimization is crucial for SEO because search engines prioritize mobile-friendly websites. With the increasing use of smartphones, search engines like Google consider mobile responsiveness as a ranking factor. Websites that provide a seamless experience on mobile devices are more likely to rank higher in search results.</div>
+        <label for="accordion4" class="accordion-item-title"><span class="icon"></span>Can I convert other tokens to SPL tokens?</label>
+        <div class="accordion-item-desc">Yes, you can convert other tokens to SPL tokens by using bridges or decentralized exchanges (DEXs) that support token swapping between different blockchain networks. Additionally, you can create wrapped versions of tokens on the Solana blockchain through custodial or decentralized solutions.</div>
     </div>
 
     <div class="accordion-item">
         <input type="checkbox" id="accordion5">
-        <label for="accordion5" class="accordion-item-title"><span class="icon"></span>What is the role of backlinks in SEO, and how can they be acquired?</label>
-        <div class="accordion-item-desc">Backlinks, or inbound links from other websites to yours, play a significant role in SEO. They are considered a vote of confidence and can improve a site's authority. Quality over quantity is crucial when acquiring backlinks. Strategies for obtaining backlinks include creating high-quality content, guest posting, reaching out to industry influencers, and participating in community activities. It's important to focus on natural and ethical link-building practices.</div>
+        <label for="accordion5" class="accordion-item-title"><span class="icon"></span>How do I ensure the security of my SPL token project?</label>
+        <div class="accordion-item-desc">Ensuring the security of your SPL token project involves rigorous code audits, adherence to best practices in smart contract development, and robust security measures such as multi-signature wallets and access controls. It's also essential to stay updated on security vulnerabilities and patches within the Solana ecosystem. Additionally, consider utilizing third-party security services for further validation and assurance.</div>
     </div>
 
 </div>
@@ -141,6 +143,12 @@ html {
 .accordion h1 {
     font-size: 32px;
     text-align: center;
+}
+
+button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
+    background: #E7BD09;
+    color: black;
+    font-family: monospace;
 }
 
 button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
