@@ -158,8 +158,8 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
 width: 100%;
     height: 100%;
     background-image: url(https://i.imgur.com/f7B6pf7.png);
-    background-position:left;
-    background-size: 45%;
+    background-position:bottom left;
+    background-size: 35%;
     background-color: #ffffff00;
     background-repeat: no-repeat;
 }
