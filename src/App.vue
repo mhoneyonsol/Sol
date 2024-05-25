@@ -18,16 +18,13 @@ initWallet({ wallets, autoConnect: true })
     <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
       <!--ring div starts here-->
 
-      <div class="mt-10">
-        <h1
-          class="tt text-5xl font-sans text-slate-800 font-bold text-center  text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]">
-          SPL TOKEN CREATOR</h1>
-      
-        <h3 class="text-center">
-          ONLY CHAIN FEE. FAST. SECURE<br />
-          <span></span>
-        </h3>
-      </div>
+      <div class="mt-10"><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]"> SPL TOKEN CREATOR</h1><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="
+    position: absolute;
+    margin-top: -95px;
+    font-size: 100px;
+    font-weight: 100;
+    color: #ffffff29 !important;
+"> SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
       <div class="mt-5">
         <wallet-multi-button />
       </div>
@@ -347,6 +344,10 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
 6. Use the user's configured `sans` font-variation-settings by default.
 7. Disable tap highlights on iOS
 */
+
+h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
+    font-weight: 900;
+}
 
 html,
 :host {
@@ -846,7 +847,7 @@ video {
   margin-bottom: 1rem;
 }
 .mt-10 {
-  margin-top: 2.5rem;
+    margin-bottom: 50px;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -987,15 +988,13 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .from-\[\#7928ca\] {
-  --tw-gradient-from: #7928ca var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(121 40 202 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  
 }
 .to-\[\#21d4fd\] {
   --tw-gradient-to: #21d4fd var(--tw-gradient-to-position);
 }
 .to-\[\#ff0080\] {
-  --tw-gradient-to: #ff0080 var(--tw-gradient-to-position);
+  
 }
 .bg-clip-text {
   -webkit-background-clip: text;
@@ -1291,7 +1290,10 @@ video {
 }
 
 .swv-button-trigger {
-    background-color: #CE9711;
+    background: white;
+    color: black;
+    font-family: monospace;
+    box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488, -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b, -10px -7px 27px 1px #8e5cff, 47px 5px 15px 39px transparent;
 }
 
 .swv-button:not([disabled]):focus-visible {
