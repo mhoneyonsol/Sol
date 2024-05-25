@@ -4,7 +4,7 @@ import Chatbot from './components/Chatbot-1.vue';
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
 import { initWallet, WalletMultiButton } from 'solana-wallets-vue'
 import "solana-wallets-vue/styles.css";
-import "./assets/index.scss";
+import "./assets/index.css";
 
 const wallets = [
   new PhantomWalletAdapter(),

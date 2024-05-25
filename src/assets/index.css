@@ -1179,7 +1179,7 @@ video {
     border-radius: var(--swv-button-radius);
 }
 
-.swv-button > * + * {
+.swv-button {
     margin-left: 12px;
 }
 
