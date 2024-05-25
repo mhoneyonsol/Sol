@@ -181,6 +181,7 @@ div#app {
 col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
     transform: scale(2) translateX(-150px);
     transition: 2s;
+    width:100%;
 }
 
 
