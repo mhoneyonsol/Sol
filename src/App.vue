@@ -91,10 +91,46 @@ initWallet({ wallets, autoConnect: true })
     
 
 
-<style>@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
 
 html {
     display: block;
@@ -222,9 +258,9 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
         font-size: 22px;
     }
 }
+</style>
 
-
-
+<style>
 .ring {
   position: relative;
   width: 400px;
@@ -272,6 +308,7 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
     transform: rotate(0deg);
   }
 }
+</style>
 
 
 
@@ -280,8 +317,7 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
 
 
 
-
-
+<style type="text/css">/*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1195,9 +1231,9 @@ video {
     --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
   }
 }
+</style>
 
-
-:root {
+<style type="text/css">:root {
     /* Buttons. */
     --swv-button-background-color: #4f46e5;
     --swv-button-text-color: white;
@@ -1272,7 +1308,7 @@ video {
     border-radius: var(--swv-button-radius);
 }
 
-.swv-button {
+.swv-button > * + * {
     margin-left: 12px;
 }
 
@@ -1525,40 +1561,5 @@ video {
 .swv-modal-list .swv-button-icon img {
     width: 28px;
     height: 28px;
-}</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+</style>
