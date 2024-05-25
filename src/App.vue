@@ -13,39 +13,27 @@ initWallet({ wallets, autoConnect: true })
 </script>
 
 <template>
-<h1 style="
-    color: white;
-    margin-top: 100px;
-    text-align: right;
-    margin-right: 20%;
-    font-size: 7em;
-    margin-bottom: -200px;
-">$MHONEY APP</h1>
-  <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
+
+<div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
     <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
       <!--ring div starts here-->
-<div class="ring">
-  <i style="--clr:#1EED93;"></i>
-  <i style="--clr:#41A8C0;"></i>
-  <i style="--clr:#9242F2;"></i>
 
 
-<img alt="Vue logo" class="logo" src="https://i.imgur.com/7KbUHcB.png" style="max-width: 70% !important;
-    z-index: 0000;" />
-</div>
+
+
       <div class="mt-10">
         <h1
           class="tt text-5xl font-sans text-slate-800 font-bold text-center  text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]">
-          $MHONEY CREATOR</h1>
+          SPL TOKEN CREATOR</h1>
       
         <h3 class="text-center">
-          ONLY CHAIN FEE. NO HIDDEN FEES.<br />
+          ONLY CHAIN FEE. FAST. SECURE<br />
           <span></span>
         </h3>
       </div>
       <div class="mt-5">
         <wallet-multi-button />
-      </div>
+      
     </div>
     <div class="flex justify-center items-center lg:w-1/2">
       <CreateTokenForm />
