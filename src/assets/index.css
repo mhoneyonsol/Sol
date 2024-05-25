@@ -129,9 +129,9 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
         font-size: 22px;
     }
 }
-</style>
 
-<style>
+
+
 .ring {
   position: relative;
   width: 400px;
@@ -179,7 +179,6 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
     transform: rotate(0deg);
   }
 }
-</style>
 
 
 
@@ -188,7 +187,8 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
 
 
 
-<style type="text/css">/*
+
+
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1102,9 +1102,9 @@ video {
     --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
   }
 }
-</style>
 
-<style type="text/css">:root {
+
+:root {
     /* Buttons. */
     --swv-button-background-color: #4f46e5;
     --swv-button-text-color: white;
