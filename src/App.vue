@@ -14,12 +14,9 @@ initWallet({ wallets, autoConnect: true })
 
 <template>
 
-<div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
+  <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
     <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
       <!--ring div starts here-->
-
-
-
 
       <div class="mt-10">
         <h1
@@ -33,7 +30,7 @@ initWallet({ wallets, autoConnect: true })
       </div>
       <div class="mt-5">
         <wallet-multi-button />
-      
+      </div>
     </div>
     <div class="flex justify-center items-center lg:w-1/2">
       <CreateTokenForm />
