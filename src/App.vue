@@ -44,8 +44,8 @@ initWallet({ wallets, autoConnect: true })
 
 
 <div class="accordion">
-<h1 style="display:none">Frequently Asked Questions</h1>
-<h1 style="display:none">Frequently Asked Questions</h1>
+<h1 style="color:black">Frequently Asked Questions</h1>
+<h1 style="color:black">Frequently Asked Questions</h1>
     <h1>Frequently Asked Questions</h1>
     <div class="accordion-item">
         <input type="checkbox" id="accordion1">
