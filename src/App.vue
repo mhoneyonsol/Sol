@@ -21,7 +21,7 @@ initWallet({ wallets, autoConnect: true })
 
 
 
-
+<div class="bk">
   <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
     <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
       <!--ring div starts here-->
@@ -77,7 +77,7 @@ initWallet({ wallets, autoConnect: true })
         <div class="accordion-item-desc">Ensuring the security of your SPL token project involves rigorous code audits, adherence to best practices in smart contract development, and robust security measures such as multi-signature wallets and access controls. It's also essential to stay updated on security vulnerabilities and patches within the Solana ecosystem. Additionally, consider utilizing third-party security services for further validation and assurance.</div>
     </div>
 
-</div>
+</div></div>
 <br>
   <div id="app">
     <Chatbot />
@@ -177,11 +177,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 }
 
 div#app {
-    background-image: url(https://i.imgur.com/f7B6pf7.png);
-    background-position: left;
-    background-size: 45%;
-    background-color: #ffffff00;
-    background-repeat: no-repeat;
+    
 }
 
 
@@ -192,6 +188,15 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
 }
 
 
+.bk {
+width: 100%;
+    height: 100%;
+    background-image: url(https://i.imgur.com/f7B6pf7.png);
+    background-position: bottom left;
+    background-size: 45%;
+    background-color: #ffffff00;
+    background-repeat: no-repeat;
+}
 
 .accordion-item {
     margin-top: 16px;
