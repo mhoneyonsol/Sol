@@ -11,9 +11,6 @@ const wallets = [
 ]
 initWallet({ wallets, autoConnect: true })
 </script>
-
-<template>
-
 <script>const degrees = 30;
 const element = document.querySelector('.icon');
 
@@ -34,6 +31,10 @@ const minMaxValue = (value, min, max) => Math.min(Math.max(value, min), max);
 
 window.addEventListener('pointermove', onPointerMove);
 </script>
+
+<template>
+
+
 
 <div class="icon">
   <div class="icon-bg"></div>
