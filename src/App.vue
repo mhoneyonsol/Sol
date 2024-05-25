@@ -41,7 +41,7 @@ initWallet({ wallets, autoConnect: true })
     </div>
 </div>
 
-<div><div>
+
 <div class="accordion">
     <h1>Frequently Asked Questions</h1>
     <div class="accordion-item">
