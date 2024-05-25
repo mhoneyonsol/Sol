@@ -144,13 +144,13 @@ html {
 }
 
 
-
-36.lg\:flex-row.flex-col.justify-center.items-center.h-screen.relative:hover {
-    transform: scale3d(1.2, 1.2, 1.2);
+.flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
+    transform: scale(2) translateX(-150px);
     transition: 2s;
 }
 
-36.lg\:flex-row.flex-col.justify-center.items-center.h-screen.relative {
+.flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
+    transform: scale(2) translateX(-150px);
     transition: 2s;
 }
 
