@@ -994,7 +994,8 @@ video {
   --tw-gradient-to: #21d4fd var(--tw-gradient-to-position);
 }
 .to-\[\#ff0080\] {
-      color: white;
+          --tw-gradient-to: #ffffff00!important;
+    --tw-gradient-from: #27ff8b00!important;
 }
 
 
@@ -1296,6 +1297,14 @@ video {
     color: black;
     font-family: monospace;
     box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488, -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b, -10px -7px 27px 1px #8e5cff, 47px 5px 15px 39px transparent;
+    font-weight: 100;
+    transition:0.5s;
+}
+
+.swv-button:not([disabled]):hover {
+    background-color: white !important;
+    transition: 0.5s;
+    transform: scale(1.2);
 }
 
 .swv-button:not([disabled]):focus-visible {
