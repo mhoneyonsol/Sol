@@ -10,8 +10,8 @@ const wallets = [
   new SolflareWalletAdapter(),
 ]
 initWallet({ wallets, autoConnect: true })
-</script>
-<script>const degrees = 30;
+
+const degrees = 30;
 const element = document.querySelector('.icon');
 
 const onPointerMove = (pointer) => {
@@ -31,6 +31,7 @@ const minMaxValue = (value, min, max) => Math.min(Math.max(value, min), max);
 
 window.addEventListener('pointermove', onPointerMove);
 </script>
+
 
 <template>
 
