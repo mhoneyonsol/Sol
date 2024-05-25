@@ -143,6 +143,11 @@ html {
     text-align: center;
 }
 
+button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
+    background: #E7BD09;
+    color: black;
+    font-family: monospace;
+}
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
     transform: scale(1.7) translateX(-200px);
