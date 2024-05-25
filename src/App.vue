@@ -994,8 +994,10 @@ video {
   --tw-gradient-to: #21d4fd var(--tw-gradient-to-position);
 }
 .to-\[\#ff0080\] {
-      --tw-gradient-to: none;
+      color: white;
 }
+
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
