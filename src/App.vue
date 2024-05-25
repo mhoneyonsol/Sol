@@ -417,12 +417,10 @@ h6 {
 }
 
 .swv-button[disabled] {
-    background: #ffffff;
-    color: var(--swv-button-disabled-text-color);
+    background: white!important;
+    color: black!important;
     cursor: not-allowed;
-    color: black;
 }
-
 .swv-modal-overlay {
     background: var(--swv-overlay-background-color);
     position: fixed;
