@@ -65,7 +65,17 @@ initWallet({ wallets, autoConnect: true })
 </div>
     </div>
 
-    
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion4">
+        <label for="accordion4" class="accordion-item-title"><span class="icon"></span>Can I convert other tokens to SPL tokens?</label>
+        <div class="accordion-item-desc">Yes, you can convert other tokens to SPL tokens by using bridges or decentralized exchanges (DEXs) that support token swapping between different blockchain networks. Additionally, you can create wrapped versions of tokens on the Solana blockchain through custodial or decentralized solutions.</div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion5">
+        <label for="accordion5" class="accordion-item-title"><span class="icon"></span>How do I ensure the security of my SPL token project?</label>
+        <div class="accordion-item-desc">Ensuring the security of your SPL token project involves rigorous code audits, adherence to best practices in smart contract development, and robust security measures such as multi-signature wallets and access controls. It's also essential to stay updated on security vulnerabilities and patches within the Solana ecosystem. Additionally, consider utilizing third-party security services for further validation and assurance.</div>
+    </div>
 
 </div></div>
 <br>
