@@ -201,6 +201,8 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     transition: 2s;
     margin-right: 20%;
     width: 100%;
+    height: 400px;
+    max-height: 600px;
 }
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
