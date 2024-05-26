@@ -20,7 +20,7 @@ require('dotenv').config();
 const prompt = `Hello`;
 
 // Make the API call
-axios.post('https://api.openai.com/v1/engines/davinci-codex/completions', {
+axios.post('https://api.openai.com/v1/completions', {
     prompt: prompt,
     max_tokens: 1024,
     temperature: 0.5
