@@ -5,6 +5,7 @@ import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adap
 import { initWallet, WalletMultiButton } from 'solana-wallets-vue'
 import "solana-wallets-vue/styles.css";
 import "./assets/add.css";
+require('dotenv').config();
 
 const wallets = [
   new PhantomWalletAdapter(),
