@@ -12,13 +12,15 @@
 
 <script>
 const axios = require('axios');
+console.log('API Key:', process.env.OPENAI_API_KEY); 
 require('dotenv').config();
+
 
 // Define the prompt
 const prompt = `Hello`;
 
 // Make the API call
-axios.post('https://api.openai.com/v1/completions', {
+axios.post('https://api.openai.com/v1/engines/davinci-codex/completions', {
     prompt: prompt,
     max_tokens: 1024,
     temperature: 0.5
@@ -38,14 +40,6 @@ axios.post('https://api.openai.com/v1/completions', {
   .catch(error => {
     console.log(error);
   });
-
-
-
-
-
-
-
-
 </script>
 
 <style scoped>
