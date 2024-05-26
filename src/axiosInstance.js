@@ -1,5 +1,6 @@
 const axios = require('axios');
 require('dotenv').config();
+console.log('API Key:', process.env.OPENAI_API_KEY);
 
 // Define the prompt
 const prompt = `Hello`;
