@@ -171,14 +171,6 @@ html {
   }
 }
 
-button.button-85.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
-    /* background: white; */
-    width: 50%;
-    margin-right: auto;
-    margin-top: 30px;
-}
-
-
 .button-85:after {
  z-index: -1;
     content: "";
@@ -197,6 +189,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     font-family: monospace;
     background-image: linear-gradient(348deg, #18ffa5 30%, #830cff 100%);
     color: white;
+    font-weight:300;
 }
 
 button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
