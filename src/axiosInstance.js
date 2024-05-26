@@ -1,4 +1,5 @@
 const axios = require('axios');
+require('dotenv').config();
 
 // Define the prompt
 const prompt = `Hello`;
@@ -12,7 +13,7 @@ axios.post('https://api.openai.com/v1/completions', {
   {
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer sk-proj-Cztaf9g8C2hKP7C0WXX8T3BlbkFJB2q1GkLQD9WrbeyhsDE4`
+      'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
     }
   }
 )
