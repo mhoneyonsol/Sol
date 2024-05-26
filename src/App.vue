@@ -177,7 +177,7 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #222;
+  background: #111;
   left: 0;
   top: 0;
   border-radius: 10px;
