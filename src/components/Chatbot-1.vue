@@ -11,6 +11,33 @@
 </template>
 
 <script>
+
+
+
+const OpenAI = require("openai");
+
+const client = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+async function main() {
+  const completion = await client.completions.create({
+    model: "gpt-3.5-turbo-instruct",
+    prompt: "Say this is a test",
+    max_tokens: 7,
+    temperature: 0,
+  });
+
+  console.log(completion.choices[0].text.trim());
+}
+
+main();
+
+
+
+
+
+const OpenAI = require("openai");
 const axios = require('axios');
 console.log('API Key:', process.env.OPENAI_API_KEY); 
 require('dotenv').config();
