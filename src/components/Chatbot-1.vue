@@ -12,9 +12,7 @@
 
 <script>
 const axios = require('axios');
-console.log('API Key:', process.env.OPENAI_API_KEY); 
 require('dotenv').config();
-
 
 // Define the prompt
 const prompt = `Hello`;
@@ -40,6 +38,14 @@ axios.post('https://api.openai.com/v1/completions', {
   .catch(error => {
     console.log(error);
   });
+
+
+
+
+
+
+
+
 </script>
 
 <style scoped>
