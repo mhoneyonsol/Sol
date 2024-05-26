@@ -13,43 +13,32 @@
 <script>
 import axios from 'axios';
 
-export default {
-  data() {
-    return {
-      messages: [],
-      input: ''
-    };
+const options = {
+  method: 'POST',
+  url: 'https://chat-gpt26.p.rapidapi.com/',
+  headers: {
+    'content-type': 'application/json',
+    'Content-Type': 'application/json',
+    'X-RapidAPI-Key': '6ed4acb7e9msh0431f35c7687e02p10466cjsna33735aae3c6',
+    'X-RapidAPI-Host': 'chat-gpt26.p.rapidapi.com'
   },
-  methods: {
-    async sendMessage() {
-      const userMessage = this.input;
-      if (userMessage.trim() === '') return;
-
-      this.messages.push({ user: true, text: userMessage });
-      this.input = '';
-
-      try {
-        const response = await axios.post('https://api.openai.com/v1/engines/davinci-codex/completions', {
-          prompt: `User: ${userMessage}\nBot:`,
-          max_tokens: 150,
-          n: 1,
-          stop: ["\n"],
-        }, {
-          headers: {
-            'Authorization': `Bearer YOUR_OPENAI_API_KEY`,
-            'Content-Type': 'application/json'
-          }
-        });
-
-        const botMessage = response.data.choices[0].text.trim();
-        this.messages.push({ user: false, text: botMessage });
-      } catch (error) {
-        console.error('Error communicating with the API', error);
-        this.messages.push({ user: false, text: 'Sorry, I am having trouble responding right now.' });
+  data: {
+    model: 'gpt-3.5-turbo',
+    messages: [
+      {
+        role: 'user',
+        content: 'Hello'
       }
-    }
+    ]
   }
 };
+
+try {
+  const response = await axios.request(options);
+  console.log(response.data);
+} catch (error) {
+  console.error(error);
+}
 </script>
 
 <style scoped>
