@@ -192,7 +192,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     font-family: monospace;
     background-image: linear-gradient(348deg, #18ffa5 30%, #830cff 100%);
     color: white;
-    margin-top:20px;
+    margin-top:30px;
     font-weight:300;
 }
 
@@ -208,6 +208,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     width: 100%;
     height: 400px;
     max-height: 600px;
+    padding-top:20px;
 }
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
