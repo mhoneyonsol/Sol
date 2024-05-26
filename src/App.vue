@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import CreateTokenForm from "./components/CreateTokenForm.vue";
 import Chatbot from './components/Chatbot-1.vue';
-import customAlert from './components/DaDa.vue';
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
 import { initWallet, WalletMultiButton } from 'solana-wallets-vue'
 import "solana-wallets-vue/styles.css";
@@ -17,10 +16,6 @@ initWallet({ wallets, autoConnect: true })
 
 <template>
 
-
-<div id="app">
-    <customAlert />
-  </div>
 
 
 
