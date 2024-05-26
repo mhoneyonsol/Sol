@@ -117,9 +117,11 @@ html {
 }
 
 button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
-    background: #E7BD09;
-    color: black;
+    text-transform: inherit;
+    color: #000;
     font-family: monospace;
+    background-image: linear-gradient(348deg, #18ffa5 30%, #830cff 100%);
+    color: white;
 }
 
 button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
