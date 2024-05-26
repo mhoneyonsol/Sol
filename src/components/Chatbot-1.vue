@@ -12,60 +12,20 @@
 
 <script>
 
+import OpenAI from 'openai';
 
-
-const OpenAI = require("openai");
-
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+const openai = new OpenAI({
+  apiKey: process.env['OPENAI_API_KEY'], // This is the default and can be omitted
 });
 
 async function main() {
-  const completion = await client.completions.create({
-    model: "gpt-3.5-turbo-instruct",
-    prompt: "Say this is a test",
-    max_tokens: 7,
-    temperature: 0,
+  const chatCompletion = await openai.chat.completions.create({
+    messages: [{ role: 'user', content: 'Say this is a test' }],
+    model: 'gpt-3.5-turbo',
   });
-
-  console.log(completion.choices[0].text.trim());
 }
 
 main();
-
-
-
-
-
-const OpenAI = require("openai");
-const axios = require('axios');
-console.log('API Key:', process.env.OPENAI_API_KEY); 
-require('dotenv').config();
-
-// Define the prompt
-const prompt = `Hello`;
-
-// Make the API call
-axios.post('https://api.openai.com/v1/completions', {
-    prompt: prompt,
-    max_tokens: 1024,
-    temperature: 0.5
-  },
-  {
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
-    }
-  }
-)
-.then(response => {
-    // Extract the generated text from the API response
-    const generatedText = response.data.choices[0].text;
-    console.log(generatedText)
-  })
-  .catch(error => {
-    console.log(error);
-  });
   
 </script>
 
