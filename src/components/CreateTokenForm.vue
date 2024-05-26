@@ -212,7 +212,7 @@ const createToken = async () => {
     position: absolute;
     text-align: center;
     margin-left: 150px;
-">Connect wallet to start</p>
+">Connect wallet to begin your Solana journey !</p>
         <button v-if="connected" @click="createToken"
             class="button-85 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded w-full mt-3 mb-4 bg-gradient-to-r from-[#2152ff] to-[#21d4fd] uppercase hover:scale-[1.01] duration-100">
             Create Token
