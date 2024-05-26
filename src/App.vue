@@ -192,7 +192,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     font-family: monospace;
     background-image: linear-gradient(348deg, #18ffa5 30%, #830cff 100%);
     color: white;
-    margin-top:30px;
+    margin-top:40px;
     font-weight:300;
 }
 
