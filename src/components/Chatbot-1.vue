@@ -12,9 +12,6 @@
 
 <script>
 const axios = require('axios');
-console.log('API Key:', process.env.OPENAI_API_KEY); 
-require('dotenv').config();
-
 
 // Define the prompt
 const prompt = `Hello`;
@@ -28,7 +25,7 @@ axios.post('https://api.openai.com/v1/completions', {
   {
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
+      'Authorization': `Bearer sk-proj-Ga0lzZZldkuCwWQN49R6T3BlbkFJpaZrh4IUJooAUW66d4P9`
     }
   }
 )
@@ -40,6 +37,7 @@ axios.post('https://api.openai.com/v1/completions', {
   .catch(error => {
     console.log(error);
   });
+  
 </script>
 
 <style scoped>
