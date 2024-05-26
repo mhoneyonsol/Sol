@@ -1,4 +1,4 @@
-import axios from 'axios';
+const axios = require('axios');
 
 const options = {
   method: 'POST',
@@ -6,7 +6,7 @@ const options = {
   headers: {
     'content-type': 'application/json',
     'Content-Type': 'application/json',
-    'X-RapidAPI-Key': '6ed4acb7e9msh0431f35c7687e02p10466cjsna33735aae3c6',
+    'X-RapidAPI-Key': '0134a6def4msh889f1a2f7af1ff4p11ab03jsn59ea9a7a4c53',
     'X-RapidAPI-Host': 'chat-gpt26.p.rapidapi.com'
   },
   data: {
