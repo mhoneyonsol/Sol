@@ -1,29 +1,28 @@
 const axios = require('axios');
-console.log('API Key:', process.env.OPENAI_API_KEY); 
-require('dotenv').config();
 
-
-// Define the prompt
-const prompt = `Hello`;
-
-// Make the API call
-axios.post('https://api.openai.com/v1/engines/davinci-codex/completions', {
-    prompt: prompt,
-    max_tokens: 1024,
-    temperature: 0.5
+const options = {
+  method: 'POST',
+  url: 'https://chat-gpt26.p.rapidapi.com/',
+  headers: {
+    'content-type': 'application/json',
+    'Content-Type': 'application/json',
+    'X-RapidAPI-Key': '6ed4acb7e9msh0431f35c7687e02p10466cjsna33735aae3c6',
+    'X-RapidAPI-Host': 'chat-gpt26.p.rapidapi.com'
   },
-  {
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
-    }
+  data: {
+    model: 'gpt-3.5-turbo',
+    messages: [
+      {
+        role: 'user',
+        content: 'Hello'
+      }
+    ]
   }
-)
-.then(response => {
-    // Extract the generated text from the API response
-    const generatedText = response.data.choices[0].text;
-    console.log(generatedText)
-  })
-  .catch(error => {
-    console.log(error);
-  });
+};
+
+try {
+  const response = await axios.request(options);
+  console.log(response.data);
+} catch (error) {
+  console.error(error);
+}
