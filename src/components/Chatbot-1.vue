@@ -11,45 +11,35 @@
 </template>
 
 <script>
-import axios from 'axios';
+const axios = require('axios');
+console.log('API Key:', process.env.OPENAI_API_KEY); 
+require('dotenv').config();
 
-export default {
-  data() {
-    return {
-      messages: [],
-      input: ''
-    };
+
+// Define the prompt
+const prompt = `Hello`;
+
+// Make the API call
+axios.post('https://api.openai.com/v1/engines/davinci-codex/completions', {
+    prompt: prompt,
+    max_tokens: 1024,
+    temperature: 0.5
   },
-  methods: {
-    async sendMessage() {
-      const userMessage = this.input;
-      if (userMessage.trim() === '') return;
-
-      this.messages.push({ user: true, text: userMessage });
-      this.input = '';
-
-      try {
-        const response = await axios.post('https://api.openai.com/v1/engines/davinci-codex/completions', {
-          prompt: `User: ${userMessage}\nBot:`,
-          max_tokens: 150,
-          n: 1,
-          stop: ["\n"],
-        }, {
-          headers: {
-            'Authorization': `Bearer YOUR_OPENAI_API_KEY`,
-            'Content-Type': 'application/json'
-          }
-        });
-
-        const botMessage = response.data.choices[0].text.trim();
-        this.messages.push({ user: false, text: botMessage });
-      } catch (error) {
-        console.error('Error communicating with the API', error);
-        this.messages.push({ user: false, text: 'Sorry, I am having trouble responding right now.' });
-      }
+  {
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
     }
   }
-};
+)
+.then(response => {
+    // Extract the generated text from the API response
+    const generatedText = response.data.choices[0].text;
+    console.log(generatedText)
+  })
+  .catch(error => {
+    console.log(error);
+  });
 </script>
 
 <style scoped>
