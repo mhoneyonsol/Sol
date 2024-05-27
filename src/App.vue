@@ -27,10 +27,10 @@ initWallet({ wallets, autoConnect: true })
       <!--ring div starts here-->
 
 
-<input class="closeflag" id="unique-id-for-box-1" type="checkbox">
+<div style="z-index:222"><input class="closeflag" id="unique-id-for-box-1" type="checkbox">
 <div class="msgbox">
   <label class="closebutton" for="unique-id-for-box-1">&#10060;</label> text
-</div>
+</div></div>
 
 
       <div class="mt-10"><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]"> SPL TOKEN CREATOR</h1><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="
