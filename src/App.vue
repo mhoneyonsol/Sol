@@ -255,7 +255,7 @@ div#app {
   }
 
 .ol.flex.flex-row.items-center.justify-center {
-    display: none;
+    
 }
 
 .h-screen {
