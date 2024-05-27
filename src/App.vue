@@ -258,6 +258,10 @@ div#app {
     margin-bottom:180px;
 }
 
+.mt-5 {
+    z-index: 222;
+}
+
 h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
     font-weight: 900;
     margin-top:65px!important;
