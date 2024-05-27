@@ -255,7 +255,7 @@ div#app {
 
 .h-screen {
     height: none!important;
-    margin-bottom:180px;
+    margin-bottom:220px;
 }
 
 .mt-5 {
