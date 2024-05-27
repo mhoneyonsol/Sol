@@ -254,6 +254,12 @@ div#app {
     background:black
   }
 
+  button.button-85.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .ol.flex.flex-row.items-center.justify-center {
     
 }
