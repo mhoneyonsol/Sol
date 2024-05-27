@@ -261,6 +261,11 @@ p.nop {
     margin-top: 50%!important;
 }
 
+.shadow-gray-500 {
+   
+    margin-top: 20%;
+    margin-right:0;
+}
 
 
 }
