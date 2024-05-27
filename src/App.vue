@@ -26,6 +26,13 @@ initWallet({ wallets, autoConnect: true })
     <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
       <!--ring div starts here-->
 
+
+<input class="closeflag" id="unique-id-for-box-1" type="checkbox">
+<div class="msgbox">
+  <label class="closebutton" for="unique-id-for-box-1">&#10060;</label> text
+</div>
+
+
       <div class="mt-10"><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]"> SPL TOKEN CREATOR</h1><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="
     position: absolute;
     margin-top: -95px;
@@ -102,6 +109,25 @@ html {
     display: block;
     backdrop-filter: brightness(0.7);
 }
+
+.closeflag {
+  display: none;
+}
+
+.closebutton {
+  float: right;
+  cursor: pointer;
+}
+
+.closeflag:checked+.msgbox {
+  display: none;
+}
+
+/* For demonstration purposes: */
+.msgbox {
+  border: solid 1px maroon;
+}
+
 .accordion {
     display: flex;
     flex-direction: column;
