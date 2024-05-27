@@ -253,7 +253,21 @@ div#app {
     background:black
   }
 
+.flex.flex-row.items-center.justify-center {
+    margin-top: 8px;
+}
 
+.flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
+    transition: 2s;
+    margin-top: 20%;
+    width: 100%;
+    height: 400px;
+    max-height: 600px;
+    padding-top: 20px;
+    padding: 9px;
+    font-size: 0.9em;
+    padding-top: 20px;
+}
 
 p.nop {
     
