@@ -34,6 +34,7 @@ initWallet({ wallets, autoConnect: true })
     background-size: 30%;
     background-color: #00000078;
     color: white;
+    filter: drop-shadow(2px 4px 6px #222);
 "><label class="closebutton" for="unique-id-for-box-1"> ❌</label> text text text text text text text text text text </div></div>
 
 
@@ -121,6 +122,8 @@ html {
 .closebutton {
   float: right;
   cursor: pointer;
+  font-size: 1.5em;
+    margin-left: 20px;
 }
 
 .closeflag:checked+.msgbox {
