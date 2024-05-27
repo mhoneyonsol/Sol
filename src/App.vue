@@ -244,7 +244,6 @@ p.nop {
 
 p.nop {
     
-    display: none;
     margin-top: 290px;
     position: absolute;
     text-align: center;
