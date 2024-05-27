@@ -253,6 +253,10 @@ div#app {
     background:black
   }
 
+  .flex.justify-center.items-center.lg\:w-1\/2 {
+    z-index: 222;
+}
+
 .flex.flex-row.items-center.justify-center {
     margin-top: 8px;
 }
