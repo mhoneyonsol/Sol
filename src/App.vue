@@ -293,7 +293,7 @@ p.nop {
     margin-top: 290px;
     position: absolute;
     text-align: center;
-    margin-left: 150px;
+    margin-left: 60px;
 
 }
 
