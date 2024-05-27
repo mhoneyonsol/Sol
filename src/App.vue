@@ -257,6 +257,9 @@ div#app {
     z-index: 222;
 }
 
+.mt-10 {
+    margin-top: 70%;
+}
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
     transform: scale(1);
