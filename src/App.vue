@@ -253,6 +253,10 @@ div#app {
     background:black
   }
 
+.ol.flex.flex-row.items-center.justify-center {
+    display: none;
+}
+
 .h-screen {
     height: none!important;
     margin-bottom:220px;
