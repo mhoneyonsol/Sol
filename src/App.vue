@@ -255,12 +255,12 @@ div#app {
 
 .h-screen {
     height: none!important;
-    margin-bottom:150px;
+    margin-bottom:180px;
 }
 
 h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
     font-weight: 900;
-    margin-top:45px!important;
+    margin-top:65px!important;
 }
   .flex.flex-col.lg\:w-1\/2.justify-center.items-center.w-full {
     margin-top: 0px!important;
