@@ -253,6 +253,12 @@ div#app {
     background:black
   }
 
+
+
+h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
+    font-weight: 900;
+    margin-top:0px!important;
+}
   .flex.flex-col.lg\:w-1\/2.justify-center.items-center.w-full {
     margin-top: 0px!important;
 }
@@ -526,6 +532,7 @@ width: 100%;
 
 h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
     font-weight: 900;
+
 }
 
 html,
