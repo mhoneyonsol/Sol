@@ -220,7 +220,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 }
 
 div#app {
-    
+    dispay:flex;
 }
 
 
