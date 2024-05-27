@@ -273,6 +273,8 @@ div#app {
     padding: 9px;
     font-size: 0.9em;
     padding-top: 20px;
+    margin-right:0px!important;
+    margin-top:20%;
 }
 
 p.nop {
