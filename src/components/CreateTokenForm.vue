@@ -207,12 +207,7 @@ const createToken = async () => {
         <span class="bg-red-400 mt-3 rounded-sm px-5 py-1 " v-if="errNotify != ''">{{ errNotify }}</span>
         <span class="bg-green-400 mt-3 break-words rounded-sm px-5 py-1" v-if="successNotify != ''">{{ successNotify
         }}</span>
-        <p style="
-    margin-top: 290px;
-    position: absolute;
-    text-align: center;
-    margin-left: 150px;
-">Connect wallet to begin your Solana journey !</p>
+        <p class="nop"> Connect wallet to begin your Solana journey !</p>
         <button v-if="connected" @click="createToken"
             class="button-85 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded w-full mt-3 mb-4 bg-gradient-to-r from-[#2152ff] to-[#21d4fd] uppercase hover:scale-[1.01] duration-100">
             Create Token

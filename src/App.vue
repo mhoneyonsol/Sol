@@ -233,6 +233,27 @@ div#app {
     height:100%;
     background:black
   }
+
+
+h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
+    
+    margin-top: 300px!important;
+}
+
+
+.flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
+    
+    margin-top: 20%!important;
+   
+}
+.nop {
+    
+    display: none;
+    margin-top: 290px;
+    position: absolute;
+    text-align: center;
+    margin-left: 150px;
+
 }
 
 col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
