@@ -209,7 +209,7 @@ const createToken = async () => {
         }}</span>
         <div class="flex flex-row items-center justify-center" style="
     margin-top: 40px;
-"><p>Connect wallet to begin</p></div>
+"><p class="ol">Connect wallet to begin</p></div>
         <button v-if="connected" @click="createToken"
             class="button-85 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded w-full mt-3 mb-4 bg-gradient-to-r from-[#2152ff] to-[#21d4fd] uppercase hover:scale-[1.01] duration-100">
             Create Token
