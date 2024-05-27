@@ -253,7 +253,9 @@ div#app {
     background:black
   }
 
-
+.h-screen {
+    height: none!important;
+}
 
 h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
     font-weight: 900;
