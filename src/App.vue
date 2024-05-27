@@ -236,11 +236,21 @@ div#app {
 
 
 
-.nop {
+p.nop {
     
     display: none;
 
 }}
+
+p.nop {
+    
+    display: none;
+    margin-top: 290px;
+    position: absolute;
+    text-align: center;
+    margin-left: 150px;
+
+}
 
 
 col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
