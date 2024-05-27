@@ -223,6 +223,17 @@ div#app {
     dispay:flex;
 }
 
+.over {
+    display:none;
+  }
+
+@media (max-width: 600px) {
+  .over {
+    width:100%;
+    height:100%;
+    background:black
+  }
+}
 
 col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
     transform: scale(2) translateX(-150px);
