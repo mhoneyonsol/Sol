@@ -258,6 +258,7 @@ div#app {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 1px 1px #000000;
 }
 
 .ol.flex.flex-row.items-center.justify-center {
