@@ -227,6 +227,20 @@ div#app {
     display:none;
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 600px) {
   .over {
     width:100%;
@@ -240,7 +254,29 @@ p.nop {
     
     display: none;
 
-}}
+}
+
+.text-transparent {
+   
+    margin-top: 50%!important;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 p.nop {
     
