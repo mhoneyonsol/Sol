@@ -27,15 +27,16 @@ initWallet({ wallets, autoConnect: true })
       <!--ring div starts here-->
 
 <div style="z-index:222;position: absolute;top: 5%;margin-left: 20%;"><input class="closeflag" id="unique-id-for-box-1" type="checkbox"><div class="msgbox" style="
-    border: 2px solid black;
+        border: 2px solid black;
     border-radius: 4px;
     padding: 19px;
-    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmRkbGF4NzJ4Y3JxNW4yYWhpMHpxNngxbGtxMG56NG55dWZyN3lmcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hbSBAUFCd7xfQnteh4/giphy.gif);
-    background-size: 30%;
+    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGlxNm1md2diMnkxMXdwazR3cHh5MXA4Y21ncGlwMG9rcjhndzhwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTniuHdUjpOlNo1q/giphy.gif);
+    background-size: 100%;
     background-color: #00000078;
     color: white;
+    background-position: bottom;
     
-"><label class="closebutton" for="unique-id-for-box-1"> ❌</label> text text text text text text text text text text </div></div>
+"><label class="closebutton" for="unique-id-for-box-1"> ❌</label> You must have SOL for tx fee in your wallet to create token </div></div>
 
 
       <div class="mt-10"><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]"> SPL TOKEN CREATOR</h1><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="
