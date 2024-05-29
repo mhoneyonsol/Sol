@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import CreateTokenForm from "./components/CreateTokenForm.vue";
 import Chatbot from './components/Chatbot-1.vue';
 
@@ -13,13 +14,12 @@ const wallets = [
   new SolflareWalletAdapter(),
 ]
 initWallet({ wallets, autoConnect: true })
+
+onMounted(() => {
+  document.title = 'SPL Token Creator';
+});
 </script>
-<script>export default {
-  name: 'HomePage',
-  mounted() {
-    document.title = 'Home Page - Solfactory';
-  }
-}</script>
+
 
 <template>
 
