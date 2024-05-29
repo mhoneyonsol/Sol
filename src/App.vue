@@ -42,7 +42,7 @@ onMounted(() => {
     color: white;
     background-position: bottom;
     
-"><label class="closebutton" for="unique-id-for-box-1"> ❌</label> You must have SOL for tx fee in your wallet to create token </div></div>
+"><label class="closebutton" for="unique-id-for-box-1"> ❌</label> To initiate token creation, ensure your wallet holds SOL for transaction fees.</div></div>
 
 
       <div class="mt-10"><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]"> SPL TOKEN CREATOR</h1><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="
