@@ -13,14 +13,13 @@ const wallets = [
   new SolflareWalletAdapter(),
 ]
 initWallet({ wallets, autoConnect: true })
-
-export default {
+</script>
+<script>export default {
   name: 'HomePage',
   mounted() {
     document.title = 'Home Page - Solfactory';
   }
-}
-</script>
+}</script>
 
 <template>
 
