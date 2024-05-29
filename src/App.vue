@@ -16,7 +16,7 @@ const wallets = [
 initWallet({ wallets, autoConnect: true })
 
 onMounted(() => {
-  document.title = 'SPL Token Creator';
+  document.title = 'SPL Token Factory';
 });
 </script>
 
