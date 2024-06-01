@@ -45,13 +45,13 @@ onMounted(() => {
 "><label class="closebutton" for="unique-id-for-box-1"> ❌</label> To initiate token creation, ensure your wallet holds SOL for transaction fees.</div></div>
 
 
-      <div class="mt-10"><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]"> SPL TOKEN CREATOR</h1><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="
-    position: absolute;
-    margin-top: -95px;
-    font-size: 100px;
-    font-weight: 100;
-    color: #ffffff29 !important;
-"> SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
+      <div class="mt-10"><div class="glitch-wrapper" style="
+    /* font-size: 3rem; */
+"> <div class="glitch" data-text="SPL TOKEN CREATOR" style="
+    font-size: 3rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-weight: 900;
+">SPL TOKEN CREATOR</div> </div><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="position:absolute;margin-top:-95px;font-size:100px;font-weight:100;color:#ffffff29 !important;"> SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
       <div class="mt-5">
         <wallet-multi-button />
       </div>
@@ -120,6 +120,68 @@ onMounted(() => {
 html {
     display: block;
     backdrop-filter: brightness(0.7);
+}
+
+.glitch-wrapper {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: #000000;
+}
+
+.glitch {
+   position: relative;
+   font-size: 40px;
+   font-weight: bold;
+   color: #FFFFFF;
+   letter-spacing: 3px;
+   z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+   display: block;
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0.8;
+}
+
+.glitch:before {
+   animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+   color: #00FFFF;
+   z-index: -1;
+}
+
+.glitch:after {
+   animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+   color: #FF00FF;
+   z-index: -2;
+}
+
+@keyframes glitch-it {
+   0% {
+      transform: translate(0);
+   }
+   20% {
+      transform: translate(-2px, 2px);
+   }
+   40% {
+      transform: translate(-2px, -2px);
+   }
+   60% {
+      transform: translate(2px, 2px);
+   }
+   80% {
+      transform: translate(2px, -2px);
+   }
+   to {
+      transform: translate(0);
+   }
 }
 
 .closeflag {
