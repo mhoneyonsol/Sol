@@ -151,6 +151,12 @@ const createToken = async () => {
 
     <div class="ribbon"><span>LOW FEE 🔓</span></div>
         
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjZ2b2llNXB4bDY3cXJiMGVveTUwa3l4dmtsdnc2a2g4aHptcG5wMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Yu9zOu3RIreHPezeU8/giphy.webp" style="
+    max-height: 40px;
+    width: 100%;
+    margin-top: -20px;
+">
+        
         <div class="flex flex-row items-center justify-center">
             <label class="w-1/3">Token Name:</label>
             <input
