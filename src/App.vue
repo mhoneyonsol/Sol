@@ -495,7 +495,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     max-height: 600px;
     padding-top:20px;
     filter: drop-shadow(2px 4px 6px black);
-    background-image: url(https://img.freepik.com/premium-photo/background-texture-crumpled-black-paper_114106-2461.jpg);
+    background-image: url(https://t4.ftcdn.net/jpg/03/50/46/25/360_F_350462575_thxACK1akx2k2EQJFNjUZauXd0mIBd7v.jpg);
     border: none;
     color: white;
     background-size: cover;
