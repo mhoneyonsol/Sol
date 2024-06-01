@@ -210,7 +210,7 @@ html {
   text-overflow: ellipsis;
   padding: 6px 8px;
   border-radius: 3px;
-  background: #333333;
+  background: #FFFFFF;
   color: #FFFFFF;
   z-index: 100;
 }
