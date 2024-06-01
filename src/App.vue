@@ -371,6 +371,12 @@ div#app {
     text-shadow: 1px 1px #000000;
 }
 
+body {
+    background-image: url(https://i.imgur.com/AnTBLYL.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
 .ol.flex.flex-row.items-center.justify-center {
     
 }
