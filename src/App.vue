@@ -616,7 +616,9 @@ html,
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
-  background-image: radial-gradient(circle at 20% 100%, rgba(184, 184, 184, 0.1) 0%, rgba(184, 184, 184, 0.1) 33%, rgba(96, 96, 96, 0.1) 33%, rgba(96, 96, 96, 0.1) 66%, rgba(7, 7, 7, 0.1) 66%, rgba(7, 7, 7, 0.1) 99%), linear-gradient(345deg, #040a22, #1EED93, #9242F2, #41A8C0);
+  background-image: url(https://i.imgur.com/AnTBLYL.jpeg);
+    background-size: cover;
+    background-position: left;
    
 }
 
