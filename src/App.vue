@@ -625,6 +625,8 @@ width: 100%;
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+
 .flex.flex-col.lg\:w-1\/2.justify-center.items-center.w-full {
     margin-top: -350px;
 }
