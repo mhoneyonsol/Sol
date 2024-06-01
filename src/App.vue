@@ -129,7 +129,7 @@ html {
    align-items: center;
    justify-content: center;
    text-align: center;
-   background-color: #000000;
+   
 }
 
 div#app:hover {
