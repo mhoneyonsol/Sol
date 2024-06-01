@@ -148,7 +148,7 @@ html {
   width: 100px;
   display: block;
   background: #79A70A;
-  background: linear-gradient(#FFDF40 0%, #A79920 100%);
+  background: linear-gradient(#000 0%, #000 100%);
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
   position: absolute;
   top: 19px; right: -21px;
@@ -157,19 +157,19 @@ html {
   content: "";
   position: absolute; left: 0px; top: 100%;
   z-index: -1;
-  border-left: 3px solid #A79920;
+  border-left: 3px solid #000;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #A79920;
+  border-top: 3px solid #000;
 }
 .ribbon span::after {
   content: "";
   position: absolute; right: 0px; top: 100%;
   z-index: -1;
   border-left: 3px solid transparent;
-  border-right: 3px solid #A79920;
+  border-right: 3px solid #000;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #A79920;
+  border-top: 3px solid #000;
 }
 
 .glitch-wrapper {
