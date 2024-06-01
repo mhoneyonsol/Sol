@@ -476,6 +476,9 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     margin-top:40px;
     font-weight:300;
     top:-70px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
