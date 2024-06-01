@@ -374,7 +374,7 @@ div#app {
 body {
     background-image: url(https://i.imgur.com/AnTBLYL.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: center!important;
 }
 
 .ol.flex.flex-row.items-center.justify-center {
