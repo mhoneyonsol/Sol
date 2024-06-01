@@ -132,6 +132,11 @@ html {
    background-color: #000000;
 }
 
+div#app:hover {
+    backdrop-filter: hue-rotate(358deg);
+    transition: 40s;
+}
+
 .glitch {
    position: relative;
    font-size: 40px;
