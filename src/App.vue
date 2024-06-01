@@ -47,11 +47,7 @@ onMounted(() => {
 
       <div class="mt-10"><div class="glitch-wrapper" style="
     /* font-size: 3rem; */
-"> <div class="glitch" data-text="SPL TOKEN CREATOR" style="
-    font-size: 3rem;
-    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-weight: 900;
-">SPL TOKEN CREATOR</div> </div><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="position:absolute;margin-top:-95px;font-size:100px;font-weight:100;color:#ffffff29 !important;"> SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
+"> <div class="glitch" data-text="SPL TOKEN CREATOR">SPL TOKEN CREATOR</div> </div><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="position:absolute;margin-top:-95px;font-size:100px;font-weight:100;color:#ffffff29 !important;"> SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
       <div class="mt-5">
         <wallet-multi-button />
       </div>
@@ -138,7 +134,8 @@ html {
    font-weight: bold;
    color: #FFFFFF;
    letter-spacing: 3px;
-   z-index: 1;
+   z-index: 0;
+   ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 .glitch:before,
