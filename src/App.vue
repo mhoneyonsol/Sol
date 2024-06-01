@@ -40,7 +40,7 @@ onMounted(() => {
     background-size: 100%;
     background-color: #00000078;
     color: white;
-    background-position: bottom;
+    background-position: bottom!important;
     
 "><label class="closebutton" for="unique-id-for-box-1"> ❌</label> To initiate token creation, ensure your wallet holds SOL for transaction fees.</div></div>
 
