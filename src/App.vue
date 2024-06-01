@@ -491,8 +491,11 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     height: 400px;
     max-height: 600px;
     padding-top:20px;
-    background: linear-gradient(to bottom right, #f7f7f7 60%, #efefef 50%);
     filter: drop-shadow(2px 4px 6px black);
+    background-image: url(https://img.freepik.com/premium-photo/background-texture-crumpled-black-paper_114106-2461.jpg);
+    border: none;
+    color: white;
+    background-size: cover;
 }
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
