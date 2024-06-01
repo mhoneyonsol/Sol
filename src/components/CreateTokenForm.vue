@@ -149,7 +149,7 @@ const createToken = async () => {
 <template>
     <div class="box flex flex-col mt-5 border border-gray-300 p-10 rounded-lg shadow-lg shadow-gray-500 w-[550px]">
 
-    <div class="ribbon"><span>VERY LOW FEE 🔓</span></div>
+    <div class="ribbon"><span>LOW FEE 🔓</span></div>
         
         <div class="flex flex-row items-center justify-center">
             <label class="w-1/3">Token Name:</label>
