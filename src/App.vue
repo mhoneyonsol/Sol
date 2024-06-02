@@ -629,7 +629,7 @@ div#app {
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
     transition: 2s;
     margin-top: 20%;
-    width: 100%;
+    width: 80%;
     height: 400px;
     max-height: 600px;
     padding-top: 20px;
