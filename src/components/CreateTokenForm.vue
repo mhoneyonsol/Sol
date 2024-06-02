@@ -9,11 +9,11 @@ const network = ref('mainnet-beta');
 const tokenName = ref('');
 const tokenSymbol = ref('');
 const metadataUri = ref('');   // https://token-creator-lac.vercel.app/token_metadata.json
-const tokenDecimals = ref(8);
-const totalSupply = ref(1000000);
+const tokenDecimals = ref('');
+const totalSupply = ref('');
 const immutable = ref(false);
 const revokeMint = ref(false);
-const revokeFreeze = ref(false);
+const revokeFreeze = ref(true);
 const errNotify = ref('');
 const successNotify = ref('');
 
