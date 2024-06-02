@@ -1645,6 +1645,7 @@ video {
 .ring-gray-400 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
+  background: #ffffff12;
 }
 .duration-100 {
   transition-duration: 100ms;
