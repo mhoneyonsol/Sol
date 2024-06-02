@@ -139,7 +139,7 @@ html {
     background: #222;
     color: #000;
     z-index: 100;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .box {
