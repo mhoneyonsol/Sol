@@ -495,9 +495,9 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     max-height: 600px;
     padding-top: 20px;
     filter: drop-shadow(2px 4px 6px black);
-    background-image: url(https://i.pinimg.com/1200x/21/48/2d/21482d172d8acb6d6ebac1e54fe6d98e.jpg);
+    
     border: none;
-    color: #fff;
+    
     background-size: 100%;
     background-position: top;
 }
