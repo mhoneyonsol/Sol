@@ -18,12 +18,6 @@ initWallet({ wallets, autoConnect: true })
 onMounted(() => {
   document.title = 'SPL Token Factory';
 });
-
-
-
-
-
-
 </script>
 
 
@@ -188,17 +182,7 @@ html {
    
 }
 
-.circle {
-  --circle-size: 40px;
-  position: fixed;
-  height: var(--circle-size);
-  width: var(--circle-size);
-  border: 1px solid white;
-  border-radius: 100%;
-  top: calc(var(--circle-size) / 2 * -1);
-  left: calc(var(--circle-size) / 2 * -1);
-  pointer-events: none;
-}
+
 
 [data-tooltip] {
   position: relative;
