@@ -642,16 +642,22 @@ div#app {
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
     transition: 2s;
-    margin-top: 20%;
-    width: 80%;
+    margin-right: 20%;
+    width: 100%;
     height: 400px;
     max-height: 600px;
     padding-top: 20px;
-    padding: 9px;
-    font-size: 0.9em;
-    padding-top: 20px;
-    margin-right:0%!important;
-    margin-top:20%;
+    filter: drop-shadow(2px 4px 6px black);
+    border: none;
+    background-size: 100%;
+    background-position: bottom;
+    background: url(https://media2.giphy.com/media/eljKx14f9Tfmg8BXF4/giphy.webp?cid=ecf05e47x3198c0v7xj00bearo491blbyw0zela71glbutri&ep=v1_stickers_search&rid=giphy.webp&ct=s);
+    background-size: 20%;
+    background-color: #00000087;
+    color: white;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
 }
 
 p.nop {
