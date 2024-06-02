@@ -158,20 +158,21 @@ html {
 }
 .ribbon span {
   font-size: 10px;
-  font-weight: bold;
-  color: #FFF;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 20px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  width: 100px;
-  display: block;
-  background: #79A70A;
-  background: linear-gradient(#000 0%, #000 100%);
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 19px; right: -21px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: none;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: #79a70a;
+    background: linear-gradient(#000, #000);
+    box-shadow: 0 3px 10px -5px #000;
+    position: absolute;
+    top: 19px;
+    right: -21px;
 }
 .ribbon span::before {
   content: "";
