@@ -168,7 +168,7 @@ html {
     width: 100px;
     display: block;
     background: #79a70a;
-    background: linear-gradient(#000, #000);
+    background: linear-gradient(#737373, #252525);
     box-shadow: 0 3px 10px -5px #000;
     position: absolute;
     top: 19px;

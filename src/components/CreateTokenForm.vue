@@ -154,7 +154,7 @@ const createToken = async () => {
 <template>
     <div class="box flex flex-col mt-5 border border-gray-300 p-10 rounded-lg shadow-lg shadow-gray-500 w-[550px]">
 
-    <div class="ribbon"><span>LOW FEE 🔓</span></div>
+    <div class="ribbon"><span>Low fees 🔓</span></div>
         
 <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjdwbTRzNWRoNDhsbnFlaW9sbjQ1NnpzOTdmbDlueWxvZzN2bnN0ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cNTobeyDPsv9xUeAOR/giphy.webp" style="
     max-height: 40px;
