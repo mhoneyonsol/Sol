@@ -493,12 +493,13 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     width: 100%;
     height: 400px;
     max-height: 600px;
-    padding-top:20px;
+    padding-top: 20px;
     filter: drop-shadow(2px 4px 6px black);
-    background-image: url(https://t4.ftcdn.net/jpg/03/50/46/25/360_F_350462575_thxACK1akx2k2EQJFNjUZauXd0mIBd7v.jpg);
+    background-image: url(https://i.pinimg.com/1200x/21/48/2d/21482d1….jpg);
     border: none;
-    color: white;
-    background-size: cover;
+    color: #fff;
+    background-size: 100%;
+    background-position: top;
 }
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
