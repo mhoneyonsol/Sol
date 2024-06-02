@@ -136,7 +136,7 @@ html {
     text-overflow: ellipsis;
     padding: 6px 8px;
     border-radius: 3px;
-    background: #fff;
+    background: #222;
     color: #000;
     z-index: 100;
     margin-left: 30px;
