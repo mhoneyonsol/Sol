@@ -30,7 +30,7 @@ onMounted(() => {
 
 
 
-<span data-tooltip="Tooltip help here!" data-flow="bottom">Network Status</span>
+<span data-tooltip="LIVE 🟢" data-flow="bottom">Network Status</span>
 <div class="bk">
   <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
     <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
@@ -124,6 +124,10 @@ onMounted(() => {
 html {
     display: block;
     backdrop-filter: brightness(0.7);
+}
+
+[data-tooltip]:after {
+    margin-left: 30px;
 }
 
 .box {
