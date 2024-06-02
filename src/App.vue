@@ -562,6 +562,20 @@ div#app {
     background:black
   }
 
+  .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
+    transform:none!important;
+    margin-top: 20%;
+    width: 80%;
+    height: 400px;
+    max-height: 600px;
+    padding-top: 20px;
+    padding: 9px;
+    font-size: 0.9em;
+    padding-top: 20px;
+    margin-right:0%!important;
+    margin-top:20%;
+}
+
   button.button-85.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
     width: 80%;
     margin-left: auto;
