@@ -155,6 +155,7 @@ const createToken = async () => {
     max-height: 40px;
     width: 100%;
     margin-top: -20px;
+    margin-bottom: -10px;
 ">
         
         <div class="flex flex-row items-center justify-center">
