@@ -127,6 +127,18 @@ html {
 }
 
 [data-tooltip]:after {
+    content: attr(data-tooltip);
+    text-align: center;
+    min-width: 3em;
+    max-width: 21em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 6px 8px;
+    border-radius: 3px;
+    background: #fff;
+    color: #000;
+    z-index: 100;
     margin-left: 30px;
 }
 
