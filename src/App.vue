@@ -582,7 +582,7 @@ div#app {
 
   .glitch {
     margin-top:20px;
-    font-size: 5rem!important;
+    font-size: 4rem!important;
 }
 
 h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
