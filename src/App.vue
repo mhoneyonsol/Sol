@@ -632,7 +632,7 @@ body {
 }
 
 .ol.flex.flex-row.items-center.justify-center {
-    
+    margin-top:-10px;
 }
 
 .h-screen {
@@ -1478,6 +1478,9 @@ video {
 }
 .w-3\/4 {
   width: 75%;
+    font-family: 'Sora';
+    font-size: 0.9em;
+    margin-top: 10px;
 }
 .w-5 {
   width: 1.25rem;
@@ -1701,6 +1704,7 @@ video {
   background: #ffffff12;
   color:white!important;
   width:80%!important;
+      margin-left: 20px;
 }
 .duration-100 {
   transition-duration: 100ms;
