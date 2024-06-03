@@ -51,7 +51,7 @@ onMounted(() => {
 
       <div class="mt-10"><div class="glitch-wrapper" style="
     /* font-size: 3rem; */
-"> <div class="glitch" data-text="SPL Forge⚒️" style="
+"> <div class="glitch" data-text="SPL Forge" style="
     font-size: 3rem;
     font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-weight: 900;
