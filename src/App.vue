@@ -582,11 +582,11 @@ div#app {
   }
 
 .glitch {
-    margin-top: 20px;
+    margin-top: 30px;
     /* font-size: 5rem !important; */
     line-height: 45px;
     margin-bottom: 40px;
-    filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(-9px -10px 4px black);
 }
 
 h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
