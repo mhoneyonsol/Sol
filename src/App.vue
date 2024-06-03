@@ -358,6 +358,7 @@ div#app:hover {
    color: #FFFFFF;
    letter-spacing: 3px;
    z-index: 0;
+   filter: drop-shadow(2px 4px 6px black);
 }
 
 .glitch:before,
@@ -585,6 +586,7 @@ div#app {
     /* font-size: 5rem !important; */
     line-height: 45px;
     margin-bottom: 40px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
