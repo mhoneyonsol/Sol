@@ -580,6 +580,11 @@ div#app {
     background:black
   }
 
+  .glitch {
+    
+    font-size: 3rem!important;
+}
+
   .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
     transform:none!important;
     margin-top: 20%;
