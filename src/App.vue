@@ -51,7 +51,7 @@ onMounted(() => {
 
       <div class="mt-10"><div class="glitch-wrapper" style="
     /* font-size: 3rem; */
-"> <div class="glitch" data-text="SPL Forge" style="
+"> <div class="glitch" data-text="SPL Forge ⚒️" style="
     font-size: 5rem;
     font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-weight: 900;
@@ -582,7 +582,7 @@ div#app {
 
   .glitch {
     
-    font-size: 3rem!important;
+    font-size: 4rem!important;
 }
 
 h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
