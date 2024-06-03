@@ -1894,9 +1894,10 @@ video {
 }
 
 .swv-button:not([disabled]):hover {
-    background-color: white !important;
+    background-color: #ffffff94 !important;
     transition: 0.5s;
     transform: scale(1.2);
+    border-radius: 13px;
 }
 
 .swv-button:not([disabled]):focus-visible {
