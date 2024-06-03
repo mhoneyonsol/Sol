@@ -581,7 +581,7 @@ div#app {
   }
 
   .glitch {
-    
+    margin-top:20px;
     font-size: 4rem!important;
 }
 
