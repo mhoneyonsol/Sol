@@ -1865,16 +1865,19 @@ video {
 }
 
 .swv-button {
+    background-color: transparent;
     border: none;
+    color: var(--swv-button-text-color);
     cursor: pointer;
     display: flex;
     align-items: center;
+    font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
+    font-weight: 600;
     height: 48px;
     line-height: 48px;
     padding: 0 24px;
     border-radius: var(--swv-button-radius);
-    text-shadow: 2px 2px black;
 }
 
 .swv-button > * + * {
