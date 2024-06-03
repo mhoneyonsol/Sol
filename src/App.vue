@@ -228,6 +228,7 @@ html {
   position: relative;
   pointer: cursor;
   color:white;
+  z-index:222;
 }
 [data-tooltip]::before,
 [data-tooltip]::after {
