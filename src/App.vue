@@ -1471,6 +1471,7 @@ video {
 }
 .w-1\/3 {
   width: 33.333333%;
+  font-familly:'sora';
 }
 .w-1\/4 {
   width: 25%;
