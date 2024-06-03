@@ -1700,7 +1700,7 @@ video {
   --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
   background: #ffffff12;
   color:white!important;
-  width:80%;
+  width:80%!important;
 }
 .duration-100 {
   transition-duration: 100ms;
