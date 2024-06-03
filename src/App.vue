@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import CreateTokenForm from "./components/CreateTokenForm.vue";
-import DaDa from "./components/DaDa.vue";
 import Chatbot from './components/Chatbot-1.vue';
 
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
@@ -29,9 +28,7 @@ onMounted(() => {
 <template>
 
 
-<div id="app">
-    <DaDa />
-  </div>
+
 
 <span data-tooltip="🟢" data-flow="bottom">Network Status</span>
 <div class="bk">
