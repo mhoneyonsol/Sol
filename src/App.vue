@@ -440,7 +440,7 @@ div#app:hover {
 .accordion {
     display: flex;
     flex-direction: column;
-    font-family: "Sora", sans-serif;
+    
     max-width: 991px;
     min-width: 320px;
     margin: 50px auto;
@@ -1471,7 +1471,7 @@ video {
 }
 .w-1\/3 {
   width: 33.333333%;
-  font-family: sora;
+  
 }
 .w-1\/4 {
   width: 25%;
