@@ -279,8 +279,13 @@ html {
 [data-tooltip]:not([data-flow])::after,
 [data-tooltip][data-flow^="top"]::before,
 [data-tooltip][data-flow^="top"]::after {
-  left: 50%;
+  
   transform: translate(-50%, -.4em);
+  left: 20%;
+    top: 130%;
+    transform: translate(-50%, 0.4em);
+    background: #333333;
+    filter: drop-shadow(2px 4px 6px black);
 }
 [data-tooltip][data-flow^="bottom"]::before {
   top: 100%;
