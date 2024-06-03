@@ -1894,7 +1894,7 @@ video {
 }
 
 .swv-button:not([disabled]):hover {
-    background-color: #ffffff94 !important;
+    background-color: #ffffffdb !important;
     transition: 0.5s;
     transform: scale(1.2);
     border-radius: 13px;
