@@ -343,6 +343,11 @@ html {
 [data-tooltip][data-flow^="bottom"]:hover::before,
 [data-tooltip][data-flow^="bottom"]:hover::after {
   animation: tooltip-vert .5s ease-out forwards;
+    left: 20%;
+    top: 130%;
+    transform: translate(-50%, 0.4em);
+    background: #333333;
+    filter: drop-shadow(2px 4px 6px black);
 }
 [data-tooltip][data-flow^="left"]:hover::before,
 [data-tooltip][data-flow^="left"]:hover::after,
