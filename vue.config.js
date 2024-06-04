@@ -5,9 +5,7 @@ module.exports = {
     config.plugin('polyfills').use(NodePolyfillPlugin)
   },
   productionSourceMap: false
-}
 
-module.exports = {
   pluginOptions: {
     electronBuilder: {
       builderOptions: {
@@ -16,3 +14,4 @@ module.exports = {
     }
   }
 }
+
