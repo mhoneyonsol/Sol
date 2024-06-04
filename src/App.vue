@@ -168,7 +168,7 @@ html {
 .ribbon span {
   font-size: 10px;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     text-transform: none;
     text-align: center;
     line-height: 20px;
@@ -176,13 +176,13 @@ html {
     -webkit-transform: rotate(45deg);
     width: 100px;
     display: block;
-    background: #79a70a;
-    background: linear-gradient(#737373, #252525);
+    background: #ffffff;
     box-shadow: 0 3px 10px -5px #000;
     position: absolute;
     top: 19px;
     right: -21px;
 }
+
 .ribbon span::before {
   content: "";
   position: absolute; left: 0px; top: 100%;
