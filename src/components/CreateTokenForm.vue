@@ -802,12 +802,15 @@ video {
 }
 .w-1\/3 {
   width: 33.333333%;
+    font-family: 'Sora';
+    font-size: 0.9em;
 }
 .w-1\/4 {
   width: 25%;
 }
 .w-3\/4 {
   width: 75%;
+    font-family: 'Sora';
 }
 .w-5 {
   width: 1.25rem;

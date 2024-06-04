@@ -586,6 +586,10 @@ div#app {
     background:black
   }
 
+.w-3\/4 {
+  font-size:0.9em;
+}
+
 .glitch {
     margin-top: 90px;
     /* font-size: 5rem !important; */
