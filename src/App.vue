@@ -30,7 +30,7 @@ onMounted(() => {
 
 
 
-<span data-tooltip="🟢" data-flow="bottom">Network Status</span>
+<span data-tooltip="🟢" data-flow="bottom">Network Status</span> <p v-if="connected">zaza</p>
 <div class="bk">
   <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
     <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
