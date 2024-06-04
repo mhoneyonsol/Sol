@@ -60,9 +60,7 @@ onMounted(() => {
         <wallet-multi-button />
       </div>
     </div>
-    /* <div id="A"></div>
-
-*/
+    
     <div class="flex justify-center items-center lg:w-1/2">
       <CreateTokenForm />
     </div>
