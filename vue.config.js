@@ -5,13 +5,4 @@ module.exports = {
     config.plugin('polyfills').use(NodePolyfillPlugin)
   },
   productionSourceMap: false
-
-  pluginOptions: {
-    electronBuilder: {
-      builderOptions: {
-        productName: 'App Name'
-      }
-    }
-  }
 }
-
