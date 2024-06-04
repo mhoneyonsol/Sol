@@ -593,7 +593,7 @@ div#app {
   }
 
 .glitch {
-    margin-top: 60px;
+    margin-top: 90px;
     /* font-size: 5rem !important; */
     line-height: 45px;
     margin-bottom: 40px;
