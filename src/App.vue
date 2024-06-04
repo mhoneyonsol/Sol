@@ -544,7 +544,9 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 
 
 
-.flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
+.flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] 
+
+{
     transition: 2s; margin-right: 20%; width: 100%; height: 400px; max-height: 600px; padding-top: 20px; filter: drop-shadow(2px 4px 6px black); border: none; background-size: 100%; background-position: bottom; background: url(https://media2.giphy.com/media/eljKx14f9Tfmg8BXF4/giphy.webp?cid=ecf05e47x3198c0v7xj00bearo491blbyw0zela71glbutri&ep=v1_stickers_search&rid=giphy.webp&ct=s); background-size: 20%; background-color: #00000087; color: white; background-repeat: no-repeat; background-position-x: right; background-position-y: bottom;
 }
 
@@ -552,9 +554,11 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     transform: scale(1.7) translateX(-200px);
     transition: 1s;
     width: 100%;
-    webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 47px 5px 15px 39px rgba(0,0,0,0); box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 47px 5px 15px 39px rgba(0,0,0,0); 
+    webkit-box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488, -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b, -10px -7px 27px 1px #8e5cff, 47px 5px 15px 39px transparent;
+    box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488, -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b, -10px -7px 27px 1px #8e5cff, 47px 5px 15px 39px transparent;
     filter: drop-shadow(10px 40px 260px black);
     background: #000000b0;
+    backdrop-filter: blur(1px);
 
     
 }
