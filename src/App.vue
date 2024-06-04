@@ -30,7 +30,7 @@ onMounted(() => {
 
 
 
-<span data-tooltip="🟢" data-flow="bottom">Network Status</span> <p v-if="connected">zaza</p>
+<span data-tooltip="🟢" data-flow="bottom">Network Status</span> 
 <div class="bk">
   <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
     <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
@@ -469,30 +469,19 @@ div#app:hover {
 
 .button-85:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+    background: linear-gradient(45deg, red, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, red);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
 }
 
 @keyframes glowing-button-85 {
@@ -513,10 +502,10 @@ div#app:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #000000b5;
+    background: #ffffff;
     left: 0;
     top: 0;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 button.button-85.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100:hover {
@@ -524,16 +513,16 @@ button.button-85.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.r
 }
 
 button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
-    text-transform: inherit;
-    font-family: monospace;
-    background-image: linear-gradient(348deg, #18ffa5 30%, #830cff 100%);
-    color: white;
-    margin-top:40px;
-    font-weight:300;
-    top:-70px;
+   text-transform: inherit;
+    background-image: linear-gradient(348deg, #18ffa5 30%, #830cff);
+    color: #000;
+    margin-top: 40px;
+    font-weight: 300;
+    top: -70px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Sora';
 }
 
 button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
