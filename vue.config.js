@@ -6,3 +6,13 @@ module.exports = {
   },
   productionSourceMap: false
 }
+
+module.exports = {
+  pluginOptions: {
+    electronBuilder: {
+      builderOptions: {
+        productName: 'App Name'
+      }
+    }
+  }
+}
