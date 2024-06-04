@@ -697,6 +697,7 @@ div#app {
     background-size: 20%;
     background-color: #00000087;
     color: white;
+    backdrop-filter: blur(2px);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
