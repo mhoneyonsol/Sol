@@ -60,6 +60,7 @@ onMounted(() => {
         <wallet-multi-button />
       </div>
     </div>
+    <div id="A"></div>
     <div class="flex justify-center items-center lg:w-1/2">
       <CreateTokenForm />
     </div>
@@ -2139,5 +2140,91 @@ video {
     height: 28px;
 }
 
-#A { color: white; font-family: 'Roboto',sans-serif; font-weight: 500; font-size: 30px; text-align: center; line-height: 150px; background-color: #00000000; width: 150px; height: 150px; display: block; margin: 270px auto; border-radius: 50%; top: -62%; margin-bottom: -260; position: absolute; left: 35%; } #A::before, #A::after { width: 150px; height: 150px; position: absolute; top: -5%; left: -5%; opacity: 0.5; filter: blur(50px); content: ""; border-radius: 50%; } #A::before { background-color: #E96753; animation: aGlow 5000ms ease infinite; z-index: -1; } #A::after { background-color: #539DE9; animation: bGlow 5000ms ease infinite; z-index: -2; } @keyframes aGlow { 0% {transform: translateX(50px) translateY(50px) scale(1.2); opacity: 0.5;} 25% {transform: translateX(-50px) translateY(-50px) scale(0.8); opacity: 0.8;} 50% {transform: translateX(50px) translateY(50px) scale(1.2); opacity: 0.5; } 75% {transform: translateX(-50px) translateY(-50px) scale(0.8); opacity: 0.8;} 100% {transform: translateX(50px) translateY(50px) scale(1.2); opacity: 0.5;} } @keyframes bGlow { 0% {transform: translateX(-50px) translateY(-50px) scale(0.8); opacity: 0.8;} 25% {transform: translateX(50px) translateY(50px) scale(1.2); opacity: 0.5;} 50% {transform: translateX(-50px) translateY(-50px) scale(0.8); opacity: 0.8;} 75% {transform: translateX(50px) translateY(50px) scale(1.2); opacity: 0.5;} 100% {transform: translateX(-50px) translateY(-50px) scale(0.8); opacity: 0.8;} }
+#A {
+    display: block;
+    left: 15%;
+    top: 15%;
+}
+
+#A,#A:after,#A:before {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+#A:after,#A:before {
+    top: -5%;
+    left: -5%;
+    opacity: .5;
+    filter: blur(50px);
+    content: ""
+}
+
+#A:before {
+    background-color: #20e3ff;
+    animation: aGlow 5s ease infinite;
+    z-index: -1
+}
+
+#A:after {
+    background-color: #f800ff;
+    animation: bGlow 5s ease infinite;
+    z-index: -2
+}
+
+@keyframes aGlow {
+    0% {
+        transform: translateX(50px) translateY(50px) scale(1.2);
+        opacity: .5
+    }
+
+    25% {
+        transform: translateX(-50px) translateY(-50px) scale(.8);
+        opacity: .8
+    }
+
+    50% {
+        transform: translateX(50px) translateY(50px) scale(1.2);
+        opacity: .5
+    }
+
+    75% {
+        transform: translateX(-50px) translateY(-50px) scale(.8);
+        opacity: .8
+    }
+
+    to {
+        transform: translateX(50px) translateY(50px) scale(1.2);
+        opacity: .5
+    }
+}
+
+@keyframes bGlow {
+    0% {
+        transform: translateX(-50px) translateY(-50px) scale(.8);
+        opacity: .8
+    }
+
+    25% {
+        transform: translateX(50px) translateY(50px) scale(1.2);
+        opacity: .5
+    }
+
+    50% {
+        transform: translateX(-50px) translateY(-50px) scale(.8);
+        opacity: .8
+    }
+
+    75% {
+        transform: translateX(50px) translateY(50px) scale(1.2);
+        opacity: .5
+    }
+
+    to {
+        transform: translateX(-50px) translateY(-50px) scale(.8);
+        opacity: .8
+    }
+}
 </style>
