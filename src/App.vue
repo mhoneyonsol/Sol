@@ -50,7 +50,7 @@ onMounted(() => {
       </radialGradient>
     </defs>
   </svg>
-  <div class="blur"></div>
+  <div class="bluur"></div>
 </div>
 
   <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
@@ -232,7 +232,7 @@ html {
     stroke: #ffffff1c;
 }
 
-.blur {
+.bluur {
     height: 12rem;
     width: 12rem;
     background-color: var(--primary);
