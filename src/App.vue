@@ -435,7 +435,15 @@ div#app:hover {
 
 /* For demonstration purposes: */
 .msgbox {
-  border: solid 1px maroon;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 19px;
+    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGlxNm1md2diMnkxMXdwazR3cHh5MXA4Y21ncGlwMG9rcjhndzhwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTniuHdUjpOlNo1q/giphy.gif);
+    background-size: 100%;
+    background-color: #00000078;
+    color: white;
+    background-position: bottom !important;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .accordion {
