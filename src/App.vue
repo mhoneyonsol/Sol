@@ -50,7 +50,7 @@ onMounted(() => {
       </radialGradient>
     </defs>
   </svg>
-  <div class="bluur"></div>
+  
 </div>
 
   <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
