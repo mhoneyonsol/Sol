@@ -173,6 +173,18 @@ html {
     margin-left: 10px;
 }
 
+
+
+
+
+.clo {
+  width: 17%;
+    height: auto;
+    position: static;
+    margin-left: -15px;
+    z-index: 4;
+}
+
 .box {
   width: 200px; height: 300px;
   position: relative;
@@ -645,6 +657,10 @@ div#app {
     height:100%;
     background:black
   }
+
+  .clo {
+  display:none;
+}
 
 .w-3\/4 {
   font-size:0.9em;
