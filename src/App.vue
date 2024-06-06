@@ -182,7 +182,7 @@ html {
     height: auto;
     margin-left: 105%;
     z-index: 4;
-    margin-top: -55%;
+    margin-top: -45%;
 }
 
 .box {
