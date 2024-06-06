@@ -765,6 +765,7 @@ div#app {
     padding-top: 20px;
     filter: drop-shadow(2px 4px 6px black);
     border: none;
+    margin-right:20%;
     background-size: 100%;
     background-position: bottom;
     background: url(https://media2.giphy.com/media/eljKx14f9Tfmg8BXF4/giphy.webp?cid=ecf05e47x3198c0v7xj00bearo491blbyw0zela71glbutri&ep=v1_stickers_search&rid=giphy.webp&ct=s);
