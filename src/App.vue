@@ -178,11 +178,11 @@ html {
 
 
 .clo {
-    width: 19%;
+  width: 17%;
     height: auto;
-    margin-left: 105%;
+    position: static;
+    margin-left: -15px;
     z-index: 4;
-    margin-top: -55%;
 }
 
 .box {
