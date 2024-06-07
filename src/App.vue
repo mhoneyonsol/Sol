@@ -613,7 +613,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     height: 400px;
     max-height: 600px;
     padding-top: 20px;
-    filter: drop-shadow(2px 4px 6px black);
+    
     border: none;
     margin-right: 20%;
     background-position: bottom;
