@@ -256,7 +256,7 @@ html {
 
 .grid {
     position: absolute;
-  
+    width: 100%;
     margin-top:20%;
     display: flex;
     align-items: center;
