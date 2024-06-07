@@ -230,7 +230,7 @@ const createToken = async () => {
         </button>
        
     </div>
-    <img class="clo" src="https://assets.codepen.io/197359/kitten-peek-transparent.png">
+    
 </template>
 
 
