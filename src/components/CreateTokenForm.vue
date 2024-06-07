@@ -230,7 +230,13 @@ const createToken = async () => {
         </button>
        
     </div>
-    <img class="clo" src="https://assets.codepen.io/197359/kitten-peek-transparent.png">
+    <img src="https://assets.codepen.io/197359/kitten-peek-transparent.png" style="
+    width: 17%;
+    height: auto;
+    position: static;
+    margin-left: -15px;
+    z-index: 4;
+">
 </template>
 
 
