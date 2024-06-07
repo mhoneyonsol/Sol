@@ -619,7 +619,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     background-position: bottom;
     background: url(https://media2.giphy.com/media/eljKx14f9Tfmg8BXF4/giphy.webp?cid=ecf05e47x3198c0v7xj00bearo491blbyw0zela71glbutri&ep=v1_stickers_search&rid=giphy.webp&ct=s);
     background-size: 10%;
-    background-color: #000000a1;
+    background-color: #000000;
     box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488, -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b, -10px -7px 27px 1px #8e5cff, 47px 5px 15px 39px transparent;
     color: #fff;
     background-repeat: no-repeat;
