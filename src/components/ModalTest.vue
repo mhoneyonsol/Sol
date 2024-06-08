@@ -1,5 +1,5 @@
 <template>
-  
+  <div class="Modal">
  <div class="buutton">
   <buutton><img src="https://media1.giphy.com/media/pylneZCpX0CCsQWSRY/200w.webp?cid=ecf05e474152b1706e962445f5c59ba8b3b0b0f3f52a1aef&amp;rid=200w.webp" style="
     max-width: 80%;
@@ -31,6 +31,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 
 
