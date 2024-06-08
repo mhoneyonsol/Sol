@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="button">
-      <button>
+    <div class="buutton">
+      <buutton>
         <img 
           src="https://media1.giphy.com/media/pylneZCpX0CCsQWSRY/200w.webp?cid=ecf05e474152b1706e962445f5c59ba8b3b0b0f3f52a1aef&amp;rid=200w.webp" 
           style="max-width: 80%;" 
         />
-      </button>
+      </buutton>
     </div>
 
     <div class="pop-up">
@@ -47,7 +47,7 @@ export default {
   mounted() {
     document.addEventListener('contextmenu', event => event.preventDefault());
 
-    $("button").click(function () {
+    $("buutton").click(function () {
       $(".pop-up").addClass("open");
     });
 
@@ -120,7 +120,7 @@ export default {
   box-sizing: border-box;
 }
 
-.button {
+.buutton {
   position: absolute;
   top: 0;
   left: 0;
@@ -128,7 +128,7 @@ export default {
   height: 100%;
   z-index: 2;
 }
-.button button {
+.buutton buutton {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -158,16 +158,16 @@ export default {
   font-weight: bold;
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.6);
 }
-.button button:hover {
+.buutton buutton:hover {
   cursor: pointer;
   background-color: #222;
   color: #ffffff;
 }
-.button button span {
+.buutton buutton span {
   opacity: 1;
   font-family: Comfortaa;
 }
-.button.clicked button {
+.buutton.clicked buutton {
   visibility: hidden;
   oacity: 0;
 }
