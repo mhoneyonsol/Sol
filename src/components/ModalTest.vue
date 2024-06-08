@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="buutton">
-      <buutton>
+    <div class="button">
+      <button>
         <img 
           src="https://media1.giphy.com/media/pylneZCpX0CCsQWSRY/200w.webp?cid=ecf05e474152b1706e962445f5c59ba8b3b0b0f3f52a1aef&amp;rid=200w.webp" 
           style="max-width: 80%;" 
         />
-      </buutton>
+      </button>
     </div>
 
     <div class="pop-up">
@@ -47,7 +47,7 @@ export default {
   mounted() {
     document.addEventListener('contextmenu', event => event.preventDefault());
 
-    $("buutton").click(function () {
+    $("button").click(function () {
       $(".pop-up").addClass("open");
     });
 
@@ -58,7 +58,9 @@ export default {
 };
 </script>
 
-<style>@-webkit-keyframes float {
+<style>
+
+@-webkit-keyframes float {
   0% {
     transform: translatey(0px);
     transform: translatex(0px);
@@ -120,7 +122,7 @@ export default {
   box-sizing: border-box;
 }
 
-.buutton {
+.button {
   position: absolute;
   top: 0;
   left: 0;
@@ -128,7 +130,7 @@ export default {
   height: 100%;
   z-index: 2;
 }
-.buutton buutton {
+.button button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -158,16 +160,16 @@ export default {
   font-weight: bold;
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.6);
 }
-.buutton buutton:hover {
+.button button:hover {
   cursor: pointer;
   background-color: #222;
   color: #ffffff;
 }
-.buutton buutton span {
+.button button span {
   opacity: 1;
   font-family: Comfortaa;
 }
-.buutton.clicked buutton {
+.button.clicked button {
   visibility: hidden;
   oacity: 0;
 }
@@ -422,6 +424,7 @@ p.back {
     font-weight: 600;
     font-family: 'Russo One', sans-serif;
 }
+
 </style>
 
 
