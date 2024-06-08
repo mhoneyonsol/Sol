@@ -2,6 +2,7 @@
 import { onMounted } from 'vue';
 import CreateTokenForm from "./components/CreateTokenForm.vue";
 import Chatbot from './components/Chatbot-1.vue';
+import Modal from './components/ModalTest.vue';
 
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
 import { initWallet, WalletMultiButton } from 'solana-wallets-vue'
@@ -27,7 +28,9 @@ onMounted(() => {
 
 <template>
 
-
+<div id="app">
+    <Modal />
+  </div>
 
 
 <span data-tooltip="🟢" data-flow="bottom">Network Status</span> 
