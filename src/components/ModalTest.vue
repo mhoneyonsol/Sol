@@ -4,7 +4,7 @@
   
  
 
- <a class="cta" href="#google">css modal</a>
+ <a class="cta" href="#google">How to use</a>
 <div id="google" class="modaloverlay">
   <div class="modal">
     <a href="#close" class="close">&times;</a>
