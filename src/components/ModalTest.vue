@@ -55,7 +55,7 @@
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 
-$("buutton").click(function () {
+$("button").click(function () {
   $(".pop-up").addClass("open");
 });
 
