@@ -1,78 +1,103 @@
 
- import $ from 'jquery';
+
 <template>
   
  
 
- <div class="pop-up">
-  <div class="content">
-    <div class="container">
-      <div class="dots">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-      
-      <span class="close">fermer</span>
-      
-   
-      <p class="back">0x444</p>
-      <img draggable="false" src="https://media0.giphy.com/media/1PgEztlO5hmsMuwIAu/giphy.gif?cid=ecf05e4740500a7827d81d483a1ff8d4a33749c7e2df0755&amp;rid=giphy.gif" alt="Car">
-      
-      <div class="subscribe">
-        <h1>Souscrivez à la newsletter et recevez <span> mes dernières news et travaux</span>.</h1>
-      
-        <form>
-          <input style="cursor: url(https://i.imgur.com/pKsV7hh.png) 25 15, auto;" type="email" placeholder="Votre adresse mail">
-          <input type="submit" value="Souscrire">
-        </form>
-      </div>
+ <p>This is a example of a <a class="cta" href="#google">css modal</a></p>
+<div id="google" class="modaloverlay">
+  <div class="modal">
+    <a href="#close" class="close">&times;</a>
+    <div>
+      <h1>Here is some content inside the Modal.</h1>
+      <p>If the modal shrinks below the breakpoint then the modal goes full screen for mobile use.</p>
     </div>
-  </div>
-</div>
-
-<div class="plus" style="">
- 
-
-
-
-
-
- <button href="index.html#contact" class="bdr-ripple-ani-btn">
- <img src="https://cdn.dribbble.com/users/891352/screenshots/7105199/media/5238cf20f0301e51fea9cad8912b9ea3.gif" class="turn" style=" transform: scale(1.8);"></button>
-
- 
-
- <div class="tooltip" style="">
-    <p>How to use</p>
-    <i class="fa fa-play"></i>
   </div>
 </div>
 
 
 <script>
 
-import $ from 'jquery';
-
-export default {
-  mounted() {
-    document.addEventListener('contextmenu', event => event.preventDefault());
-  },
-  methods: {
-    openPopUp() {
-      $(".pop-up").addClass("open");
-    },
-    closePopUp() {
-      $(".pop-up").removeClass("open");
-    }
-  }
-}
 
 </script>
 
 <style>
 
+.cta {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  color: tomato;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  padding: 0.3em 1em;
+  text-decoration: none;
+}
+.cta:hover {
+  background-color: lightgrey;
+  color: slategrey;
+  text-decoration: none;
+}
 
+.modaloverlay {
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  z-index: -1;
+  display: none;
+}
+.modaloverlay:target {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 99999;
+}
+.modaloverlay .modal {
+  background-color: white;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 3em;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 60em) {
+  .modaloverlay .modal {
+    height: 75%;
+    margin: 5% auto;
+    max-height: 57em;
+    max-width: 66em;
+    width: 85%;
+  }
+}
+.modaloverlay .modal > iframe, .modaloverlay .modal > div {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.modaloverlay .close {
+  background-color: turquoise;
+  color: white;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  z-index: 1;
+}
 
 </style>
 
