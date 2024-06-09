@@ -1217,9 +1217,9 @@ div#app {
 
 body {
   background: rgb(102,102,102);
-background: radial-gradient(circle, rgba(102,102,102,1) 0%, rgba(0,0,0,1) 100%)!important;
+background: radial-gradient(circle, rgba(102,102,102,1) 0%, rgba(0,0,0,1) 100%);
 background-image:none;
-background-color:black;
+background-color:#1a1a1a;
 }
 
 
