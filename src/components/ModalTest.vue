@@ -52,19 +52,21 @@
 
 <script>
 
-document.addEventListener('contextmenu', event => event.preventDefault());
+import $ from 'jquery';
 
-
-$("button").click(function () {
-  $(".pop-up").addClass("open");
-});
-
-$(".pop-up .close").click(function () {
-  $(".pop-up").removeClass("open");
-});
-
-
-
+export default {
+  mounted() {
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  },
+  methods: {
+    openPopUp() {
+      $(".pop-up").addClass("open");
+    },
+    closePopUp() {
+      $(".pop-up").removeClass("open");
+    }
+  }
+}
 
 </script>
 
