@@ -3,6 +3,7 @@ import { onMounted } from 'vue';
 import CreateTokenForm from "./components/CreateTokenForm.vue";
 import Chatbot from './components/Chatbot-1.vue';
 import Modal from './components/ModalTest.vue';
+import $ from 'jquery'
 
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
 import { initWallet, WalletMultiButton } from 'solana-wallets-vue'
