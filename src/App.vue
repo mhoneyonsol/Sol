@@ -128,6 +128,9 @@ onMounted(() => {
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Color+Emoji&family=Red+Rose:wght@300..700&display=swap');
 
+li {
+    margin-top: 10px;
+}
 
 .cta {
 background-color: #0006;

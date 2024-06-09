@@ -9,10 +9,34 @@
 <div id="google" class="modaloverlay">
   <div class="modal">
     <a href="#close" class="close">&times;</a>
-    <div>
-      <h1>Here is some content inside the Modal.</h1>
-      <p>If the modal shrinks below the breakpoint then the modal goes full screen for mobile use.</p>
-    </div>
+    <div style="
+    margin-top: 50px;
+"><p>
+    <strong>Welcome to SPL Forge!</strong>
+    <br><br>
+    Thank you for visiting SPL Forge. To ensure a smooth experience, here are the steps you need to follow:
+    </p><h1 style="
+    margin-top: 20px;
+">First,we can create token only on SOLANA </h1>
+
+<p style="
+    /* margin-top: 30px; */
+    margin-bottom: 40px;
+">Also you need to hold at least 0.006 in $SOL on your wallet to generate working tx</p>
+
+<ol>
+        <li><strong>Connect Your Account:</strong> Log in or create an account to get started. Your account is your gateway to managing your assets securely.</li>
+        <li><strong>Fund Your Wallet:</strong> Deposit funds into your wallet to initiate transactions. Having a funded wallet enables you to participate in various activities on the platform.</li>
+        <li><strong>Enter Information:</strong> Provide necessary information to facilitate transactions. Accurate details ensure seamless processing.</li>
+        <li><strong>Approve Transactions:</strong> Review and approve transactions to proceed. Your consent is essential for every action taken on the platform.</li>
+        <li><strong>Receive Tokens:</strong> Once transactions are approved, you'll receive your tokens. Enjoy the benefits of your transactions and explore the platform further.</li>
+    </ol>
+    <strong>Total Token Supply:</strong> [Insert Total Token Supply Here]
+    <br><br>
+    If you encounter any issues or have questions, feel free to reach out to our support team for assistance.
+    <br><br>
+    Thank you for choosing SPL Forge!
+<p></p></div>
   </div>
 </div>
 
