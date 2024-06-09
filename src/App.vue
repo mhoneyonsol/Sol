@@ -1237,8 +1237,7 @@ h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.b
 
 body {
         background-image: url(https://i.imgur.com/Au3ROiu.jpeg);
-    background-size: 170%;
-    background-position: left;
+    background-size: cover;
     backdrop-filter: blur(11px);
 }
 
@@ -1573,7 +1572,10 @@ html,
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
-  
+  background-image: url(https://i.imgur.com/Au3ROiu.jpeg);
+    background-size: 170%;
+    background-position: left;
+    backdrop-filter: blur(11px);
    
 }
 
