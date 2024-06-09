@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 <template>
   
  <div class="pop-up">
