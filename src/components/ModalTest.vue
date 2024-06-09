@@ -44,7 +44,7 @@
  
 
  <div class="tooltip" style="">
-    <p>Newsletter</p>
+    <p>How to use</p>
     <i class="fa fa-play"></i>
   </div>
 </div>
