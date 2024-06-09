@@ -1236,7 +1236,7 @@ h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.b
 }
 
 body {
-        background: #222!important;
+        background-color: #2220 !important;
         
 }
 
