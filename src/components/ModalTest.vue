@@ -4,7 +4,7 @@
   
  
 
- <p>This is a example of a <a class="cta" href="#google">css modal</a></p>
+ <a class="cta" href="#google">css modal</a>
 <div id="google" class="modaloverlay">
   <div class="modal">
     <a href="#close" class="close">&times;</a>
