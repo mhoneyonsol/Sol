@@ -144,6 +144,7 @@ onMounted(() => {
   position: absolute;
   right: 2%;
   TOP: 2%;
+  z-index:4;
 }
 .cta:hover {
   background-color: lightgrey;
