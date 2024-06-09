@@ -151,6 +151,7 @@ background-color: #0006;
     width: 200px;
     background-position: 100%;
     backdrop-filter: blur(4px);
+    zoom:80%;
 }
 .cta:hover {
   background-color: lightgrey;
@@ -180,13 +181,15 @@ background-color: #0006;
   z-index: 99999;
 }
 .modaloverlay .modal {
-  background-color: white;
-  height: 100%;
-  position: relative;
-  margin: 0 auto;
-  padding: 3em;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  background-color: #ffffffb8;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 3em;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 23px;
+    backdrop-filter: blur(9px);
 }
 @media (min-width: 60em) {
   .modaloverlay .modal {
@@ -203,16 +206,17 @@ background-color: #0006;
   height: 100%;
 }
 .modaloverlay .close {
-  background-color: turquoise;
-  color: white;
-  font-size: 24px;
-  padding: 8px 12px;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  text-decoration: none;
-  top: 0;
-  z-index: 1;
+background-color: #ff000047;
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 18px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    top: 10px;
+    z-index: 1;
+    border-radius: 23px;
 }
 
 html {
