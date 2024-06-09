@@ -182,15 +182,20 @@ background-color: #0006;
   z-index: 99999;
 }
 .modaloverlay .modal {
-  background-color: #ffffffb8;
+background-color: #ffffffb8;
     height: 100%;
     position: relative;
     margin: 0 auto;
+    background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
+    background-size: 30%;
     padding: 3em;
+    background-repeat: no-repeat;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     border-radius: 23px;
+    -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(9px);
+    background-position: bottom right;
 }
 @media (min-width: 60em) {
   .modaloverlay .modal {
