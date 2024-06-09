@@ -1278,12 +1278,7 @@ input.mt-2.block.w-full.rounded-md.border-0.py-1\.5.pl-4.pr-4.text-gray-900.ring
     width: 50%;
 }
 
-.flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
-    transform: scale(1);
-    width: 100%;
-    webkit-box-shadow: none!important;
-    box-shadow: none!important;
-}
+
 
 
 .flex.flex-row.items-center.justify-center {
@@ -1297,7 +1292,7 @@ div#app {
 }
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
-    transition: 2s;
+transition: 2s;
     margin-right: 20%;
     width: 100%;
     height: 400px;
@@ -1305,17 +1300,16 @@ div#app {
     padding-top: 20px;
     filter: drop-shadow(2px 4px 6px black);
     border: none;
-    margin-right:20%;
-    background-size: 100%;
     background-position: bottom;
-    background: url(https://media2.giphy.com/media/eljKx14f9Tfmg8BXF4/giphy.webp?cid=ecf05e47x3198c0v7xj00bearo491blbyw0zela71glbutri&ep=v1_stickers_search&rid=giphy.webp&ct=s);
-    background-size: 20%;
+    background: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTIzYXI5YWFzZWMwcWtuaXdqMHZmZWI5eHB5ZHdtN3gwYjlpa2V1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9ZQ/LOnt6uqjD9OexmQJRB/giphy.webp);
+    background-size: 15%;
     background-color: #00000087;
-    color: white;
-    backdrop-filter: blur(2px);
+    color: #fff;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 p.nop {
