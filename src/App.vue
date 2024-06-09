@@ -154,9 +154,7 @@ background-color: #0006;
     zoom:80%;
 }
 .cta:hover {
-  background-color: lightgrey;
-  color: slategrey;
-  text-decoration: none;
+  
 }
 
 .modaloverlay {
