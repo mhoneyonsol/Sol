@@ -874,8 +874,7 @@ p.back {
 }
 
 div#app:hover {
-    backdrop-filter: hue-rotate(358deg);
-    transition: 40s;
+    
 }
 
 .glitch {
