@@ -1196,6 +1196,15 @@ div#app {
     background:black
   }
 
+
+element.style {
+}
+.cta {
+
+
+    zoom: 60%!important;
+}
+
 .w-3\/4 {
   font-size:0.9em;
 }
