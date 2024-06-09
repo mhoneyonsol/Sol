@@ -164,35 +164,35 @@ const createToken = async () => {
 ">
         
         <div class="flex flex-row items-center justify-center">
-            <label class="w-1/3">Token Name:</label>
+            
             <input
                 class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 v-model="tokenName" placeholder="enter token name" label="token name"
                 @keypress="() => { errNotify = '' }" />
         </div>
         <div class="flex flex-row items-center justify-center">
-            <label class="w-1/3">Token Symbol:</label>
+            
             <input
                 class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 v-model="tokenSymbol" placeholder="enter token symbol" label="token symbol"
                 @keypress="() => { errNotify = '' }" />
         </div>
         <div class="flex flex-row items-center justify-center">
-            <label class="w-1/3">Metadata URI:</label>
+            
             <input
                 class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 v-model="metadataUri" placeholder="enter metadata uri" label="token uri"
                 @keypress="() => { errNotify = '' }" />
         </div>
         <div class="flex flex-row items-center justify-center">
-            <label class="w-1/3">Token Decimals:</label>
+            
             <input type="number"
                 class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 v-model="tokenDecimals" placeholder="enter token decimals" label="token decimals"
                 @keypress="() => { errNotify = '' }" />
         </div>
         <div class="flex flex-row items-center justify-center">
-            <label class="w-1/3">Total Supply:</label>
+            
             <input type="number"
                 class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 v-model="totalSupply" placeholder="enter total supply" label="total supply"

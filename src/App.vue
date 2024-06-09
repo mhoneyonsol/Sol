@@ -130,9 +130,9 @@ onMounted(() => {
 
 
 .cta {
-background-color: #000;
+background-color: #0006;
     border-radius: 13px;
-    color: white;
+    color: #fff;
     display: inline-block;
     font-family: Open Sans, sans-serif;
     font-size: 1em;
@@ -143,13 +143,14 @@ background-color: #000;
     right: 2%;
     TOP: 2%;
     z-index: 4;
-    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnY0YmNwNW8xdXptbnc5aGxyYzc4aGY0bXE3bmdqMGMwZzIxMWJ1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j3q5DAhsp4UrNW0lig/giphy.webp);
-    background-size: 40%;
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHR4djF5dXE1andnNmZvczVmNmYzcXBrZm91ZXl6dmVsMWowcHhyaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ZdfklbwtI0nxyXyN85/giphy.webp);
+    background-size: 30%;
     height: 90px;
     background-repeat: no-repeat;
     filter: drop-shadow(2px 4px 6px black);
     width: 200px;
-    background-position: right;
+    background-position: 100%;
+    backdrop-filter: blur(4px);
 }
 .cta:hover {
   background-color: lightgrey;
@@ -1145,6 +1146,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 
 {
     transition: 2s; margin-right: 20%; width: 100%; height: 400px; max-height: 600px; padding-top: 20px; filter: drop-shadow(2px 4px 6px black); border: none; background-size: 100%; background-position: bottom; background: url(https://media2.giphy.com/media/eljKx14f9Tfmg8BXF4/giphy.webp?cid=ecf05e47x3198c0v7xj00bearo491blbyw0zela71glbutri&ep=v1_stickers_search&rid=giphy.webp&ct=s); background-size: 10%; background-color: #00000087; color: white; background-repeat: no-repeat; background-position-x: right; background-position-y: bottom;
+    backdrop-filter: blur(4px);
 }
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
