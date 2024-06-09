@@ -1,7 +1,9 @@
-import $ from 'jquery';
+
 
 <template>
   
+  import $ from 'jquery';
+
  <div class="pop-up">
   <div class="content">
     <div class="container">
