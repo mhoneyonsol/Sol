@@ -21,7 +21,19 @@ onMounted(() => {
   document.title = 'SPL Forge - Solana Token Factory';
 });
 
-
+export default {
+  mounted() {
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  },
+  methods: {
+    openPopUp() {
+      $(".pop-up").addClass("open");
+    },
+    closePopUp() {
+      $(".pop-up").removeClass("open");
+    }
+  }
+}
 
 
 </script>
