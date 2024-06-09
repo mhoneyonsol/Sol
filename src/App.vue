@@ -1210,8 +1210,8 @@ element.style {
 }
 
 body {
-  background-image:url(https://i.imgur.com/AnTBLYL.jpeg)!important;
-  background-size:contain!important;
+  background-repeat: no-repeat;
+        background-size: cover !important;
 }
 
 
