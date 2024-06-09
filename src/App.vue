@@ -1216,7 +1216,9 @@ background-image:none;
 background-color:black;
 }
 
-
+.modaloverlay .modal {
+    margin: 50px;
+}
 
 .glitch {
     margin-top: 90px;
@@ -1259,7 +1261,7 @@ body {
 
 .cta {
 
-    z-index: 999!important;
+    z-index: 111!important;
    
 }
 
