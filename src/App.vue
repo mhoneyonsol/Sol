@@ -1197,8 +1197,14 @@ div#app {
   }
 
 
-element.style {
+
+.modaloverlay .modal {
+    
+    margin: 50px;
+    height: 50%!important;
 }
+
+
 .cta {
 
 
