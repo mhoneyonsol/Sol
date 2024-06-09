@@ -141,6 +141,9 @@ onMounted(() => {
   margin-bottom: 1em;
   padding: 0.3em 1em;
   text-decoration: none;
+  position: absolute;
+  right: 2%;
+  TOP: 2%;
 }
 .cta:hover {
   background-color: lightgrey;
