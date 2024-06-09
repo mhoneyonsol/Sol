@@ -1249,7 +1249,7 @@ h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.b
 }
 
 body {
-        background-color: #1e1e1e !important;
+        
         
 }
 
