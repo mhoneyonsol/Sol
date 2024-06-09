@@ -1573,9 +1573,7 @@ html,
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
-  background-image: url(https://i.imgur.com/AnTBLYL.jpeg);
-    background-size: cover;
-    background-position: left;
+  
    
 }
 
