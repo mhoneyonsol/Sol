@@ -1211,6 +1211,7 @@ element.style {
 
 body {
   background-image:url(https://i.imgur.com/AnTBLYL.jpeg)!important;
+  background-size:contain!important;
 }
 
 
