@@ -1211,7 +1211,7 @@ element.style {
 
 body {
   background-repeat: no-repeat;
-        background-image: url(https://i.pinimg.com/originals/69/f7/66/69f7666440ceb4efe41223601648de5d.jpg);
+        background-image: url(https://i.pinimg.com/originals/69/f7/66/69f7666440ceb4efe41223601648de5d.jpg)!important;
 }
 
 
