@@ -1216,10 +1216,9 @@ div#app {
 }
 
 body {
-  background: rgb(102,102,102);
-background: radial-gradient(circle, rgba(102,102,102,1) 0%, rgba(0,0,0,1) 100%);
-background-image:none;
-background-color:#1a1a1a;
+ 
+
+background-color:#0e0e0e;
 }
 
 
