@@ -1209,6 +1209,12 @@ element.style {
   font-size:0.9em;
 }
 
+body {
+  background-image:url(https://i.imgur.com/Au3ROiu.jpeg)!important;
+}
+
+
+
 .glitch {
     margin-top: 90px;
     /* font-size: 5rem !important; */
