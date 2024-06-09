@@ -1210,7 +1210,7 @@ element.style {
 }
 
 body {
-  background-image:url(https://i.imgur.com/Au3ROiu.jpeg)!important;
+  background-image:url(https://i.imgur.com/AnTBLYL.jpeg)!important;
 }
 
 
