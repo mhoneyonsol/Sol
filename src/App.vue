@@ -130,21 +130,26 @@ onMounted(() => {
 
 
 .cta {
-  background-color: white;
-  border: 1px solid lightgrey;
-  border-radius: 6px;
-  color: tomato;
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-  margin-bottom: 1em;
-  padding: 0.3em 1em;
-  text-decoration: none;
-  position: absolute;
-  right: 2%;
-  TOP: 2%;
-  z-index:4;
+background-color: #000;
+    border-radius: 13px;
+    color: white;
+    display: inline-block;
+    font-family: Open Sans, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    padding: .3em 1em;
+    position: absolute;
+    right: 2%;
+    TOP: 2%;
+    z-index: 4;
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnY0YmNwNW8xdXptbnc5aGxyYzc4aGY0bXE3bmdqMGMwZzIxMWJ1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j3q5DAhsp4UrNW0lig/giphy.webp);
+    background-size: 40%;
+    height: 90px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
+    width: 200px;
+    background-position: right;
 }
 .cta:hover {
   background-color: lightgrey;
