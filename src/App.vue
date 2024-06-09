@@ -1236,10 +1236,8 @@ h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.b
 }
 
 body {
-        background-image: url(https://i.imgur.com/Au3ROiu.jpeg) !important;
-        background-size: cover !important;
-        -webkit-backdrop-filter: blur(11px) !important;
-        backdrop-filter: blur(11px) !important;
+        background: black!important;
+        
 }
 
 .ol.flex.flex-row.items-center.justify-center {
