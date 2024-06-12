@@ -1227,11 +1227,7 @@ div#app {
 
 body {
  
-background-image: url(https://i.imgur.com/Au3ROiu.jpeg);
-    background-size: inherit;
-    background-position: top;
-    -webkit-backdrop-filter: blur(11px);
-    backdrop-filter: blur(11px);
+background-image: url(https://i.imgur.com/bQ5QhNC.png)!important;
 }
 
 
@@ -1557,6 +1553,11 @@ width: 100%;
   --tw-content: '';
 }
 
+
+
+/*
+SMART
+*/
 @media only screen and (max-width: 600px) {
    tt {
     font-size:3em!important;
@@ -1569,6 +1570,13 @@ width: 100%;
     text-shadow:none!important;
 }
 }
+
+/*
+FIN SMART
+*/
+
+
+
 
 /*
 1. Use a consistent sensible line-height in all browsers.
