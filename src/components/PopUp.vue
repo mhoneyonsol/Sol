@@ -69,9 +69,10 @@ export default {
 <style scoped>
 .alert-box {
   position: fixed;
-  bottom: 15%;
-  right: -100%;
+  top: 50%;
+  left: 100%;
   border-radius: 13px;
+  transform: translateY(-50%);
   background-color: white;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -91,28 +92,29 @@ export default {
 
 @keyframes slide-in {
   0% {
-    right: -100%;
+    left: 100%;
   }
   100% {
-    right: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 @keyframes rebound {
   0% {
-    right: 15%;
+    transform: translate(-50%, -50%);
   }
   25% {
-    right: 12%;
+    transform: translate(-45%, -50%);
   }
   50% {
-    right: 15%;
+    transform: translate(-50%, -50%);
   }
   75% {
-    right: 13%;
+    transform: translate(-48%, -50%);
   }
   100% {
-    right: 15%;
+    transform: translate(-50%, -50%);
   }
 }
 </style>
