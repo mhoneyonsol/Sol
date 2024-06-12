@@ -2,7 +2,7 @@
   <div>
     <div v-if="isVisible" id="background-overlay" class="background-overlay"></div>
     <div v-if="isVisible" id="alert-box" class="alert-box">
-      <p>{{ alertMessage }}</p>
+      <p style="margin-right: 15px;">{{ alertMessage }}</p>
       <button class="close-button" @click="closeAlert">✖</button>
     </div>
   </div>
