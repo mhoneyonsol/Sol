@@ -1177,7 +1177,7 @@ div#app {
     background-image: url(https://i.imgur.com/f7B6pf7.png);
     background-position:bottom left;
     background-size: 35%;
-    background-color: #ffffff00;
+    
     background-repeat: no-repeat;
 }
 
