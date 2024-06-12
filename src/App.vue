@@ -2824,7 +2824,7 @@ h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.b
     margin-top:65px!important;
 }
   .flex.flex-col.lg\:w-1\/2.justify-center.items-center.w-full {
-    margin-top: 0px!important;
+    margin-top: 90px!important;
 }
 
   .flex.justify-center.items-center.lg\:w-1\/2 {
