@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import confetti from 'canvas-confetti';
+
 export default {
   data() {
     return {
@@ -36,7 +38,7 @@ export default {
   methods: {
     generateAlertMessages() {
       const funnyNames = [
-          "Bonk", "Pok", "Paki", "Shark", "Fluff", "Wobble", "Doodle", "Zonk", "Fizz", "Giggles",
+        "Bonk", "Pok", "Paki", "Shark", "Fluff", "Wobble", "Doodle", "Zonk", "Fizz", "Giggles",
         "Olen Moist", "Kili Janer", "Jeo Biden", "Bezosaurus", "Mars Zucker", "Rihanna Gold", 
         "Nicki Coins", "Cardi Blockchain", "Gaga Ether", "Madonna Miner", "T-Swift Crypto", 
         "Adele Assets", "Snoop Dogecoin", "Musk Martian", "Buffett Bits", "Zuck Zillions", 
@@ -60,6 +62,9 @@ export default {
     showAlert() {
       this.alertMessage = this.alertMessages[this.currentAlertIndex];
       this.isVisible = true;
+
+      // Trigger confetti effect
+      this.triggerConfetti();
 
       setTimeout(this.closeAlert, 3000);
 
@@ -87,6 +92,13 @@ export default {
 
       this.timeoutId = setTimeout(this.showAlert, delay);
       this.alertIndex++;
+    },
+    triggerConfetti() {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
     }
   }
 };
