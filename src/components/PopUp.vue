@@ -15,15 +15,15 @@ export default {
       alertMessage: '',
       alertMessages: [],
       currentAlertIndex: 0,
-      intervalId: null,
+      timeoutId: null,
     };
   },
   created() {
     this.generateAlertMessages();
-    this.intervalId = setInterval(this.showAlert, 7000);
+    this.scheduleNextAlert(30000, 50000); // Schedule the first alert between 30-50 seconds
   },
   beforeUnmount() {
-    clearInterval(this.intervalId);
+    clearTimeout(this.timeoutId);
   },
   methods: {
     generateAlertMessages() {
@@ -61,9 +61,16 @@ export default {
       setTimeout(this.closeAlert, 3000);
 
       this.currentAlertIndex = (this.currentAlertIndex + 1) % this.alertMessages.length;
+
+      // Schedule the next alert between 1-3 minutes
+      this.scheduleNextAlert(60000, 180000);
     },
     closeAlert() {
       this.isVisible = false;
+    },
+    scheduleNextAlert(min, max) {
+      const delay = Math.random() * (max - min) + min;
+      this.timeoutId = setTimeout(this.showAlert, delay);
     }
   }
 };
@@ -124,6 +131,6 @@ export default {
 }
 
 p {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 </style>
