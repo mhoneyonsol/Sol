@@ -1237,9 +1237,9 @@ backdrop-filter: none !important;
 
 
 .glitch {
-    margin-top: 90px;
+    margin-top: 99px;
     /* font-size: 5rem !important; */
-    line-height: 45px;
+    line-height: 55px;
     margin-bottom: 40px;
     filter: drop-shadow(-9px -10px 4px black);
 }
