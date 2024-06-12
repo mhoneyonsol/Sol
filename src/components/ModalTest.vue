@@ -10,7 +10,7 @@
   <div class="modal">
     <a href="#close" class="close">&times;</a>
     <div style="
-    margin-top: 50px;
+    margin-top: 30px;
 "><p>
     <strong>Welcome to SPL Forge!</strong>
     <br><br>
