@@ -35,6 +35,10 @@ onMounted(() => {
   </div>
 
 
+    <Popup />
+ 
+
+
 <span data-tooltip="🟢" data-flow="bottom">Network Status</span> 
 <div class="bk">
   <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
@@ -78,9 +82,7 @@ onMounted(() => {
     <Chatbot />
   </div>
 
-<div id="app">
-    <Popup />
-  </div>
+
 
 </template>
 
