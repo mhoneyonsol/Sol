@@ -73,10 +73,9 @@ export default {
 /* Alert box container */
 .alert-box {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  bottom: 20px;
+  right: 20px;
   border-radius: 13px;
-  transform: translate(-50%, -50%);
   background-color: white;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -98,27 +97,27 @@ export default {
 /* Impulse wave effect */
 @keyframes pulse {
   0% {
-    transform: translate(-50%, -50%) scale(0.95);
+    transform: scale(0.95);
     opacity: 0.7;
   }
   20% {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: scale(1.1);
     opacity: 1;
   }
   40% {
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: scale(0.9);
     opacity: 1;
   }
   60% {
-    transform: translate(-50%, -50%) scale(1.05);
+    transform: scale(1.05);
     opacity: 1;
   }
   80% {
-    transform: translate(-50%, -50%) scale(0.98);
+    transform: scale(0.98);
     opacity: 1;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
     opacity: 1;
   }
 }
