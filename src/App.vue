@@ -22,7 +22,12 @@ onMounted(() => {
   document.title = 'SPL Forge - Solana Token Factory';
 });
 
-
+export default {
+  name: 'App',
+  components: {
+    AlertPopup
+  }
+};
 
 
 </script>
