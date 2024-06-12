@@ -1227,7 +1227,8 @@ div#app {
 
 body {
  
-background-image: url(https://i.imgur.com/bQ5QhNC.png)!important;
+background-image: url(https://img.lovepik.com/background/20211030/medium/lovepik-creative-black-gold-mobile-phone-wallpaper-background-image_400386463.jpg)!important;
+background-size:cover;
 backdrop-filter: none !important;
 
 }
