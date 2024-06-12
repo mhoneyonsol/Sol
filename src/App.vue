@@ -1227,8 +1227,9 @@ div#app {
 
 body {
  
-background-image: url(https://img.lovepik.com/background/20211030/medium/lovepik-creative-black-gold-mobile-phone-wallpaper-background-image_400386463.jpg)!important;
-background-size:cover;
+background-image: url(https://images.rawpixel.com/image_social_portrait/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsb2ZmaWNlM19hYnN0cmFjdF9nZW9tZXRyaWNfZmx1aWRfYmxhY2tfY29sb3JfZ3JhZGllbnRfYl9mNWYxMTRjMC01MTVlLTRkZTctYjAxMi05ZDFkODljYzEyODBfMS5qcGc.jpg) !important;
+background-size: cover !important;
+-webkit-backdrop-filter: none !important;
 backdrop-filter: none !important;
 
 }
