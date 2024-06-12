@@ -16,11 +16,12 @@ export default {
       alertMessages: [],
       currentAlertIndex: 0,
       timeoutId: null,
+      alertSchedule: [30000, 50000, 40000, 10000, 80000, 120000], // Time intervals in ms
     };
   },
   created() {
     this.generateAlertMessages();
-    this.scheduleNextAlert(30000, 50000); // Schedule the first alert between 30-50 seconds
+    this.scheduleNextAlert(); // Schedule the first alert
   },
   beforeUnmount() {
     clearTimeout(this.timeoutId);
@@ -62,15 +63,18 @@ export default {
 
       this.currentAlertIndex = (this.currentAlertIndex + 1) % this.alertMessages.length;
 
-      // Schedule the next alert between 1-3 minutes
-      this.scheduleNextAlert(60000, 180000);
+      // Schedule the next alert based on the alert schedule
+      this.scheduleNextAlert();
     },
     closeAlert() {
       this.isVisible = false;
     },
-    scheduleNextAlert(min, max) {
-      const delay = Math.random() * (max - min) + min;
-      this.timeoutId = setTimeout(this.showAlert, delay);
+    scheduleNextAlert() {
+      const interval = this.alertSchedule.shift(); // Get the next interval
+      if (interval) {
+        const delay = interval instanceof Array ? Math.random() * (interval[1] - interval[0]) + interval[0] : interval;
+        this.timeoutId = setTimeout(this.showAlert, delay);
+      }
     }
   }
 };
