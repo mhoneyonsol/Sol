@@ -1228,6 +1228,8 @@ div#app {
 body {
  
 background-image: url(https://i.imgur.com/bQ5QhNC.png)!important;
+backdrop-filter: none !important;
+
 }
 
 
