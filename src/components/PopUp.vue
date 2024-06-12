@@ -33,12 +33,9 @@ export default {
         "Wacky", "Snort", "Peppy", "Bam", "Boom", "Bop", "Zip", "Zap", "Frodo", "Zappy",
         "Zippy", "Noodle", "Squee", "Puff", "Blip", "Blob", "Squiggle", "Whiz", "Tinkle", "Jolly",
         "Goofy", "Funky", "Buzzy", "Hoppy", "Jumpy", "Fizzy", "Quirky", "Silly", "Lumpy", "Zany",
-        "Spunky", "Froggy", "Jumpy", "Nutty", "Cheery", "Loony", "Dizzy", "Witty", "Giddy", "Bouncy",
-        "Wiggly", "Poppy", "Snappy", "Blinky", "Twinkly", "Wacky", "Pipsqueak", "Squeaky", "Wobble",
-        "Chirpy", "Peppy", "Doodle", "Dizzy", "Giggles", "Fluff", "Punky", "Bub", "Fuzz", "Tizzy",
-        "Jester", "Zinger", "Quacky", "Wacky", "Jolly", "Zippy", "Peppy", "Buzzy", "Nutter", "Silly",
-        "Fizzy", "Goofy", "Snappy", "Wacky", "Zany", "Spunky", "Loon", "Jester", "Jumpy", "Bouncy", "Wiggly",
-        "Pipsqueak", "Chirpy", "Hoppy", "Zappy", "Frodo", "Nutty"
+        "Spunky", "Froggy", "Nutty", "Cheery", "Loony", "Dizzy", "Witty", "Giddy", "Bouncy",
+        "Wiggly", "Poppy", "Snappy", "Blinky", "Twinkly", "Pipsqueak", "Squeaky", "Chirpy",
+        "Punky", "Bub", "Fuzz", "Tizzy", "Jester", "Zinger", "Quacky", "Nutter", "Loon"
       ];
 
       for (let i = 1; i <= 100; i++) {
@@ -48,7 +45,7 @@ export default {
       }
     },
     getRandomString(length) {
-      const characters = '0123456789012345678901234567890123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+      const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
       let result = '';
       for (let i = 0; i < length; i++) {
         result += characters[Math.floor(Math.random() * characters.length)];
@@ -71,7 +68,6 @@ export default {
 </script>
 
 <style scoped>
-/* Alert box container */
 .alert-box {
   position: fixed;
   top: 50%;
@@ -85,7 +81,6 @@ export default {
   animation: pulse 1s ease-out;
 }
 
-/* Close button */
 .close-button {
   position: absolute;
   top: 10px;
@@ -96,7 +91,6 @@ export default {
   cursor: pointer;
 }
 
-/* Impulse wave effect */
 @keyframes pulse {
   0% {
     transform: translate(-50%, -50%) scale(0.95);
@@ -124,7 +118,6 @@ export default {
   }
 }
 
-/* Background overlay */
 .background-overlay {
   position: fixed;
   top: 0;
