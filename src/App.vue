@@ -1177,7 +1177,7 @@ div#app {
     background-image: url(https://i.imgur.com/f7B6pf7.png);
     background-position:bottom left;
     background-size: 35%;
-    
+    background-color: #ffffff00;
     background-repeat: no-repeat;
 }
 
@@ -1227,7 +1227,11 @@ div#app {
 
 body {
  
-
+background-image: url(https://i.imgur.com/Au3ROiu.jpeg);
+    background-size: inherit;
+    background-position: top;
+    -webkit-backdrop-filter: blur(11px);
+    backdrop-filter: blur(11px);
 }
 
 
