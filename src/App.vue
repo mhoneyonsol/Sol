@@ -147,7 +147,7 @@ li {
     .alert-box {
       
       position: fixed;
-      top: 50%;
+      top: 90%;
       left: 50%;
       border-radius: 13px;
       transform: translate(-50%, -50%);
