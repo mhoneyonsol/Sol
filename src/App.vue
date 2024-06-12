@@ -1227,10 +1227,7 @@ div#app {
 
 body {
  
-background-image: url(https://i.imgur.com/Au3ROiu.jpeg);
-    background-size: 170%;
-    -webkit-backdrop-filter:none;
-    backdrop-filter:none;
+background-color:#0e0e0e;
 }
 
 
