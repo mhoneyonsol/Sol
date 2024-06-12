@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div v-if="isVisible" id="background-overlay" class="background-overlay"></div>
     <div v-if="isVisible" id="alert-box" class="alert-box">
       <p>{{ alertMessage }}</p>
       <button class="close-button" @click="closeAlert">✖</button>
@@ -116,15 +115,5 @@ export default {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
-}
-
-.background-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
 }
 </style>
