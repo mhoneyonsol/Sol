@@ -66,7 +66,7 @@ export default {
       // Trigger confetti effect
       this.triggerConfetti();
 
-      setTimeout(this.closeAlert, 3000);
+      setTimeout(this.closeAlert, 6000);
 
       this.currentAlertIndex = (this.currentAlertIndex + 1) % this.alertMessages.length;
 
