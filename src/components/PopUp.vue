@@ -67,4 +67,5 @@
   // Show the alert every 7 seconds
   setInterval(showAlert, 7000);
 </script>
-</template>
+</template><main>
+<body> 
