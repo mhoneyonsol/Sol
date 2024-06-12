@@ -124,8 +124,10 @@ onMounted(() => {
 
 
 
-<style>@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
+<style>
 
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Color+Emoji&family=Red+Rose:wght@300..700&display=swap');
 
 li {
@@ -1225,8 +1227,10 @@ div#app {
 
 body {
  
-
-background-color:#0e0e0e;
+background-image: url(https://i.imgur.com/Au3ROiu.jpeg);
+    background-size: 170%;
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
 }
 
 
