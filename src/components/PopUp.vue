@@ -17,12 +17,12 @@ export default {
       currentAlertIndex: 0,
       timeoutId: null,
       alertSchedule: [
-        { min: 30000, max: 50000 },
-        40000,
-        10000,
-        80000,
-        120000
-      ], // Time intervals in ms
+        { min: 30000, max: 50000 }, // Random between 30-50 seconds
+        40000,                      // 40 seconds after the first alert
+        10000,                      // 10 seconds after the second alert
+        80000,                      // 1 minute 20 seconds after the third alert
+        120000                      // 2 minutes after the fourth alert
+      ],
       alertIndex: 0,
     };
   },
@@ -77,19 +77,21 @@ export default {
       this.isVisible = false;
     },
     scheduleNextAlert() {
+      let delay;
       if (this.alertIndex < this.alertSchedule.length) {
-        let delay;
         const schedule = this.alertSchedule[this.alertIndex];
-
         if (typeof schedule === 'object') {
           delay = Math.random() * (schedule.max - schedule.min) + schedule.min;
         } else {
           delay = schedule;
         }
-
-        this.timeoutId = setTimeout(this.showAlert, delay);
-        this.alertIndex++;
+      } else {
+        // Subsequent alerts after the 5th
+        delay = 120000 + Math.random() * (40000 - 10000) + 10000; // 2 minutes plus 10-40 seconds
       }
+
+      this.timeoutId = setTimeout(this.showAlert, delay);
+      this.alertIndex++;
     }
   }
 };
