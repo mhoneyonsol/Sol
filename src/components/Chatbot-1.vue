@@ -48,14 +48,16 @@ axios.post('https://api.openai.com/v1/completions', {
 
 <style scoped>
 .chatbot {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 300px;
-  background: white;
-  border: 1px solid #ccc;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    left: 45%;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 12px 12px 0px 0px;
 }
 
 .messages {
