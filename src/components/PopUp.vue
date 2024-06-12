@@ -23,7 +23,7 @@ export default {
     this.generateAlertMessages();
     this.intervalId = setInterval(this.showAlert, 7000);
   },
-  beforeDestroy() {
+  beforeUnmount() {
     clearInterval(this.intervalId);
   },
   methods: {
