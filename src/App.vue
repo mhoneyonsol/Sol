@@ -145,7 +145,7 @@ li {
 
     /* Alert box container */
     .alert-box {
-      display: none;
+      
       position: fixed;
       top: 50%;
       left: 50%;
@@ -199,7 +199,7 @@ li {
 
     /* Background overlay */
     .background-overlay {
-      display: none;
+     
       position: fixed;
       top: 0;
       left: 0;
