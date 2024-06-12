@@ -70,14 +70,14 @@ export default {
 .alert-box {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 100%;
   border-radius: 13px;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   background-color: white;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  animation: pulse 1s ease-out;
+  animation: slide-in 0.5s ease-out, rebound 0.3s ease-out 0.5s;
 }
 
 .close-button {
@@ -90,30 +90,31 @@ export default {
   cursor: pointer;
 }
 
-@keyframes pulse {
+@keyframes slide-in {
   0% {
-    transform: translate(-50%, -50%) scale(0.95);
-    opacity: 0.7;
-  }
-  20% {
-    transform: translate(-50%, -50%) scale(1.1);
-    opacity: 1;
-  }
-  40% {
-    transform: translate(-50%, -50%) scale(0.9);
-    opacity: 1;
-  }
-  60% {
-    transform: translate(-50%, -50%) scale(1.05);
-    opacity: 1;
-  }
-  80% {
-    transform: translate(-50%, -50%) scale(0.98);
-    opacity: 1;
+    left: 100%;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes rebound {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    transform: translate(-45%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -50%);
+  }
+  75% {
+    transform: translate(-48%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
   }
 }
 </style>
