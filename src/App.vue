@@ -3,6 +3,7 @@ import { onMounted } from 'vue';
 import CreateTokenForm from "./components/CreateTokenForm.vue";
 import Chatbot from './components/Chatbot-1.vue';
 import Modal from './components/ModalTest.vue';
+import Popup from './components/PopUp.vue';
 
 
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
@@ -76,6 +77,11 @@ onMounted(() => {
   <div id="app">
     <Chatbot />
   </div>
+
+<div id="app">
+    <Popup />
+  </div>
+
 </template>
 
 
@@ -133,6 +139,73 @@ onMounted(() => {
 li {
     margin-top: 10px;
 }
+
+
+    /* Alert box container */
+    .alert-box {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      border-radius: 13px;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      animation: pulse 1s ease-out;
+    }
+
+    /* Close button */
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Impulse wave effect */
+    @keyframes pulse {
+      0% {
+        transform: translate(-50%, -50%) scale(0.95);
+        opacity: 0.7;
+      }
+      20% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 1;
+      }
+      40% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 1;
+      }
+      60% {
+        transform: translate(-50%, -50%) scale(1.05);
+        opacity: 1;
+      }
+      80% {
+        transform: translate(-50%, -50%) scale(0.98);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Background overlay */
+    .background-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
 
 .cta {
 background-color: #0006;
