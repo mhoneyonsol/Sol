@@ -1,6 +1,5 @@
 <template>
-<main>
-<body>
+
 <div id="background-overlay" class="background-overlay"></div>
 <div id="alert-box" class="alert-box">
   <p id="alert-message"></p>
