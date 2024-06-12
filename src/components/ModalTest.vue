@@ -22,7 +22,7 @@
 <p style="
     /* margin-top: 30px; */
     margin-bottom: 40px;
-">Also you need to hold at least 0.006 in $SOL on your wallet to generate working tx</p>
+">Also you need to hold at least 0.06 SOL (8$) on your wallet to generate working tx</p>
 
 <ol>
         <li><strong>Connect Your Account:</strong> Log in or create an account to get started. Your account is your gateway to managing your assets securely.</li>
