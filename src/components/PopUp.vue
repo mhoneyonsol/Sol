@@ -121,4 +121,8 @@ export default {
     opacity: 1;
   }
 }
+
+p {
+    margin-right: 10px;
+}
 </style>
