@@ -36,16 +36,15 @@ export default {
   methods: {
     generateAlertMessages() {
       const funnyNames = [
-        "Bonk", "Pok", "Paki", "Shark", "Fluff", "Wobble", "Doodle", "Zonk", "Fizz", "Giggles",
+          "Bonk", "Pok", "Paki", "Shark", "Fluff", "Wobble", "Doodle", "Zonk", "Fizz", "Giggles",
         "Wacky", "Snort", "Peppy", "Bam", "Boom", "Bop", "Zip", "Zap", "Frodo", "Zappy",
         "Zippy", "Noodle", "Squee", "Puff", "Blip", "Blob", "Squiggle", "Whiz", "Tinkle", "Jolly",
-        "Goofy", "Funky", "Buzzy", "Hoppy", "Jumpy", "Fizzy", "Quirky", "Silly", "Lumpy", "Zany",
-        "Spunky", "Froggy", "Jumpy", "Nutty", "Cheery", "Loony", "Dizzy", "Witty", "Giddy", "Bouncy",
-        "Wiggly", "Poppy", "Snappy", "Blinky", "Twinkly", "Wacky", "Pipsqueak", "Squeaky", "Wobble",
-        "Chirpy", "Peppy", "Doodle", "Dizzy", "Giggles", "Fluff", "Punky", "Bub", "Fuzz", "Tizzy",
-        "Jester", "Zinger", "Quacky", "Wacky", "Jolly", "Zippy", "Peppy", "Buzzy", "Nutter", "Silly",
-        "Fizzy", "Goofy", "Snappy", "Wacky", "Zany", "Spunky", "Loon", "Jester", "Jumpy", "Bouncy", "Wiggly",
-        "Pipsqueak", "Chirpy", "Hoppy", "Zappy", "Frodo", "Nutty"
+        "Goofy", "Funky", "Buzzy", "Hoppy", "Jumpy", "Fizzy", "Quirky", "Silly", 
+        
+        "Olen Moist", "Kili Janer", "Jeo Biden", "Bezosaurus", "Mars Zucker", "Rihanna Gold", 
+        "Nicki Coins", "Cardi Blockchain", "Gaga Ether", "Madonna Miner", "T-Swift Crypto", 
+        "Adele Assets", "Snoop Dogecoin", "Musk Martian", "Buffett Bits", "Zuck Zillions", 
+        "Branson Blocks", "Rogen Reserve", "Streep Satoshis", "Oprah Orbs"
       ];
 
       for (let i = 1; i <= 100; i++) {
