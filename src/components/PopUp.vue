@@ -37,9 +37,7 @@ export default {
     generateAlertMessages() {
       const funnyNames = [
           "Bonk", "Pok", "Paki", "Shark", "Fluff", "Wobble", "Doodle", "Zonk", "Fizz", "Giggles",
-        "Wacky", "Snort", "Peppy", "Bam", "Boom", "Bop", "Zip", "Zap", "Frodo", "Zappy",
-        "Zippy", "Noodle", "Squee", "Puff", "Blip", "Blob", "Squiggle", "Whiz", "Tinkle", "Jolly",
-        "Goofy", "Funky", "Buzzy", "Hoppy", "Jumpy", "Fizzy", "Quirky", "Silly", 
+        
         
         "Olen Moist", "Kili Janer", "Jeo Biden", "Bezosaurus", "Mars Zucker", "Rihanna Gold", 
         "Nicki Coins", "Cardi Blockchain", "Gaga Ether", "Madonna Miner", "T-Swift Crypto", 
