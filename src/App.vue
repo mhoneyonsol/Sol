@@ -1479,7 +1479,7 @@ h6 {
     cursor: not-allowed;
 }
 .swv-modal-overlay {
-    background: var(--swv-overlay-background-color);
+    background: #0000007a;
     position: fixed;
     top: 0;
     left: 0;
@@ -2524,7 +2524,7 @@ video {
 }
 
 .swv-modal-overlay {
-    background: var(--swv-overlay-background-color);
+        background: #0000007a;
     position: fixed;
     top: 0;
     left: 0;
