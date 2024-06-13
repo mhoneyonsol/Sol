@@ -1,5 +1,5 @@
 <template>
-  <button v-if="connected" class="tip-button" @click="handleClick createToken">
+  <button class="tip-button" @click="handleClick">
     <span class="tip-button__text">Create token</span>
     <div class="coin-wrapper">
       <div class="coin">
