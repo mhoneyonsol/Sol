@@ -4,7 +4,7 @@ import { useWallet, useAnchorWallet } from 'solana-wallets-vue';
 import { Connection, LAMPORTS_PER_SOL, PublicKey, Transaction, SystemProgram, Keypair, TransactionSignature } from '@solana/web3.js'
 import { PROGRAM_ID, createCreateMetadataAccountV3Instruction } from '@metaplex-foundation/mpl-token-metadata'
 import { MINT_SIZE, AuthorityType, TOKEN_PROGRAM_ID, createSetAuthorityInstruction, getMinimumBalanceForRentExemptMint, createInitializeMintInstruction, getAssociatedTokenAddress, createAssociatedTokenAccountInstruction, createMintToInstruction } from '@solana/spl-token';
-import Button from 'Button.vue';
+import Button from './Button.vue';
 
 const network = ref('mainnet-beta');
 const tokenName = ref('');
