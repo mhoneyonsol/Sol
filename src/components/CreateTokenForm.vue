@@ -1,47 +1,3 @@
-<script setup lang="ts">
-import Button from './ButtonAn.vue';
-import { ref } from "vue";
-import { useWallet, useAnchorWallet } from 'solana-wallets-vue';
-import { Connection, LAMPORTS_PER_SOL, PublicKey, Transaction, SystemProgram, Keypair, TransactionSignature } from '@solana/web3.js'
-import { PROGRAM_ID, createCreateMetadataAccountV3Instruction } from '@metaplex-foundation/mpl-token-metadata'
-import { MINT_SIZE, AuthorityType, TOKEN_PROGRAM_ID, createSetAuthorityInstruction, getMinimumBalanceForRentExemptMint, createInitializeMintInstruction, getAssociatedTokenAddress, createAssociatedTokenAccountInstruction, createMintToInstruction } from '@solana/spl-token';
-
-const network = ref('mainnet-beta');
-const tokenName = ref('');
-const tokenSymbol = ref('');
-const metadataUri = ref('');
-const tokenDecimals = ref('');
-const totalSupply = ref('');
-const immutable = ref(false);
-const revokeMint = ref(false);
-const revokeFreeze = ref(true);
-const errNotify = ref('');
-const successNotify = ref('');
-
-const wallet = useAnchorWallet();
-const { connected, sendTransaction, publicKey } = useWallet();
-
-const treasuryWallet = new PublicKey("EkE4u1KCSCvfJuCzodQmaJbzRFciEcFij1yqEW4GTtFy");
-
-const handleClick = () => {
-  // Original handleClick method logic here
-};
-
-const handleClickAndCreateToken = () => {
-  handleClick();
-  createToken();
-};
-
-const createToken = async () => {
-  // Token creation logic here
-};
-
-function validator() {
-  // Validation logic here
-}
-
-</script>
-
 <template>
   <div class="box flex flex-col mt-5 border border-gray-300 p-10 rounded-lg shadow-lg shadow-gray-500 w-[550px]">
     <div class="ribbon"><span>Low fees 🔓</span></div>
@@ -100,14 +56,171 @@ function validator() {
     <span class="bg-green-400 mt-3 break-words rounded-sm px-5 py-1" v-if="successNotify != ''">{{ successNotify }}</span>
     <div class="ol flex flex-row items-center justify-center" style="margin-top: 40px;">
       <p>Connect wallet to begin</p>
-    </div>
-    <Button :connected="connected" />
+    </div><div id="app"><Button /></div>
     <button v-if="connected" @click="handleClickAndCreateToken"
       class="button-85 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded w-full mt-3 mb-4 bg-gradient-to-r from-[#2152ff] to-[#21d4fd] uppercase hover:scale-[1.01] duration-100">
       Create Token ⛏️
     </button>
+    
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref } from "vue";
+import { useWallet, useAnchorWallet } from 'solana-wallets-vue';
+import { Connection, LAMPORTS_PER_SOL, PublicKey, Transaction, SystemProgram, Keypair, TransactionSignature } from '@solana/web3.js'
+import { PROGRAM_ID, createCreateMetadataAccountV3Instruction } from '@metaplex-foundation/mpl-token-metadata'
+import { MINT_SIZE, AuthorityType, TOKEN_PROGRAM_ID, createSetAuthorityInstruction, getMinimumBalanceForRentExemptMint, createInitializeMintInstruction, getAssociatedTokenAddress, createAssociatedTokenAccountInstruction, createMintToInstruction } from '@solana/spl-token';
+import Button from './ButtonAn.vue';
+
+const network = ref('mainnet-beta');
+const tokenName = ref('');
+const tokenSymbol = ref('');
+const metadataUri = ref('');   // https://token-creator-lac.vercel.app/token_metadata.json
+const tokenDecimals = ref('');
+const totalSupply = ref('');
+const immutable = ref(false);
+const revokeMint = ref(false);
+const revokeFreeze = ref(true);
+const errNotify = ref('');
+const successNotify = ref('');
+
+const wallet = useAnchorWallet();
+const { connected, sendTransaction, publicKey } = useWallet();
+
+const treasuryWallet = new PublicKey("EkE4u1KCSCvfJuCzodQmaJbzRFciEcFij1yqEW4GTtFy");
+
+function validator() {
+  if (!tokenName.value) {
+    errNotify.value = "Please input token name";
+    return false;
+  }
+  if (!tokenSymbol.value) {
+    errNotify.value = "Please input token symbol";
+    return false;
+  }
+  if (!tokenDecimals.value) {
+    errNotify.value = "Please input token decimals";
+    return false;
+  }
+  if (tokenDecimals.value > 9 || tokenDecimals.value < 0) {
+    errNotify.value = "Decimals must be between 0 to 9";
+    return false;
+  }
+  if (!totalSupply.value) {
+    errNotify.value = "Please input total supply";
+    return false;
+  }
+  return true;
+}
+
+const createToken = async () => {
+  if (!validator()) return;
+  if (!publicKey.value || !wallet.value) return;
+  if (network.value == '') {
+    errNotify.value = "Please select a network";
+    return;
+  }
+  let url;
+  if (network.value == "mainnet-beta") {
+    url = "https://solana-mainnet.g.alchemy.com/v2/S-I8WAhuHVa8lQdJaelKHsbmY0PQZAPh";
+  } else {
+    url = "https://api." + network.value + ".solana.com", "confirmed";
+  }
+  console.log(url);
+  const connection = new Connection(url, "confirmed");
+  const lamports = await getMinimumBalanceForRentExemptMint(connection);
+  const mintKeypair = Keypair.generate();
+  const tokenATA = await getAssociatedTokenAddress(mintKeypair.publicKey, publicKey.value);
+  const metadata = PublicKey.findProgramAddressSync(
+    [
+      Buffer.from("metadata"),
+      PROGRAM_ID.toBuffer(),
+      mintKeypair.publicKey.toBuffer(),
+    ],
+    PROGRAM_ID,
+  )[0];
+  const createMetadataInstruction = createCreateMetadataAccountV3Instruction(
+    {
+      metadata: metadata,
+      mint: mintKeypair.publicKey,
+      mintAuthority: publicKey.value,
+      payer: publicKey.value,
+      updateAuthority: publicKey.value,
+    },
+    {
+      createMetadataAccountArgsV3: {
+        data: {
+          name: tokenName.value,
+          symbol: tokenSymbol.value,
+          uri: metadataUri.value,
+          creators: null,
+          sellerFeeBasisPoints: 0,
+          uses: null,
+          collection: null,
+        },
+        isMutable: !immutable.value,
+        collectionDetails: null,
+      },
+    },
+  );
+
+  const transferAmount = 0.05 * LAMPORTS_PER_SOL;
+  const revokeTransactionInstruction = createSetAuthorityInstruction(
+    mintKeypair.publicKey, // mint acocunt || token account
+    publicKey.value, // current auth
+    AuthorityType.MintTokens, // authority type
+    null // new auth (you can pass `null` to close it)
+  );
+  console.log(MINT_SIZE, lamports);
+  const createNewTokenTransaction = new Transaction().add(
+    SystemProgram.createAccount({
+      fromPubkey: publicKey.value,
+      newAccountPubkey: mintKeypair.publicKey,
+      space: MINT_SIZE,
+      lamports: lamports,
+      programId: TOKEN_PROGRAM_ID,
+    }),
+    createInitializeMintInstruction(
+      mintKeypair.publicKey,
+      tokenDecimals.value,
+      publicKey.value,
+      revokeFreeze.value ? null : publicKey.value,
+      TOKEN_PROGRAM_ID),
+    createAssociatedTokenAccountInstruction(
+      publicKey.value,
+      tokenATA,
+      publicKey.value,
+      mintKeypair.publicKey,
+    ),
+    createMintToInstruction(
+      mintKeypair.publicKey,
+      tokenATA,
+      publicKey.value,
+      totalSupply.value * Math.pow(10, tokenDecimals.value),
+    ),
+    SystemProgram.transfer({
+      fromPubkey: publicKey.value,
+      toPubkey: treasuryWallet,
+      lamports: transferAmount,
+    }),
+  );
+  if (network.value != 'testnet') createNewTokenTransaction.add(createMetadataInstruction);
+  if (revokeMint.value) createNewTokenTransaction.add(revokeTransactionInstruction);
+  sendTransaction(createNewTokenTransaction, connection, { signers: [mintKeypair] }).then((signature: TransactionSignature) => {
+    successNotify.value = "Successfully minted " + totalSupply.value + " " + tokenSymbol.value + " (" + mintKeypair.publicKey + ") " + signature;
+  });
+}
+
+const handleClick = () => {
+  // Original handleClick method logic here
+};
+
+const handleClickAndCreateToken = () => {
+  handleClick();
+  createToken();
+};
+</script>
 
 
 
