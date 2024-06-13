@@ -6,31 +6,31 @@
       <input
         class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
         v-model="tokenName" placeholder="enter token name" label="token name"
-        @keypress="() => { errNotify.value = '' }" />
+        @input="clearError" />
     </div>
     <div class="flex flex-row items-center justify-center">
       <input
         class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
         v-model="tokenSymbol" placeholder="enter token symbol" label="token symbol"
-        @keypress="() => { errNotify.value = '' }" />
+        @input="clearError" />
     </div>
     <div class="flex flex-row items-center justify-center">
       <input
         class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
         v-model="metadataUri" placeholder="enter metadata uri" label="token uri"
-        @keypress="() => { errNotify.value = '' }" />
+        @input="clearError" />
     </div>
     <div class="flex flex-row items-center justify-center">
       <input type="number"
         class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
         v-model="tokenDecimals" placeholder="enter token decimals" label="token decimals"
-        @keypress="() => { errNotify.value = '' }" />
+        @input="clearError" />
     </div>
     <div class="flex flex-row items-center justify-center">
       <input type="number"
         class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
         v-model="totalSupply" placeholder="enter total supply" label="total supply"
-        @keypress="() => { errNotify.value = '' }" />
+        @input="clearError" />
     </div>
     <div class="flex flex-row">
       <div class="flex flex-row items-center justify-center mt-3 w-1/3">
@@ -95,25 +95,29 @@ const { connected, sendTransaction, publicKey } = useWallet();
 
 const treasuryWallet = new PublicKey("EkE4u1KCSCvfJuCzodQmaJbzRFciEcFij1yqEW4GTtFy");
 
+function clearError() {
+  errNotify.value = '';
+}
+
 function validator() {
     if (!tokenName.value) {
-        errNotify.value = "Please input token name"
+        errNotify.value = "Please input token name";
         return false;
     }
     if (!tokenSymbol.value) {
-        errNotify.value = "Please input token symbol"
+        errNotify.value = "Please input token symbol";
         return false;
     }
     if (!tokenDecimals.value) {
-        errNotify.value = "Please input token decimals"
+        errNotify.value = "Please input token decimals";
         return false;
     }
     if (tokenDecimals.value > 9 || tokenDecimals.value < 0) {
-        errNotify.value = "Decimals must be between 0 to 9"
+        errNotify.value = "Decimals must be between 0 to 9";
         return false;
     }
     if (!totalSupply.value) {
-        errNotify.value = "Please input total supply"
+        errNotify.value = "Please input total supply";
         return false;
     }
     return true;
@@ -213,7 +217,7 @@ const createToken = async () => {
     if (network.value != 'testnet') createNewTokenTransaction.add(createMetadataInstruction);
     if (revokeMint.value) createNewTokenTransaction.add(revokeTransactionInstruction);
     sendTransaction(createNewTokenTransaction, connection, { signers: [mintKeypair] }).then((signature: TransactionSignature) => {    
-        successNotify.value = "Successfully minted " + totalSupply.value + " " + tokenSymbol.value + " (" + mintKeypair.publicKey + ") " + signature
+        successNotify.value = "Successfully minted " + totalSupply.value + " " + tokenSymbol.value + " (" + mintKeypair.publicKey + ") " + signature;
     });
 }
 
