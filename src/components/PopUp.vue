@@ -39,20 +39,20 @@ export default {
     generateAlertMessages() {
       const funnyNames = [
         "Bonk", "Pok", "Paki", "Shark", "Fluff", "Wobble", "Doodle", "Zonk", "Fizz", "Giggles",
-        "Olen Moist", "Kili Janer", "Jeo Biden", "Bezosaurus", "Mars Zucker", "Rihanna Gold", 
-        "Nicki Coins", "Cardi Blockchain", "Gaga Ether", "Madonna Miner", "T-Swift Crypto", 
-        "Adele Assets", "Snoop Dogecoin", "Musk Martian", "Buffett Bits", "Zuck Zillions", 
-        "Branson Blocks", "Rogen Reserve", "Streep Satoshis", "Oprah Orbs"
+        "OlenMoist", "KiliJaner", "JeoBiden", "Bezosaurus", "MarsZucker", "RihannaGold", 
+        "NickiCoins", "CardiBlockchain", "GagaEther", "MadonnaMiner", "TSwiftCrypto", 
+        "AdeleAssets", "SnoopDogecoin", "MuskMartian", "BuffettBits", "ZuckZillions", 
+        "BransonBlocks", "RogenReserve", "StreepSatoshis", "OprahOrbs"
       ];
 
       for (let i = 1; i <= 100; i++) {
-        const address = this.getRandomString(4) + '...' + this.getRandomString(4);
+        const address = this.getRandomString(4) + '...' + this.getRandomString(3);
         const funnyName = funnyNames[Math.floor(Math.random() * funnyNames.length)];
-        this.alertMessages.push(`${address} created ${funnyName} token`);
+        this.alertMessages.push(`${address} created $${funnyName}`);
       }
     },
     getRandomString(length) {
-      const characters = '0123456789012345678901234567890123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+      const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
       let result = '';
       for (let i = 0; i < length; i++) {
         result += characters[Math.floor(Math.random() * characters.length)];
@@ -116,7 +116,6 @@ export default {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   animation: pulse 1s ease-out;
-  
 }
 
 /* Close button */
