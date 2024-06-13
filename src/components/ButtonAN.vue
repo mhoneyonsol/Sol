@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 
 export default {
-  name: 'CoinFlipButton',
+  name: 'ButtonAn',
   setup() {
     const isClicked = ref(false);
     const coin = ref(null);
