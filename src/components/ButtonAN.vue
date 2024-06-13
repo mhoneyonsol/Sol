@@ -31,6 +31,13 @@ export default {
         coin.value.style.setProperty('--coin-rotation-multiplier', 0);
         coin.value.style.setProperty('--shine-opacity-multiplier', 0.4);
         coin.value.style.setProperty('--shine-bg-multiplier', '50%');
+        coin.value.style.setProperty('--coin-y-multiplier', 0);
+        coin.value.style.setProperty('--front-scale-multiplier', 1);
+        coin.value.style.setProperty('--front-y-multiplier', 0);
+        coin.value.style.setProperty('--middle-scale-multiplier', 0);
+        coin.value.style.setProperty('--middle-y-multiplier', 0);
+        coin.value.style.setProperty('--back-scale-multiplier', 0);
+        coin.value.style.setProperty('--back-y-multiplier', 0);
         coin.value.style.setProperty('opacity', 1);
       }
       setTimeout(() => {
@@ -78,6 +85,7 @@ export default {
       setTimeout(() => {
         sideRotationCount = Math.floor(Math.random() * 5) * 90;
         maxFlipAngle = (Math.floor(Math.random() * 4) + 3) * Math.PI;
+        moveLoopCount = 0;  // Reset moveLoopCount
         flipCoinLoop();
       }, 50);
     };
