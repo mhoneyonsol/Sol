@@ -1,5 +1,5 @@
 <template>
-  <button class="tip-button" @click="handleClick">
+  <button class="tip-button" @click="handleClick" :class="{ clicked: isClicked }">
     <span class="tip-button__text">Create token</span>
     <div class="coin-wrapper">
       <div class="coin">
@@ -12,86 +12,84 @@
 </template>
 
 <script>
+import { ref, onMounted } from 'vue';
+
 export default {
-  data() {
-    return {
-      clicked: false,
-      maxMoveLoopCount: 90,
-      sideRotationCount: 0,
-      maxFlipAngle: 0,
-      moveLoopCount: 0,
-    };
-  },
-  mounted() {
-    this.coin = this.$el.querySelector('.coin');
-  },
-  methods: {
-    handleClick() {
-      if (this.clicked) return;
-      this.clicked = true;
-      this.$el.classList.add('clicked');
+  name: 'CoinFlipButton',
+  setup() {
+    const isClicked = ref(false);
+    const coin = ref(null);
+    const maxMoveLoopCount = 90;
+    let moveLoopCount = 0;
+    let maxFlipAngle = 0;
+    let sideRotationCount = 0;
 
+    const resetCoin = () => {
+      if (coin.value) {
+        coin.value.style.setProperty('--coin-x-multiplier', 0);
+        coin.value.style.setProperty('--coin-scale-multiplier', 0);
+        coin.value.style.setProperty('--coin-rotation-multiplier', 0);
+        coin.value.style.setProperty('--shine-opacity-multiplier', 0.4);
+        coin.value.style.setProperty('--shine-bg-multiplier', '50%');
+        coin.value.style.setProperty('opacity', 1);
+      }
       setTimeout(() => {
-        this.sideRotationCount = Math.floor(Math.random() * 5) * 90;
-        this.maxFlipAngle = (Math.floor(Math.random() * 4) + 3) * Math.PI;
-        this.flipCoin();
-      }, 50);
-    },
-    flipCoin() {
-      this.moveLoopCount = 0;
-      this.flipCoinLoop();
-    },
-    resetCoin() {
-      this.coin.style.setProperty('--coin-x-multiplier', 0);
-      this.coin.style.setProperty('--coin-scale-multiplier', 0);
-      this.coin.style.setProperty('--coin-rotation-multiplier', 0);
-      this.coin.style.setProperty('--shine-opacity-multiplier', 0.4);
-      this.coin.style.setProperty('--shine-bg-multiplier', '50%');
-      this.coin.style.setProperty('opacity', 1);
-      setTimeout(() => {
-        this.clicked = false;
+        isClicked.value = false;
       }, 300);
-    },
-    flipCoinLoop() {
-      this.moveLoopCount++;
-      let percentageCompleted = this.moveLoopCount / this.maxMoveLoopCount;
-      this.coin.angle = -this.maxFlipAngle * Math.pow((percentageCompleted - 1), 2) + this.maxFlipAngle;
+    };
 
-      this.coin.style.setProperty('--coin-y-multiplier', -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 11);
-      this.coin.style.setProperty('--coin-x-multiplier', percentageCompleted);
-      this.coin.style.setProperty('--coin-scale-multiplier', percentageCompleted * 0.6);
-      this.coin.style.setProperty('--coin-rotation-multiplier', percentageCompleted * this.sideRotationCount);
+    const flipCoinLoop = () => {
+      moveLoopCount++;
+      let percentageCompleted = moveLoopCount / maxMoveLoopCount;
+      let angle = -maxFlipAngle * Math.pow((percentageCompleted - 1), 2) + maxFlipAngle;
+      if (coin.value) {
+        coin.value.style.setProperty('--coin-y-multiplier', -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 11);
+        coin.value.style.setProperty('--coin-x-multiplier', percentageCompleted);
+        coin.value.style.setProperty('--coin-scale-multiplier', percentageCompleted * 0.6);
+        coin.value.style.setProperty('--coin-rotation-multiplier', percentageCompleted * sideRotationCount);
 
-      this.coin.style.setProperty('--front-scale-multiplier', Math.max(Math.cos(this.coin.angle), 0));
-      this.coin.style.setProperty('--front-y-multiplier', Math.sin(this.coin.angle));
-      this.coin.style.setProperty('--middle-scale-multiplier', Math.abs(Math.cos(this.coin.angle), 0));
-      this.coin.style.setProperty('--middle-y-multiplier', Math.cos((this.coin.angle + Math.PI / 2) % Math.PI));
-      this.coin.style.setProperty('--back-scale-multiplier', Math.max(Math.cos(this.coin.angle - Math.PI), 0));
-      this.coin.style.setProperty('--back-y-multiplier', Math.sin(this.coin.angle - Math.PI));
-      this.coin.style.setProperty('--shine-opacity-multiplier', 4 * Math.sin((this.coin.angle + Math.PI / 2) % Math.PI) - 3.2);
-      this.coin.style.setProperty('--shine-bg-multiplier', -40 * (Math.cos((this.coin.angle + Math.PI / 2) % Math.PI) - 0.5) + '%');
-
-      if (this.moveLoopCount < this.maxMoveLoopCount) {
-        if (this.moveLoopCount === this.maxMoveLoopCount - 6) this.$el.classList.add('shrink-landing');
-        window.requestAnimationFrame(this.flipCoinLoop);
+        coin.value.style.setProperty('--front-scale-multiplier', Math.max(Math.cos(angle), 0));
+        coin.value.style.setProperty('--front-y-multiplier', Math.sin(angle));
+        coin.value.style.setProperty('--middle-scale-multiplier', Math.abs(Math.cos(angle), 0));
+        coin.value.style.setProperty('--middle-y-multiplier', Math.cos((angle + Math.PI / 2) % Math.PI));
+        coin.value.style.setProperty('--back-scale-multiplier', Math.max(Math.cos(angle - Math.PI), 0));
+        coin.value.style.setProperty('--back-y-multiplier', Math.sin(angle - Math.PI));
+        coin.value.style.setProperty('--shine-opacity-multiplier', 4 * Math.sin((angle + Math.PI / 2) % Math.PI) - 3.2);
+        coin.value.style.setProperty('--shine-bg-multiplier', -40 * (Math.cos((angle + Math.PI / 2) % Math.PI) - 0.5) + '%');
+      }
+      if (moveLoopCount < maxMoveLoopCount) {
+        if (moveLoopCount === maxMoveLoopCount - 6) isClicked.value = false;
+        window.requestAnimationFrame(flipCoinLoop);
       } else {
-        this.$el.classList.add('coin-landed');
-        this.coin.style.setProperty('opacity', 0);
         setTimeout(() => {
-          this.$el.classList.remove('clicked', 'shrink-landing', 'coin-landed');
-          setTimeout(() => {
-            this.resetCoin();
-          }, 300);
+          resetCoin();
         }, 1500);
       }
-    }
-  }
+    };
+
+    const handleClick = () => {
+      if (isClicked.value) return;
+      isClicked.value = true;
+      setTimeout(() => {
+        sideRotationCount = Math.floor(Math.random() * 5) * 90;
+        maxFlipAngle = (Math.floor(Math.random() * 4) + 3) * Math.PI;
+        flipCoinLoop();
+      }, 50);
+    };
+
+    onMounted(() => {
+      coin.value = document.querySelector('.coin');
+    });
+
+    return { handleClick, isClicked };
+  },
 };
 </script>
 
 <style scoped>
 .tip-button {
   background: none;
+  margin-top: 150px;
   border: 0;
   border-radius: 0.25rem 0.25rem 0 0;
   cursor: pointer;
