@@ -64,9 +64,9 @@
     <div class="coin-wrapper" ref="coinWrapper">
       <div ref="coin" class="coin coin-hidden">
         <div class="coin__middle"></div>
-        <div style="background:red" class="coin__back"><img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-crypto-coin-7821899-6247427.png" alt="Solana Logo" class="solana-logo"></div>
+        <div style="background:red" class="coin__back"><img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-6926590-5650872.png" alt="Solana Logo" class="solana-logo"></div>
         <div class="coin__front" style="background:red">
-          <img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-crypto-coin-7821899-6247427.png" alt="Solana Logo" class="solana-logo">
+          <img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-6926590-5650872.png" alt="Solana Logo" class="solana-logo">
         </div>
       </div>
     </div>
