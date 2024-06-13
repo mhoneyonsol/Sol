@@ -508,7 +508,6 @@ const handleClickAndCreateToken = () => {
   }
 }
 
-</style>
 
 /*
 1. Use a consistent sensible line-height in all browsers.
