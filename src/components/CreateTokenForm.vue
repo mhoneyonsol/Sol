@@ -64,9 +64,9 @@
     <div class="coin-wrapper" ref="coinWrapper">
       <div ref="coin" class="coin coin-hidden">
         <div class="coin__middle"></div>
-        <div class="coin__back"></div>
-        <div class="coin__front">
-          <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="Solana Logo" class="solana-logo">
+        <div style="background:red" class="coin__back"><img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-crypto-coin-7821899-6247427.png" alt="Solana Logo" class="solana-logo"></div>
+        <div class="coin__front" style="background:red">
+          <img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-crypto-coin-7821899-6247427.png" alt="Solana Logo" class="solana-logo">
         </div>
       </div>
     </div>
