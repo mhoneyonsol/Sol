@@ -62,7 +62,7 @@
       Create Token ⛏️
     </button>
     <div class="coin-wrapper" ref="coinWrapper">
-      <div ref="coin" class="coin">
+      <div ref="coin" class="coin coin-hidden">
         <div class="coin__middle"></div>
         <div class="coin__back"></div>
         <div class="coin__front"></div>
@@ -240,6 +240,7 @@ const resetCoin = () => {
     coin.value.style.setProperty('--back-scale-multiplier', 0);
     coin.value.style.setProperty('--back-y-multiplier', 0);
     coin.value.style.setProperty('opacity', 1);
+    coin.value.classList.add('coin-hidden'); // Hide the coin after animation
   }
   setTimeout(() => {
     isClicked.value = false;
@@ -251,6 +252,8 @@ const flipCoinLoop = () => {
   let percentageCompleted = moveLoopCount / maxMoveLoopCount;
   let angle = -maxFlipAngle * Math.pow((percentageCompleted - 1), 2) + maxFlipAngle;
   if (coin.value) {
+    coin.value.classList.remove('coin-hidden'); // Show the coin during animation
+
     coin.value.style.setProperty('--coin-y-multiplier', -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 11);
     coin.value.style.setProperty('--coin-x-multiplier', percentageCompleted);
     coin.value.style.setProperty('--coin-scale-multiplier', percentageCompleted * 0.6);
@@ -294,54 +297,9 @@ const handleClickAndCreateToken = () => {
 
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style scoped type="text/css">/*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
-*//*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
-
-*,
-::before,
-::after {
-  box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
-  font-family: monospace;
-}
-
-::before,
-::after {
-  --tw-content: '';
+<style scoped>
+.coin-hidden {
+  display: none;
 }
 
 .tip-button {
@@ -534,7 +492,7 @@ const handleClickAndCreateToken = () => {
     transform: rotate(-4deg);
   }
   100% {
-    transform: rotate();
+    transform: rotate(0);
   }
 }
 
