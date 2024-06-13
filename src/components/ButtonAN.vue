@@ -2,7 +2,7 @@
   <button class="tip-button" @click="handleClick" :class="{ clicked: isClicked }">
     <span class="tip-button__text">Create token</span>
     <div class="coin-wrapper">
-      <div class="coin">
+      <div ref="coin" class="coin">
         <div class="coin__middle"></div>
         <div class="coin__back"></div>
         <div class="coin__front"></div>
@@ -58,10 +58,15 @@ export default {
         coin.value.style.setProperty('--shine-bg-multiplier', -40 * (Math.cos((angle + Math.PI / 2) % Math.PI) - 0.5) + '%');
       }
       if (moveLoopCount < maxMoveLoopCount) {
-        if (moveLoopCount === maxMoveLoopCount - 6) isClicked.value = false;
+        if (moveLoopCount === maxMoveLoopCount - 6) {
+          coin.value.classList.add('shrink-landing');
+        }
         window.requestAnimationFrame(flipCoinLoop);
       } else {
+        coin.value.classList.add('coin-landed');
+        coin.value.style.setProperty('opacity', 0);
         setTimeout(() => {
+          coin.value.classList.remove('shrink-landing', 'coin-landed');
           resetCoin();
         }, 1500);
       }
@@ -77,11 +82,7 @@ export default {
       }, 50);
     };
 
-    onMounted(() => {
-      coin.value = document.querySelector('.coin');
-    });
-
-    return { handleClick, isClicked };
+    return { handleClick, isClicked, coin };
   },
 };
 </script>
