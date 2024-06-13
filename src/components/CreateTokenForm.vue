@@ -65,7 +65,9 @@
       <div ref="coin" class="coin coin-hidden">
         <div class="coin__middle"></div>
         <div class="coin__back"></div>
-        <div class="coin__front"></div>
+        <div class="coin__front">
+          <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="Solana Logo" class="solana-logo">
+        </div>
       </div>
     </div>
   </div>
@@ -306,6 +308,12 @@ const handleClickAndCreateToken = () => {
   display: none;
 }
 
+.solana-logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 .tip-button {
   background: none;
   margin-top: 150px;
@@ -499,6 +507,8 @@ const handleClickAndCreateToken = () => {
     transform: rotate(0);
   }
 }
+
+</style>
 
 /*
 1. Use a consistent sensible line-height in all browsers.
