@@ -1185,7 +1185,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     
 transition: 1s;
     width: 100%;
-    filter: drop-shadow(10px 40px 260px black);
+    
     background-color: #000000b0;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(5px);
