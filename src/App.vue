@@ -1180,7 +1180,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] 
 
 {
-    transition: 2s; margin-right: 20%; width: 100%; height: 425px; max-height: 600px; padding-top: 20px; filter: drop-shadow(2px 4px 6px black); border: none; background-size: 100%; background-position: bottom; background: url(https://i.imgur.com/nOG6pYM.png); background-size: 15%; background-color: #00000087; color: white; background-repeat: no-repeat; background-position-x: right; background-position-y: bottom;
+    transition: 2s; margin-right: 20%; width: 100%; height: 450px!important; max-height: 600px; padding-top: 20px; filter: drop-shadow(2px 4px 6px black); border: none; background-size: 100%; background-position: bottom; background: url(https://i.imgur.com/nOG6pYM.png); background-size: 15%; background-color: #00000087; color: white; background-repeat: no-repeat; background-position-x: right; background-position-y: bottom;
     backdrop-filter: blur(4px);
 }
 
