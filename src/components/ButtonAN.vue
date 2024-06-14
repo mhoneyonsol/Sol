@@ -240,6 +240,7 @@ export default {
   transition: opacity 100ms linear 200ms, transform 100ms linear 200ms; /* Add transform transition for smooth movement */
   width: 3.5rem;
   z-index: 3;
+  zoom:130%;
 }
 .coin__front, .coin__middle, .coin__back, .coin::before, .coin__front::after, .coin__back::after {
   border-radius: 50%;
