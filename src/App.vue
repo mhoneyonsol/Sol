@@ -148,7 +148,7 @@ li {
 span.bg-red-400.mt-3.rounded-sm.px-5.py-1 {
     position: absolute;
     left: 25%;
-    top: 70%;
+    top: 40%;
     border-radius: 13px;
     background: #ff0000;
     z-index: 444;
