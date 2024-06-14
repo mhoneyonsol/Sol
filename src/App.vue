@@ -148,9 +148,11 @@ li {
 span.bg-red-400.mt-3.rounded-sm.px-5.py-1 {
     position: absolute;
     left: 25%;
-    top: 40%;
+    top: 80%;
     border-radius: 13px;
-    background: #ff0000ad;
+    background: #ff0000;
+    z-index: 444;
+    filter: drop-shadow(2px 4px 6px black);
 }
     
 
