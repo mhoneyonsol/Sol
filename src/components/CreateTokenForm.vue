@@ -437,11 +437,10 @@ const handleClickAndCreateToken = () => {
   margin-bottom: 3.05rem;
   position: absolute;
   right: calc(var(--coin-x-multiplier) * 34% + 16%);
-  transform: translateX(50%) scale(calc(0.4 + var(--coin-scale-multiplier))) rotate(calc(var(--coin-rotation-multiplier) * -1deg));
+  transform: translateX(50%) scale(calc(0.52 + var(--coin-scale-multiplier))) rotate(calc(var(--coin-rotation-multiplier) * -1deg));
   transition: opacity 100ms linear 200ms, transform 100ms linear 200ms; /* Add transform transition for smooth movement */
   width: 3.5rem;
   z-index: 3;
-  zoom:130%;
 }
 .coin__front, .coin__middle, .coin__back, .coin::before, .coin__front::after, .coin__back::after {
   border-radius: 50%;
