@@ -2762,7 +2762,7 @@ SMART
 .cta {
 
 
-    zoom: 50%!important;
+    zoom: 30%!important;
 }
 
 .w-3\/4 {
