@@ -410,7 +410,7 @@ const handleClickAndCreateToken = () => {
 .coin-wrapper {
   background: none;
   bottom: 0;
-  height: 18rem;
+  height: 28rem;
   left: 0;
   opacity: 1;
   overflow: hidden;
