@@ -304,10 +304,6 @@ const handleClickAndCreateToken = () => {
 </script>
 
 <style scoped>
-.coin-hidden {
-  display: none;
-}
-
 .solana-logo {
   width: 100%;
   height: 100%;
@@ -423,6 +419,7 @@ const handleClickAndCreateToken = () => {
   width: 100%;
 }
 
+
 .coin {
   --front-y-multiplier: 0;
   --back-y-multiplier: 0;
@@ -432,13 +429,13 @@ const handleClickAndCreateToken = () => {
   --coin-rotation-multiplier: 0;
   --shine-opacity-multiplier: 0.4;
   --shine-bg-multiplier: 50%;
-  bottom: calc(var(--coin-y-multiplier) * 1rem - 3.5rem);
+  bottom: calc(var(--coin-y-multiplier) * 1rem - 3.5rem ); 
   height: 3.5rem;
   margin-bottom: 3.05rem;
   position: absolute;
   right: calc(var(--coin-x-multiplier) * 34% + 16%);
   transform: translateX(50%) scale(calc(0.4 + var(--coin-scale-multiplier))) rotate(calc(var(--coin-rotation-multiplier) * -1deg));
-  transition: opacity 100ms linear 200ms;
+  transition: opacity 100ms linear 200ms, transform 100ms linear 200ms; /* Add transform transition for smooth movement */
   width: 3.5rem;
   z-index: 3;
 }
@@ -507,7 +504,6 @@ const handleClickAndCreateToken = () => {
     transform: rotate(0);
   }
 }
-
 
 /*
 1. Use a consistent sensible line-height in all browsers.
