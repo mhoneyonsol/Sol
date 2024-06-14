@@ -65,7 +65,7 @@
       <div ref="coin" class="coin coin-hidden">
         <div class="coin__middle"></div>
         <div style="background:black" class="coin__back"><img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-6926590-5650872.png" alt="Solana Logo" class="solana-logo"></div>
-        <div class="coin__front" style="background:red">
+        <div class="coin__front" style="background:black">
           <img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-6926590-5650872.png" alt="Solana Logo" class="solana-logo">
         </div>
       </div>
