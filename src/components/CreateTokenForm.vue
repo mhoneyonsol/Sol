@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    <span class="bg-red-400 mt-3 rounded-sm px-5 py-1 " v-if="errNotify != ''">{{ errNotify }}</span>
+    <span class="bg-red-400 mt-3 rounded-sm px-5 py-1 " v-if="errNotify != ''">{{ errNotify }} <button @click="clearError" class="ml-4 font-bold">×</button></span>
     <span class="bg-green-400 mt-3 break-words rounded-sm px-5 py-1" v-if="successNotify != ''">{{ successNotify }}</span>
     <div class="ol flex flex-row items-center justify-center" style="margin-top: 40px;">
       <p>Connect wallet to begin</p>
