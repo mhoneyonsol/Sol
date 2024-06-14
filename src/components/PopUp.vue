@@ -97,7 +97,7 @@ export default {
       confetti({
         particleCount: 100,
         spread: 70,
-        origin: { y: 0.6 }
+        origin: { x: 0.9, y: 0.9 } // Adjust the confetti origin to just above the pop-up
       });
     }
   }
