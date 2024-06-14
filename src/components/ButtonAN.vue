@@ -52,7 +52,7 @@ export default {
       let percentageCompleted = moveLoopCount / maxMoveLoopCount;
       let angle = -maxFlipAngle * Math.pow((percentageCompleted - 1), 2) + maxFlipAngle;
       if (coin.value) {
-        coin.value.style.setProperty('--coin-y-multiplier', -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 11);
+        coin.value.style.setProperty('--coin-y-multiplier', -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 15);
         coin.value.style.setProperty('--coin-x-multiplier', percentageCompleted);
         coin.value.style.setProperty('--coin-scale-multiplier', percentageCompleted * 0.6);
         coin.value.style.setProperty('--coin-rotation-multiplier', percentageCompleted * sideRotationCount);
@@ -66,8 +66,9 @@ export default {
         coin.value.style.setProperty('--shine-opacity-multiplier', 4 * Math.sin((angle + Math.PI / 2) % Math.PI) - 3.2);
         coin.value.style.setProperty('--shine-bg-multiplier', -40 * (Math.cos((angle + Math.PI / 2) % Math.PI) - 0.5) + '%');
 
+        // Ajouté pour augmenter le mouvement descendant vers la fin
         if (moveLoopCount > maxMoveLoopCount - 10) {
-          // Make the coin disappear towards the end of the animation
+          coin.value.style.setProperty('--coin-y-multiplier', 11 + (moveLoopCount - (maxMoveLoopCount - 10)) * 1.5);
           coin.value.style.setProperty('opacity', (maxMoveLoopCount - moveLoopCount) / 10);
         }
       }
@@ -101,6 +102,7 @@ export default {
   },
 };
 </script>
+
 
 <style scoped>
 .solana-logo {
@@ -205,7 +207,7 @@ export default {
 
 .coin-wrapper {
   background: none;
-  bottom: 0;
+  bottom: -6rem; /* Ajustement pour faire descendre la pièce plus bas */
   height: 18rem;
   left: 0;
   opacity: 1;
