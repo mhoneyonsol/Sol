@@ -5,7 +5,9 @@
       <div ref="coin" class="coin">
         <div class="coin__middle"></div>
         <div class="coin__back"></div>
-        <div class="coin__front"></div>
+        <div class="coin__front">
+          <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="Solana Logo" class="solana-logo">
+        </div>
       </div>
     </div>
   </button>
@@ -63,6 +65,11 @@ export default {
         coin.value.style.setProperty('--back-y-multiplier', Math.sin(angle - Math.PI));
         coin.value.style.setProperty('--shine-opacity-multiplier', 4 * Math.sin((angle + Math.PI / 2) % Math.PI) - 3.2);
         coin.value.style.setProperty('--shine-bg-multiplier', -40 * (Math.cos((angle + Math.PI / 2) % Math.PI) - 0.5) + '%');
+
+        if (moveLoopCount > maxMoveLoopCount - 10) {
+          // Make the coin disappear towards the end of the animation
+          coin.value.style.setProperty('opacity', (maxMoveLoopCount - moveLoopCount) / 10);
+        }
       }
       if (moveLoopCount < maxMoveLoopCount) {
         if (moveLoopCount === maxMoveLoopCount - 6) {
@@ -96,6 +103,12 @@ export default {
 </script>
 
 <style scoped>
+.solana-logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 .tip-button {
   background: none;
   margin-top: 150px;
@@ -286,7 +299,7 @@ export default {
     transform: rotate(-4deg);
   }
   100% {
-    transform: rotate();
+    transform: rotate(0);
   }
 }
 </style>
