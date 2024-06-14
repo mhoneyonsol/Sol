@@ -5,7 +5,9 @@
       <div ref="coin" class="coin">
         <div class="coin__middle"></div>
         <div class="coin__back"></div>
-        <div class="coin__front"></div>
+        <div class="coin__front">
+          <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="Solana Logo" class="solana-logo">
+        </div>
       </div>
     </div>
   </button>
@@ -96,6 +98,12 @@ export default {
 </script>
 
 <style scoped>
+.solana-logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 .tip-button {
   background: none;
   margin-top: 150px;
@@ -286,7 +294,7 @@ export default {
     transform: rotate(-4deg);
   }
   100% {
-    transform: rotate();
+    transform: rotate(0);
   }
 }
 </style>
