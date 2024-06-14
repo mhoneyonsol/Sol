@@ -227,7 +227,7 @@ export default {
   --coin-rotation-multiplier: 0;
   --shine-opacity-multiplier: 0.4;
   --shine-bg-multiplier: 50%;
-  bottom: calc(var(--coin-y-multiplier) * 1rem - 3.5rem + 50px); /* Added extra 50px */
+  bottom: calc(var(--coin-y-multiplier) * 1rem - 5.5rem ); 
   height: 3.5rem;
   margin-bottom: 3.05rem;
   position: absolute;
