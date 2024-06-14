@@ -176,7 +176,7 @@ background-color: #0006;
     width: 200px;
     background-position: 100%;
     backdrop-filter: blur(4px);
-    zoom:80%;
+    zoom:60%;
 }
 .cta:hover {
   
