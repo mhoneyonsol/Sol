@@ -1163,6 +1163,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     font-weight: 300;
     top: -70px;
     width: 75%;
+z-index:444;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Sora';
