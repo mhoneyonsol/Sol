@@ -9,9 +9,7 @@
 <div id="google" class="modaloverlay">
   <div class="modal">
     <a href="#close" class="close">&times;</a>
-    <div style="
-    margin-top: 30px;
-"><p>
+    <div><p>
     <strong>Welcome to SPL Forge!</strong>
     <br><br>
     Thank you for visiting SPL Forge. To ensure a smooth experience, here are the steps you need to follow:
