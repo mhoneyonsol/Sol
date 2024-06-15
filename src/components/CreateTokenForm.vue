@@ -36,7 +36,7 @@
       <div class="flex flex-row items-center justify-center mt-3 w-1/3">
         <label class="w-3/4">Immutable:</label>
         <div class="w-1/4 flex flex-row justify-start">
-          <input type="checkbox" class="h-5 w-5 " label="immutable" v-model="immutable" />
+          <input type="checkbox" class="rounded-checkbox h-5 w-5 " label="immutable" v-model="immutable" />
         </div>
       </div>
       <div class="flex flex-row items-center justify-center mt-3 w-1/3">
@@ -48,7 +48,7 @@
       <div class="flex flex-row items-center justify-center mt-3 w-1/3">
         <label class="w-3/4">Revoke Freeze:</label>
         <div class="w-1/4 flex flex-row justify-start">
-          <input type="checkbox" class="w-5 h-5" label="revokefreeze" v-model="revokeFreeze" />
+          <input type="checkbox" class="rounded-checkbox w-5 h-5" label="revokefreeze" v-model="revokeFreeze" />
         </div>
       </div>
     </div>
