@@ -2759,7 +2759,9 @@ SMART
 }
 
 
-.cta {
+.cto {
+
+  font-size:1em!important;
 
     
     
