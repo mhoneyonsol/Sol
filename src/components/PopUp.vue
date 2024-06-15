@@ -98,7 +98,6 @@ export default {
         particleCount: 100,
         spread: 70,
         origin: { x: 0.9, y: 0.9 } // Adjust the confetti origin to just above the pop-up
-        scale: 0.5
       });
     }
   }
