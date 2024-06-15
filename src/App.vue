@@ -2761,8 +2761,8 @@ SMART
 
 .cta {
 
-    font-size:1em;
-    zoom: 30%!important;
+    
+    
 }
 
 .w-3\/4 {
