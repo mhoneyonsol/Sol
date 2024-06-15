@@ -198,7 +198,7 @@ background-color: #0006;
     right: 2%;
     TOP: 2%;
     z-index: 4;
-    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHR4djF5dXE1andnNmZvczVmNmYzcXBrZm91ZXl6dmVsMWowcHhyaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ZdfklbwtI0nxyXyN85/giphy.webp);
+    background-image: url(https://cdn3d.iconscout.com/3d/premium/thumb/solana-10229260-8263859.png?f=webp);
     background-size: 30%;
     height: 90px;
     background-repeat: no-repeat;
