@@ -154,6 +154,34 @@ span.bg-red-400.mt-3.rounded-sm.px-5.py-1 {
     z-index: 444;
     filter: drop-shadow(2px 4px 6px black);
 }
+
+.rounded-checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* This will round the borders */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.rounded-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+input[type="checkbox"].hidden:checked + .rounded-checkbox::after {
+  opacity: 1;
+}
     
 
 .cta {
