@@ -42,7 +42,7 @@
       <div class="flex flex-row items-center justify-center mt-3 w-1/3">
         <label class="w-3/4">Revoke Mint:</label>
         <div class="w-1/4 flex flex-row justify-start">
-          <input type="checkbox" class="w-5 h-5" label="revokemint" v-model="revokeMint" />
+          <input type="checkbox" class="rounded-checkbox w-5 h-5" label="revokemint" v-model="revokeMint" />
         </div>
       </div>
       <div class="flex flex-row items-center justify-center mt-3 w-1/3">
