@@ -2755,7 +2755,7 @@ SMART
 .modaloverlay .modal {
     
     margin: 50px;
-    height: 50%!important;
+    height: 80%!important;
 }
 
 
