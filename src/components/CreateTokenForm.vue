@@ -1162,7 +1162,7 @@ video {
   width: 25%;
 }
 .w-3\/4 {
-  width: 75%;
+  width: 55%;
     font-family: 'Sora';
 }
 .w-5 {
