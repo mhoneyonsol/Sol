@@ -5,7 +5,7 @@ import Chatbot from './components/Chatbot-1.vue';
 import Modal from './components/ModalTest.vue';
 import Popup from './components/PopUp.vue';
 import "./assets/add.css";
-import CustomButton from './components/WalletButton,.vue';
+import CustomButton from './components/WalletButton.vue';
 
 
 
