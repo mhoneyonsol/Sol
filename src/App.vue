@@ -168,6 +168,12 @@ span.bg-red-400.mt-3.rounded-sm.px-5.py-1 {
   cursor: pointer;
 }
 
+button.cursor-pointer.relative.p-3.border-2.border-white.overflow-hidden.bg-gradient-to-tr.from-yellow-100.to-yellow-200.group.duration-300.hover\:-rotate-45.hover\:opacity-75.hover\:scale-125.active\:scale-100.rounded-full.drop-shadow-xl {
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+}
+
 .rounded-checkbox::after {
   content: "";
   position: absolute;
