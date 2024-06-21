@@ -1,6 +1,6 @@
 <template>
   <div class="solana-price">
-    <p>Solana Price: {{ price !== null ? `$${price}` : 'Loading...' }}</p>
+    <p>Solana Price: {{ price ? `$${price}` : 'Loading...' }}</p>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ const fetchPrice = async () => {
 
 onMounted(() => {
   fetchPrice();
-  setInterval(fetchPrice, 1000); // Update every second
+  setInterval(fetchPrice, 60000); // Update every 60 seconds
 });
 </script>
 
