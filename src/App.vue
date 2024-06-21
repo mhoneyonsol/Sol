@@ -7,6 +7,7 @@ import Popup from './components/PopUp.vue';
 import "./assets/add.css";
 import CustomButton from './components/WalletButton.vue';
 import HoverButton from './components/WalletHover.vue';
+import Car from './components/CarOu.vue';
 
 
 
@@ -37,7 +38,7 @@ onMounted(() => {
 <div id="app">
     <Modal />
   </div>
-
+<Car />
 
     <Popup />
  
