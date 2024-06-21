@@ -4,7 +4,7 @@ import CreateTokenForm from "./components/CreateTokenForm.vue";
 import Chatbot from './components/Chatbot-1.vue';
 import Modal from './components/ModalTest.vue';
 import Popup from './components/PopUp.vue';
-
+import "./assets/add.css";
 
 
 
