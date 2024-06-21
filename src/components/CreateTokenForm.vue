@@ -38,7 +38,7 @@
     <label class="w-3/4">Immutable:</label>
     <div class="w-1/4 flex flex-row justify-start checkbox-wrapper-10">
       <input type="checkbox" class="tgl tgl-flip" id="cb-immutable" v-model="immutable" />
-      <label for="cb-immutable" data-tg-on="Yeah" data-tg-off="Nope" class="tgl-btn"></label>
+      <label for="cb-immutable" data-tg-on="Yes" data-tg-off="No" class="tgl-btn"></label>
     </div>
   </div>
   <div class="flex flex-row items-center justify-center mt-3 w-1/3">
