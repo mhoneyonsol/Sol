@@ -43,7 +43,6 @@ onMounted(() => {
  
 
 
-/*<span data-tooltip="🟢" data-flow="bottom">Network Status</span> */
 
 
 <div class="bk">
@@ -364,43 +363,6 @@ p.call {
   100% {
     box-shadow: 0 4px 10px rgba(255, 65, 130, 0.1), 0 0 0 5px rgba(255, 65, 130, 0.1), 0 0 0 10px rgba(255, 65, 130, 0.1), 0 0 0 20px rgba(255, 65, 130, 0);
   }
-}
-
-/* Tooltip */
-.plus {
-  position: relative;
-  z-index: 2;
-  position: fixed;
-  right: 50px;
-  top: 50px;
-}
-.plus:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-.tooltip {
-    position:absolute;
-    bottom:6px;
-    right:65px;
-    display:table;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.5s;
-  white-space: nowrap;
-}
-.tooltip p {
-    color:#FFF;
-    background:rgba(51,51,51,0.5);
-    display:table-cell;
-    vertical-align:middle;
-    padding:10px;
-    border-radius:3px;min-width:150px;
-}
-.tooltip i {
-    display:table-cell;
-    vertical-align:middle;
-    color:#333;
-    opacity:0.5;
 }
 
 
