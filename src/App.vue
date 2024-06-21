@@ -2784,6 +2784,10 @@ SMART
     background:black
   }
 
+  .chatbot {
+    display: none;
+}
+
 .h-screen {
   height: 150vh;
 }
