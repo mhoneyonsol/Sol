@@ -21,7 +21,7 @@ const fetchPrice = async () => {
 
 onMounted(() => {
   fetchPrice();
-  setInterval(fetchPrice, 60000); // Update every 60 seconds
+  setInterval(fetchPrice, 6000); // Update every 6 seconds
 });
 </script>
 
