@@ -11,9 +11,9 @@ const price = ref<number | null>(null);
 
 const fetchPrice = async () => {
   try {
-    const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd');
+    const response = await fetch('https://public-api.solscan.io/market/price?symbol=SOL');
     const data = await response.json();
-    price.value = data.solana.usd;
+    price.value = data.data.priceUsdt;
     console.log('Fetched price:', price.value); // Debug log to ensure fetch is working
   } catch (error) {
     console.error('Error fetching the price:', error);
