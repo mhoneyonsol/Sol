@@ -28,7 +28,7 @@ onMounted(() => {
 @media (max-width: 600px) {
   .loading-screen {
     display:none;
-  }
+  }}
 
 .loading-screen {
   position: fixed;
