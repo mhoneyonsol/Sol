@@ -1,12 +1,13 @@
 <template>
   <div class="loading-screen" v-if="showLoading">
     <img src="https://i.imgur.com/Yxh4siF.png" alt="Loading Image" class="loading-image" />
-  </div>
-
-  <div class="loader">
+    <div class="loader">
     <span class="loader-text">loading</span>
       <span class="load"></span>
   </div>
+  </div>
+
+  
 
 </template>
 
@@ -164,5 +165,5 @@ onMounted(() => {
   }
 }
  
- 
+
 </style>
