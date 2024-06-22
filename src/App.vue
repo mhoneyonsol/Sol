@@ -37,7 +37,7 @@ onMounted(() => {
 
 <div id="app">
     <Modal />
-    <Car style="postion:absolute;" />
+    <Car />
 
   </div>
 
