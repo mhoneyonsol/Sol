@@ -27,7 +27,7 @@ onMounted(() => {
 
 @media (max-width: 600px) {
   .loading-screen {
-    display:none;
+    display:none!important;
   }}
 
 .loading-screen {
