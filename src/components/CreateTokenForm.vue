@@ -34,16 +34,14 @@
     </div>
     
 <div class="flex flex-row">
-  <div class="flex flex-row items-center justify-center mt-3 w-1/3">
-  <label class="w-3/4">Immutable:</label>
-  <label class="container w-1/4 flex flex-row justify-start">
-    <input type="checkbox" v-model="immutable" />
-    <span class="checkmark"></span>
-  </label>
-</div>
-
-<div class="flex flex-row items-center justify-center mt-3 w-1/3">
+ <div class="flex flex-row items-center justify-center mt-3 w-1/3">
   <label class="w-3/4">Rmint:</label>
+  <span class="tooltip">
+    <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <span class="tooltiptext">Revokes minting permission</span>
+  </span>
   <label class="container w-1/4 flex flex-row justify-start">
     <input type="checkbox" v-model="revokeMint" />
     <span class="checkmark"></span>
@@ -52,6 +50,12 @@
 
 <div class="flex flex-row items-center justify-center mt-3 w-1/3">
   <label class="w-3/4">Rfreeze:</label>
+  <span class="tooltip">
+    <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <span class="tooltiptext">Revokes freeze permission</span>
+  </span>
   <label class="container w-1/4 flex flex-row justify-start">
     <input type="checkbox" v-model="revokeFreeze" />
     <span class="checkmark"></span>
@@ -367,6 +371,52 @@ const handleClickAndCreateToken = () => {
 
 .container input:checked ~ .checkmark:after {
   display: block;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the text */
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Arrow at the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #888;
 }
 
 .tip-button {
