@@ -8,7 +8,7 @@ import "./assets/add.css";
 import CustomButton from './components/WalletButton.vue';
 import SolPrice from './components/SolPrice.vue';
 import Car from './components/CarOu.vue';
-
+import LoadingScreen from './components/LoadingScreen.vue'; 
 
 
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
@@ -34,6 +34,8 @@ onMounted(() => {
 
 
 <template>
+
+<LoadingScreen />
 
 <div id="app">
     <Modal />
