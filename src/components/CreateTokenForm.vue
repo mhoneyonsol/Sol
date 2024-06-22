@@ -356,7 +356,11 @@ const handleClickAndCreateToken = () => {
 }
 
 .container input:checked ~ .checkmark {
-  background-color: var(--input-focus);
+  background-color: hsla(39,100%,68%,1);
+}
+
+label.container.w-1\/4.flex.flex-row.justify-start {
+    zoom: 70%;
 }
 
 .checkmark:after {
