@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import CreateTokenForm from "./components/CreateTokenForm.vue";
 import Chatbot from './components/Chatbot-1.vue';
 import Modal from './components/ModalTest.vue';
@@ -8,8 +8,6 @@ import "./assets/add.css";
 import CustomButton from './components/WalletButton.vue';
 import SolPrice from './components/SolPrice.vue';
 import Car from './components/CarOu.vue';
-
-
 
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
 import { initWallet, WalletMultiButton } from 'solana-wallets-vue'
@@ -27,75 +25,73 @@ onMounted(() => {
   document.title = 'SPL Forge - Solana Token Factory';
 });
 
+const showBackground = ref(true);
 
-
-
+const hideBackground = () => {
+  showBackground.value = false;
+}
 </script>
 
-
 <template>
-
-<div id="app">
-    <Modal />
-    
-
+  <div v-if="showBackground" class="full-screen-bg" @click="hideBackground">
+    <img src="https://i.imgur.com/Yxh4siF.png" alt="Background" class="centered-image">
   </div>
 
-
+  <div v-else id="app">
+    <Modal />
     <Popup />
- 
+    <div class="bk">
+      <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
+        <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
+          <!--ring div starts here-->
+          <div style="z-index:222;position: absolute;top: 5%;margin-left: 20%;">
+            <input class="closeflag" id="unique-id-for-box-1" type="checkbox">
+            <div class="msgbox" style="
+                border: 2px solid black;
+                border-radius: 4px;
+                padding: 19px;
+                background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGlxNm1md2diMnkxMXdwazR3cHh5MXA4Y21ncGlwMG9rcjhndzhwbSZlcD12MV9pbnRlcm5fZ2lmX2J5X2lkJmN0PWc/xTiTniuHdUjpOlNo1q/giphy.gif);
+                background-size: 100%;
+                background-color: #00000078;
+                color: white;
+                background-position: bottom!important;">
+              <label class="closebutton" for="unique-id-for-box-1"> ❌</label>
+              To initiate token creation, ensure your wallet holds SOL for transaction fees.
+            </div>
+          </div>
 
-
-
-
-<div class="bk">
-  <div class="flex lg:px-36 lg:flex-row flex-col justify-center items-center h-screen relative">
-    <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
-      <!--ring div starts here-->
-
-<div style="z-index:222;position: absolute;top: 5%;margin-left: 20%;"><input class="closeflag" id="unique-id-for-box-1" type="checkbox"><div class="msgbox" style="
-        border: 2px solid black;
-    border-radius: 4px;
-    padding: 19px;
-    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGlxNm1md2diMnkxMXdwazR3cHh5MXA4Y21ncGlwMG9rcjhndzhwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTniuHdUjpOlNo1q/giphy.gif);
-    background-size: 100%;
-    background-color: #00000078;
-    color: white;
-    background-position: bottom!important;
-    
-"><label class="closebutton" for="unique-id-for-box-1"> ❌</label> To initiate token creation, ensure your wallet holds SOL for transaction fees.</div></div>
-
-
-      <div class="mt-10"><div class="glitch-wrapper" style="
-    /* font-size: 3rem; */
-"> <div class="glitch" data-text="SPL Forge" style="
-    font-size: 6rem;
-    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-weight: 900;
-">SPL Forge</div> </div><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="position:absolute;margin-top:-145px;font-size:5em;font-weight:100;color:#ffffff29 !important;">SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
-      <div class="mt-5">
-        <wallet-multi-button />
-
-        <SolPrice />
-        <CustomButton />
+          <div class="mt-10">
+            <div class="glitch-wrapper" style="/* font-size: 3rem; */">
+              <div class="glitch" data-text="SPL Forge" style="
+                  font-size: 6rem;
+                  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+                  font-weight: 900;">
+                SPL Forge
+              </div>
+            </div>
+            <h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="position:absolute;margin-top:-145px;font-size:5em;font-weight:100;color:#ffffff29 !important;">
+              SPL TOKEN CREATOR
+            </h1>
+            <h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3>
+          </div>
+          <div class="mt-5">
+            <wallet-multi-button />
+            <SolPrice />
+            <CustomButton />
+          </div>
+        </div>
         
+        <div class="flex justify-center items-center lg:w-1/2">
+          <CreateTokenForm />
+          <Car />
+        </div>
+        <Chatbot />
       </div>
     </div>
-    
-    <div class="flex justify-center items-center lg:w-1/2">
-      <CreateTokenForm />
-      <Car />
-    </div>
-    <Chatbot />
-</div>
-
-
-</div>
-
-
-
-
+  </div>
 </template>
+
+
 
 
 
@@ -150,7 +146,24 @@ onMounted(() => {
     display: none;
 }
 
+.full-screen-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
+.centered-image {
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
