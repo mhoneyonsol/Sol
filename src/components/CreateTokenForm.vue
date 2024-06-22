@@ -377,7 +377,7 @@ const handleClickAndCreateToken = () => {
 }
 
 .tooltip {
-  position: relative;
+  position: absolute;
   display: inline-block;
   margin-left: 5px;
 }
