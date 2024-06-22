@@ -43,7 +43,7 @@
 </div>
 
 <div class="flex flex-row items-center justify-center mt-3 w-1/3">
-  <label class="w-3/4">Revoke Mint:</label>
+  <label class="w-3/4">Rmint:</label>
   <label class="container w-1/4 flex flex-row justify-start">
     <input type="checkbox" v-model="revokeMint" />
     <span class="checkmark"></span>
@@ -51,7 +51,7 @@
 </div>
 
 <div class="flex flex-row items-center justify-center mt-3 w-1/3">
-  <label class="w-3/4">Revoke Freeze:</label>
+  <label class="w-3/4">Rfreeze:</label>
   <label class="container w-1/4 flex flex-row justify-start">
     <input type="checkbox" v-model="revokeFreeze" />
     <span class="checkmark"></span>
