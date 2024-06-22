@@ -37,6 +37,7 @@ onMounted(() => {
 
 <div id="app">
     <Modal />
+    <wallet-multi-button />
   </div>
 <Car />
 
@@ -73,6 +74,7 @@ onMounted(() => {
 ">SPL Forge</div> </div><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="position:absolute;margin-top:-145px;font-size:5em;font-weight:100;color:#ffffff29 !important;">SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
       <div class="mt-5">
         <wallet-multi-button />
+
         <SolPrice />
         <CustomButton />
         
