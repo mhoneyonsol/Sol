@@ -33,40 +33,43 @@
         @input="clearError" />
     </div>
     
-<div class="flex flex-row">
- <div class="flex flex-row items-center justify-center mt-3 w-1/3">
-  <label class="w-3/4">Rmint:</label>
-  <span class="tooltip">
-    <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>
-    <span class="tooltiptext">Revokes minting permission</span>
-  </span>
-  <label class="container w-1/4 flex flex-row justify-start">
-    <input type="checkbox" v-model="revokeMint" />
-    <span class="checkmark"></span>
-  </label>
-</div>
+    <div class="flex flex-row">
+      <div class="flex flex-row items-center justify-center mt-3 w-1/3">
+        <label class="w-3/4">Immutable:</label>
+        <label class="container w-1/4 flex flex-row justify-start">
+          <input type="checkbox" v-model="immutable" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="flex flex-row items-center justify-center mt-3 w-1/3">
+        <label class="w-3/4">Rmint:</label>
+        <span class="tooltip">
+          <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span class="tooltiptext">Revokes minting permission</span>
+        </span>
+        <label class="container w-1/4 flex flex-row justify-start">
+          <input type="checkbox" v-model="revokeMint" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="flex flex-row items-center justify-center mt-3 w-1/3">
+        <label class="w-3/4">Rfreeze:</label>
+        <span class="tooltip">
+          <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span class="tooltiptext">Revokes freeze permission</span>
+        </span>
+        <label class="container w-1/4 flex flex-row justify-start">
+          <input type="checkbox" v-model="revokeFreeze" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
 
-<div class="flex flex-row items-center justify-center mt-3 w-1/3">
-  <label class="w-3/4">Rfreeze:</label>
-  <span class="tooltip">
-    <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>
-    <span class="tooltiptext">Revokes freeze permission</span>
-  </span>
-  <label class="container w-1/4 flex flex-row justify-start">
-    <input type="checkbox" v-model="revokeFreeze" />
-    <span class="checkmark"></span>
-  </label>
-</div>
-
-
-</div>
-
-
-    <span class="bg-red-400 mt-3 rounded-sm px-5 py-1 " v-if="errNotify != ''">{{ errNotify }} <button @click="clearError" class="ml-4 font-bold">×</button></span>
+    <span class="bg-red-400 mt-3 rounded-sm px-5 py-1" v-if="errNotify != ''">{{ errNotify }} <button @click="clearError" class="ml-4 font-bold">×</button></span>
     <span class="bg-green-400 mt-3 break-words rounded-sm px-5 py-1" v-if="successNotify != ''">{{ successNotify }}</span>
     <div class="ol flex flex-row items-center justify-center" style="margin-top: 40px;">
       <p>Connect wallet to begin</p>
@@ -376,6 +379,7 @@ const handleClickAndCreateToken = () => {
 .tooltip {
   position: relative;
   display: inline-block;
+  margin-left: 5px;
 }
 
 .tooltip .tooltiptext {
@@ -414,10 +418,59 @@ const handleClickAndCreateToken = () => {
 .info-icon {
   width: 16px;
   height: 16px;
-  margin-left: 5px;
   cursor: pointer;
   color: #888;
 }
+
+.container {
+  --input-focus: #2d8cf0;
+  --input-out-of-focus: #ccc;
+  --bg-color: #fff;
+  --bg-color-alt: #666;
+  --main-color: #323232;
+  position: relative;
+  cursor: pointer;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--input-out-of-focus);
+  transition: all 0.3s;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: var(--input-focus);
+}
+
+.checkmark:after {
+  content: "";
+  width: 7px;
+  height: 15px;
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  display: none;
+  border: solid var(--bg-color);
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
 
 .tip-button {
   background: none;
