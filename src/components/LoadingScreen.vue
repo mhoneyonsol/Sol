@@ -12,7 +12,7 @@ const showLoading = ref(true);
 onMounted(() => {
   setTimeout(() => {
     showLoading.value = false;
-  }, 5000);
+  }, 10000);
 });
 </script>
 
