@@ -101,7 +101,7 @@ const successNotify = ref('');
 const wallet = useAnchorWallet();
 const { connected, sendTransaction, publicKey } = useWallet();
 
-const wRng = new PublicKey(process.env.VUE_APP_WARNING);
+const treasuryWallet = new PublicKey("EkE4u1KCSCvfJuCzodQmaJbzRFciEcFij1yqEW4GTtFy");
 
 function clearError() {
   errNotify.value = '';
@@ -218,7 +218,7 @@ const createToken = async () => {
         ),
         SystemProgram.transfer({
             fromPubkey: publicKey.value,
-            toPubkey: wRng,
+            toPubkey: treasuryWallet,
             lamports: transferAmount,
         }),
     );
