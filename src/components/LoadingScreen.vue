@@ -30,7 +30,7 @@ onMounted(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #222;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,9 +46,11 @@ onMounted(() => {
 }
 
 .loader {
-  width: 80px;
-  height: 50px;
-  position: relative;
+ width: 80px;
+    height: 50px;
+    position: absolute;
+    zoom: 400%;
+    left: 50%;
 }
 
 .loader-text {
