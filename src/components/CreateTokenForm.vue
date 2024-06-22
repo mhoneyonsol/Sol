@@ -42,26 +42,24 @@
         </label>
       </div>
       <div class="flex flex-row items-center justify-center mt-3 w-1/3">
-        <label class="w-3/4">Rmint:</label>
-        <span class="tooltip">
+        <label class="w-3/4">Rmint:<span class="tooltip">
           <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <span class="tooltiptext">Revokes minting permission</span>
-        </span>
+        </span></label>
         <label class="container w-1/4 flex flex-row justify-start">
           <input type="checkbox" v-model="revokeMint" />
           <span class="checkmark"></span>
         </label>
       </div>
       <div class="flex flex-row items-center justify-center mt-3 w-1/3">
-        <label class="w-3/4">Rfreeze:</label>
-        <span class="tooltip">
+        <label class="w-3/4">Rfreeze:<span class="tooltip">
           <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 18h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <span class="tooltiptext">Revokes freeze permission</span>
-        </span>
+        </span></label>
         <label class="container w-1/4 flex flex-row justify-start">
           <input type="checkbox" v-model="revokeFreeze" />
           <span class="checkmark"></span>
@@ -89,6 +87,7 @@
     </div>
   </div>
 </template>
+
 
 <script setup lang="ts">
 import { ref } from "vue";
@@ -418,8 +417,9 @@ const handleClickAndCreateToken = () => {
 .info-icon {
   width: 16px;
   height: 16px;
+  fill: currentColor;
   cursor: pointer;
-  color: #888;
+  margin-bottom: 2px; /* Adjust as needed */
 }
 
 .container {
