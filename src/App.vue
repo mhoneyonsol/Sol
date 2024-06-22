@@ -37,7 +37,7 @@ onMounted(() => {
 
 <div id="app">
     <Modal />
-    <Car />
+    
 
   </div>
 
@@ -84,6 +84,7 @@ onMounted(() => {
     
     <div class="flex justify-center items-center lg:w-1/2">
       <CreateTokenForm />
+      <Car />
     </div>
     <Chatbot />
 </div>
