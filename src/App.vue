@@ -37,9 +37,9 @@ onMounted(() => {
 
 <div id="app">
     <Modal />
-    <wallet-multi-button />
+
   </div>
-<Car />
+
 
     <Popup />
  
@@ -87,7 +87,7 @@ onMounted(() => {
 </div>
 
 
-</div>
+</div><Car />
 <br>
   <div id="app">
     <Chatbot />
