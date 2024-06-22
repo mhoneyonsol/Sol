@@ -2792,7 +2792,8 @@ body {
  
 
 background-size: cover !important;
-
+-webkit-backdrop-filter: none !important;
+backdrop-filter: none !important;
 
 }
 
