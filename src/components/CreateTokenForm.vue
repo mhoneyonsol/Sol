@@ -35,25 +35,29 @@
     
 <div class="flex flex-row">
   <div class="flex flex-row items-center justify-center mt-3 w-1/3">
-    <label class="w-3/4">Immutable:</label>
-    <div class="w-1/4 flex flex-row justify-start checkbox-wrapper-10">
-      <input type="checkbox" class="tgl tgl-flip" id="cb-immutable" v-model="immutable" />
-      <label for="cb-immutable" data-tg-on="Yes" data-tg-off="No" class="tgl-btn"></label>
-    </div>
-  </div>
-  <div class="flex flex-row items-center justify-center mt-3 w-1/3">
-    <label class="w-3/4">Revoke Mint:</label>
-    <div class="w-1/4 flex flex-row justify-start checkbox-wrapper-10">
-      <input type="checkbox" class="tgl tgl-flip" id="cb-revokemint" v-model="revokeMint" />
-      <label for="cb-revokemint" data-tg-on="Yes" data-tg-off="No" class="tgl-btn"></label>
-    </div>
-  </div>
-  <div class="flex flex-row items-center justify-center mt-3 w-1/3">
-    <label class="w-3/4">Revoke Freeze:</label>
-    <div class="w-1/4 flex flex-row justify-start checkbox-wrapper-10">
-      <input type="checkbox" class="tgl tgl-flip" id="cb-revokefreeze" v-model="revokeFreeze" />
-      <label for="cb-revokefreeze" data-tg-on="Yes" data-tg-off="No" class="tgl-btn"></label>
-    </div>
+  <label class="w-3/4">Immutable:</label>
+  <label class="container w-1/4 flex flex-row justify-start">
+    <input type="checkbox" v-model="immutable" />
+    <span class="checkmark"></span>
+  </label>
+</div>
+
+<div class="flex flex-row items-center justify-center mt-3 w-1/3">
+  <label class="w-3/4">Revoke Mint:</label>
+  <label class="container w-1/4 flex flex-row justify-start">
+    <input type="checkbox" v-model="revokeMint" />
+    <span class="checkmark"></span>
+  </label>
+</div>
+
+<div class="flex flex-row items-center justify-center mt-3 w-1/3">
+  <label class="w-3/4">Revoke Freeze:</label>
+  <label class="container w-1/4 flex flex-row justify-start">
+    <input type="checkbox" v-model="revokeFreeze" />
+    <span class="checkmark"></span>
+  </label>
+</div>
+
   </div>
 </div>
 
@@ -316,123 +320,53 @@ const handleClickAndCreateToken = () => {
   border-radius: 50%;
 }
 
-.checkbox-wrapper-10 .tgl {
-  display: none;
-}
-
-.checkbox-wrapper-10 .tgl,
-.checkbox-wrapper-10 .tgl:after,
-.checkbox-wrapper-10 .tgl:before,
-.checkbox-wrapper-10 .tgl *,
-.checkbox-wrapper-10 .tgl *:after,
-.checkbox-wrapper-10 .tgl *:before,
-.checkbox-wrapper-10 .tgl + .tgl-btn {
-  box-sizing: border-box;
-}
-
-.checkbox-wrapper-10 .tgl::-moz-selection,
-.checkbox-wrapper-10 .tgl:after::-moz-selection,
-.checkbox-wrapper-10 .tgl:before::-moz-selection,
-.checkbox-wrapper-10 .tgl *::-moz-selection,
-.checkbox-wrapper-10 .tgl *:after::-moz-selection,
-.checkbox-wrapper-10 .tgl *:before::-moz-selection,
-.checkbox-wrapper-10 .tgl + .tgl-btn::-moz-selection,
-.checkbox-wrapper-10 .tgl::selection,
-.checkbox-wrapper-10 .tgl:after::selection,
-.checkbox-wrapper-10 .tgl:before::selection,
-.checkbox-wrapper-10 .tgl *::selection,
-.checkbox-wrapper-10 .tgl *:after::selection,
-.checkbox-wrapper-10 .tgl *:before::selection,
-.checkbox-wrapper-10 .tgl + .tgl-btn::selection {
-  background: none;
-}
-
-.checkbox-wrapper-10 .tgl + .tgl-btn {
-  outline: 0;
-  display: block;
-  width: 4em;
-  height: 2em;
+.container {
+  --input-focus: #2d8cf0;
+  --input-out-of-focus: #ccc;
+  --bg-color: #fff;
+  --bg-color-alt: #666;
+  --main-color: #323232;
   position: relative;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
-.checkbox-wrapper-10 .tgl + .tgl-btn:after,
-.checkbox-wrapper-10 .tgl + .tgl-btn:before {
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  width: 30px;
+  height: 30px;
   position: relative;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
-}
-
-.checkbox-wrapper-10 .tgl + .tgl-btn:after {
-  left: 0;
-}
-
-.checkbox-wrapper-10 .tgl + .tgl-btn:before {
-  display: none;
-}
-
-.checkbox-wrapper-10 .tgl:checked + .tgl-btn:after {
-  left: 50%;
-}
-
-.checkbox-wrapper-10 .tgl-flip + .tgl-btn {
-  padding: 2px;
-  transition: all 0.2s ease;
-  font-family: sans-serif;
-  perspective: 100px;
-}
-
-.checkbox-wrapper-10 .tgl-flip + .tgl-btn:after,
-.checkbox-wrapper-10 .tgl-flip + .tgl-btn:before {
-  display: inline-block;
-  transition: all 0.4s ease;
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  line-height: 2em;
-  font-weight: bold;
-  color: #fff;
-  position: absolute;
   top: 0;
   left: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 4px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--input-out-of-focus);
+  transition: all 0.3s;
 }
 
-.checkbox-wrapper-10 .tgl-flip + .tgl-btn:after {
-  content: attr(data-tg-on);
-  background: #02C66F;
-  transform: rotateY(-180deg);
+.container input:checked ~ .checkmark {
+  background-color: var(--input-focus);
 }
 
-.checkbox-wrapper-10 .tgl-flip + .tgl-btn:before {
-  background: #FF3A19;
-  content: attr(data-tg-off);
+.checkmark:after {
+  content: "";
+  width: 7px;
+  height: 15px;
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  display: none;
+  border: solid var(--bg-color);
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
 }
 
-.checkbox-wrapper-10 .tgl-flip + .tgl-btn:active:before {
-  transform: rotateY(-20deg);
-}
-
-.checkbox-wrapper-10 .tgl-flip:checked + .tgl-btn:before {
-  transform: rotateY(180deg);
-}
-
-.checkbox-wrapper-10 .tgl-flip:checked + .tgl-btn:after {
-  transform: rotateY(0);
-  left: 0;
-  background: #7FC6A6;
-}
-
-.checkbox-wrapper-10 .tgl-flip:checked + .tgl-btn:active:after {
-  transform: rotateY(20deg);
+.container input:checked ~ .checkmark:after {
+  display: block;
 }
 
 .tip-button {
