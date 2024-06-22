@@ -38,8 +38,8 @@ onMounted(() => {
 }
 
 .loading-image {
-  max-width: 30%;
-    max-height: 100%;
+  max-width: 20%;
+    
     left: 5%;
     border-radius: 13px;
     position: absolute;
