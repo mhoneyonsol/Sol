@@ -39,10 +39,10 @@ onMounted(() => {
 
 .loading-image {
   max-width: 20%;
-    
-    left: 5%;
+    left: 15%;
     border-radius: 13px;
     position: absolute;
+    filter: drop-shadow(2px 4px 16px black);
 }
 
 .loader {
