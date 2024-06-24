@@ -87,7 +87,11 @@ onMounted(() => {
     </div>
     
     <div class="flex justify-center items-center lg:w-1/2">
-      <CreateTokenForm />
+
+    <a class="cta" href="#google1"><p class="cto" style="margin-top: 23px;font-size:1.3em;">test</p></a>
+<div id="google1" class="modaloverlay">
+  <div class="modal">
+      <CreateTokenForm /></div></div>
       <Car />
     </div>
     <Chatbot />
