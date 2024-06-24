@@ -90,7 +90,7 @@ onMounted(() => {
 
     <a class="ct" href="#google1"><p class="cto" style="margin-top: 23px;font-size:1.3em;">UUU</p></a>
 <div id="google1" class="modaloverlay">
-  <div class="modal">
+  <div class="modal">test
       <CreateTokenForm />
       </div>
       </div>
