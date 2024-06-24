@@ -1,177 +1,67 @@
 <template>
-  <div class="loading-screen" v-if="showLoading">
-    <img src="https://i.imgur.com/Yxh4siF.png" alt="Loading Image" class="loading-image" />
-    <div class="loader">
-    <span class="loader-text">loading</span>
-      <span class="load"></span>
-  </div>
-  </div>
-
-  
-
+  <div class="wrap">
+  <div class="loader"></div>
+  <h3>Wobbly 3D loader</h3>
+</div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
 
-const showLoading = ref(true);
-
-onMounted(() => {
-  setTimeout(() => {
-    showLoading.value = false;
-  }, 10000);
-});
 </script>
 
 <style scoped>
 
 @media (max-width: 600px) {
-  .loading-screen {
-    display:none!important;
-  }}
+  
+  
+  }
+.loader {
+  height: 185px;
+  width: 200px;
+  display: inline-block;
+  position: relative;
+  border-radius: 100%;
+  animation: spin 0.35s linear infinite;
+  box-shadow: inset 0px 0px 20px 2px rgba(0, 0, 0, 0.9), 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+.loader:before {
+  content: "";
+  display: block;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  bottom: 15%;
+  background-color: #666;
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.6), inset 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+}
 
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background-color: #666;
+  color: #333;
+  overflow-x: hidden;
+  margin: 0;
+}
+body .wrap {
+  min-height: 300px;
+  position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #222;
+  text-align: center;
+  font-family: sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
-
-.loading-image {
-  max-width: 20%;
-    left: 15%;
-    border-radius: 13px;
-    position: absolute;
-    filter: drop-shadow(2px 4px 16px black);
-}
-
-.loader {
- width: 80px;
-    height: 50px;
-    position: absolute;
-    zoom: 400%;
-    left: 50%;
-}
-
-.loader-text {
-  position: absolute;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  color: #C8B6FF;
-  animation: text_713 3.5s ease both infinite;
-  font-size: .8rem;
-  letter-spacing: 1px;
-}
-
-.load {
-  background-color: #9A79FF;
-  border-radius: 50px;
-  display: block;
-  height: 16px;
-  width: 16px;
-  bottom: 0;
-  position: absolute;
-  transform: translateX(64px);
-  animation: loading_713 3.5s ease both infinite;
-}
-
-.load::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #D1C2FF;
-  border-radius: inherit;
-  animation: loading2_713 3.5s ease both infinite;
-}
-
-@keyframes text_713 {
-  0% {
-    letter-spacing: 1px;
-    transform: translateX(0px);
-  }
-
-  40% {
-    letter-spacing: 2px;
-    transform: translateX(26px);
-  }
-
-  80% {
-    letter-spacing: 1px;
-    transform: translateX(32px);
-  }
-
-  90% {
-    letter-spacing: 2px;
-    transform: translateX(0px);
-  }
-
-  100% {
-    letter-spacing: 1px;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes loading_713 {
-  0% {
-    width: 16px;
-    transform: translateX(0px);
-  }
-
-  40% {
-    width: 100%;
-    transform: translateX(0px);
-  }
-
-  80% {
-    width: 16px;
-    transform: translateX(64px);
-  }
-
-  90% {
-    width: 100%;
-    transform: translateX(0px);
-  }
-
-  100% {
-    width: 16px;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes loading2_713 {
-  0% {
-    transform: translateX(0px);
-    width: 16px;
-  }
-
-  40% {
-    transform: translateX(0%);
-    width: 80%;
-  }
-
-  80% {
-    width: 100%;
-    transform: translateX(0px);
-  }
-
-  90% {
-    width: 80%;
-    transform: translateX(15px);
-  }
-
-  100% {
-    transform: translateX(0px);
-    width: 16px;
-  }
-}
- 
-
 </style>
