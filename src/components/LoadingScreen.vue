@@ -84,7 +84,7 @@ color: white;
   background-color:rgba(0,0,0,0);
   border-radius:100%;
   margin:-15px;
-  box-shadow: 0 4px 0 0 #000;
+  box-shadow: 0 4px 0 0 #fff;
   transition: all 1s linear;
   animation: lds-eclipse 1s linear infinite;
 }
