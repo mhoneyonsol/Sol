@@ -26,18 +26,6 @@ onMounted(() => {
 
 <style scoped>
 
-body .wrap {
-  min-height: 300px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
 @media (max-width: 600px) {
   .loading-screen {
     display:none!important;
