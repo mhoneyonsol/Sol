@@ -17,7 +17,7 @@
 
 
 
-<script setup lang="ts">
+
 <script setup lang="ts">
 import CreateTokenForm from "./components/CreateTokenForm.vue";
 import "./assets/add.css";
