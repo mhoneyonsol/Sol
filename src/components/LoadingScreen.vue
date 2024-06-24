@@ -3,7 +3,7 @@
     
 <div class="wrap">
   <div class="loader"></div>
-  <h3>Wobbly 3D loader</h3>
+  <h3>LOADING ...</h3>
 </div>
   </div>
 
