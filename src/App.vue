@@ -92,6 +92,7 @@ onMounted(() => {
 <div id="google1" class="modaloverlay">
   <div class="modal">test
       <CreateTokenForm />
+      <wallet-multi-button />
       </div>
       </div>
 
