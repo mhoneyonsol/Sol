@@ -3,10 +3,12 @@
     
 <div class="wrap">
   <div class="loading-spinner">
-</div>
-  <h3 class="lang" >LOADING ...</h3>
-</div>
   </div>
+  <h3 class="lang" >LOADING ...</h3>
+
+
+  </div>
+   </div>
 
   
 
