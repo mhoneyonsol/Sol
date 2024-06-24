@@ -2,7 +2,8 @@
   <div class="loading-screen" v-if="showLoading">
     
 <div class="wrap">
-  <div class="loader"></div>
+  <div class="loading-spinner">
+</div>
   <h3 class="lang" >LOADING ...</h3>
 </div>
   </div>
@@ -50,54 +51,53 @@ color: white;
   z-index: 1000;
 }
 
-.loader {
-  height: 185px;
-  width: 200px;
-  display: inline-block;
-  position: relative;
-  border-radius: 100%;
-  animation: spin 0.35s linear infinite;
-  box-shadow: inset 0px 0px 20px 2px rgba(0, 0, 0, 0.9), 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-}
-.loader:before {
-  content: "";
-  display: block;
-  top: 15%;
-  left: 15%;
-  right: 15%;
-  bottom: 15%;
-  background-color: #000;
-  position: absolute;
-  border-radius: 100%;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.6), inset 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+.loading-spinner {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,-50%) translateZ(0);
+    top: 50%;
+    width: 90px;
+    height: 90px;
+    z-index: 1;
+    background: url(https://i.imgur.com/7KbUHcB.png) center no-repeat;
+    background-size: contain;
+    /*animation: spinning 1.5s infinite ease-in-out;*/
 }
 
-@keyframes spin {
+.loading-spinner:after {
+  content:"";
+  position:absolute;
+  width:120px;
+  height:120px;
+  background-color:rgba(0,0,0,0);
+  border-radius:100%;
+  margin:-15px;
+  box-shadow: 0 4px 0 0 #000;
+  transition: all 1s linear;
+  animation: lds-eclipse 1s linear infinite;
+}
+
+
+
+@keyframes spinning {
+  0% { transform: translate(-50%,-50%) scale(1) translateZ(0);}
+  50% { transform: translate(-50%,-50%) scale(1.1) translateZ(0);}
+  100% { transform: translate(-50%,-50%) scale(1) translateZ(0);}
+}
+
+@keyframes lds-eclipse {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
   100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-body {
-  background-color: #666;
-  color: #333;
-  overflow-x: hidden;
-  margin: 0;
-}
-body .wrap {
-  min-height: 300px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 </style>
