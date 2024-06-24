@@ -2517,7 +2517,7 @@ video {
     bottom: 0;
     opacity: 1;
     transition: opacity linear 150ms;
-    z-index: 1040;
+    z-index: 99999;
     overflow-y: auto;
 }
 
