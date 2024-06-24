@@ -3,7 +3,7 @@
     
 <div class="wrap">
   <div class="loader"></div>
-  <h3>LOADING ...</h3>
+  <h3 class="lang" >LOADING ...</h3>
 </div>
   </div>
 
@@ -30,13 +30,20 @@ onMounted(() => {
     display:none!important;
   }}
 
+.lang {
+
+color: white;
+    margin-top: 30px;
+    font-family: "Sora";
+}
+
 .loading-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #222;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +67,7 @@ onMounted(() => {
   left: 15%;
   right: 15%;
   bottom: 15%;
-  background-color: #666;
+  background-color: #000;
   position: absolute;
   border-radius: 100%;
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.6), inset 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
