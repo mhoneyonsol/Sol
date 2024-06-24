@@ -4,8 +4,8 @@
   
  
 
- <a class="cta" href="#google"><p class="cto" style="margin-top: 23px;font-size:1.3em;">test</p></a>
-<div id="google" class="modaloverlay">
+ <a class="cta" href="#google1"><p class="cto" style="margin-top: 23px;font-size:1.3em;">test</p></a>
+<div id="google1" class="modaloverlay">
   <div class="modal">
     
 <CreateTokenForm />
