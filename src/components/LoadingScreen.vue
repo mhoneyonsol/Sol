@@ -26,9 +26,7 @@ onMounted(() => {
 <style scoped>
 
 @media (max-width: 600px) {
-  .loading-screen {
-    display:none!important;
-  }}
+ }
 
 .lang {
 
