@@ -19,7 +19,7 @@
 
 
 <script setup lang="ts">
-import CreateTokenForm from "./CreateTokenForm.vue";
+import CreateTokenForm from "./components/CreateTokenForm.vue";
 import "./assets/add.css";
 import CustomButton from './components/WalletButton.vue';
 
