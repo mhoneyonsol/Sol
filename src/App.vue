@@ -89,8 +89,16 @@ onMounted(() => {
     <div class="flex justify-center items-center lg:w-1/2">
 
     <a class="ct" href="#google1"><p class="cto" style="margin-top: 23px;font-size:1.3em;">UUU</p></a>
+
+
+    <a class="ct" href="#google1"><p class="cto" style="margin-top: 23px;font-size:1.3em;">UUU</p></a>
+
+
+    
 <div id="google1" class="modaloverlay">
-  <div class="modal"><a href="#close" class="close">&times;</a>test
+  <div class="modal"><a href="#close" class="close">&times;</a>
+
+  test
       <CreateTokenForm />
       <wallet-multi-button />
       
@@ -158,6 +166,9 @@ onMounted(() => {
 
 <style>
 
+.flex.justify-center.items-center.lg\:w-1\/2 {
+    flex-direction: column;
+}
 
 .flex.flex-col.gap-2.w-60.sm\:w-72.text-\[10px\].sm\:text-xs.z-50 {
     display: none;
