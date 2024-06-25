@@ -166,6 +166,23 @@ onMounted(() => {
 
 <style>
 
+a.cr, a.cy {
+    padding: 50px;
+    border-radius: 23px;
+    width: 50%;
+    color: #fff;
+    padding-left: 20px;
+    filter: drop-shadow(2px 4px 6px black);
+    height: 1em;
+    transition: 2s;
+}
+
+a.cr, a.cy:hover {
+    transition: 1s;
+    transform: scale(0.9);
+}
+
+
 a.cr {
     background: #4A59E0;
     padding: 50px;
