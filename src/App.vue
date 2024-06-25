@@ -91,7 +91,7 @@ onMounted(() => {
     <a class="cy" href="#google1"><p class="cto" style="font-size:1.3em;">UUU</p></a>
 
 
-    <a class="cr" href="#google"><p class="cto" style="margin-top: 23px;font-size:1.3em;">UUU</p></a>
+    <a class="cr" style="margin-top: 23px" href="#google"><p class="cto" style="font-size:1.3em;">UUU</p></a>
 
 
 
