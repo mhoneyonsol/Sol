@@ -85,7 +85,7 @@ onMounted(() => {
         
       </div>
     </div>
-    
+    <div>
     <div class="flex justify-center items-center lg:w-1/2">
 
     <a class="ct" href="#google1"><p class="cto" style="margin-top: 23px;font-size:1.3em;">UUU</p></a>
@@ -96,6 +96,17 @@ onMounted(() => {
       
       </div>
       </div>
+
+      <a class="ct" href="#google1"><p class="cto" style="margin-top: 23px;font-size:1.3em;">UUU</p></a>
+<div id="google1" class="modaloverlay">
+  <div class="modal"><a href="#close" class="close">&times;</a>test
+      <CreateTokenForm />
+      <wallet-multi-button />
+      
+      </div>
+      </div>  </div>
+
+
 
       <Car />
     </div>
