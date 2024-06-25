@@ -85,12 +85,6 @@ onMounted(() => {
         
       </div>
     </div>
-
-    <div class="angry-grid">
-  <div id="item-0">&nbsp;</div>
-  <div id="item-1">&nbsp;</div>
-  <div id="item-2">&nbsp;</div>
-</div>
     
     <div class="flex justify-center items-center lg:w-1/2">
 
@@ -163,48 +157,6 @@ onMounted(() => {
 
 
 <style>
-
-.angry-grid {
-   display: grid; 
-
-   grid-template-rows: 1fr 1fr 1fr;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   
-   gap: 0px;
-   height: 100%;
-   
-}
-  
-#item-0 {
-
-   background-color: #B9795F; 
-   grid-row-start: 2;
-   grid-column-start: 1;
-
-   grid-row-end: 3;
-   grid-column-end: 3;
-   
-}
-#item-1 {
-
-   background-color: #9BDE79; 
-   grid-row-start: 1;
-   grid-column-start: 1;
-
-   grid-row-end: 2;
-   grid-column-end: 3;
-   
-}
-#item-2 {
-
-   background-color: #E9D6F9; 
-   grid-row-start: 3;
-   grid-column-start: 1;
-
-   grid-row-end: 4;
-   grid-column-end: 3;
-   
-}
 
 
 .flex.flex-col.gap-2.w-60.sm\:w-72.text-\[10px\].sm\:text-xs.z-50 {
@@ -330,10 +282,6 @@ background-color: #ffffffb8;
     -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(9px);
     background-position: bottom right;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
 }
 @media (min-width: 60em) {
   .modaloverlay .modal {
