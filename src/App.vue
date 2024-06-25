@@ -88,10 +88,10 @@ onMounted(() => {
     
     <div class="flex justify-center items-center lg:w-1/2">
 
-    <a class="cy" href="#google1"><p class="cto" style="font-size:1.3em;">Create Token</p></a>
+    <a class="cy" href="#google1"><p class="cto" >Create Token</p></a>
 
 
-    <a class="cr" style="margin-top: 23px" href="#google"><p class="cto" style="font-size:1.3em;">Volume Boost</p></a>
+    <a class="cr" style="margin-top: 23px" href="#google"><p class="cto" >Volume Boost</p></a>
 
 
 
@@ -175,6 +175,20 @@ a.cr, a.cy {
     filter: drop-shadow(2px 4px 6px black);
     height: 1em;
     transition: 2s;
+}
+
+p.cto {
+    font-size: 200%;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+p.cto {
+    font-size: 200%;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 a.cr, a.cy:hover {
