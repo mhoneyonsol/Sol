@@ -88,10 +88,10 @@ onMounted(() => {
     
     <div class="flex justify-center items-center lg:w-1/2">
 
-    <a class="cy" href="#google1"><p class="cto" style="font-size:1.3em;">UUU</p></a>
+    <a class="cy" href="#google1"><p class="cto" style="font-size:1.3em;">Create Token</p></a>
 
 
-    <a class="cr" style="margin-top: 23px" href="#google"><p class="cto" style="font-size:1.3em;">UUU</p></a>
+    <a class="cr" style="margin-top: 23px" href="#google"><p class="cto" style="font-size:1.3em;">Volume Boost</p></a>
 
 
 
@@ -166,6 +166,33 @@ onMounted(() => {
 
 <style>
 
+a.cr {
+    background: #4A59E0;
+    padding: 50px;
+    border-radius: 23px;
+    width: 50%;
+    background-image: url(https://i.imgur.com/py2KVmM.png);
+    width: 50%;
+    background-position: right;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    color: white;
+}
+
+a.cy {
+    background: #E1597F;
+    padding: 50px;
+    border-radius: 23px;
+    background-image: url(https://i.imgur.com/py2KVmM.png);
+    width: 50%;
+    background-position: right;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    color: white;
+}
+
 .flex.justify-center.items-center.lg\:w-1\/2 {
     flex-direction: column;
 }
@@ -230,13 +257,12 @@ input[type="checkbox"].hidden:checked + .rounded-checkbox::after {
     
 
 .cta {
-background-color: #0006;
-    border-radius: 13px;
+border-radius: 13px;
     color: #fff;
     display: inline-block;
-    font-family: Open Sans, sans-serif;
+    font-family: "Sora";
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 200;
     margin-bottom: 1em;
     padding: .3em 1em;
     position: absolute;
@@ -250,8 +276,9 @@ background-color: #0006;
     filter: drop-shadow(2px 4px 6px black);
     width: 200px;
     background-position: 100%;
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    zoom:60%;
+    zoom: 60%;
 }
 .cta:hover {
   
