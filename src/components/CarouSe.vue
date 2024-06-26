@@ -107,7 +107,6 @@ a:hover {
   display: inline-block;
   width: 50px;
   height: 50px;
-  border: 2px solid white;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
@@ -118,6 +117,7 @@ a:hover {
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     animation-play-state: paused;
+    filter:drop-shadow (2px 2px black);
 }
 .checkbox.scnd + label{
   background-image: url('https://i.imgur.com/4AHHNBn.png');
