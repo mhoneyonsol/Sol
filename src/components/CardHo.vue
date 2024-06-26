@@ -27,10 +27,7 @@
 
 <script>
 export default {
-  async mounted() {
-    // Dynamically import gsap
-    const { gsap } = await import('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js');
-
+  mounted() {
     const speed = 7;
     const r = gsap.timeline({ repeat: -1 });
     const o = gsap.timeline({ repeat: -1 });
