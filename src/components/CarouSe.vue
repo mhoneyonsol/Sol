@@ -102,8 +102,8 @@ a:hover {
   cursor: pointer;
   margin: 0 auto;
   text-align: center;
-  margin-right: 6px;
-  margin-left: 6px;
+  margin-right: 1em;
+    margin-left: 1em;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -169,6 +169,7 @@ ul li {
   display: block;
   z-index: 100;
   padding: 0;
+  transition:2s;
   margin: 0;
   list-style: none;
   height: 400px;
@@ -187,7 +188,7 @@ ul li {
   writing-mode: vertical-rl;
   opacity: 0;
   pointer-events: none;
-  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+box-shadow: 0 8px 25px 0 rgb(0 0 0);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
