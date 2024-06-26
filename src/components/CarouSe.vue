@@ -66,7 +66,9 @@ const dampingForce = 10;
 const acceleration = -60;
 const mouseSensitivity = 0.2;
 const touchSensitivity = 0.25;
-const MAX_VELOCITY = 1000;
+
+let lastMouseMoveTime;  // Defined lastMouseMoveTime
+let animating = false;  // Defined animating
 
 window.onload = () => {
   let cards = [...document.querySelectorAll(".card")];
@@ -129,8 +131,6 @@ function handleTouchEnd() {
   position = angleOffset;
   clock = requestAnimationFrame(spin);
 }
-
-let decayClock = 0;
 
 function throttle(fn, wait) {
   var time = Date.now();
@@ -244,8 +244,8 @@ function spin(currentFrameTime) {
   function shuffle() {
     if (p-- > 0) return;
     text = "";
-    for (var k = 0; k < j; k++) text += orignal[k];
-    for (var k = j; k < j + 4 && k < l; k++) {
+    for (var i = 0; i < j; i++) text += orignal[i];
+    for (var i = j; i < j + 4 && i < l; i++) {
       text += String.fromCharCode(
         Math.random() > 0.5
           ? Math.floor(Math.random() * 26) + 65
