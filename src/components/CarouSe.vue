@@ -261,6 +261,9 @@ ul li:nth-child(4) {
   .slider-height-padding {
     padding-top: 240px;
   }
+  .section {
+    width:100%!important;
+  }
   ul li {
     height: 200px;
   }
