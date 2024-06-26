@@ -230,6 +230,11 @@ ul li:nth-child(4) {
   border-radius: 16px;
 }
 
+li:hover {
+    transition: 1s;
+    transform: scale(0.95);
+}
+
 .logo {
     position: absolute;
     top: 30px;
