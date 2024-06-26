@@ -172,7 +172,7 @@ a {
   transform: translate3d(0, 0, 0.1px) scale(var(--scale)) rotateY(var(--r));
   transform-style: preserve-3d;
   pointer-events: auto;
-  width:60%;
+  width:60%!important;
 }
 
 .front,
