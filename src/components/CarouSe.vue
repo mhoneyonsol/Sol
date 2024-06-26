@@ -1,5 +1,7 @@
 <template>
   
+
+  
     <a href="https://front.codes/" class="logo hover-target" target="_blank">
         <img src="https://assets.codepen.io/1462889/fcb.png" alt="">
     </a>
@@ -21,9 +23,9 @@
                             <li href="#google1" >
                                 <span>MALE GOOFY FACE</span>
                             </li>
-                            <li href="#google2" >
+                            <a href="#google2"><li href="#google2" >
                                 <span>TOY PIG</span>
-                            </li>
+                            </li></a>
                             <li>
                                 <span>SHY PORTRAIT</span>
                             </li>
