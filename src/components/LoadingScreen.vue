@@ -1,10 +1,19 @@
 <template>
   <div class="loading-screen" v-if="showLoading">
     
-<div class="wrap">
-  <div class="loader"></div>
-  <h3 class="lang" >LOADING ...</h3>
-</div>
+
+<svg viewBox="0 0 600 300">
+  <!-- Symbol-->
+  <symbol id="s-text">
+    <text text-anchor="middle" x="50%" y="50%" dy=".35em">loading ...</text>
+  </symbol>
+  <!-- Duplicate symbols-->
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+</svg>
   </div>
 
   
@@ -25,77 +34,70 @@ onMounted(() => {
 
 <style scoped>
 
-@media (max-width: 600px) {
- }
-
-.lang {
-
-color: white;
-    margin-top: 30px;
-    font-family: "Sora";
+/* Main styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+.text {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+.text:nth-child(5n+1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n+2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n+3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n+4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n+5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
 }
 
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.loader {
-  height: 185px;
-  width: 200px;
-  display: inline-block;
-  position: relative;
-  border-radius: 100%;
-  animation: spin 0.35s linear infinite;
-  box-shadow: inset 0px 0px 20px 2px rgba(0, 0, 0, 0.9), 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-}
-.loader:before {
-  content: "";
-  display: block;
-  top: 15%;
-  left: 15%;
-  right: 15%;
-  bottom: 15%;
-  background-color: #000;
-  position: absolute;
-  border-radius: 100%;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.6), inset 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
+@-webkit-keyframes stroke {
   100% {
-    transform: rotate(360deg);
+    stroke-dashoffset: -400;
   }
 }
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+/* Other styles */
+html, body {
+  height: 100%;
+}
+
 body {
-  background-color: #666;
-  color: #333;
-  overflow-x: hidden;
+  background: #111;
+  background-size: 0.2em 100%;
+  font: 5em/1 Open Sans, Impact;
+  text-transform: uppercase;
   margin: 0;
 }
-body .wrap {
-  min-height: 300px;
+
+svg {
   position: absolute;
   width: 100%;
   height: 100%;
-  text-align: center;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 </style>
