@@ -382,7 +382,7 @@ background-color: #121212;
 .modaloverlay .modal > iframe, .modaloverlay .modal > div {
   border: none;
   width: 100%;
-  height: 100%;
+  
 }
 .modaloverlay .close {
 background-color: #ff000000;
