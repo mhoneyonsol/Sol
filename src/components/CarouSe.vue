@@ -20,11 +20,14 @@
                         <input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
                         <label for="slider-4"></label>
                         <ul>
-                            <li href="#google1" >
-                                <span>MALE GOOFY FACE</span>
+                            <li >
+                            <a href="#google1">
+                                <span>MALE GOOFY FACE</span></a>
                             </li>
-                            <li href="#google2" >
+                            <li>
+                            <a href="#google2">
                                 <span>TOY PIG</span>
+                                </a<
                             </li>
                             <li>
                                 <span>SHY PORTRAIT</span>
