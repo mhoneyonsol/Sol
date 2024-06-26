@@ -172,7 +172,7 @@ ul li {
   margin: 0;
   list-style: none;
   height: 400px;
-  border: 5px solid #bdc3c7;
+  border: 2px solid #fff;
   background-size: cover;
   background-position: center;
   background-image: url('https://i.imgur.com/miErJ5i.png');
