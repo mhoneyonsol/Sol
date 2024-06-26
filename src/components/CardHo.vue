@@ -26,6 +26,9 @@
 </template>
 
 <script>
+// Declare gsap as a global variable
+/* global gsap */
+
 export default {
   mounted() {
     const speed = 7;
