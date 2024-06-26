@@ -9,6 +9,7 @@ import CustomButton from './components/WalletButton.vue';
 import SolPrice from './components/SolPrice.vue';
 import Car from './components/CarOu.vue';
 import CarouSe from './components/CarouSe.vue'; 
+import LoadingScreen from './components/LoadingScreen.vue'; 
 
 
 
