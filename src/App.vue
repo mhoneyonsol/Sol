@@ -2313,9 +2313,11 @@ video {
 .ring-gray-400 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
-  background: #ffffff12;
+  background: #232323;
   color:white!important;
   width:100%!important;
+  box-shadow: 4px 4px black;
+    border: 1px solid white;
 }
 .duration-100 {
   transition-duration: 100ms;
@@ -3006,11 +3008,13 @@ transition: 2s;
     filter: drop-shadow(2px 4px 6px black);
     border: none;
     background-position: bottom;
-    background: url(https://media-private.canva.com/3oeDY/MAFBem3oeDY/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240615T144530Z&X-Amz-Expires=30565&X-Amz-Signature=0e0f782885281f02e555c37d20aecf69510fc6fc2dc4018551660a7d42f523ff&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2015%20Jun%202024%2023%3A14%3A55%20GMT);
-    background-size: 20%;
-    background-color: #00000087;
-    color: #fff;
+    background: url(https://media-private.canva.com/3oeDY/MAFBem3oeDY/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240615T144530Z&X-Amz-Expires=30565&X-Amz-Signature=0e0f782…&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2015%20Jun%202024%2023%3A14%3A55%20GMT);
+    background-size: 15%;
+    background-color: #ffffff;
+    color: #000;
     background-repeat: no-repeat;
+    border: 1px solid black;
+    box-shadow: 8px 8px white;
     background-position-x: right;
     background-position-y: bottom;
     -webkit-backdrop-filter: blur(4px);
@@ -3046,22 +3050,22 @@ p.nop {
 
   .modaloverlay .modal {
     background-color: #121212;
-        height: 80%;
-        margin-top: 20% !important;
-        position: relative;
-        margin: 0 auto;
-        background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
-        background-size: 30%;
-        padding: 1em !important;
-        background-repeat: no-repeat;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        border-radius: 23px;
-        border: 3px solid #fff;
-        color: #fff;
-        -webkit-backdrop-filter: blur(9px);
-        backdrop-filter: blur(9px);
-        background-position: 100% 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
+    background-size: 30%;
+    padding: 3em;
+    color: #fff;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 23px;
+    border: 3px solid #fff;
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    box-shadow: 15px -11px 0px 9px rgb(35 35 35);
+    background-position: 100% 100%;
 }
 
   button.button-85.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
