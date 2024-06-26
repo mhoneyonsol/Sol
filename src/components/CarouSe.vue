@@ -67,9 +67,6 @@ const acceleration = -60;
 const mouseSensitivity = 0.2;
 const touchSensitivity = 0.25;
 
-let lastMouseMoveTime;  // Defined lastMouseMoveTime
-let animating = false;  // Defined animating
-
 window.onload = () => {
   let cards = [...document.querySelectorAll(".card")];
   slider = document.querySelector(".circular-slider");
@@ -96,7 +93,6 @@ function handleMouseMove(event) {
   deltaMouse = curMousePosition - lastMousePosition;
   lastMousePosition = curMousePosition;
   angleOffset += delta * mouseSensitivity;
-  lastMouseMoveTime = Date.now();
   setAngleOffset(angleOffset);
 }
 
@@ -191,7 +187,6 @@ function snap(currentFrameTime) {
     meanPosition = roundToFactor(angleOffset, unitAngle);
     angleOffset = meanPosition;
     lastFrameTime = NaN;
-    animating = false;
   }
 }
 
@@ -209,8 +204,6 @@ function spin(currentFrameTime) {
   position = angleOffset;
   setAngleOffset(angleOffset);
 
-  animating = true;
-
   lastFrameTime = currentFrameTime;
   if (Math.abs(velocity) > 10) {
     clock = requestAnimationFrame(spin);
@@ -227,7 +220,6 @@ function spin(currentFrameTime) {
   var orignal;
   var text = "";
   const rotationGap = 4;
-  var clock2;
   var j;
   var l;
   var c;
@@ -238,14 +230,14 @@ function spin(currentFrameTime) {
     orignal = `itsGoodBits`;
     l = orignal.length;
     j = c = p = 0;
-    clock2 = setInterval(shuffle, 30);
+    setInterval(shuffle, 30);
   });
 
   function shuffle() {
     if (p-- > 0) return;
     text = "";
-    for (var i = 0; i < j; i++) text += orignal[i];
-    for (var i = j; i < j + 4 && i < l; i++) {
+    for (let i = 0; i < j; i++) text += orignal[i];
+    for (let i = j; i < j + 4 && i < l; i++) {
       text += String.fromCharCode(
         Math.random() > 0.5
           ? Math.floor(Math.random() * 26) + 65
