@@ -112,7 +112,7 @@ a:hover {
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url('https://assets.codepen.io/1462889/sl1.jpg');
+  background-image: url('https://i.imgur.com/miErJ5i.png');
   animation: border-transform 6s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
