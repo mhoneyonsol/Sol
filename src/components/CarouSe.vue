@@ -24,11 +24,14 @@
                             
                                 <span>CREATE TOKEN</span>
                             </li></a>
-                            <a href="#google2"><li>
+
+                            <a href="#google2">
+                            <li>
                             
                                 <span>MINT NFT</span>
                                 
-                            </li></a>
+                            </li>
+                            </a>
                             <li>
                                 <span>SOLANA CASINO</span>
                             </li>
