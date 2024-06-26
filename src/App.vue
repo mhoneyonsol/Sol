@@ -183,9 +183,7 @@ p.cto {
 
 p.cto {
     font-size: 200%;
-    font-weight: 900;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+  
 }
 
 a.cr, a.cy:hover {
