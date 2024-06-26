@@ -183,7 +183,14 @@ p.cto {
 
 p.cto {
     font-size: 200%;
+    transition:1s;
+
   
+}
+
+p.cto:hover {
+    font-size: 220%;
+  transition:1s;
 }
 
 a.cr, a.cy:hover {
