@@ -107,7 +107,7 @@ a:hover {
   display: inline-block;
   width: 50px;
   height: 50px;
-  border: 3px solid #000000;
+  border: 2px solid white;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
