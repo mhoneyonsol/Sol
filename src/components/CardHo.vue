@@ -1,6 +1,6 @@
 <template>
   <main id="app">
-    <section class="ticket" ref="ticket">
+    <section href="#google1" class="ticket" ref="ticket">
       <header class="front">
         <div class="holo"></div>
         <img class="logo" src="https://res.cloudinary.com/dpphcu4gm/image/upload/v1712992262/full-logo_bdbltu.png" alt="" />
