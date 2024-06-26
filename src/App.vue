@@ -2888,7 +2888,7 @@ SMART
 
 body {
  
-
+background-image:url(https://i.imgur.com/TXsBia9.png);
 background-size: cover !important;
 -webkit-backdrop-filter: none !important;
 backdrop-filter: none !important;
