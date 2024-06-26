@@ -21,7 +21,7 @@
                             <li href="#google1" >
                                 <span>MALE GOOFY FACE</span>
                             </li>
-                            <li>
+                            <li href="#google2" >
                                 <span>TOY PIG</span>
                             </li>
                             <li>
