@@ -8,7 +8,7 @@ import "./assets/add.css";
 import CustomButton from './components/WalletButton.vue';
 import SolPrice from './components/SolPrice.vue';
 import Car from './components/CarOu.vue';
-import CardHo from './components/CardHo.vue'; import CarouSe from './components/CarouSe.vue'; 
+import CarouSe from './components/CarouSe.vue'; 
 
 
 
@@ -108,7 +108,7 @@ onMounted(() => {
       <div id="google2" class="modaloverlay">
   <div class="modal"><a href="#close" class="close">&times;</a>
 
-  <CardHo />
+  test2
       
       </div>
       </div>
