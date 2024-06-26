@@ -106,33 +106,33 @@ Supabase Ticket URL: https://supabase.com/special-announcement/tickets/gambhirsh
 
 */
 html {
-  --zoom: 120;
-  --green: #37996b;
-  --neon: #3ecf8e;
+  --zoom: 120 !important;
+  --green: #37996b !important;
+  --neon: #3ecf8e !important;
 }
 :root {
-  --unit: 1vmin;
-  --available-screen-min: 665;
-  --px: calc(var(--zoom) * (var(--unit) / var(--available-screen-min)));
-  --bg: #060809;
-  --logopng: url(https://res.cloudinary.com/dpphcu4gm/image/upload/v1712993492/supabase-outline-logo_u83xos.png);
-  --ticket: url(https://assets.codepen.io/13471/ticket-shape.svg);
-  --ar: 10/30;
-  --gutter: 8%;
+  --unit: 1vmin !important;
+  --available-screen-min: 665 !important;
+  --px: calc(var(--zoom) * (var(--unit) / var(--available-screen-min))) !important;
+  --bg: #060809 !important;
+  --logopng: url(https://res.cloudinary.com/dpphcu4gm/image/upload/v1712993492/supabase-outline-logo_u83xos.png) !important;
+  --ticket: url(https://assets.codepen.io/13471/ticket-shape.svg) !important;
+  --ar: 10/30 !important;
+  --gutter: 8% !important;
 }
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
 }
 *::after,
 *::before {
-  content: "";
-  display: block;
-  position: relative;
-  box-sizing: border-box;
+  content: "" !important;
+  display: block !important;
+  position: relative !important;
+  box-sizing: border-box !important;
 }
 head::before,
 head::after,
@@ -140,108 +140,108 @@ body::before,
 body::after,
 html::before,
 html::after {
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  filter: blur(0);
+  content: "" !important;
+  position: absolute !important;
+  background-repeat: no-repeat !important;
+  box-sizing: border-box !important;
+  filter: blur(0) !important;
 }
 body {
-  all: unset;
-  background-color: var(--bg);
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  all: unset !important;
+  background-color: var(--bg) !important;
+  height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 a {
-  all: unset;
+  all: unset !important;
 }
 
 #app {
-  perspective: 1200px;
-  --o: 0;
-  --p: 100%;
-  --h: 50%;
-  --r: 0;
-  transform: translate3d(0, 0, 0.1px);
+  perspective: 1200px !important;
+  --o: 0 !important;
+  --p: 100% !important;
+  --h: 50% !important;
+  --r: 0 !important;
+  transform: translate3d(0, 0, 0.1px) !important;
 }
 
 .ticket {
-  --scale: 1;
-  transform: translate3d(0, 0, 0.1px) scale(var(--scale)) rotateY(var(--r));
-  transform-style: preserve-3d;
-  pointer-events: auto;
+  --scale: 1 !important;
+  transform: translate3d(0, 0, 0.1px) scale(var(--scale)) rotateY(var(--r)) !important;
+  transform-style: preserve-3d !important;
+  pointer-events: auto !important;
 }
 
 .front,
 .back {
-  grid-area: 1/1;
-  background-color: #6e6176;
+  grid-area: 1/1 !important;
+  background-color: #6e6176 !important;
   background-image: radial-gradient(
     circle at var(--p) 50%,
     #111 10%,
     transparent 100%
-  );
-  background-size: 100% 220vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 15px;
-  display: grid;
-  backface-visibility: visible;
-  transform: translateZ(1px);
-  transform-style: preserve-3d;
-  mask-image: var(--ticket);
-  mask-size: cover;
-  mask-repeat: no-repeat;
-  height: calc(420 * var(--px));
+  ) !important;
+  background-size: 100% 220vh !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border-radius: 15px !important;
+  display: grid !important;
+  backface-visibility: visible !important;
+  transform: translateZ(1px) !important;
+  transform-style: preserve-3d !important;
+  mask-image: var(--ticket) !important;
+  mask-size: cover !important;
+  mask-repeat: no-repeat !important;
+  height: calc(420 * var(--px)) !important;
 }
 .cutout {
-  position: absolute;
+  position: absolute !important;
 }
 
 .front::after,
 .back::after {
-  content: "";
-  position: absolute;
-  inset: 0;
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
   background-image: linear-gradient(
     -70deg,
     transparent 40%,
     rgba(255, 255, 255, 0.5) 40.5%,
     transparent
-  );
-  background-size: 200% 200%;
-  background-position: var(--p) var(--p);
-  z-index: 5;
-  opacity: calc(var(--o) + 0.5);
-  pointer-events: none;
+  ) !important;
+  background-size: 200% 200% !important;
+  background-position: var(--p) var(--p) !important;
+  z-index: 5 !important;
+  opacity: calc(var(--o) + 0.5) !important;
+  pointer-events: none !important;
 }
 
 .front {
-  transform: rotateY(180deg) translateZ(1px);
+  transform: rotateY(180deg) translateZ(1px) !important;
 }
 .back {
-  padding: calc(20 * var(--px));
+  padding: calc(20 * var(--px)) !important;
 }
 
 .holo {
-  display: block;
-  position: absolute;
-  inset: 0;
-  border-radius: 15px;
+  display: block !important;
+  position: absolute !important;
+  inset: 0 !important;
+  border-radius: 15px !important;
 }
 
 .holo {
-  --space: 5%;
-  --red: hsl(0, 100%, 50%);
-  --orange: hsl(30, 100%, 50%);
-  --yellow: hsl(60, 100%, 50%);
-  --green: hsl(120, 100%, 50%);
-  --cyan: hsl(180, 100%, 50%);
-  --blue: hsl(222, 100%, 50%);
-  --purple: hsl(258, 100%, 50%);
-  --magenta: hsl(300, 100%, 50%);
+  --space: 5% !important;
+  --red: hsl(0, 100%, 50%) !important;
+  --orange: hsl(30, 100%, 50%) !important;
+  --yellow: hsl(60, 100%, 50%) !important;
+  --green: hsl(120, 100%, 50%) !important;
+  --cyan: hsl(180, 100%, 50%) !important;
+  --blue: hsl(222, 100%, 50%) !important;
+  --purple: hsl(258, 100%, 50%) !important;
+  --magenta: hsl(300, 100%, 50%) !important;
   background-image: repeating-linear-gradient(
     -45deg,
     var(--red) 0%,
@@ -253,36 +253,36 @@ a {
     var(--purple) calc(var(--space) * 6),
     var(--magenta) calc(var(--space) * 7),
     var(--red) calc(var(--space) * 8)
-  );
-  background-size: 150vw 150vh;
-  background-position: calc(var(--h)) calc(var(--h));
-  background-repeat: no-repeat;
-  mask-image: var(--logopng);
-  mask-size: 80% 80%;
-  mask-repeat: no-repeat;
-  mask-position: 150% 180%;
-  mix-blend-mode: plus-lighter;
-  filter: brightness(0.9) contrast(0.7) saturate(2);
-  opacity: var(--o);
+  ) !important;
+  background-size: 150vw 150vh !important;
+  background-position: calc(var(--h)) calc(var(--h)) !important;
+  background-repeat: no-repeat !important;
+  mask-image: var(--logopng) !important;
+  mask-size: 80% 80% !important;
+  mask-repeat: no-repeat !important;
+  mask-position: 150% 180% !important;
+  mix-blend-mode: plus-lighter !important;
+  filter: brightness(0.9) contrast(0.7) saturate(2) !important;
+  opacity: var(--o) !important;
 }
 
 .logo {
-  width: 50%;
-  place-self: center;
-  transform: translateY(-14%);
+  width: 50% !important;
+  place-self: center !important;
+  transform: translateY(-14%) !important;
 }
 
 .divider {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-  height: 18%;
-  padding: 0 var(--gutter);
-  text-transform: uppercase;
+  position: absolute !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: start !important;
+  bottom: 2% !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 18% !important;
+  padding: 0 var(--gutter) !important;
+  text-transform: uppercase !important;
 
   background-image: repeating-linear-gradient(
       90deg,
@@ -291,72 +291,70 @@ a {
       var(--green) 8px,
       var(--green) 16px
     ),
-    radial-gradient(ellipse at center center, #fff0 10%, transparent 50%);
-  background-size: 100% 1.5px, 250% 1.5px;
-  background-repeat: no-repeat;
-  background-position: -4px top, var(--h) top;
-  background-blend-mode: overlay;
+    radial-gradient(ellipse at center center, #fff0 10%, transparent 50%) !important;
+  background-size: 100% 1.5px, 250% 1.5px !important;
+  background-repeat: no-repeat !important;
+  background-position: -4px top, var(--h) top !important;
+  background-blend-mode: overlay !important;
 
-  font-size: 16px;
-  font-weight: 400;
-  z-index: 2;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  z-index: 2 !important;
 
   div {
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: left !important;
   }
 }
 
 .divider > div > img {
-  margin-right: 10px;
-  height: 40px;
+  margin-right: 10px !important;
+  height: 40px !important;
 }
 #app {
-  color: #fff;
+  color: #fff !important;
   /* font-family: "Roboto Mono", monospace; */
-  display: grid;
-  grid: 1fr/1fr;
-  place-content: center;
-  overflow: hidden;
-  padding: 50px;
-  z-index: 999;
-  height: 90%;
+  display: grid !important;
+  grid: 1fr/1fr !important;
+  place-content: center !important;
+  overflow: hidden !important;
+  padding: 50px !important;
+  z-index: 999 !important;
+  height: 90% !important;
 }
 
 .ticket {
-  display: grid;
-  grid-area: 1/1;
-  width: calc(300 * var(--px));
-  height: calc(400 * var(--px));
-  aspect-ratio: var(--ar);
+  display: grid !important;
+  grid-area: 1/1 !important;
+  width: calc(300 * var(--px)) !important;
+  height: calc(400 * var(--px)) !important;
+  aspect-ratio: var(--ar) !important;
 }
 
 @media screen and (max-width: 400px) {
   .ticket {
-    --scale: 0.75;
+    --scale: 0.75 !important;
   }
 }
 
 #id_number {
-  position: absolute;
-  margin: calc(40 * var(--px)) calc(20 * var(--px));
+  position: absolute !important;
+  margin: calc(40 * var(--px)) calc(20 * var(--px)) !important;
 }
 
 .data {
-  position: absolute;
-  top: calc(70 * var(--px));
-  margin: calc(20 * var(--px));
+  position: absolute !important;
+  top: calc(70 * var(--px)) !important;
+  margin: calc(20 * var(--px)) !important;
 }
 .name {
-  font-size: calc(30 * var(--px));
+  font-size: calc(30 * var(--px)) !important;
 }
 .githubid {
-  font-size: calc(20 * var(--px));
+  font-size: calc(20 * var(--px)) !important;
 }
 h3 {
-  font-size: calc(15 * var(--px));
+  font-size: calc(15 * var(--px)) !important;
 }
-
-
 </style>
