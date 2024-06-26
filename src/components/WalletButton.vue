@@ -24,6 +24,7 @@
 .bg-slate-200 {
     --tw-bg-opacity: 1;
     background-color: rgb(255 0 0);
-    animation: hue-rotate-animation 3s linear infinite;
+    animation: hue-rotate-animation 0.6s linear infinite;
+    opacity: 0.8;
 }
 </style>
