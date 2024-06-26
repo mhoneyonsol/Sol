@@ -101,7 +101,7 @@ onMounted(() => {
 
   test
       <CreateTokenForm />
-      <wallet-multi-button />
+      <div class="divwlt"><wallet-multi-button /></div>
       
       </div>
       </div>
