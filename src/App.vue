@@ -87,7 +87,7 @@ onMounted(() => {
       </div>
     </div>
     
-     
+     <CardHo />
     <div class="flex justify-center items-center lg:w-1/2">
 
     <CardHo />
