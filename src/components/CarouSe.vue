@@ -194,10 +194,11 @@ box-shadow: 0 8px 25px 0 rgb(0 0 0);
 }
 ul li span {
   font-size: 2em;
-    font-weight: 200;
-    font-family: "Sora";
-       color:white;
-       text-shadow:5px 5px 5px black;
+    font-weight: 900;
+    font-family: Sora;
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+    line-height: 10px;
 }
 ul li:nth-child(2) {
   background-image: url('https://i.imgur.com/4AHHNBn.png');
