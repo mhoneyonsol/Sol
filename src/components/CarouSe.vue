@@ -2,9 +2,7 @@
   
 
 
-    <a href="https://front.codes/" class="logo hover-target" target="_blank">
-        <img src="https://assets.codepen.io/1462889/fcb.png" alt="">
-    </a>
+    
 
     <div class="section full-height over-hide px-4 px-sm-0">
         <div class="container">
