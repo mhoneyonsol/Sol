@@ -90,7 +90,7 @@ onMounted(() => {
     
     <div class="flex justify-center items-center lg:w-1/2">
 
-    <CardHo />
+    
      <CarouSe />
 
 
@@ -101,6 +101,14 @@ onMounted(() => {
   test
       <CreateTokenForm />
       <wallet-multi-button />
+      
+      </div>
+      </div>
+
+      <div id="google2" class="modaloverlay">
+  <div class="modal"><a href="#close" class="close">&times;</a>
+
+  <CardHo />
       
       </div>
       </div>
