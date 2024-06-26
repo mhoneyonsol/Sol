@@ -1,6 +1,6 @@
 <template>
   <div class="loading-screen" v-if="showLoading">
-    
+    <div class="wrap">
 
 <svg viewBox="0 0 600 300">
   <!-- Symbol-->
@@ -14,6 +14,7 @@
   <use class="text" xlink:href="#s-text"></use>
   <use class="text" xlink:href="#s-text"></use>
 </svg>
+</div>
   </div>
 
   
@@ -93,6 +94,22 @@ body {
   text-transform: uppercase;
   margin: 0;
 }
+
+body .wrap {
+  min-height: 300px;
+  }
+  
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 
 svg {
   position: absolute;
