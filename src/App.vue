@@ -3034,21 +3034,22 @@ p.nop {
 
   .modaloverlay .modal {
     background-color: #121212;
-    height: 100%;
-    position: relative;
-    margin: 0 auto;
-    background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
-    background-size: 30%;
-    padding: 1em!important;
-    background-repeat: no-repeat;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    border-radius: 23px;
-    border: 3px solid #fff;
-    color: white;
-    -webkit-backdrop-filter: blur(9px);
-    backdrop-filter: blur(9px);
-    background-position: 100% 100%;
+        height: 80%;
+        margin-top: 20% !important;
+        position: relative;
+        margin: 0 auto;
+        background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
+        background-size: 30%;
+        padding: 1em !important;
+        background-repeat: no-repeat;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 23px;
+        border: 3px solid #fff;
+        color: #fff;
+        -webkit-backdrop-filter: blur(9px);
+        backdrop-filter: blur(9px);
+        background-position: 100% 100%;
 }
 
   button.button-85.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
