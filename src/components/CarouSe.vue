@@ -27,7 +27,7 @@
                             <li>
                             <a href="#google2">
                                 <span>TOY PIG</span>
-                                </a<
+                                </a>
                             </li>
                             <li>
                                 <span>SHY PORTRAIT</span>
