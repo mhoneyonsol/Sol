@@ -1,39 +1,42 @@
 <template>
-<main id="app">
-  <section class="ticket">
-    <header class="front">
-      <div class="holo"></div>
-      <img class="logo" src="https://res.cloudinary.com/dpphcu4gm/image/upload/v1712992262/full-logo_bdbltu.png" alt="" />
-      <aside class="divider"></aside>
-    </header>
-    <section class="back">
-      <div class="holo"></div>
-      <p id="id_number">NO 00004521</p>
-      <div class="data">
-        <p class="name">gambhir⚡</p>
-        <p class="githubid">@gambhirsharma</p>
-        <p></p>
-      </div>
-      <aside class="divider">
-        <div>
-          <img src="https://res.cloudinary.com/dpphcu4gm/image/upload/v1712992245/logo_ycu0zf.svg" alt="" />
-          <h3>April 15-19 / 7AM PT</h2>
+  <main id="app">
+    <section class="ticket" ref="ticket">
+      <header class="front">
+        <div class="holo"></div>
+        <img class="logo" src="https://res.cloudinary.com/dpphcu4gm/image/upload/v1712992262/full-logo_bdbltu.png" alt="" />
+        <aside class="divider"></aside>
+      </header>
+      <section class="back">
+        <div class="holo"></div>
+        <p id="id_number">NO 00004521</p>
+        <div class="data">
+          <p class="name">gambhir⚡</p>
+          <p class="githubid">@gambhirsharma</p>
+          <p></p>
         </div>
-      </aside>
+        <aside class="divider">
+          <div>
+            <img src="https://res.cloudinary.com/dpphcu4gm/image/upload/v1712992245/logo_ycu0zf.svg" alt="" />
+            <h3>April 15-19 / 7AM PT</h3>
+          </div>
+        </aside>
+      </section>
     </section>
-  </section>
-</main>
+  </main>
 </template>
 
 <script>
 export default {
-  mounted() {
+  async mounted() {
+    // Dynamically import gsap
+    const { gsap } = await import('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js');
+
     const speed = 7;
     const r = gsap.timeline({ repeat: -1 });
     const o = gsap.timeline({ repeat: -1 });
     const h = gsap.timeline({ repeat: -1 });
 
-    const $ticket = document.querySelector(".ticket");
+    const $ticket = this.$refs.ticket;
     $ticket.addEventListener("mouseenter", () => {
       r.pause();
       o.pause();
