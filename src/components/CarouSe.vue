@@ -20,18 +20,18 @@
                         <input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
                         <label for="slider-4"></label>
                         <ul>
-                            <a href="#google1"><li >
+                            <li >
                             
-                                <span>CREATE TOKEN</span>
-                            </li></a>
-
-                            <a href="#google2">
-                            <li>
-                            
-                                <span>MINT NFT</span>
-                                
+                                <a href="#google1"><span>CREATE TOKEN</span></a>
                             </li>
-                            </a>
+
+                            
+                            <li>
+                            <a href="#google2">
+                                <span>MINT NFT</span>
+                                   </a>
+                            </li>
+                         
                             <li>
                                 <span>SOLANA CASINO</span>
                             </li>
