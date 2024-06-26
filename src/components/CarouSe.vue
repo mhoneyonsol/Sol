@@ -123,7 +123,7 @@ a:hover {
   background-image: url('https://i.imgur.com/4AHHNBn.png');
 }
 .checkbox.thrd + label{
-  background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+  background-image: url('https://i.imgur.com/MEadbgt.png');
 }
 .checkbox.foth + label{
   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
@@ -202,7 +202,7 @@ ul li:nth-child(2) {
   background-image: url('https://i.imgur.com/4AHHNBn.png');
 }
 ul li:nth-child(3) {
-  background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+  background-image: url('https://i.imgur.com/MEadbgt.png');
 }
 ul li:nth-child(4) {
   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
