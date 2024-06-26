@@ -1,393 +1,259 @@
 <template>
-  <div class="wrapper">
-            <div class="circular-slider">
-                <div class="card">
-                    <div class="content">
-                        👋<br>
-                        Hello World !
+  
+    <a href="https://front.codes/" class="logo hover-target" target="_blank">
+        <img src="https://assets.codepen.io/1462889/fcb.png" alt="">
+    </a>
+
+    <div class="section full-height over-hide px-4 px-sm-0">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-lg-10 col-xl-8 align-self-center padding-tb">
+                    <div class="section mx-auto text-center slider-height-padding">
+                        <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked/>
+                        <label for="slide-1"></label>
+                        <input class="checkbox scnd" type="radio" name="slider" id="slider-2"/>
+                        <label for="slider-2"></label>
+                        <input class="checkbox thrd" type="radio" name="slider" id="slider-3"/>
+                        <label for="slider-3"></label>
+                        <input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
+                        <label for="slider-4"></label>
+                        <ul>
+                            <li>
+                                <span>MALE GOOFY FACE</span>
+                            </li>
+                            <li>
+                                <span>TOY PIG</span>
+                            </li>
+                            <li>
+                                <span>SHY PORTRAIT</span>
+                            </li>
+                            <li>
+                                <span>SKATEBOARD FACE</span>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        😇 <br>
-                        Be Nice !
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        🥗<br>
-                        Eat well !
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        🌱<br>
-                        Stay Healthy !
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        🌟<br>
-                        Shine Bright !
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        😄<br>
-                        Be Happy !
-                    </div>
-                </div>
-            </div>
-            <div class="info">
-                <div class="smile">: )</div>
-                <div class="name"></div>
-                <div class="msg">
-                    Swipe left or right
                 </div>
             </div>
         </div>
+    </div>
 </template>
 
 <script>
-let slider;
-let angleOffset = 0;
-let unitAngle;
-let lastMousePosition;
-let curMousePosition;
-let deltaMouse;
-let clock;
-let lastFrameTime = NaN;
-let velocity = 0;
-let meanPosition = 0;
-let position = 0;
-const springConstant = 80;
-const sliderMass = 1;
-const dampingForce = 10;
-const acceleration = -60;
-const mouseSensitivity = 0.2;
-const touchSensitivity = 0.25;
-
-window.onload = () => {
-  let cards = [...document.querySelectorAll(".card")];
-  slider = document.querySelector(".circular-slider");
-  distribute(cards);
-  window.addEventListener("mousedown", handleMouseDown);
-  window.addEventListener("touchstart", handleTouchStart);
-  window.addEventListener("touchmove", handleTouchMove);
-  window.addEventListener("touchend", handleTouchEnd);
-  window.addEventListener("wheel", throttle(handleWheel, 300));
-};
-
-function handleMouseDown(event) {
-  cancelAnimation();
-  lastMousePosition = event.clientX;
-  curMousePosition = event.clientX;
-  deltaMouse = 0;
-  window.addEventListener("mousemove", handleMouseMove);
-  window.addEventListener("mouseup", handleMouseUp);
-}
-
-function handleMouseMove(event) {
-  curMousePosition = event.clientX;
-  let delta = lastMousePosition - curMousePosition;
-  deltaMouse = curMousePosition - lastMousePosition;
-  lastMousePosition = curMousePosition;
-  angleOffset += delta * mouseSensitivity;
-  setAngleOffset(angleOffset);
-}
-
-function handleMouseUp() {
-  window.removeEventListener("mousemove", handleMouseMove);
-  window.removeEventListener("mouseup", handleMouseUp);
-  meanPosition = roundToFactor(angleOffset, unitAngle);
-  velocity = -deltaMouse * 50 * mouseSensitivity;
-  position = angleOffset;
-  clock = requestAnimationFrame(spin);
-}
-
-function handleTouchStart(event) {
-  cancelAnimation();
-  lastMousePosition = event.touches[0].clientX;
-  curMousePosition = event.touches[0].clientX;
-  deltaMouse = 0;
-}
-
-function handleTouchMove(event) {
-  curMousePosition = event.touches[0].clientX;
-  let delta = lastMousePosition - curMousePosition;
-  deltaMouse = curMousePosition - lastMousePosition;
-  lastMousePosition = curMousePosition;
-  angleOffset += delta * touchSensitivity;
-  setAngleOffset(angleOffset);
-}
-
-function handleTouchEnd() {
-  meanPosition = roundToFactor(angleOffset, unitAngle);
-  velocity = -deltaMouse * 50 * touchSensitivity;
-  position = angleOffset;
-  clock = requestAnimationFrame(spin);
-}
-
-function throttle(fn, wait) {
-  var time = Date.now();
-  return function (event) {
-    if (time + wait - Date.now() < 0) {
-      fn(event);
-      time = Date.now();
-    }
-  };
-}
-
-function handleWheel(event) {
-  cancelAnimation();
-  velocity += 100 * Math.sign(event.deltaY);
-  clock = requestAnimationFrame(spin);
-}
-
-let roundToFactor = (value, factor) => Math.round(value / factor) * factor;
-
-function distribute(cards) {
-  if (cards.length == 0) return;
-  let angle = (Math.PI * 2) / cards.length;
-  unitAngle = 360 / cards.length;
-  let radius = cards[0].offsetWidth / (2 * Math.tan(angle / 2)) + 16;
-  slider.style.transformOrigin = `center center ${-radius}px`;
-  cards.forEach((card, index) => {
-    let tiltAngle = index * angle;
-    let deltaZ = radius * (1 - Math.cos(tiltAngle));
-    let deltaY = radius * Math.sin(tiltAngle);
-    card.style.transform = `
-            translate3d(${deltaY}px,0px,${-deltaZ}px)
-            rotateY(${(tiltAngle * 180) / Math.PI}deg)
-        `;
-  });
-}
-
-function setAngleOffset(newOffset) {
-  angleOffset = newOffset;
-  slider.style.transform = `rotateY(${-angleOffset}deg)`;
-}
-
-function snap(currentFrameTime) {
-  lastFrameTime = lastFrameTime || currentFrameTime;
-  let deltaTime = (currentFrameTime - lastFrameTime) / 1000;
-
-  let displacement = position - meanPosition;
-  let netForce = -displacement * springConstant - velocity * dampingForce;
-  let acceleration = netForce / sliderMass;
-  velocity += acceleration * deltaTime;
-  position += velocity * deltaTime;
-  angleOffset = position;
-  setAngleOffset(angleOffset);
-
-  lastFrameTime = currentFrameTime;
-  if (Math.abs(acceleration) > 0.1) {
-    clock = requestAnimationFrame(snap);
-  } else {
-    meanPosition = roundToFactor(angleOffset, unitAngle);
-    angleOffset = meanPosition;
-    lastFrameTime = NaN;
-  }
-}
-
-function cancelAnimation() {
-  cancelAnimationFrame(clock);
-  lastFrameTime = NaN;
-}
-
-function spin(currentFrameTime) {
-  lastFrameTime = lastFrameTime || currentFrameTime;
-  let deltaTime = (currentFrameTime - lastFrameTime) / 1000;
-
-  velocity += Math.sign(velocity) * acceleration * deltaTime;
-  angleOffset += velocity * deltaTime;
-  position = angleOffset;
-  setAngleOffset(angleOffset);
-
-  lastFrameTime = currentFrameTime;
-  if (Math.abs(velocity) > 10) {
-    clock = requestAnimationFrame(spin);
-  } else {
-    meanPosition = roundToFactor(angleOffset, unitAngle);
-    position = angleOffset;
-    lastFrameTime = NaN;
-    clock = requestAnimationFrame(snap);
-  }
-}
-
-(() => {
-  var word;
-  var orignal;
-  var text = "";
-  const rotationGap = 4;
-  var j;
-  var l;
-  var c;
-  var p;
-
-  window.addEventListener("load", () => {
-    word = document.querySelector(".name");
-    orignal = `itsGoodBits`;
-    l = orignal.length;
-    j = c = p = 0;
-    setInterval(shuffle, 30);
-  });
-
-  function shuffle() {
-    if (p-- > 0) return;
-    text = "";
-    for (let i = 0; i < j; i++) text += orignal[i];
-    for (let i = j; i < j + 4 && i < l; i++) {
-      text += String.fromCharCode(
-        Math.random() > 0.5
-          ? Math.floor(Math.random() * 26) + 65
-          : Math.floor(Math.random() * 26) + 97
-      );
-    }
-    c++;
-    if (c == rotationGap) {
-      c = 0;
-      j += 1;
-    }
-    word.innerText = text;
-    if (j >= l + 1) {
-      j = 0;
-      c = 0;
-      p = 100;
-    }
-  }
-})();
 
 </script>
 
 <style scoped>
 
-* {
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-    user-select: none ;
+
+
+/* Please ❤ this if you like it! */
+
+
+/* ========================================= * 
+                BEST VIEWED FULLSCREEN
+   https://codepen.io/ig_design/full/NWxwBvw
+ * ========================================= */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #343434;
+    background-color: #f1f2f6;
+    overflow-x: hidden;
+}
+a {
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
 }
 
-html {
-  font-family : 'Segoe UI' , "sans-serif";
+.section{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-height{
+  min-height: 100vh;
+}
+.over-hide{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 100px 0;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url('https://assets.codepen.io/1462889/sl1.jpg');
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkbox.scnd + label{
+  background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
+}
+.checkbox.thrd + label{
+  background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+}
+.checkbox.foth + label{
+  background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
 }
 
-body {
-    position:fixed;
-    width:100vw;
+.checkbox:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
 }
 
-:root {
-    --time : 0.2s;
+.slider-height-padding {
+  padding-top: 440px;
 }
 
-.wrapper {
-    height:100vh;
-    overflow:hidden;
-    background-color:#f5f5f5;
-    perspective: 800px ;
-    
-    background:linear-gradient(135deg, #f3f3ff 0%,#5D687445 100%);
+ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://assets.codepen.io/1462889/sl1.jpg');
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul li span {
+  mix-blend-mode: difference;
+}
+ul li:nth-child(2) {
+  background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
+}
+ul li:nth-child(3) {
+  background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
+}
+ul li:nth-child(4) {
+  background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
 }
 
-.circular-slider {
-    position:relative;
+
+.checkbox.frst:checked ~ ul li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkbox.scnd:checked ~ ul li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkbox.thrd:checked ~ ul li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkbox.foth:checked ~ ul li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
     display: block;
-    width : 100%  ;
-    height: 90% ;
-
-    display: flex ;
-    align-items: center ;
-    justify-content: center ;
-
-    transform-style: preserve-3d;
+    z-index: 100;
+    transition: all 250ms linear;
 }
-
-.card {
-    position: absolute ;
-    width :20rem;
-    height:16rem;
-    background-color:#fff;
-    border-radius:16px;
-    box-shadow:
-    0 3px 6px rgba(0,0,0,.2),
-    0 8px 16px rgba(0,0,0,.15);
-
-    
-    backface-visibility: hidden;
-    
-    transform-style: preserve-3d;
-    perspective:800px;
-}
-
-.card .content {
-    width :100%;
-    height:100%;
-    font-size:2rem;
-    color:#666;
-    backface-visibility: hidden;
-    display: flex ;
-    align-items: center ;
-    justify-content: center ;
-    text-align:center;
-    position:absolute;
-    transform-style: preserve-3d;
-
-    transform:translateZ(2rem) rotateY(0deg);
-    filter:drop-shadow(0px 0px 4px rgba(0,0,0,.2));
-    color:#fff;
-}
-
-.info {
-    position: absolute ;
-    bottom:2rem;
-    color:#454545;
-    left:50%;
-    z-index:1000;
-    transform: translateX(-50%);
-    text-align:center;
-    line-height:1.3;
-    font-size:0.8rem;
-    pointer-events:none;
-    z-index:1;
-}
-
-.info .smile {
-    font-size:1.2rem;
-}
-
-.info .name {
-    font-weight:300;
-    font-size:1.2rem;
-}
-
-
-.card:nth-child(1) {
-    background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
-}
-
-.card:nth-child(6) {
-    background:linear-gradient(135deg, #c3ec52aa 0%,#0ba29daa 100%);
-}
-
-.card:nth-child(3) {
-    background:linear-gradient(135deg, #0FF0B388 0%,#036ED988 100%);
-}
-
-.card:nth-child(4) {
-    background:linear-gradient(135deg, #fcdf8a 0%,#f38381 100%);
-}
-
-.card:nth-child(5) {
-    background:linear-gradient(135deg, #fad961aa 0%,#f76b1caa 100%);
-}
-
-.card:nth-child(2) {
-    background:linear-gradient(135deg, #f02fc2cc 0%,#6094eacc 100%);
+.logo img {
+    height: 26px;
+    width: auto;
+    display: block;
 }
 
 
 
+@media (max-width: 767px) {
+  .slider-height-padding {
+    padding-top: 340px;
+  }
+  ul li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-height-padding {
+    padding-top: 240px;
+  }
+  ul li {
+    height: 200px;
+  }
+}
 
 </style>
