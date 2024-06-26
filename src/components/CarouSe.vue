@@ -197,6 +197,8 @@ ul li span {
   font-size: 2em;
     font-weight: 200;
     font-family: "Sora";
+       color:white;
+       text-shadow:5px 5px 5px black;
 }
 ul li:nth-child(2) {
   background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
