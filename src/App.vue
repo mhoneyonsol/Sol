@@ -8,7 +8,8 @@ import "./assets/add.css";
 import CustomButton from './components/WalletButton.vue';
 import SolPrice from './components/SolPrice.vue';
 import Car from './components/CarOu.vue';
-import LoadingScreen from './components/LoadingScreen.vue'; 
+import CardHo from './components/CardHO.vue'; 
+
 
 
 
@@ -86,6 +87,7 @@ onMounted(() => {
       </div>
     </div>
     
+     <CardHo />
     <div class="flex justify-center items-center lg:w-1/2">
 
     <a class="cy" href="#google1"><p class="cto" >Create Token</p></a>
