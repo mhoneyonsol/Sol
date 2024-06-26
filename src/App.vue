@@ -99,9 +99,10 @@ onMounted(() => {
 <div id="google1" class="modaloverlay">
   <div class="modal"><a href="#close" class="close">&times;</a>
 
-  test
+  
       <CreateTokenForm />
-      <div class="divwlt"><wallet-multi-button /></div>
+      <br>
+      <wallet-multi-button />
       
       </div>
       </div>
@@ -174,6 +175,12 @@ onMounted(() => {
 
 
 <style>
+
+button.swv-button.swv-button-trigger {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 a.cr, a.cy {
     padding: 50px;
@@ -347,7 +354,7 @@ border-radius: 13px;
   z-index: 99999;
 }
 .modaloverlay .modal {
-background-color: #ffffffb8;
+background-color: #121212;
     height: 100%;
     position: relative;
     margin: 0 auto;
@@ -358,9 +365,10 @@ background-color: #ffffffb8;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     border-radius: 23px;
+    border: 3px solid white;
     -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(9px);
-    background-position: bottom right;
+    background-position: 100% 100%;
 }
 @media (min-width: 60em) {
   .modaloverlay .modal {
