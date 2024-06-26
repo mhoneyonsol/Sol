@@ -86,8 +86,7 @@ body .wrap {
 /* Main styles */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 .text {
-  fill: none;
-  stroke-width: 3;
+  font-size: 7em;
   stroke-linejoin: round;
   stroke-dasharray: 70 330;
   stroke-dashoffset: 0;
