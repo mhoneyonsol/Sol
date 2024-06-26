@@ -120,7 +120,7 @@ a:hover {
     animation-play-state: paused;
 }
 .checkbox.scnd + label{
-  background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
+  background-image: url('https://i.imgur.com/4AHHNBn.png');
 }
 .checkbox.thrd + label{
   background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
@@ -199,7 +199,7 @@ ul li span {
        text-shadow:5px 5px 5px black;
 }
 ul li:nth-child(2) {
-  background-image: url('https://media.lesechos.com/api/v1/images/view/6241c4986265616b61552387/1280x720/0701218849482-web-tete.jpg');
+  background-image: url('https://i.imgur.com/4AHHNBn.png');
 }
 ul li:nth-child(3) {
   background-image: url('https://assets.codepen.io/1462889/sl3.jpg');
