@@ -172,6 +172,7 @@ a {
   transform: translate3d(0, 0, 0.1px) scale(var(--scale)) rotateY(var(--r));
   transform-style: preserve-3d;
   pointer-events: auto;
+  width:80%;
 }
 
 .front,
@@ -194,7 +195,8 @@ a {
   mask-image: var(--ticket);
   mask-size: cover;
   mask-repeat: no-repeat;
-  height: calc(420 * var(--px));
+  height: 500px;
+
 }
 .cutout {
   position: absolute;
