@@ -78,11 +78,11 @@ a:hover {
 
 .section{
   position: relative;
-  width: 100%;
+  width: 80%;
   display: block;
 }
 .full-height{
-  min-height: 100vh;
+  
 }
 .over-hide{
   overflow: hidden;
@@ -174,7 +174,7 @@ ul li {
   border: 5px solid #bdc3c7;
   background-size: cover;
   background-position: center;
-  background-image: url('https://assets.codepen.io/1462889/sl1.jpg');
+  background-image: url('https://i.imgur.com/miErJ5i.png');
   border-radius: 50%;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -191,7 +191,9 @@ ul li {
   transition: all 0.5s ease;
 }
 ul li span {
-  mix-blend-mode: difference;
+  font-size: 2em;
+    font-weight: 200;
+    font-family: "Sora";
 }
 ul li:nth-child(2) {
   background-image: url('https://assets.codepen.io/1462889/sl2.jpg');
