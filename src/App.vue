@@ -88,7 +88,7 @@ onMounted(() => {
     </div>
     
      
-    <div class="">
+    <div class="flex justify-center items-center lg:w-1/2">
 
     <CardHo />
     <a class="cy" href="#google1"><p class="cto" >Create Token</p></a>
@@ -107,9 +107,6 @@ onMounted(() => {
       
       </div>
       </div>
-
-
-      
 
       <Car />
     </div>
