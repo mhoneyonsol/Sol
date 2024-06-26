@@ -8,7 +8,7 @@ import "./assets/add.css";
 import CustomButton from './components/WalletButton.vue';
 import SolPrice from './components/SolPrice.vue';
 import Car from './components/CarOu.vue';
-import CardHo from './components/CardHO.vue'; 
+import CardHo from './components/CardHo.vue'; 
 
 
 
