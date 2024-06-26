@@ -95,8 +95,8 @@ export default {
     },
     triggerConfetti() {
       confetti({
-        particleCount: 100,
-        spread: 70,
+        particleCount: 50,
+        spread: 20,
         origin: { x: 0.9, y: 0.9 } // Adjust the confetti origin to just above the pop-up
       });
     }
