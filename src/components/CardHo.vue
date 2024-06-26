@@ -88,7 +88,7 @@ h.to("#app", {
   duration: speed / 2,
   ease: "sine.out"
 });
-
+}
 </script>
 
 <style scoped>
