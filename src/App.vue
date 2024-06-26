@@ -178,10 +178,7 @@ a.cr, a.cy {
 }
 
 p.cto {
-    font-size: 200%;
-    font-weight: 900;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    
 }
 
 p.cto {
@@ -192,8 +189,7 @@ p.cto {
 }
 
 a.cr, a.cy:hover {
-    transition: 1s;
-    transform: scale(0.9);
+    
 }
 
 
