@@ -321,7 +321,6 @@ border-radius: 13px;
     background-size: 30%;
     height: 90px;
     background-repeat: no-repeat;
-    filter: drop-shadow(2px 4px 6px black);
     width: 200px;
     background-position: 100%;
     -webkit-backdrop-filter: blur(4px);
