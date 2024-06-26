@@ -22,15 +22,15 @@
                         <ul>
                             <li >
                             <a href="#google1">
-                                <span>MALE GOOFY FACE</span></a>
+                                <span>CREATE TOKEN</span></a>
                             </li>
                             <li>
                             <a href="#google2">
-                                <span>TOY PIG</span>
+                                <span>MINT NFT</span>
                                 </a>
                             </li>
                             <li>
-                                <span>SHY PORTRAIT</span>
+                                <span>SOLANA CASINO</span>
                             </li>
                             <li>
                                 <span>SKATEBOARD FACE</span>
