@@ -2545,6 +2545,7 @@ video {
 .swv-dropdown {
     margin-left: auto;
     margin-right: auto;
+    margin-left: 40%;
 }
 
 .swv-dropdown-list {
