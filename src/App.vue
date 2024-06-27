@@ -1312,23 +1312,24 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 {
     transition: 2s;
     margin-right: 20%;
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     max-height: 600px;
     padding-top: 20px;
     filter: drop-shadow(2px 4px 6px black);
     border: none;
     background-position: bottom;
-    background: url(https://media-private.canva.com/3oeDY/MAFBem3oeDY/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240615T144530Z&X-Amz-Expires=30565&X-Amz-Signature=0e0f782…&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2015%20Jun%202024%2023%3A14%3A55%20GMT);
-    background-size: 0%;
-    background-color: #ffffff;
+    background: url(https://media-private.canva.com/3oeDY/MAFBem3oeDY/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240615T144530Z&X-Amz-Expires=30565&X-Amz-Signature=0e0f782%E2%80%A6&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2015%20Jun%202024%2023%3A14%3A55%20GMT);
+    background-size: 0;
+    background-color: #fff;
     color: #000;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
     -webkit-backdrop-filter: blur(4px);
-    box-shadow: 8px 8px white;
-    border: 1px solid black;
+    box-shadow: 8px 8px #fff;
+    border: 1px solid #000;
     backdrop-filter: blur(4px);
 }
 
