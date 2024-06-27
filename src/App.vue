@@ -1265,7 +1265,6 @@ div#app:hover {
 
 .button-85:after {
  z-index: -1;
-    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
