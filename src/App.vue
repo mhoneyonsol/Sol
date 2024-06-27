@@ -369,7 +369,7 @@ background-color: #121212;
     height: 100%;
     position: relative;
     margin: 0 auto;
-    background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
+    
     background-size: 30%;
     padding: 3em;
     color:white;
@@ -3077,7 +3077,7 @@ display: none;
     height: 100%;
     position: relative;
     margin: 0 auto;
-    background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
+    
     background-size: 30%;
     padding: 3em;
     -ms-overflow-style: none;  /* IE and Edge */
