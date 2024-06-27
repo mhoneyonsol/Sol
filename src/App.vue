@@ -97,7 +97,7 @@ onMounted(() => {
 
 
 <div id="google1" class="modaloverlay">
-  <div class="modal"><a href="#close" class="close">&times;</a>
+  <div class="modal" style="padding: 20px;"><a href="#close" class="close">&times;</a>
 
   
       <CreateTokenForm />
@@ -3077,7 +3077,8 @@ display: none;
     height: 100%;
     position: relative;
     margin: 0 auto;
-    
+    height: 80%;
+    margin-top: 20% !important;
     background-size: 30%;
     padding: 3em;
     -ms-overflow-style: none;  /* IE and Edge */
