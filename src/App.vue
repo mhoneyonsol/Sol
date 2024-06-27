@@ -1242,7 +1242,7 @@ div#app:hover {
 
 .button-85:before {
   content: "";
-    background: linear-gradient(45deg, red, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, red);
+    
     position: absolute;
     top: -2px;
     left: -2px;
