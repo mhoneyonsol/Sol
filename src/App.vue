@@ -2543,8 +2543,8 @@ video {
 }
 
 .swv-dropdown {
-    position: relative;
-    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .swv-dropdown-list {
