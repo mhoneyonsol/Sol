@@ -1269,7 +1269,7 @@ div#app:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-   background: radial-gradient(#636363, black);
+    background: #ffffff;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -1282,23 +1282,21 @@ button.button-85.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.r
 button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
    text-transform: inherit;
     background-image: linear-gradient(348deg, #18ffa5 30%, #830cff);
-    color: #fff;
+    color: #000;
     margin-top: 40px;
     font-weight: 300;
     top: -70px;
     width: 75%;
-    z-index: 444;
+z-index:444;
     margin-left: auto;
     margin-right: auto;
-    font-family: Sora;
-    background: #2b2b2b;
-    font-family: "Sora;
+    font-family: 'Sora';
 }
 
 button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
     background: #E7BD09;
 
-    
+    font-family: monospace;
 }
 
 
@@ -1312,7 +1310,12 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
     
-
+transition: 1s;
+    width: 100%;
+    
+    background-color: #000000b0;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
     
 }
 
@@ -2310,7 +2313,7 @@ video {
 .ring-gray-400 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
-  background: radial-gradient(#636363, black);
+  background: #232323;
   color:white!important;
   width:100%!important;
   box-shadow: 4px 4px black;
@@ -3011,6 +3014,8 @@ transition: 2s;
     background-color: #ffffff;
     color: #000;
     background-repeat: no-repeat;
+    border: 1px solid black;
+    box-shadow: 8px 8px white;
     background-position-x: right;
     background-position-y: bottom;
     -webkit-backdrop-filter: blur(4px);
@@ -3048,24 +3053,25 @@ p.nop {
 display: none;
  }
   .modaloverlay .modal {
-        background-color: #ffffff;
+    background-color: #121212;
     height: 100%;
     position: relative;
     margin: 0 auto;
     background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
     background-size: 30%;
     padding: 3em;
-    color: #000;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+    color: #fff;
     background-repeat: no-repeat;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     border-radius: 23px;
-    border: 3px solid #000;
+    border: 3px solid #fff;
     -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(9px);
+    box-shadow: 15px -11px 0px 9px rgb(35 35 35);
     background-position: 100% 100%;
-    box-shadow: 8px 8px white;
-    overflow: hidden;
 }
 
   button.button-85.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
