@@ -2889,6 +2889,14 @@ SMART
 
 
 @media (max-width: 600px) {
+
+div#google1:hover {
+    
+    transform: none;
+    
+}
+
+
   .over {
     width:100%;
     height:100%;
