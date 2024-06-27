@@ -327,6 +327,7 @@ const handleClickAndCreateToken = () => {
 .button-create-token {
   background: linear-gradient(to right, #2152ff, #21d4fd);
   color: white;
+  font-bold;
   padding: 0.75rem 1rem;
   border-radius: 0.375rem;
   width: 100%;
