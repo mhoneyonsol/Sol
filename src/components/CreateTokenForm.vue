@@ -199,6 +199,72 @@ const createToken = async () => {
     });
 }
 
+// Coin flip logic
+const isClicked = ref(false);
+const coin = ref(null);
+const maxMoveLoopCount = 90;
+let moveLoopCount = 0;
+let maxFlipAngle = 0;
+let sideRotationCount = 0;
+
+const resetCoin = () => {
+  if (coin.value) {
+    coin.value.style.setProperty('--coin-x-multiplier', 0);
+    coin.value.style.setProperty('--coin-scale-multiplier', 0);
+    coin.value.style.setProperty('--coin-rotation-multiplier', 0);
+    coin.value.style.setProperty('--shine-opacity-multiplier', 0.4);
+    coin.value.style.setProperty('--shine-bg-multiplier', '50%');
+    coin.value.style.setProperty('--coin-y-multiplier', 0);
+    coin.value.style.setProperty('--front-scale-multiplier', 1);
+    coin.value.style.setProperty('--front-y-multiplier', 0);
+    coin.value.style.setProperty('--middle-scale-multiplier', 0);
+    coin.value.style.setProperty('--middle-y-multiplier', 0);
+    coin.value.style.setProperty('--back-scale-multiplier', 0);
+    coin.value.style.setProperty('--back-y-multiplier', 0);
+    coin.value.style.setProperty('opacity', 1);
+    coin.value.classList.add('coin-hidden'); // Hide the coin after animation
+  }
+  setTimeout(() => {
+    isClicked.value = false;
+  }, 300);
+};
+
+const flipCoinLoop = () => {
+  moveLoopCount++;
+  let percentageCompleted = moveLoopCount / maxMoveLoopCount;
+  let angle = -maxFlipAngle * Math.pow((percentageCompleted - 1), 2) + maxFlipAngle;
+  if (coin.value) {
+    coin.value.classList.remove('coin-hidden'); // Show the coin during animation
+
+    coin.value.style.setProperty('--coin-y-multiplier', -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 11);
+    coin.value.style.setProperty('--coin-x-multiplier', percentageCompleted);
+    coin.value.style.setProperty('--coin-scale-multiplier', percentageCompleted * 0.6);
+    coin.value.style.setProperty('--coin-rotation-multiplier', percentageCompleted * sideRotationCount);
+
+    coin.value.style.setProperty('--front-scale-multiplier', Math.max(Math.cos(angle), 0));
+    coin.value.style.setProperty('--front-y-multiplier', Math.sin(angle));
+    coin.value.style.setProperty('--middle-scale-multiplier', Math.abs(Math.cos(angle), 0));
+    coin.value.style.setProperty('--middle-y-multiplier', Math.cos((angle + Math.PI / 2) % Math.PI));
+    coin.value.style.setProperty('--back-scale-multiplier', Math.max(Math.cos(angle - Math.PI), 0));
+    coin.value.style.setProperty('--back-y-multiplier', Math.sin(angle - Math.PI));
+    coin.value.style.setProperty('--shine-opacity-multiplier', 4 * Math.sin((angle + Math.PI / 2) % Math.PI) - 3.2);
+    coin.value.style.setProperty('--shine-bg-multiplier', -40 * (Math.cos((angle + Math.PI / 2) % Math.PI) - 0.5) + '%');
+  }
+  if (moveLoopCount < maxMoveLoopCount) {
+    if (moveLoopCount === maxMoveLoopCount - 6) {
+      coin.value.classList.add('shrink-landing');
+    }
+    window.requestAnimationFrame(flipCoinLoop);
+  } else {
+    coin.value.classList.add('coin-landed');
+    coin.value.style.setProperty('opacity', 0);
+    setTimeout(() => {
+      coin.value.classList.remove('shrink-landing', 'coin-landed');
+      resetCoin();
+    }, 1500);
+  }
+};
+
 const handleClickAndCreateToken = () => {
   if (isClicked.value) return;
   isClicked.value = true;
@@ -235,7 +301,7 @@ const handleClickAndCreateToken = () => {
   padding-left: 30px;
 }
 
-.title::before,.title::after {
+.title::before, .title::after {
   position: absolute;
   content: "";
   height: 16px;
@@ -307,7 +373,7 @@ const handleClickAndCreateToken = () => {
   font-size: 0.9em;
 }
 
-.form label .input:focus + span,.form label .input:valid + span {
+.form label .input:focus + span, .form label .input:valid + span {
   top: 30px;
   font-size: 0.7em;
   font-weight: 600;
