@@ -1444,7 +1444,6 @@ width: 100%;
     font-size: 20px;
 }
 .accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
-    content: "+";
     font-size: 20px;
 }
 .accordion-item:first-child {
