@@ -912,6 +912,13 @@ p.back {
     margin-left: 10px;
 }
 
+
+div#google1:hover {
+    background: rgb(0 0 0 / 95%);
+    transform: scale(1.2);
+    transition: 2s;
+}
+
 .box {
   width: 200px; height: 300px;
   position: relative;
