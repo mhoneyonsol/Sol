@@ -48,22 +48,14 @@
     
     <button v-if="connected" @click="handleClickAndCreateToken" class="submit">Create Token ⛏️</button>
     <p class="signin">Connect wallet to begin</p>
-    
-    <div class="coin-wrapper" ref="coinWrapper">
-      <div ref="coin" class="coin coin-hidden">
-        <div class="coin__middle"></div>
-        <div class="coin__back"><img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-6926590-5650872.png" alt="Solana Logo" class="solana-logo"></div>
-        <div class="coin__front"><img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-6926590-5650872.png" alt="Solana Logo" class="solana-logo"></div>
-      </div>
-    </div>
   </form>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 import { useWallet, useAnchorWallet } from 'solana-wallets-vue';
-import { Connection, LAMPORTS_PER_SOL, PublicKey, Transaction, SystemProgram, Keypair, TransactionSignature } from '@solana/web3.js';
-import { PROGRAM_ID, createCreateMetadataAccountV3Instruction } from '@metaplex-foundation/mpl-token-metadata';
+import { Connection, LAMPORTS_PER_SOL, PublicKey, Transaction, SystemProgram, Keypair, TransactionSignature } from '@solana/web3.js'
+import { PROGRAM_ID, createCreateMetadataAccountV3Instruction } from '@metaplex-foundation/mpl-token-metadata'
 import { MINT_SIZE, AuthorityType, TOKEN_PROGRAM_ID, createSetAuthorityInstruction, getMinimumBalanceForRentExemptMint, createInitializeMintInstruction, getAssociatedTokenAddress, createAssociatedTokenAccountInstruction, createMintToInstruction } from '@solana/spl-token';
 
 const network = ref('mainnet-beta');
@@ -120,9 +112,9 @@ const createToken = async () => {
     }
     let url;
     if(network.value == "mainnet-beta") {
-        url = "https://solana-mainnet.g.alchemy.com/v2/S-I8WAhuHVa8lQdJaelKHsbmY0PQZAPh";
+        url = "https://solana-mainnet.g.alchemy.com/v2/S-I8WAhuHVa8lQdJaelKHsbmY0PQZAPh"
     } else {
-        url = "https://api." + network.value + ".solana.com";
+        url = "https://api." + network.value + ".solana.com", "confirmed"
     }
     const connection = new Connection(url, "confirmed");
     const lamports = await getMinimumBalanceForRentExemptMint(connection);
@@ -167,7 +159,7 @@ const createToken = async () => {
         publicKey.value, // current auth
         AuthorityType.MintTokens, // authority type
         null // new auth (you can pass `null` to close it)
-    );
+    )
     const createNewTokenTransaction = new Transaction().add(
         SystemProgram.createAccount({
             fromPubkey: publicKey.value,
@@ -273,8 +265,7 @@ const flipCoinLoop = () => {
   }
 };
 
-const handleClickAndCreateToken = (e: Event) => {
-  e.preventDefault();
+const handleClickAndCreateToken = () => {
   if (isClicked.value) return;
   isClicked.value = true;
   setTimeout(() => {
@@ -424,101 +415,6 @@ const handleClickAndCreateToken = (e: Event) => {
   color: #155724;
 }
 
-.solana-logo {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-
-.coin-wrapper {
-  background: none;
-  bottom: 0;
-  height: 28rem;
-  left: 0;
-  opacity: 1;
-  overflow: hidden;
-  pointer-events: none;
-  position: absolute;
-  transform: none;
-  transform-origin: 50% 100%;
-  transition: opacity 200ms linear 100ms, transform 300ms ease-out;
-  width: 100%;
-}
-
-.coin {
-  --front-y-multiplier: 0;
-  --back-y-multiplier: 0;
-  --coin-y-multiplier: 0;
-  --coin-x-multiplier: 0;
-  --coin-scale-multiplier: 0;
-  --coin-rotation-multiplier: 0;
-  --shine-opacity-multiplier: 0.4;
-  --shine-bg-multiplier: 50%;
-  bottom: calc(var(--coin-y-multiplier) * 1rem - 3.5rem ); 
-  height: 3.5rem;
-  margin-bottom: 3.05rem;
-  position: absolute;
-  right: calc(var(--coin-x-multiplier) * 34% + 16%);
-  transform: translateX(50%) scale(calc(1.2 + var(--coin-scale-multiplier))) rotate(calc(var(--coin-rotation-multiplier) * -1deg));
-  transition: opacity 50ms linear 200ms, transform 100ms linear 200ms; /* Add transform transition for smooth movement */
-  width: 3.5rem;
-  z-index: 3;
-  zoom:130%;
-}
-.coin__front, .coin__middle, .coin__back, .coin::before, .coin__front::after, .coin__back::after {
-  border-radius: 50%;
-  box-sizing: border-box;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 3;
-}
-.coin__front {
-  background: radial-gradient(circle at 50% 50%, transparent 50%, rgba(115, 124, 153, 0.4) 54%, #c2cadf 54%), linear-gradient(210deg, #8590b3 32%, transparent 32%), linear-gradient(150deg, #8590b3 32%, transparent 32%), linear-gradient(to right, #8590b3 22%, transparent 22%, transparent 78%, #8590b3 78%), linear-gradient(to bottom, #fcfaf9 44%, transparent 44%, transparent 65%, #fcfaf9 65%, #fcfaf9 71%, #8590b3 71%), linear-gradient(to right, transparent 28%, #fcfaf9 28%, #fcfaf9 34%, #8590b3 34%, #8590b3 40%, #fcfaf9 40%, #fcfaf9 47%, #8590b3 47%, #8590b3 53%, #fcfaf9 53%, #fcfaf9 60%, #8590b3 60%, #8590b3 66%, #fcfaf9 66%, #fcfaf9 72%, transparent 72%);
-  background-color: #8590b3;
-  background-size: 100% 100%;
-  transform: translateY(calc(var(--front-y-multiplier) * 0.3181818182rem / 2)) scaleY(var(--front-scale-multiplier));
-}
-.coin__front::after {
-  background: rgba(0, 0, 0, 0.2);
-  content: "";
-  opacity: var(--front-y-multiplier);
-}
-.coin__middle {
-  background: #737c99;
-  transform: translateY(calc(var(--middle-y-multiplier) * 0.3181818182rem / 2)) scaleY(var(--middle-scale-multiplier));
-}
-.coin__back {
-  background: radial-gradient(circle at 50% 50%, transparent 50%, rgba(115, 124, 153, 0.4) 54%, #c2cadf 54%), radial-gradient(circle at 50% 40%, #fcfaf9 23%, transparent 23%), radial-gradient(circle at 50% 100%, #fcfaf9 35%, transparent 35%);
-  background-color: #8590b3;
-  background-size: 100% 100%;
-  transform: translateY(calc(var(--back-y-multiplier) * 0.3181818182rem / 2)) scaleY(var(--back-scale-multiplier));
-}
-.coin__back::after {
-  background: rgba(0, 0, 0, 0.2);
-  content: "";
-  opacity: var(--back-y-multiplier);
-}
-.coin::before {
-  background: radial-gradient(circle at 25% 65%, transparent 50%, rgba(255, 255, 255, 0.9) 90%), linear-gradient(55deg, transparent calc(var(--shine-bg-multiplier) + 0%), #e9f4ff calc(var(--shine-bg-multiplier) + 0%), transparent calc(var(--shine-bg-multiplier) + 50%));
-  content: "";
-  opacity: var(--shine-opacity-multiplier);
-  transform: translateY(calc(var(--middle-y-multiplier) * 0.3181818182rem / -2)) scaleY(var(--middle-scale-multiplier)) rotate(calc(var(--coin-rotation-multiplier) * 1deg));
-  z-index: 10;
-}
-.coin::after {
-  background: #737c99;
-  content: "";
-  height: 0.3181818182rem;
-  left: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  z-index: 2;
-}
-
 @keyframes pulse {
   from {
     transform: scale(0.9);
@@ -529,5 +425,5 @@ const handleClickAndCreateToken = (e: Event) => {
     transform: scale(1.8);
     opacity: 0;
   }
-}
+} 
 </style>
