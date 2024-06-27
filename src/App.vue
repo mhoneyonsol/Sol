@@ -3048,6 +3048,9 @@ p.nop {
     font-size:3em!important;
   }
 
+.modaloverlay .modal::webkit-scrollbar {
+display: none;
+ }
   .modaloverlay .modal {
     background-color: #121212;
     height: 100%;
@@ -3056,6 +3059,8 @@ p.nop {
     background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
     background-size: 30%;
     padding: 3em;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
     color: #fff;
     background-repeat: no-repeat;
     overflow-y: scroll;
