@@ -2111,7 +2111,7 @@ video {
   width: 25%;
 }
 .w-3\/4 {
-  width: 75%;
+  width: 65%;
 }
 .w-5 {
   width: 1.25rem;

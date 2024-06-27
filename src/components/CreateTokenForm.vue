@@ -1203,7 +1203,7 @@ video {
   width: 25%;
 }
 .w-3\/4 {
-  width: 55%;
+  width: 65%;
     font-family: 'Sora';
 }
 .w-5 {
