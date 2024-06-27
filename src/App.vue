@@ -176,7 +176,8 @@ onMounted(() => {
 <style>
 
 button.swv-button.swv-button-trigger {
-    
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
