@@ -99,10 +99,9 @@ onMounted(() => {
 <div id="google1" class="modaloverlay">
   <div class="modal" style="padding: 20px;"><a href="#close" class="close">&times;</a>
 
-  
+  <wallet-multi-button />
       <CreateTokenForm />
-      <br>
-      <wallet-multi-button />
+ 
       
       </div>
       </div>
@@ -2565,7 +2564,7 @@ video {
 .swv-dropdown {
     margin-left: auto;
     margin-right: auto;
-    margin-left: 40%;
+    
 }
 
 .swv-dropdown-list {
