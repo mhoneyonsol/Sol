@@ -135,6 +135,7 @@ a:hover {
     -webkit-animation-play-state: running;
     -moz-animation-play-state: running;
     animation-play-state: running;
+    opacity:0.5;
 }
 @keyframes border-transform{
   0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
