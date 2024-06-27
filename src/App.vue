@@ -1304,18 +1304,31 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] 
 
 {
-    transition: 2s; margin-right: 20%; width: 100%; height: 400px; max-height: 600px; padding-top: 20px; filter: drop-shadow(2px 4px 6px black); border: none; background-size: 100%; background-position: bottom; background: url(https://media-private.canva.com/3oeDY/MAFBem3oeDY/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240615T144530Z&X-Amz-Expires=30565&X-Amz-Signature=0e0f782885281f02e555c37d20aecf69510fc6fc2dc4018551660a7d42f523ff&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2015%20Jun%202024%2023%3A14%3A55%20GMT); background-size: 15%; background-color: #00000087; color: white; background-repeat: no-repeat; background-position-x: right; background-position-y: bottom;
+    transition: 2s;
+    margin-right: 20%;
+    width: 100%;
+    height: 400px;
+    max-height: 600px;
+    padding-top: 20px;
+    filter: drop-shadow(2px 4px 6px black);
+    border: none;
+    background-position: bottom;
+    background: url(https://media-private.canva.com/3oeDY/MAFBem3oeDY/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240615T144530Z&X-Amz-Expires=30565&X-Amz-Signature=0e0f782…&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2015%20Jun%202024%2023%3A14%3A55%20GMT);
+    background-size: 0%;
+    background-color: #ffffff;
+    color: #000;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 8px 8px white;
+    border: 1px solid black;
     backdrop-filter: blur(4px);
 }
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
     
-transition: 1s;
-    width: 100%;
-    
-    background-color: #000000b0;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(5px);
+
     
 }
 
