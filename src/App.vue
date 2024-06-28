@@ -96,7 +96,7 @@ onMounted(() => {
 
 
 
-<div id="google1" class="modaloverlay">
+<div id="google1" class="modaloverlayy">
   <div class="modal" style="padding: 20px;"><a href="#close" class="close">&times;</a>
  <wallet-multi-button />
 <CreateTokenForm />
@@ -344,6 +344,9 @@ border-radius: 13px;
   
 }
 
+
+
+
 .modaloverlay {
   background: rgba(0, 0, 0, 0.8);
   bottom: 0;
@@ -369,8 +372,7 @@ border-radius: 13px;
 background-color: #121212;
     height: 100%;
     position: relative;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
     background-size: 30%;
     padding: 3em;
     color:white;
@@ -409,6 +411,80 @@ background-color: #ff000000;
     z-index: 1;
     border-radius: 23px;
 }
+
+
+
+
+
+
+
+.modaloverlayy {
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  z-index: -1;
+  display: none;
+}
+.modaloverlayy:target {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 99999;
+}
+.modaloverlayy .modal {
+
+    height: 100%;
+    position: relative;
+    margin: 0 auto;   
+    background-size: 30%;
+    padding: 3em;
+    color:white;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    border-radius: 23px;
+    background-position: 100% 100%;
+}
+@media (min-width: 60em) {
+  .modaloverlayy .modal {
+    height: 75%;
+    margin: 5% auto;
+    max-height: 57em;
+    max-width: 66em;
+    width: 85%;
+  }
+}
+.modaloverlayy .modal > iframe, .modaloverlayy .modal > div {
+  border: none;
+  width: 100%;
+  
+}
+.modaloverlayy .close {
+background-color: #ff000000;
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 18px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    top: 10px;
+    z-index: 1;
+    border-radius: 23px;
+}
+
+
+
+
+
+
 
 html {
     display: block;
