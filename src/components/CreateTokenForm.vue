@@ -1,7 +1,7 @@
 <template>
   <div class="box flex flex-col mt-5 border border-gray-300 p-10 rounded-lg shadow-lg shadow-gray-500 w-[550px]">
     <div class="ribbon"><span>mainnet 🟢</span></div>
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjdwbTRzNWRoNDhsbnFlaW9sbjQ1NnpzOTdmbDlueWxvZzN2bnN0ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cNTobeyDPsv9xUeAOR/giphy.webp" style="max-height: 40px; width: 100%; margin-top: -20px;">
+    
     <div class="flex flex-row items-center justify-center">
       <input
         class="mt-2 block w-full rounded-md border-0 py-1.5 pl-4 pr-4 text-gray-900 ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -356,7 +356,7 @@ const handleClickAndCreateToken = () => {
 }
 
 .container input:checked ~ .checkmark {
-  background-color: hsla(39,100%,68%,1);
+  background-color: #ffc65c!important;
 }
 
 label.container.w-1\/4.flex.flex-row.justify-start {
@@ -1203,7 +1203,7 @@ video {
   width: 25%;
 }
 .w-3\/4 {
-  width: 55%;
+  width: 65%;
     font-family: 'Sora';
 }
 .w-5 {

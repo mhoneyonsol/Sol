@@ -97,12 +97,11 @@ onMounted(() => {
 
 
 <div id="google1" class="modaloverlay">
-  <div class="modal"><a href="#close" class="close">&times;</a>
-
-  
+  <div class="modal" style="padding: 20px;"><a href="#close" class="close">&times;</a>
+<br>
+  <wallet-multi-button />
       <CreateTokenForm />
-      <br>
-      <wallet-multi-button />
+ 
       
       </div>
       </div>
@@ -369,7 +368,7 @@ background-color: #121212;
     height: 100%;
     position: relative;
     margin: 0 auto;
-    background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
+    
     background-size: 30%;
     padding: 3em;
     color:white;
@@ -912,6 +911,13 @@ p.back {
     margin-left: 10px;
 }
 
+
+div#google1:hover {
+    background: rgb(0 0 0 / 95%);
+    transform: scale(1.2);
+    transition: 2s;
+}
+
 .box {
   width: 200px; height: 300px;
   position: relative;
@@ -1240,7 +1246,7 @@ use.text {
 
 .button-85:before {
   content: "";
-    background: linear-gradient(45deg, red, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, red);
+    
     position: absolute;
     top: -2px;
     left: -2px;
@@ -1308,18 +1314,33 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] 
 
 {
-    transition: 2s; margin-right: 20%; width: 100%; height: 400px; max-height: 600px; padding-top: 20px; filter: drop-shadow(2px 4px 6px black); border: none; background-size: 100%; background-position: bottom; background: url(https://media-private.canva.com/3oeDY/MAFBem3oeDY/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240615T144530Z&X-Amz-Expires=30565&X-Amz-Signature=0e0f782885281f02e555c37d20aecf69510fc6fc2dc4018551660a7d42f523ff&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2015%20Jun%202024%2023%3A14%3A55%20GMT); background-size: 15%; background-color: #00000087; color: white; background-repeat: no-repeat; background-position-x: right; background-position-y: bottom;
+    transition: 2s;
+    margin-right: 20%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height:400px;
+    max-height: 600px;
+    padding-top: 20px;
+    filter: drop-shadow(2px 4px 6px black);
+    border: none;
+    background-position: bottom;
+    background: url(https://media-private.canva.com/3oeDY/MAFBem3oeDY/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240615T144530Z&X-Amz-Expires=30565&X-Amz-Signature=0e0f782%E2%80%A6&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2015%20Jun%202024%2023%3A14%3A55%20GMT);
+    background-size: 0;
+    background-color: #fff;
+    color: #000;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 8px 8px #fff;
+    border: 1px solid #000;
     backdrop-filter: blur(4px);
 }
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\]:hover {
     
-transition: 1s;
-    width: 100%;
-    
-    background-color: #000000b0;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(5px);
+
     
 }
 
@@ -2096,7 +2117,7 @@ video {
   width: 25%;
 }
 .w-3\/4 {
-  width: 75%;
+  width: 65%;
 }
 .w-5 {
   width: 1.25rem;
@@ -2550,7 +2571,7 @@ video {
 .swv-dropdown {
     margin-left: auto;
     margin-right: auto;
-    margin-left: 40%;
+    
 }
 
 .swv-dropdown-list {
@@ -2874,6 +2895,14 @@ SMART
 
 
 @media (max-width: 600px) {
+
+div#google1:hover {
+    
+    transform: none;
+    
+}
+
+
   .over {
     width:100%;
     height:100%;
@@ -2984,7 +3013,7 @@ h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.b
 }
 
 .mt-10 {
-    margin-top: 70%;
+    margin-top: 30%!important;
 }
 
 input.mt-2.block.w-full.rounded-md.border-0.py-1\.5.pl-4.pr-4.text-gray-900.ring-1.ring-inset.ring-gray-400.placeholder\:text-gray-400.focus\:ring-2.focus\:ring-inset.focus\:ring-indigo-600.sm\:text-sm.sm\:leading-6 {
@@ -3006,24 +3035,25 @@ div#app {
 
 .flex.flex-col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[550px\] {
 transition: 2s;
-    margin-right: 20%;
-    width: 100%;
+    margin-right: auto;
+    width: 80%;
+    margin-left: AUTO;
     height: 400px;
     max-height: 600px;
     padding-top: 20px;
     filter: drop-shadow(2px 4px 6px black);
     border: none;
     background-position: bottom;
-    background: url(https://media-private.canva.com/3oeDY/MAFBem3oeDY/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240615T144530Z&X-Amz-Expires=30565&X-Amz-Signature=0e0f782…&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2015%20Jun%202024%2023%3A14%3A55%20GMT);
-    background-size: 15%;
-    background-color: #ffffff;
+    background: url(https://media-private.canva.com/3oeDY/MAFBem3oeDY/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240615T144530Z&X-Amz-Expires=30565&X-Amz-Signature=0e0f782%E2%80%A6&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2015%20Jun%202024%2023%3A14%3A55%20GMT);
+    background-size: 0;
+    background-color: #fff;
     color: #000;
     background-repeat: no-repeat;
-    border: 1px solid black;
-    box-shadow: 8px 8px white;
     background-position-x: right;
     background-position-y: bottom;
     -webkit-backdrop-filter: blur(4px);
+    box-shadow: 8px 8px #fff;
+    border: 1px solid #000;
     backdrop-filter: blur(4px);
 }
 
@@ -3062,7 +3092,8 @@ display: none;
     height: 100%;
     position: relative;
     margin: 0 auto;
-    background-image: url(https://miro.medium.com/v2/resize:fit:5136/1*GSORFD441VsXMMbsvuBcGw.png);
+    height: 80%;
+    margin-top: 20% !important;
     background-size: 30%;
     padding: 3em;
     -ms-overflow-style: none;  /* IE and Edge */
