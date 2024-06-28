@@ -945,11 +945,13 @@ div#google1:hover {
     -webkit-transform: rotate(45deg);
     width: 100px;
     display: block;
-    background: #ffffff;
+    background: #fff;
     box-shadow: 0 3px 10px -5px #000;
     position: absolute;
     top: 19px;
     right: -21px;
+    font-family: "Sora";
+    text-transform: uppercase;
 }
 
 .ribbon span::before {
@@ -1305,12 +1307,6 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     margin-right: auto;
     background: #373736;
     font-family: "Sora"!important;
-}
-
-button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-full.mt-3.mb-4.bg-gradient-to-r.from-\[\#2152ff\].to-\[\#21d4fd\].uppercase.hover\:scale-\[1\.01\].duration-100 {
-    background: #E7BD09;
-
-    font-family: monospace;
 }
 
 
