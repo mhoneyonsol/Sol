@@ -1219,6 +1219,10 @@ div#app:hover {
     text-align: center;
 }
 
+use.text {
+    stroke-width: 2px;
+}
+
 .button-85 {
   padding: 0.6em 2em;
   border: none;
@@ -2313,11 +2317,12 @@ video {
 .ring-gray-400 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
-  background: #232323;
+
   color:white!important;
   width:100%!important;
   box-shadow: 4px 4px black;
     border: 1px solid white;
+    background: radial-gradient(#636363, black);
 }
 .duration-100 {
   transition-duration: 100ms;
