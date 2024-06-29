@@ -282,6 +282,18 @@ li:hover {
     padding-top: 240px;
   }
 
+ul li span {
+  font-size: 1em!important;
+    font-weight: 900;
+    font-family: Sora;
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+    line-height: 10px;
+    background: black;
+    padding: 10px;
+    border-radius: 13px;
+    filter: drop-shadow(2px 4px 6px #ffffff57);
+}
 
   .section {
     width:100%!important;
