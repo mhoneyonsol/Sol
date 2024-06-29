@@ -297,7 +297,7 @@ li:hover {
 @keyframes myYAnim {
   0% {
     background-position: center bottom;
-    background-size: 100%;
+    background-size: contain;
   }
 
   100% {
