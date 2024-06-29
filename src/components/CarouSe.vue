@@ -129,7 +129,7 @@ a:hover {
     filter:drop-shadow (2px 2px black);
 }
 .checkbox.scnd + label{
-  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW1pdm1mZ2huN3d0bGQzN29ieGFrM3k3ZDMycHRtbnptaWZxMjYybCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j3q5DAhsp4UrNW0lig/giphy.webp');
+  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnR5b3I0M2x5NHdud3VobHRwZ3NrdnpzNTV2Zmh2b296OGV3OTY5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8MImqXjNcCSdaWcpOq/giphy.webp');
 }
 .checkbox.thrd + label{
   background-image: url('https://media-public.canva.com/7TnxY/MAEdaE7TnxY/1/s.png');
