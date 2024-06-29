@@ -36,7 +36,7 @@
                                   </a>
                             </li>
                             <li>
-                                <span>WALLET/SWAP 👆</span>
+                                <span>WALLET/DEX 👆</span>
                             </li>
                         </ul>
                     </div>
