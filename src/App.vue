@@ -506,7 +506,7 @@ background-color: #ff000000;
 
 
 .modaloverlayyy {
-  background: rgb(0 0 0 / 87%);
+  background: rgb(0 0 0 / 94%);
   bottom: 0;
   left: 0;
   opacity: 0;
@@ -581,7 +581,7 @@ background-color: #ff000000;
 
 
 .modaloverlayy {
-  background: rgb(0 0 0 / 87%);
+  background: rgb(0 0 0 / 94%);
   bottom: 0;
   left: 0;
   opacity: 0;
