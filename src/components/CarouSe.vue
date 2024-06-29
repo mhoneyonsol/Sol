@@ -210,7 +210,7 @@ ul li span {
     border-radius: 13px;
 }
 ul li:nth-child(2) {
-  background-image: url('https://i.imgur.com/pGOMjIK.png');
+  background-image: url('https://i.imgur.com/CdlytDl.png');
 }
 ul li:nth-child(3) {
   background-image: url('https://i.imgur.com/MEadbgt.png');
