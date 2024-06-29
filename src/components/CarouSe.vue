@@ -122,7 +122,7 @@ a:hover {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   background-image: url('https://media-private.canva.com/cfh4o/MAEuGTcfh4o/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240629%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240629T034117Z&X-Amz-Expires=46461&X-Amz-Signature=df9c9081278a80d2877cf82a26925fc8591b22051fa584f91fb17a904911efc4&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2029%20Jun%202024%2016%3A35%3A38%20GMT');
-  animation: border-transform 6s linear infinite alternate forwards;
+  animation: border-transform 10s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     animation-play-state: paused;
