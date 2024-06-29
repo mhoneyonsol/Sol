@@ -198,6 +198,7 @@ ul li {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: e-resize;
+  animation: myAnim 2s ease 0s 1 reverse forwards;
 }
 ul li span {
   font-size: 2em;
@@ -289,6 +290,18 @@ li:hover {
   }
   ul li {
     height: 200px;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    background-position: center bottom;
+    background-size: 100%;
+  }
+
+  100% {
+    background-position: center bottom;
+    background-size: 150%;
   }
 }
 
