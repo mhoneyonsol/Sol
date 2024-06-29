@@ -993,9 +993,9 @@ p.back {
 
 div#google1:hover {
     background: rgb(0 0 0 / 95%);
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1s;
-    margin-top: 50px;
+   
 }
 
 .box {
