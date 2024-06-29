@@ -122,7 +122,7 @@ onMounted(() => {
   <div class="modal"><a href="#close" class="close">&times;</a>
 
 <div class="iframe-container">
- <iframe src="https://splgamble.vercel.app/" width="100%" height="100%" frameborder="0" allowfullscreen></iframe></div>
+ <iframe src="https://splgamble.vercel.app/" width="100%" height="500px" frameborder="0" allowfullscreen></iframe></div>
       
       </div>
       </div>
