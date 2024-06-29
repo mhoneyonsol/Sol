@@ -116,6 +116,17 @@ onMounted(() => {
       </div>
       </div>
 
+
+
+ <div id="google3" class="modaloverlay">
+  <div class="modal"><a href="#close" class="close">&times;</a>
+
+ <iframe src="https://splgamble.vercel.app/" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+      
+      </div>
+      </div>
+
+
       <Car />
     </div>
     <Chatbot />

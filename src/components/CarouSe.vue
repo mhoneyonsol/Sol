@@ -31,7 +31,9 @@
                             </li>
                          
                             <li>
+                            <a href="#google3">
                                 <span>SOLANA CASINO</span>
+                                  </a>
                             </li>
                             <li>
                                 <span>SKATEBOARD FACE</span>
