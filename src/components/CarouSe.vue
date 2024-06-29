@@ -198,8 +198,8 @@ ul li {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: e-resize;
-  animation: myAnim 2s ease 0s 1 reverse forwards;
-  animation-delay:5s;
+  animation: myYAnim 2s ease 0s 1 reverse forwards;
+  animation-delay:4.8s;
 }
 ul li span {
   font-size: 2em;
@@ -294,7 +294,7 @@ li:hover {
   }
 }
 
-@keyframes myAnim {
+@keyframes myYAnim {
   0% {
     background-position: center bottom;
     background-size: 100%;
