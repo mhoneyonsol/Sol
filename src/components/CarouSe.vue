@@ -125,13 +125,13 @@ a:hover {
     filter:drop-shadow (2px 2px black);
 }
 .checkbox.scnd + label{
-  background-image: url('https://i.imgur.com/CdlytDl.png');
+  background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjk0amw3Z3A1MGN0eWpuenplbDR0M203cjRwMTFycjB6bzd2NzFiciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Gn8PIdMTA7AepcXNo0/giphy.webp');
 }
 .checkbox.thrd + label{
-  background-image: url('https://i.imgur.com/dBKrI4q.png');
+  background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDZqd2QwZmRmNG54Zzkxc2Q4ZHNtbDgyeHQzZ2czdmh6NWQ0bGViYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/mwSA9jht6ubVyoWAfw/giphy.webp');
 }
 .checkbox.foth + label{
-  background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+  background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHRjZTByZ2ZncHV1bWtuMWV5bGZ2bWg5c3c4Nmw1cGh5Z2JjOWd4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/n3mWEDAzMQJhDpGfvL/giphy.webp');
 }
 
 .checkbox:checked + label{
