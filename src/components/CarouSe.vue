@@ -143,16 +143,29 @@ a:hover {
     animation-play-state: running;
     opacity:0.5;
 }
-@keyframes border-transform{
-  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
-  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
-  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
-  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
-  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
-  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
-  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+@keyframes border-transform {
+  0%, 100% { 
+    border-radius: 63% 37% 54% 46% / 55% 45% 55% 45%; 
+  } 
+  14% { 
+    border-radius: 40% 60% 54% 46% / 49% 51% 49% 51%; 
+  } 
+  28% { 
+    border-radius: 54% 46% 38% 62% / 49% 51% 49% 51%; 
+  } 
+  42% { 
+    border-radius: 61% 39% 55% 45% / 61% 39% 61% 39%; 
+  } 
+  56% { 
+    border-radius: 61% 39% 67% 33% / 70% 30% 70% 30%; 
+  } 
+  70% { 
+    border-radius: 50% 50% 34% 66% / 56% 44% 56% 44%; 
+  } 
+  84% { 
+    border-radius: 46% 54% 50% 50% / 35% 65% 35% 65%; 
+  } 
 }
-
 .slider-height-padding {
   padding-top: 440px;
 }
