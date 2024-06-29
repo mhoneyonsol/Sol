@@ -1139,6 +1139,7 @@ div#google1:hover {
    justify-content: center;
    text-align: center;
    animation: myAnim 2s ease 0s 1 normal forwards;
+   animation-delay:5s;
    
 }
 
