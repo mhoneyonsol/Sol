@@ -117,7 +117,7 @@ a:hover {
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTQ0cHlidnNsdjUyM3ljbm5rMGplbzN1cXdrNjk1a2Rvdzc1amNpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/iGht72QH913uLHMSKJ/giphy.webp');
+  background-image: url('https://media-private.canva.com/cfh4o/MAEuGTcfh4o/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240629%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240629T034117Z&X-Amz-Expires=46461&X-Amz-Signature=df9c9081278a80d2877cf82a26925fc8591b22051fa584f91fb17a904911efc4&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2029%20Jun%202024%2016%3A35%3A38%20GMT');
   animation: border-transform 6s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
@@ -125,10 +125,10 @@ a:hover {
     filter:drop-shadow (2px 2px black);
 }
 .checkbox.scnd + label{
-  background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjk0amw3Z3A1MGN0eWpuenplbDR0M203cjRwMTFycjB6bzd2NzFiciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Gn8PIdMTA7AepcXNo0/giphy.webp');
+  background-image: url('https://media-public.canva.com/v6xmA/MAFHB-v6xmA/1/s2.png');
 }
 .checkbox.thrd + label{
-  background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDZqd2QwZmRmNG54Zzkxc2Q4ZHNtbDgyeHQzZ2czdmh6NWQ0bGViYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/mwSA9jht6ubVyoWAfw/giphy.webp');
+  background-image: url('https://media-public.canva.com/7TnxY/MAEdaE7TnxY/1/s.png');
 }
 .checkbox.foth + label{
   background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHRjZTByZ2ZncHV1bWtuMWV5bGZ2bWg5c3c4Nmw1cGh5Z2JjOWd4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/n3mWEDAzMQJhDpGfvL/giphy.webp');
