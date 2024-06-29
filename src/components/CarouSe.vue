@@ -240,7 +240,7 @@ ul li:nth-child(3) {
   background-image: url('https://i.imgur.com/dBKrI4q.png');
 }
 ul li:nth-child(4) {
-  background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+  background-image: url('https://i.imgur.com/dBKrI4q.png');
 }
 
 
