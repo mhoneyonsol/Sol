@@ -145,6 +145,7 @@ a:hover {
     -webkit-animation-play-state: running;
     -moz-animation-play-state: running;
     animation-play-state: running;
+    background-size: 100%!important;
     
 }
 @keyframes border-transform {
