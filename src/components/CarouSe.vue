@@ -20,23 +20,23 @@
                         <ul>
                             <li >
                             
-                                <a href="#google1"><span>CREATE TOKEN</span></a>
+                                <a href="#google1"><span>CREATE TOKEN 👆</span></a>
                             </li>
 
                             
                             <li>
                             <a href="#google2">
-                                <span>MINT NFT</span>
+                                <span>MINT NFT 👆</span>
                                    </a>
                             </li>
                          
                             <li>
                             <a href="#google3">
-                                <span>SPL GAMBLE</span>
+                                <span>SPL GAMBLE 👆</span>
                                   </a>
                             </li>
                             <li>
-                                <span>COMING SOON</span>
+                                <span>COMING SOON 👆</span>
                             </li>
                         </ul>
                     </div>
@@ -117,7 +117,7 @@ a:hover {
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url('https://i.imgur.com/stPqqFI.png');
+  background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTQ0cHlidnNsdjUyM3ljbm5rMGplbzN1cXdrNjk1a2Rvdzc1amNpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/iGht72QH913uLHMSKJ/giphy.webp');
   animation: border-transform 6s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
@@ -211,7 +211,7 @@ ul li span {
     background: black;
     padding: 10px;
     border-radius: 13px;
-    filter: drop-shadow(2px 4px 6px #ffffff57);
+    
 }
 ul li:nth-child(2) {
   background-image: url('https://i.imgur.com/CdlytDl.png');
@@ -292,7 +292,7 @@ ul li span {
     background: black;
     padding: 10px;
     border-radius: 13px;
-    filter: drop-shadow(2px 4px 6px #ffffff57);
+    filter: none!important;
 }
 
   .section {
