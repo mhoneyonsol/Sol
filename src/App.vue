@@ -534,7 +534,7 @@ background-color: #ff000000;
     position: relative;
     margin: 0 auto;   
     background-size: 30%;
-    padding: 3em;
+    
     color:white;
     background-repeat: no-repeat;
     overflow:hidden;
