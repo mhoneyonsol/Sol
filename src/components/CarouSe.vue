@@ -198,7 +198,7 @@ ul li {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: e-resize;
-animation: myyAnim 2s ease 0s 1 reverse forwards;
+animation: myyAnim 1s ease 0s 1 reverse forwards;
   animation-delay:4.8s;
 }
 ul li span {
