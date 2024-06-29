@@ -124,10 +124,10 @@ a:hover {
     filter:drop-shadow (2px 2px black);
 }
 .checkbox.scnd + label{
-  background-image: url('https://i.imgur.com/4AHHNBn.png');
+  background-image: url('https://i.imgur.com/CdlytDl.png');
 }
 .checkbox.thrd + label{
-  background-image: url('https://i.imgur.com/MEadbgt.png');
+  background-image: url('https://i.imgur.com/dBKrI4q.png');
 }
 .checkbox.foth + label{
   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
