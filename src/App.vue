@@ -1593,7 +1593,7 @@ div#app {
     background-position:bottom left;
     background-size: 35%;
     background-color: #ffffff00;
-    background-repeat: no-repeat;
+    background-image: url(https://media-public.canva.com/z9gLc/MAEFHRz9gLc/1/s2.png);
 }
 
 .over {
@@ -1649,6 +1649,11 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
 .bk {
 width: 100%;
     height: 100%;
+    background-image: url(https://i.imgur.com/f7B6pf7.png);
+    background-size: 40%;
+    background-color: #ffffff00;
+    background-repeat: no-repeat;
+    background-position: bottom left;
     
 }
 
