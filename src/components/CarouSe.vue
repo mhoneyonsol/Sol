@@ -52,7 +52,10 @@
 
 <style scoped>
 
-
+label {
+    background-color: black;
+    background-size: 60% !important;
+}
 
 /* Please ❤ this if you like it! */
 
