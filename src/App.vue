@@ -420,7 +420,7 @@ background-color: #ff000000;
 
 
 .modaloverlayy {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(0 0 0 / 87%);
   bottom: 0;
   left: 0;
   opacity: 0;
