@@ -83,6 +83,8 @@ a:hover {
   position: relative;
   width: 80%;
   display: block;
+      scale: 1.05;
+    margin-top: 9%;
 }
 .full-height{
   
@@ -209,7 +211,7 @@ ul li span {
     border-radius: 13px;
 }
 ul li:nth-child(2) {
-  background-image: url('https://i.imgur.com/4AHHNBn.png');
+  background-image: url('https://i.imgur.com/pGOMjIK.png');
 }
 ul li:nth-child(3) {
   background-image: url('https://i.imgur.com/MEadbgt.png');
@@ -276,8 +278,12 @@ li:hover {
   .slider-height-padding {
     padding-top: 240px;
   }
+
+
   .section {
     width:100%!important;
+     scale: inherit!important;
+    margin-top: inherit!important;
   }
   ul li {
     height: 200px;
