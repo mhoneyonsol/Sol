@@ -138,7 +138,7 @@ onMounted(() => {
 
 
 
-
+<Analytics />
 </template>
 
 
