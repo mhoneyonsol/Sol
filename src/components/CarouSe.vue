@@ -203,6 +203,9 @@ ul li span {
     color: #fff;
     text-shadow: 5px 5px 5px #000;
     line-height: 10px;
+    background: black;
+    padding: 10px;
+    border-radius: 13px;
 }
 ul li:nth-child(2) {
   background-image: url('https://i.imgur.com/4AHHNBn.png');
