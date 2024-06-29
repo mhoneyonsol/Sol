@@ -3241,6 +3241,11 @@ p.nop {
 
 
 @media only screen and (max-width: 600px) {
+  
+button.cursor-pointer.relative.p-3.border-2.border-white.overflow-hidden.bg-gradient-to-tr.from-yellow-100.to-yellow-200.group.duration-300.hover\:-rotate-45.hover\:opacity-75.hover\:scale-125.active\:scale-100.rounded-full.drop-shadow-xl {
+    zoom: 80%!important;
+}
+
    tt {
     font-size:3em!important;
   }

@@ -183,6 +183,7 @@ ul {
   z-index: 100;
   padding: 0;
   margin: 0;
+  transition: 1s;
   list-style: none;
 }
 ul li {
@@ -350,6 +351,11 @@ ul li span {
   75% {
     transform: translateX(-6px) rotate(-1.2deg);
   }
+}
+
+ul:hover {
+    scale: 1.1;
+    transition: 1s;
 }
 
 </style>
