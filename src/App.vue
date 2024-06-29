@@ -121,7 +121,8 @@ onMounted(() => {
  <div id="google3" class="modaloverlay">
   <div class="modal"><a href="#close" class="close">&times;</a>
 
- <iframe src="https://splgamble.vercel.app/" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+<div class="iframe-container">
+ <iframe src="https://splgamble.vercel.app/" width="100%" height="100%" frameborder="0" allowfullscreen></iframe></div>
       
       </div>
       </div>
@@ -187,6 +188,22 @@ onMounted(() => {
 
 
 <style>
+
+.iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
 
 button.swv-button.swv-button-trigger {
     margin-left: auto;
