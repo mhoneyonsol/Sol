@@ -994,8 +994,8 @@ p.back {
 div#google1:hover {
     background: rgb(0 0 0 / 95%);
     transform: scale(1.2);
-    transition: 2s;
-    margin-top: 100px;
+    transition: 1s;
+    margin-top: 50px;
 }
 
 .box {
@@ -2977,7 +2977,7 @@ SMART
 div#google1:hover {
     
     transform: none;
-    margin-top:none!important;
+
     
 }
 
