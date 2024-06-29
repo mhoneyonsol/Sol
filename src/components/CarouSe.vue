@@ -179,7 +179,7 @@ ul li {
   filter:drop-shadow(2px 4px 6px black);
   background-size: cover;
   background-position: center;
-  background-image: url('https://i.imgur.com/miErJ5i.png');
+  background-image: url('https://i.imgur.com/stPqqFI.png');
   border-radius: 50%;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
