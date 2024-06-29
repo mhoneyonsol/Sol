@@ -992,7 +992,7 @@ p.back {
 
 
 div#google1:hover {
-    background: rgb(0 0 0 / 96%);
+    
 
    
 }
