@@ -296,12 +296,12 @@ li:hover {
 
 @keyframes myAnim {
   0% {
-    background-position: center bottom;
-    background-size: 100%;
+    
+    background-size: cover;
   }
 
   100% {
-    background-position: center bottom;
+    
     background-size: contain;
   }
 }
