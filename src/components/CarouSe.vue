@@ -127,7 +127,7 @@ a:hover {
     -moz-animation-play-state: paused;
     animation-play-state: paused;
     filter:drop-shadow (2px 2px black);
-    opacity:0.5;
+    
 }
 .checkbox.scnd + label{
   background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnR5b3I0M2x5NHdud3VobHRwZ3NrdnpzNTV2Zmh2b296OGV3OTY5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8MImqXjNcCSdaWcpOq/giphy.webp');
@@ -146,6 +146,7 @@ a:hover {
     -moz-animation-play-state: running;
     animation-play-state: running;
     background-size: 100%!important;
+  
     
 }
 @keyframes border-transform {
