@@ -239,6 +239,7 @@ onMounted(() => {
             padding-bottom: 56.25%; /* 16:9 aspect ratio */
             height: 0;
             overflow: hidden;
+            height:100%;
         }
         .iframe-container iframe {
             position: absolute;
