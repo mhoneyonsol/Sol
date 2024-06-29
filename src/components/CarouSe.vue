@@ -194,6 +194,7 @@ ul li {
 box-shadow: 0 8px 25px 0 rgb(0 0 0);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  cursor: e-resize;
 }
 ul li span {
   font-size: 2em;
