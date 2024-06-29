@@ -83,7 +83,7 @@ a:hover {
   position: relative;
   width: 80%;
   display: block;
-      scale: 1.05;
+      scale: 1.15;
     margin-top: 9%;
     margin-right: 10%;
 }
