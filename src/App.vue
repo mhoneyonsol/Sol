@@ -118,7 +118,7 @@ onMounted(() => {
 
 
 
- <div id="google3" class="modaloverlay">
+ <div id="google3" class="modaloverlayyy">
   <div class="modal"><a href="#close" class="close">&times;</a>
 
 <div class="iframe-container">
@@ -467,6 +467,9 @@ background-color: #121212;
    
   }
 
+.modaloverlayyy .modal {
+  padding: 0em !important;
+ }
   .modaloverlayy .modal {
     height: 75%;
     margin: 5% auto;
