@@ -177,7 +177,8 @@ ul li {
   list-style: none;
   height: 400px;
   filter:drop-shadow(2px 4px 6px black);
-  background-size: cover;
+  background-size: contain;
+  background-repeat:no-repeat;
   background-position: center;
   background-image: url('https://i.imgur.com/stPqqFI.png');
   border-radius: 50%;
