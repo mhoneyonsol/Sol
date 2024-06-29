@@ -55,6 +55,7 @@
 label {
     background-color: black;
     background-size: 60% !important;
+
 }
 
 /* Please ❤ this if you like it! */
@@ -316,6 +317,11 @@ ul li span {
     filter: none!important;
 }
 
+label {
+    
+    margin-top: 80px !important;
+}
+
   .section {
     width:100%!important;
      scale: inherit!important;
@@ -324,6 +330,7 @@ ul li span {
   }
   ul li {
     height: 200px;
+    zoom:130%;
   }
 }
 
