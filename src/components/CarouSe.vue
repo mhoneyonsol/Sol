@@ -200,7 +200,7 @@ ul li {
   transition: all 0.5s ease;
   cursor: e-resize;
 animation: myyAnim 1s ease 0s 1 reverse forwards;
-  animation-delay:4.8s;
+  animation-delay:4.5s;
 }
 ul li span {
   font-size: 2em;
