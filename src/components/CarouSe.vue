@@ -319,7 +319,7 @@ ul li span {
 
 label {
     
-    margin-top: 80px !important;
+    margin-top: 50px !important;
 }
 
   .section {
