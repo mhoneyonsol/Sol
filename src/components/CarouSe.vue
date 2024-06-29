@@ -199,6 +199,7 @@ ul li {
   transition: all 0.5s ease;
   cursor: e-resize;
   animation: myAnim 2s ease 0s 1 reverse forwards;
+  animation-delay:5s;
 }
 ul li span {
   font-size: 2em;
