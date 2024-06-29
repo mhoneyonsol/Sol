@@ -402,7 +402,16 @@ background-color: #121212;
     max-height: 57em;
     max-width: 66em;
     width: 85%;
-    margin-top:180px;
+   
+  }
+
+  .modaloverlayy .modal {
+    height: 75%;
+    margin: 5% auto;
+    max-height: 57em;
+    max-width: 66em;
+    width: 85%;
+    margin-top:180px!important;
   }
 }
 .modaloverlay .modal > iframe, .modaloverlay .modal > div {
