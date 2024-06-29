@@ -85,6 +85,7 @@ a:hover {
   display: block;
       scale: 1.05;
     margin-top: 9%;
+    margin-right: 10%;
 }
 .full-height{
   
@@ -208,7 +209,7 @@ ul li span {
     background: black;
     padding: 10px;
     border-radius: 13px;
-    box-shadow: 1px -1px white;
+    filter: drop-shadow(2px 4px 6px #ffffff57);
 }
 ul li:nth-child(2) {
   background-image: url('https://i.imgur.com/CdlytDl.png');
@@ -284,6 +285,7 @@ li:hover {
     width:100%!important;
      scale: inherit!important;
     margin-top: inherit!important;
+    margin-right: inherit!important;
   }
   ul li {
     height: 200px;
