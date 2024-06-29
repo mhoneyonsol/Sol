@@ -121,7 +121,7 @@ a:hover {
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url('https://media-private.canva.com/cfh4o/MAEuGTcfh4o/1/s2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240629%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240629T034117Z&X-Amz-Expires=46461&X-Amz-Signature=df9c9081278a80d2877cf82a26925fc8591b22051fa584f91fb17a904911efc4&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2029%20Jun%202024%2016%3A35%3A38%20GMT');
+  background-image: url('https://i.imgur.com/M8QOyi7.gif');
   animation: border-transform 10s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
@@ -129,7 +129,7 @@ a:hover {
     filter:drop-shadow (2px 2px black);
 }
 .checkbox.scnd + label{
-  background-image: url('https://media-public.canva.com/v6xmA/MAFHB-v6xmA/1/s2.png');
+  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW1pdm1mZ2huN3d0bGQzN29ieGFrM3k3ZDMycHRtbnptaWZxMjYybCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j3q5DAhsp4UrNW0lig/giphy.webp');
 }
 .checkbox.thrd + label{
   background-image: url('https://media-public.canva.com/7TnxY/MAEdaE7TnxY/1/s.png');
