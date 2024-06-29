@@ -208,6 +208,7 @@ ul li span {
     background: black;
     padding: 10px;
     border-radius: 13px;
+    box-shadow: 1px -1px white;
 }
 ul li:nth-child(2) {
   background-image: url('https://i.imgur.com/CdlytDl.png');
