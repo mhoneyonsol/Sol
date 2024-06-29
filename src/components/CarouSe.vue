@@ -130,7 +130,7 @@ a:hover {
     opacity:0.5;
 }
 .checkbox.scnd + label{
-  content:"build";
+  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnR5b3I0M2x5NHdud3VobHRwZ3NrdnpzNTV2Zmh2b296OGV3OTY5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8MImqXjNcCSdaWcpOq/giphy.webp');
 }
 .checkbox.thrd + label{
   background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3Q0ZndheWc3cTVicnIwOGtmcjhzemowN205cTMwZjB0cHR4aHFheCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/JOSBoxT3dploPJ1ams/giphy.webp');
