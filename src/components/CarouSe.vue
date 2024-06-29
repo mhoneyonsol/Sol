@@ -32,11 +32,11 @@
                          
                             <li>
                             <a href="#google3">
-                                <span>SOLANA CASINO</span>
+                                <span>SPL GAMBLE</span>
                                   </a>
                             </li>
                             <li>
-                                <span>SKATEBOARD FACE</span>
+                                <span>COMING SOON</span>
                             </li>
                         </ul>
                     </div>
