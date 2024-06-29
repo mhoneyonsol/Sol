@@ -32,11 +32,11 @@
                          
                             <li>
                             <a href="#google3">
-                                <span>SOLANA CASINO</span>
+                                <span>SPL GAMBLE</span>
                                   </a>
                             </li>
                             <li>
-                                <span>SKATEBOARD FACE</span>
+                                <span>COMING SOON</span>
                             </li>
                         </ul>
                     </div>
@@ -89,6 +89,9 @@ a:hover {
 }
 .over-hide{
   overflow: hidden;
+  margin-right: 20%;
+    scale: 1.2;
+    margin-top: 70px;
 }
 .padding-tb{
   padding: 100px 0;
@@ -101,34 +104,36 @@ a:hover {
 .checkbox:checked + label,
 .checkbox:not(:checked) + label{
   position: relative;
-  cursor: pointer;
-  margin: 0 auto;
-  text-align: center;
-  margin-right: 1em;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    margin-right: 1em;
     margin-left: 1em;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  background-image: url('https://i.imgur.com/miErJ5i.png');
-  animation: border-transform 6s linear infinite alternate forwards;
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    box-sizing: border-box;
+    transition: all .2s ease;
+    /* border: 1px solid white; */
+    filter: drop-shadow(1px 1px 8px black);
+    background-image: url(https://i.imgur.com/M8QOyi7.gif);
+    /* animation: border-transform-72f32d4e 6s linear infinite alternate forwards; */
     animation-play-state: paused;
-    filter:drop-shadow (2px 2px black);
+    filter: drop-shadow(2px 2px black);
 }
 .checkbox.scnd + label{
-  background-image: url('https://i.imgur.com/4AHHNBn.png');
+  background-image: url(https://media-public.canva.com/bSjJk/MAE9ObbSjJk/1/t.png);
 }
+
+
 .checkbox.thrd + label{
-  background-image: url('https://i.imgur.com/MEadbgt.png');
+background-image: url(https://media-public.canva.com/7TnxY/MAEdaE7TnxY/1/s.png);
 }
 .checkbox.foth + label{
-  background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
+  background-image: url(https://media-private.canva.com/e7jsc/MAE3ICe7jsc/1/s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20240629%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240629T171151Z&X-Amz-Expires=18454&X-Amz-Signature=af9ee2d…&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2029%20Jun%202024%2022%3A19%3A25%20GMT);
 }
 
 .checkbox:checked + label{
@@ -165,50 +170,46 @@ ul {
   list-style: none;
 }
 ul li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: block;
-  z-index: 100;
-  padding: 0;
-  transition:2s;
-  margin: 0;
-  list-style: none;
-  height: 400px;
-  filter:drop-shadow(2px 4px 6px black);
-  background-size: cover;
-  background-position: center;
-  background-image: url('https://i.imgur.com/stPqqFI.png');
-  border-radius: 50%;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 900;
-  font-size: 16px;
-  letter-spacing: 2px;
-  line-height: 2.7;
-  color: #343434;
-  writing-mode: vertical-rl;
-  opacity: 0;
-  pointer-events: none;
-box-shadow: 0 8px 25px 0 rgb(0 0 0);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  cursor: e-resize;
+
+      transition: 2s;
+    height: 400px;
+    filter: drop-shadow(2px 4px 6px black);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(https://i.imgur.com/stPqqFI.png);
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 2.7;
+    color: #343434;
+    writing-mode: vertical-rl;
+    opacity: 0;
+    pointer-events: none;
+    /* box-shadow: 0 8px 25px 0 #000; */
+    transition: all .5s ease;
+    cursor: e-resize;
+
 }
 ul li span {
-  font-size: 2em;
+font-size: 2em;
     font-weight: 900;
     font-family: Sora;
     color: #fff;
     text-shadow: 5px 5px 5px #000;
     line-height: 10px;
+    background: black;
+    padding: 10px;
+    border-radius: 13px;
 }
 ul li:nth-child(2) {
-  background-image: url('https://i.imgur.com/4AHHNBn.png');
+  background-image: url('background-image: url(https://i.imgur.com/Zda1JEw.png);');
 }
 ul li:nth-child(3) {
-  background-image: url('https://i.imgur.com/MEadbgt.png');
+  background-image: url(https://i.imgur.com/0lbLjFk.png);
 }
 ul li:nth-child(4) {
   background-image: url('https://assets.codepen.io/1462889/sl4.jpg');
@@ -272,8 +273,20 @@ li:hover {
   .slider-height-padding {
     padding-top: 240px;
   }
+
+.over-hide{
+  overflow: hidden;
+  margin-right: inherit!important;
+    scale: inherit!important;
+    margin-top: inherit!important;
+}
+
   .section {
     width:100%!important;
+    width: 100% !important;
+        margin-right: inherit!important;
+        scale: inherit!important;
+        margin-top: inherit!important;
   }
   ul li {
     height: 200px;
