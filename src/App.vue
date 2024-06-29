@@ -504,6 +504,82 @@ background-color: #ff000000;
 
 
 
+
+.modaloverlayyy {
+  background: rgb(0 0 0 / 87%);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  z-index: -1;
+  display: none;
+}
+.modaloverlayyy:target {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 99999;
+}
+.modaloverlayyy .modal {
+
+    height: 100%;
+    position: relative;
+    margin: 0 auto;   
+    background-size: 30%;
+    padding: 3em;
+    color:white;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    border-radius: 23px;
+    background-position: 100% 100%;
+}
+@media (min-width: 60em) {
+  .modaloverlayyy .modal {
+    height: 75%;
+    margin: 5% auto;
+    max-height: 57em;
+    max-width: 66em;
+    width: 85%;
+    margin-top:180px;
+  }
+}
+.modaloverlayyy .modal > iframe, .modaloverlayyy .modal > div {
+  border: none;
+  width: 100%;
+  
+}
+.modaloverlayyy .close {
+background-color: #ff000000;
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 18px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    top: 10px;
+    z-index: 1;
+    border-radius: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .modaloverlayy {
   background: rgb(0 0 0 / 87%);
   bottom: 0;
