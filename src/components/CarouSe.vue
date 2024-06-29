@@ -198,7 +198,7 @@ ul li {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: e-resize;
-  animation: myYAnim 2s ease 0s 1 reverse forwards;
+animation: myyAnim 2s ease 0s 1 reverse forwards;
   animation-delay:4.8s;
 }
 ul li span {
@@ -294,15 +294,31 @@ li:hover {
   }
 }
 
-@keyframes myYAnim {
-  0% {
-    background-position: center bottom;
-    background-size: 80%;
+@keyframes myyAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
   }
 
-  100% {
-    background-position: center bottom;
-    background-size: 150%;
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
   }
 }
 
