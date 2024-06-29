@@ -36,7 +36,7 @@
                                   </a>
                             </li>
                             <li>
-                                <span>COMING SOON 👆</span>
+                                <span>WALLET/SWAP 👆</span>
                             </li>
                         </ul>
                     </div>
