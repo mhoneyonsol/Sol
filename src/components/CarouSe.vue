@@ -194,7 +194,6 @@ ul li {
   writing-mode: vertical-rl;
   opacity: 0;
   pointer-events: none;
-box-shadow: 0 8px 25px 0 rgb(0 0 0);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: e-resize;
