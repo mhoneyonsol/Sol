@@ -53,7 +53,7 @@
 <style scoped>
 
 label {
-    background-color: black;
+    background-color: #222;
     background-size: 60% !important;
 
 }
