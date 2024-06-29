@@ -242,7 +242,7 @@ ul li:nth-child(3) {
   background-image: url('https://i.imgur.com/CdlytDl.png');
 }
 ul li:nth-child(4) {
-  background-image: url('https://i.imgur.com/dBKrI4q.png');
+  background-image: url('https://i.imgur.com/yUal1pm.gif');
 }
 
 
