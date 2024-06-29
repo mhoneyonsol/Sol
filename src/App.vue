@@ -440,6 +440,7 @@ border-radius: 13px;
   opacity: 1;
   pointer-events: auto;
   z-index: 99999;
+  background-image: url(https://media-public.canva.com/z9gLc/MAEFHRz9gLc/1/s2.png);
 }
 .modaloverlay .modal {
 background-color: #121212;
@@ -525,6 +526,7 @@ background-color: #ff000000;
   opacity: 1;
   pointer-events: auto;
   z-index: 99999;
+  background-image: url(https://media-public.canva.com/z9gLc/MAEFHRz9gLc/1/s2.png);
 }
 .modaloverlayyy .modal {
 
@@ -600,6 +602,7 @@ background-color: #ff000000;
   opacity: 1;
   pointer-events: auto;
   z-index: 99999;
+  background-image: url(https://media-public.canva.com/z9gLc/MAEFHRz9gLc/1/s2.png);
 }
 .modaloverlayy .modal {
 
