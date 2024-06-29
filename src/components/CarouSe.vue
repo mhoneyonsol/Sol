@@ -112,7 +112,8 @@ a:hover {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat:no-repeat;
   background-position: center;
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
