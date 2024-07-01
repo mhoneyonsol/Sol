@@ -1632,7 +1632,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    height:400px;
+    height:450px;
     max-height: 600px;
     padding-top: 20px;
     filter: drop-shadow(2px 4px 6px black);
