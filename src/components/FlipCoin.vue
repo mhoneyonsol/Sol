@@ -1,100 +1,161 @@
 <template>
-  <div class="coin-container">
-    <span class="coin gold" @click="Flip"></span>
+  <div>
+    <div class="outcome" ref="outcome"></div>
+    <button @click="FlipP">Flip Coin</button>
   </div>
 </template>
 
 <script>
 export default {
   methods: {
-    Flip(event) {
-      const coin = event.target;
-      const random = Math.floor(Math.random() * 2);
-      const classes = coin.className;
-
-      coin.className = `${classes} ${random === 1 ? 'flippy' : 'reverse-flippy'}`;
+    getRandomNumber() {
+      return Math.floor(Math.random() * (2 - 1 + 1)) + 1;
+    },
+    FlipP() {
+      const outcome = this.$refs.outcome;
+      const randomNumber = this.getRandomNumber();
+      outcome.textContent = '';
+      outcome.classList.toggle('flip');
+      outcome.classList.add('toss');
 
       setTimeout(() => {
-        coin.className = classes;
-      }, 1500);
+        if (randomNumber === 1) {
+          outcome.textContent = 'heads';
+        } else if (randomNumber === 2) {
+          outcome.textContent = 'tails';
+        }
+        outcome.classList.remove('toss');
+      }, 800);
     },
   },
 };
 </script>
 
 <style scoped>
-.coin-container {
-  display: inline-block;
-}
-
-.coin {
-  display: inline-block;
+* {
   box-sizing: border-box;
-  width: 2em;
-  margin: 0 0.25rem;
-  height: 1em;
-  border-bottom: 0.05em solid white;
-  border-right: 0.05em solid white;
-  border-radius: 50%;
-  transition: all 0.25s ease-out;
+}
+
+body {
+  background: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+button {
+  background: none;
+  border: 2px solid green;
+  padding: 12px 30px 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: relative;
+  color: white;
+  z-index: 0;
+  font-size: 12px;
+  outline: none;
+}
+button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  background: green;
+  transition: 0.2s;
+  z-index: -1;
+}
+button:hover:before {
+  height: 100%;
+}
+button:hover {
   cursor: pointer;
-  background-image: linear-gradient(20deg, goldenrod, 30%, khaki, 34%, khaki, 50%, goldenrod, 54%, goldenrod, 60%, wheat, 64%, wheat, 67%, goldenrod, 71%, goldenrod);
-  box-shadow: 0 0.05em 0 darken(goldenrod, 20%), 0 0.1em 0 darken(goldenrod, 20%), 0 0.15em 0 darken(goldenrod, 20%), 0 0.2em 0 darken(goldenrod, 20%), 0 0.25em 0 darken(goldenrod, 20%), 0 0.3em 0 darken(goldenrod, 20%), 0 0.35em 0.1em rgba(0, 0, 0, 0.5);
 }
 
-.coin.copper {
-  filter: hue-rotate(-30deg) saturate(50%) contrast(140%);
+.outcome {
+  height: 200px;
+  width: 200px;
+  background: #555;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  border-style: dotted;
+  border-color: #1c1c1c;
+  border-width: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: rotateY(0deg) rotateX(0deg);
+  transition: 1s;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  line-height: 0.8;
+  color: #222;
+  box-shadow: 0 0 30px black;
+}
+.outcome.flip {
+  transition: 1s;
+  transform: rotateY(720deg) rotateX(720deg);
+}
+.outcome.toss {
+  -webkit-animation: toss 0.7s forwards ease-in-out;
+          animation: toss 0.7s forwards ease-in-out;
+}
+.outcome:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 185px;
+  width: 185px;
+  display: block;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+.outcome:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 190px;
+  width: 190px;
+  display: block;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
 }
 
-.coin.silver {
-  filter: grayscale(100%) contrast(115%);
-}
-
-.coin.flippy {
-  animation: flip 1.5s linear;
-}
-
-.coin.reverse-flippy {
-  animation: reverse-flip 1.5s linear;
-}
-
-@keyframes flip {
+@-webkit-keyframes toss {
   0% {
-    transform: translateY(0) rotate(0);
-  }
-  25% {
-    transform: translateY(-3rem) rotate(180deg);
+    top: 0px;
   }
   50% {
-    height: 0.1rem;
-    border: 0.025;
-    transform: translateY(-5rem) rotate(360deg);
-  }
-  75% {
-    transform: translateY(-4rem) rotate(540deg);
+    top: -150px;
   }
   100% {
-    transform: translateY(0) rotate(720deg);
+    top: 0px;
   }
 }
 
-@keyframes reverse-flip {
+@keyframes toss {
   0% {
-    transform: translateY(0) rotate(0);
-  }
-  25% {
-    transform: translateY(-3rem) rotate(-180deg);
+    top: 0px;
   }
   50% {
-    height: 0.1rem;
-    border: 0.025;
-    transform: translateY(-5rem) rotate(-360deg);
-  }
-  75% {
-    transform: translateY(-4rem) rotate(-540deg);
+    top: -150px;
   }
   100% {
-    transform: translateY(0) rotate(-720deg);
+    top: 0px;
   }
 }
 </style>
