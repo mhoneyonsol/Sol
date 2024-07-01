@@ -3,7 +3,7 @@
     
 <div class="wrap">
   
-<source src="./assets/Animated.mp4" type="video/mp4">
+<source src="..src/assets/Animated.mp4" type="video/mp4">
 </div>
   </div>
 
