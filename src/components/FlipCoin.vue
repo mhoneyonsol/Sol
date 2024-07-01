@@ -181,4 +181,18 @@ button:hover {
     top: 0px;
   }
 }
+
+
+
+media (max-width: 600px) {
+
+
+.outcome {
+    
+    
+    zoom: 50%!important;
+    
+}
+}
+
 </style>
