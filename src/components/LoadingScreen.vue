@@ -3,18 +3,7 @@
     
 <div class="wrap">
   
-<svg viewBox="0 0 600 300">
-  <!-- Symbol-->
-  <symbol id="s-text">
-    <text text-anchor="middle" x="50%" y="50%" dy=".35em">loading ...</text>
-  </symbol>
-  <!-- Duplicate symbols-->
-  <use class="text" xlink:href="#s-text"></use>
-  <use class="text" xlink:href="#s-text"></use>
-  <use class="text" xlink:href="#s-text"></use>
-  <use class="text" xlink:href="#s-text"></use>
-  <use class="text" xlink:href="#s-text"></use>
-</svg>
+<source src="./assets/Animated.mp4" type="video/mp4">
 </div>
   </div>
 
@@ -30,7 +19,7 @@ const showLoading = ref(true);
 onMounted(() => {
   setTimeout(() => {
     showLoading.value = false;
-  }, 5000);
+  }, 5000); 
 });
 </script>
 
