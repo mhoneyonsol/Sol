@@ -1,18 +1,14 @@
 <template>
   <div class="loading-screen" v-if="showLoading">
     <div class="wrap">
-      <svg viewBox="0 0 600 300">
-  <!-- Symbol-->
-  <symbol id="s-text">
-    <text text-anchor="middle" x="50%" y="50%" dy=".35em">loading ...</text>
-  </symbol>
-  <!-- Duplicate symbols-->
-  <use class="text" xlink:href="#s-text"></use>
-  <use class="text" xlink:href="#s-text"></use>
-  <use class="text" xlink:href="#s-text"></use>
-  <use class="text" xlink:href="#s-text"></use>
-  <use class="text" xlink:href="#s-text"></use>
-</svg>
+      
+<div class="video__container">
+    <video autoplay loop muted class="video__player">
+      <source src="https://videos.pexels.com/video-files/20496240/20496240-uhd_2560_1440_30fps.mp4">
+    </video>
+  </div>
+
+
     </div>
   </div>
 </template>
@@ -136,5 +132,20 @@ svg {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.video__container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center;
+  background-size: cover;
+}
+
+.video__player {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 </style>
