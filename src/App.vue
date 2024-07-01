@@ -1619,7 +1619,7 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
     width: 75%;
     z-index: 444;
     margin-left: auto;
-    box-shadow: 8px 8px hsla(39, 100%, 68%, 1);
+    box-shadow: 8px 8px #FE8526;
     margin-right: auto;
     background: #373736;
     font-family: "Sora"!important;
@@ -3286,7 +3286,7 @@ h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.b
     transform:none!important;
     margin-top: 20%;
     width: 100% !important;
-    height: 450px;
+    height: 650px;
     max-height: 600px;
     padding-top: 20px;
     padding: 9px;
@@ -3362,7 +3362,7 @@ transition: 2s;
     margin-right: auto;
     width: 80%;
     margin-left: AUTO;
-    height: 400px;
+    height: 600px;
     max-height: 600px;
     padding-top: 20px;
     filter: drop-shadow(2px 4px 6px black);
