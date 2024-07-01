@@ -1644,8 +1644,8 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 }
 
 div#app {
-    dispay:flex;
-    background-position:bottom left;
+    dispay: flex;
+    background-position: 0 100%;
     background-size: 35%;
     background-color: #ffffff00;
     background-image: url(https://media-public.canva.com/z9gLc/MAEFHRz9gLc/1/s2.png);
