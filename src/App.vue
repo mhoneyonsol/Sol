@@ -189,6 +189,10 @@ onMounted(() => {
 
 <style>
 
+.custom-cursor {
+  cursor: url('/path/to/your-cursor.png'), auto;
+}
+
 @keyframes BouR {
   0% {
     animation-timing-function: ease-in;
