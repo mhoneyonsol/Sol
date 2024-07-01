@@ -1915,7 +1915,7 @@ body {
     background-size: 170%;
     background-position: left;
     backdrop-filter: blur(11px);
-    cursor: url(https://i.imgur.com/K2MGLE1.png) 0 0, auto !important;
+    cursor: url(https://i.imgur.com/6el37cr.png) 0 0, auto !important;
    
 }
 
