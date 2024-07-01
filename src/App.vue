@@ -190,7 +190,7 @@ onMounted(() => {
 <style>
 
 .custom-cursor {
-  cursor: url('/path/to/your-cursor.png'), auto;
+  cursor: url('https://static.vecteezy.com/system/resources/previews/022/286/604/original/cursor-icon-pink-3d-render-png.png'), auto;
 }
 
 @keyframes BouR {
