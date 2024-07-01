@@ -189,6 +189,16 @@ onMounted(() => {
 
 <style>
 
+@keyframes ScaleUP {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes myAnim {
   0% {
     animation-timing-function: ease-in;
@@ -1816,6 +1826,8 @@ width: 100%;
 
 h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.bg-clip-text.bg-gradient-to-l.from-\[\#7928ca\].to-\[\#ff0080\] {
     font-weight: 900;
+    animation: ScaleUP 2s ease 0s 1 normal forwards;
+    animation-delay:5s;
 
 }
 
