@@ -617,11 +617,8 @@ background-color: #ff000000;
 @media (min-width: 60em) {
   .modaloverlayyy .modal {
     height: 75%;
-    margin: 5% auto;
-    max-height: 57em;
-    max-width: 66em;
-    width: 85%;
-    margin-top:180px;
+        max-width: 90%;
+        margin-top: 10%;
   }
 }
 .modaloverlayyy .modal > iframe, .modaloverlayyy .modal > div {
