@@ -1,4 +1,5 @@
 <template>
+<wallet-multi-button />
   <div class="box flex flex-col mt-5 border border-gray-300 p-10 rounded-lg shadow-lg shadow-gray-500 w-[550px]">
     <div class="ribbon"><span>mainnet 💛</span></div>
     

@@ -189,8 +189,21 @@ onMounted(() => {
 
 <style>
 
+label.closebutton {
+    cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
+}
+
 .custom-cursor {
     cursor: url(https://i.imgur.com/6el37cr.png), auto;
+}
+
+button {
+    /* cursor: pointer; */
+    cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
+}
+
+a {
+    cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
 }
 
 @keyframes BouR {
