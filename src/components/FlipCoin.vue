@@ -24,9 +24,9 @@ export default {
 
       setTimeout(() => {
         if (randomNumber === 1) {
-          outcome.textContent = 'heads';
+          outcome.textContent = '';
         } else if (randomNumber === 2) {
-          outcome.textContent = 'tails';
+          outcome.textContent = '';
         }
         outcome.classList.remove('toss');
       }, 800);
@@ -50,17 +50,23 @@ body {
 }
 
 button {
-  background: none;
-  border: 2px solid green;
-  padding: 12px 30px 11px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 5px;
-  position: relative;
-  color: white;
-  z-index: 0;
-  font-size: 12px;
-  outline: none;
+ background: none;
+    border: 2px solid green;
+    padding: 12px 30px 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    position: relative;
+    color: #fff;
+    z-index: 0;
+    font-size: 12px;
+    outline: none;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    opacity: 0;
 }
 button:before {
   content: "";
@@ -84,7 +90,7 @@ button:hover {
 .outcome {
   height: 200px;
     width: 200px;
-    background: #555;
+    background: #000;
     margin-bottom: 50px;
     border-radius: 50%;
     border-style: dotted;
@@ -93,7 +99,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
     transform: rotateY(0deg) rotateX(0deg);
     transition: 1s;
     font-size: 32px;
@@ -103,6 +109,15 @@ button:hover {
     line-height: .8;
     color: #222;
     box-shadow: 0 0 30px #000;
+    margin-top: 7vh;
+    margin-left: 7vh;
+    zoom: 70%;
+    background-image: url(https://i.imgur.com/hjNeC8A.png);
+    background-size: 70%;
+    background-position: center;
+    border: 15px solid #383838;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
 }
 .outcome.flip {
   transition: 1s;

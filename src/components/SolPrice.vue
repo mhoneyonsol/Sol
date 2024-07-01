@@ -33,6 +33,6 @@ onMounted(() => {
     font-weight: 100;
     position: absolute;
     bottom: 2%;
-    left: 3%;
+    right: 3%;
 }
 </style>
