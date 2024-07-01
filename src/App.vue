@@ -3351,6 +3351,7 @@ input.mt-2.block.w-full.rounded-md.border-0.py-1\.5.pl-4.pr-4.text-gray-900.ring
 div#app {
     
     background-size: 100%;
+    background-image:url(https://i.imgur.com/4tO079U.png);
     
 }
 
