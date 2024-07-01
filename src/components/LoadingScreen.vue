@@ -1,10 +1,9 @@
 <template>
   <div class="loading-screen" v-if="showLoading">
     <div class="wrap">
-      <video id="loadingVideo" autoplay muted loop>
-        <source src="/media/Animated.7cf562ba.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+       <video src="../assets/Animated.mp4" autoplay muted loop>
+        Your browser doesn't support the `<video>` tag.
+        </video>
     </div>
   </div>
 </template>
