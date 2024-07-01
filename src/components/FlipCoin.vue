@@ -1,5 +1,9 @@
 <template>
-  <div>
+  <div style="position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    zoom: 70%;">
     <div class="outcome" ref="outcome"></div>
     <button @click="FlipP">Flip Coin</button>
   </div>
@@ -79,26 +83,26 @@ button:hover {
 
 .outcome {
   height: 200px;
-  width: 200px;
-  background: #555;
-  margin-bottom: 50px;
-  border-radius: 50%;
-  border-style: dotted;
-  border-color: #1c1c1c;
-  border-width: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transform: rotateY(0deg) rotateX(0deg);
-  transition: 1s;
-  font-size: 32px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: bold;
-  line-height: 0.8;
-  color: #222;
-  box-shadow: 0 0 30px black;
+    width: 200px;
+    background: #555;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    border-style: dotted;
+    border-color: #1c1c1c;
+    border-width: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: rotateY(0deg) rotateX(0deg);
+    transition: 1s;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    line-height: .8;
+    color: #222;
+    box-shadow: 0 0 30px #000;
 }
 .outcome.flip {
   transition: 1s;
@@ -110,29 +114,33 @@ button:hover {
 }
 .outcome:before {
   content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 185px;
-  width: 185px;
-  display: block;
-  background: none;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    /* background: none; */
+    background-image: url(https://i.imgur.com/hjNeC8A.png);
+    background-size: 70%;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
 }
 .outcome:after {
   content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 190px;
-  width: 190px;
-  display: block;
-  background: none;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    /* background: none; */
+    background-image: url(https://i.imgur.com/hjNeC8A.png);
+    background-size: 70%;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 @-webkit-keyframes toss {

@@ -32,7 +32,7 @@ onMounted(() => {
     font-family: monospace;
     font-weight: 100;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 2%;
+    left: 3%;
 }
 </style>
