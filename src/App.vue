@@ -413,7 +413,7 @@ button.cursor-pointer.relative.p-3.border-2.border-white.overflow-hidden.bg-grad
     bottom: 4%;
     right: 6%;
     animation: BouR 2s ease 0s 1 normal forwards;
-    animation-delay:6s;
+    animation-delay:5.1s;
 }
 
 @keyframes hue-rotate-animation {

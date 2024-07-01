@@ -53,8 +53,10 @@
 <style scoped>
 
 label {
-    background-color: #222;
+    background-color: #fff;
     background-size: 60% !important;
+    border: 2px solid hsl(0deg 0% 2.34%);
+    filter: drop-shadow(2px 4px 6px white);
 
 }
 
@@ -310,10 +312,10 @@ ul li span {
   font-size: 1em!important;
     font-weight: 900;
     font-family: Sora;
-    color: #fff;
-    text-shadow: 5px 5px 5px #000;
+    
+    
     line-height: 10px;
-    background: black;
+  
     padding: 10px;
     border-radius: 13px;
     filter: none!important;
