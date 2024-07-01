@@ -190,7 +190,7 @@ onMounted(() => {
 <style>
 
 .custom-cursor {
-  cursor: url('https://static.vecteezy.com/system/resources/previews/022/286/604/original/cursor-icon-pink-3d-render-png.png'), auto;
+    cursor: url(https://i.imgur.com/6el37cr.png), auto;
 }
 
 @keyframes BouR {
@@ -1905,6 +1905,7 @@ body {
     background-size: 170%;
     background-position: left;
     backdrop-filter: blur(11px);
+    cursor: url(https://i.imgur.com/K2MGLE1.png) 0 0, auto !important;
    
 }
 
