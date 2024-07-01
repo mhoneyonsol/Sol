@@ -225,18 +225,24 @@ ul li {
 animation: myyAnim 1s ease 0s 1 reverse forwards;
   animation-delay:4.5s;
 }
+
+.checkbox:not(:checked)+label {
+    opacity: 0.5;
+    filter: drop-shadow(2px 4px 6px grey);
+}
+
 ul li span {
   
     font-size: 1em;
     font-weight: 900;
     font-family: Sora;
-    color: #000;
-    text-shadow: 5px 5px 5px #0000002e;
+    color: #fff;
+    text-shadow: 5px 5px 5px #ffffff70;
     line-height: 10px;
-    background: #fff;
+    background: #000;
     padding: 10px;
     border-radius: 13px;
-    animation-delay:6s;
+    animation-delay: 6s;
     
 }
 ul li:nth-child(2) {
@@ -309,16 +315,7 @@ li:hover {
   }
 
 ul li span {
-  font-size: 1em!important;
-    font-weight: 900;
-    font-family: Sora;
-    
-    
-    line-height: 10px;
-  
-    padding: 10px;
-    border-radius: 13px;
-    filter: none!important;
+
 }
 
 label {
