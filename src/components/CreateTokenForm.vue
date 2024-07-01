@@ -95,7 +95,7 @@
 
 import { WalletMultiButton } from 'solana-wallets-vue'
 import "solana-wallets-vue/styles.css";
-import "./assets/add.css";
+import "../src/assets/add.css";
 import { ref } from "vue";
 import { useWallet, useAnchorWallet } from 'solana-wallets-vue';
 import { Connection, LAMPORTS_PER_SOL, PublicKey, Transaction, SystemProgram, Keypair, TransactionSignature } from '@solana/web3.js'
