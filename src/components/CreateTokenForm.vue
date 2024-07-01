@@ -92,8 +92,8 @@
 </template>
 
 <script setup lang="ts">
-import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
-import { initWallet, WalletMultiButton } from 'solana-wallets-vue'
+
+import { WalletMultiButton } from 'solana-wallets-vue'
 import "solana-wallets-vue/styles.css";
 import "./assets/add.css";
 import { ref } from "vue";
