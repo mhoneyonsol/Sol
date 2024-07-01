@@ -367,7 +367,7 @@ label {
 }
 
 ul:hover {
-    scale: 1.1;
+    scale: 1.05;
     transition: 1s;
 }
 
