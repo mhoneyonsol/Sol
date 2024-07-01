@@ -224,13 +224,14 @@ animation: myyAnim 1s ease 0s 1 reverse forwards;
   animation-delay:4.5s;
 }
 ul li span {
-  font-size: 2em;
+  
+    font-size: 1em;
     font-weight: 900;
     font-family: Sora;
-    color: #fff;
-    text-shadow: 5px 5px 5px #000;
+    color: #000;
+    text-shadow: 5px 5px 5px #0000002e;
     line-height: 10px;
-    background: black;
+    background: #fff;
     padding: 10px;
     border-radius: 13px;
     
