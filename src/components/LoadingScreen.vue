@@ -1,9 +1,9 @@
 <template>
   <div class="loading-screen" v-if="showLoading">
     <div class="wrap">
-       <video src="https://d2gmxft35na058.cloudfront.net/s9e9sx%2Ffile%2Fb52b88520525b097561d6a72ab3f485a_dafc7e03ce1bc06d38bc86cac4ea8a9f.mp4?response-content-disposition=inline%3Bfilename%3D%22b52b88520525b097561d6a72ab3f485a_dafc7e03ce1bc06d38bc86cac4ea8a9f.mp4%22%3B&response-content-type=video%2Fmp4&Expires=1719845136&Signature=CoC0l~Cr6VzaTE6PvAKaa9qrDg26PeIcxp5QDPK7eFIVIGsmzp1372oGdCeabLS3qMoKA1rLbG9IR6h2tNM4l2h7G5Gqop2VixSzuzP6SXQlZQ8D9OWjEy29AR6uKHGggmH6kLjCx7-UBy2J4U3L8Y83QFB6t0TANl65gET~O0uNv13FB1ItrRezW0aOK-xs~tv~a102zeXZKHWu9PXkG2Et531a8djpGARDkwsWLWdEjIGpL1F5EKhsDbtIOBHiG8gP07eF3Br8DFwYLoC3BESFhdzu3xYjA6aJwq6UCRnwhjftIhohv3ojXPohOky4VBdpaaj6mUii1xRpX0Xs~Q__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ" autoplay muted loop>
-        Your browser doesn't support the `<video>` tag.
-        </video>
+<video src="https://d2gmxft35na058.cloudfront.net/s9e9sx%2Ffile%2Fb52b88520525b097561d6a72ab3f485a_dafc7e03ce1bc06d38bc86cac4ea8a9f.mp4?response-content-disposition=inline%3Bfilename%3D%22b52b88520525b097561d6a72ab3f485a_dafc7e03ce1bc06d38bc86cac4ea8a9f.mp4%22%3B&response-content-type=video%2Fmp4&Expires=1719845136&Signature=CoC0l~Cr6VzaTE6PvAKaa9qrDg26PeIcxp5QDPK7eFIVIGsmzp1372oGdCeabLS3qMoKA1rLbG9IR6h2tNM4l2h7G5Gqop2VixSzuzP6SXQlZQ8D9OWjEy29AR6uKHGggmH6kLjCx7-UBy2J4U3L8Y83QFB6t0TANl65gET~O0uNv13FB1ItrRezW0aOK-xs~tv~a102zeXZKHWu9PXkG2Et531a8djpGARDkwsWLWdEjIGpL1F5EKhsDbtIOBHiG8gP07eF3Br8DFwYLoC3BESFhdzu3xYjA6aJwq6UCRnwhjftIhohv3ojXPohOky4VBdpaaj6mUii1xRpX0Xs~Q__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ" autoplay muted loop>
+  Your browser doesn't support the <video> tag.
+</video>
     </div>
   </div>
 </template>
