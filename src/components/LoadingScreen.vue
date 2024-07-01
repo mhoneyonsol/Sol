@@ -1,14 +1,12 @@
 <template>
   <div class="loading-screen" v-if="showLoading">
-    
-<div class="wrap">
-  
-<source src="../assets/Animated.mp4" type="video/mp4">
-</div>
+    <div class="wrap">
+      <video id="loadingVideo" autoplay muted loop>
+        <source src="/media/Animated.7cf562ba.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
-
-  
-
 </template>
 
 <script setup lang="ts">
@@ -24,17 +22,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
-@media (max-width: 600px) {
- }
-
-.lang {
-
-color: white;
-    margin-top: 30px;
-    font-family: "Sora";
-}
-
 .loading-screen {
   position: fixed;
   top: 0;
@@ -48,7 +35,19 @@ color: white;
   z-index: 1000;
 }
 
+.wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+video {
+  width: 100%;
+  height: auto;
+}
 
 @keyframes spin {
   0% {
@@ -59,17 +58,10 @@ color: white;
   }
 }
 
-body .wrap {
-  min-height: 300px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.lang {
+  color: white;
+  margin-top: 30px;
+  font-family: "Sora";
 }
 
 /* Main styles */
@@ -118,6 +110,7 @@ body .wrap {
     stroke-dashoffset: -400;
   }
 }
+
 /* Other styles */
 html, body {
   height: 100%;
