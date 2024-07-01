@@ -194,7 +194,7 @@ label.closebutton {
 }
 
 .custom-cursor {
-    cursor: url(https://i.imgur.com/6el37cr.png), auto;
+    cursor: url(https://i.imgur.com/mu9r8sc.png), auto;
 }
 
 button {
@@ -618,7 +618,7 @@ background-color: #ff000000;
   .modaloverlayyy .modal {
     height: 75%;
         max-width: 90%;
-        margin-top: 10%;
+        
   }
 }
 .modaloverlayyy .modal > iframe, .modaloverlayyy .modal > div {
@@ -1915,7 +1915,7 @@ body {
     background-size: 170%;
     background-position: left;
     backdrop-filter: blur(11px);
-    cursor: url(https://i.imgur.com/6el37cr.png) 0 0, auto !important;
+    cursor: url(https://i.imgur.com/mu9r8sc.png) 0 0, auto !important;
    
 }
 
