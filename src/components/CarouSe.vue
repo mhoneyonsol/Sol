@@ -234,7 +234,6 @@ ul li span {
     background: #fff;
     padding: 10px;
     border-radius: 13px;
-    animation: BouR 2s ease 0s 1 normal forwards;
     animation-delay:6s;
     
 }
