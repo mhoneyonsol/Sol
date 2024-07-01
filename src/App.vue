@@ -5,7 +5,7 @@ import Chatbot from './components/Chatbot-1.vue';
 import Modal from './components/ModalTest.vue';
 import Popup from './components/PopUp.vue';
 import "./assets/add.css";
-import CustomButton from './components/WalletButton.vue';
+import FlipCoin from './components/FlipCoin.vue';
 import SolPrice from './components/SolPrice.vue';
 import Car from './components/CarOu.vue';
 import CarouSe from './components/CarouSe.vue'; 
@@ -83,7 +83,7 @@ onMounted(() => {
         <wallet-multi-button />
 
         <SolPrice />
-        <CustomButton />
+        <FlipCoin />
         
       </div>
     </div>
