@@ -74,7 +74,7 @@ onMounted(() => {
 
       <div class="mt-10"><div class="glitch-wrapper" style="
     /* font-size: 3rem; */
-"> <div class="glitch" data-text="SPL Forge" style="
+"> <div class="glitch clip-text" data-text="SPL Forge" style="
     font-size: 6rem;
     font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-weight: 900;
@@ -188,6 +188,12 @@ onMounted(() => {
 
 
 <style>
+
+.clip-text{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(https://images.unsplash.com/photo-1501761844139-01addf0af8af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+}
 
 .custom-cursor {
   cursor: url('https://static.vecteezy.com/system/resources/previews/022/286/604/original/cursor-icon-pink-3d-render-png.png'), auto;
