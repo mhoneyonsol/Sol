@@ -1645,16 +1645,9 @@ button.bg-blue-500.hover\:bg-blue-700.text-white.font-bold.py-3.px-4.rounded.w-f
 
 div#app {
     dispay:flex;
-    background-image: url(https://i.imgur.com/f7B6pf7.png);
-    background-position:bottom left;
-    background-size: 55%;
-    background-color: #ffffff00;
-    background-image: url(https://media-public.canva.com/z9gLc/MAEFHRz9gLc/1/s2.png);
-
     background-position:bottom left;
     background-size: 35%;
     background-color: #ffffff00;
-    background-repeat: no-repeat;
     background-image: url(https://media-public.canva.com/z9gLc/MAEFHRz9gLc/1/s2.png);
 }
 
