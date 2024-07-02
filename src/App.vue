@@ -3231,7 +3231,7 @@ SMART
 @media (max-width: 600px) {
 
 .LF {
-  
+  zoom:50%!important
 }
 
 div#google1:hover {
