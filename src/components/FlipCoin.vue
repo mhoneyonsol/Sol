@@ -225,7 +225,7 @@ button {
     width: 200PX;
     z-index: 444;
     opacity: 0;
-    margin-top: -100px;
+    margin-top: -150px;
     margin-right: -50px;
 }
 

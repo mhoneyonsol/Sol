@@ -3230,11 +3230,7 @@ SMART
 
 @media (max-width: 600px) {
 
-.LF {
-  zoom: 50% !important;
-        top: 5% !important;
-        left: 4% !important;
-}
+
 
 .outcome {
   
