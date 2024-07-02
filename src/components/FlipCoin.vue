@@ -41,6 +41,7 @@ position: absolute;
     top: 1%;
     left: 2%;
     zoom: 70%;
+    z-index:4444;
 }
 
 body {
