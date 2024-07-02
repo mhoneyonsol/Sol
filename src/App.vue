@@ -3230,6 +3230,13 @@ SMART
 
 @media (max-width: 600px) {
 
+.LF {
+    position: fixed!important;
+    bottom: 1%;
+    right: 2%;
+    zoom: 50%;
+}
+
 div#google1:hover {
     
     transform: none;
