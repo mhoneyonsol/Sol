@@ -3232,8 +3232,8 @@ SMART
 
 .LF {
     position: fixed!important;
-    bottom: 1%;
-    right: 2%;
+    bottom: 3%!important;
+    right: 4%!important;
     zoom: 50%;
 }
 
