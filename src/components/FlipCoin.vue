@@ -71,6 +71,7 @@ button {
     left: 0;
     width: 200px;
     opacity: 0;
+        z-index: 444;
 }
 button:before {
   content: "";
