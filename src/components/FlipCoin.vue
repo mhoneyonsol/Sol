@@ -207,7 +207,7 @@ media (max-width: 600px) {
   zoom: 50% !important;
         position: relative;
         margin-left: 40%;
-        margin-top: -80px;
+       
 }
 
 button {

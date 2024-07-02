@@ -3383,7 +3383,7 @@ transition: 2s;
     margin-right: auto;
     width: 80%;
     margin-left: AUTO;
-    height: 600px;
+    height: 450px;
     max-height: 600px;
     padding-top: 20px;
     filter: drop-shadow(2px 4px 6px black);
