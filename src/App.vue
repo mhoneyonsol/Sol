@@ -82,7 +82,7 @@ onMounted(() => {
       <div class="mt-5">
         <wallet-multi-button />
 
-        <SolPrice />
+        
         <FlipCoin />
         
       </div>
@@ -130,6 +130,7 @@ onMounted(() => {
 
       <Car />
     </div>
+    <SolPrice />
     <Chatbot />
 </div>
 

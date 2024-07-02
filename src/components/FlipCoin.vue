@@ -189,9 +189,9 @@ media (max-width: 600px) {
 
 .outcome {
     
-    margin-top: 2vh;
-    margin-left: 2vh;
-    zoom: 30%!important;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    zoom: 20%!important;
     
 }
 }
