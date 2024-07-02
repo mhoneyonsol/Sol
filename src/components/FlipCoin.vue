@@ -37,11 +37,11 @@ export default {
 }
 
 .LF {
-position: absolute;
-    top: 1%;
-    left: 2%;
+    position: absolute;
+    top: 5%;
+    left: 3%;
     zoom: 70%;
-    z-index:4444;
+    z-index: 444;
 }
 
 body {
