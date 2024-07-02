@@ -194,6 +194,16 @@ media (max-width: 600px) {
     zoom: 50%!important;
    
 }
+
+
+.LF {
+    position: fixed!important;
+    bottom: 1%!important;
+    right: 2%!important;
+    
+}
+
+
 }
 
 </style>
