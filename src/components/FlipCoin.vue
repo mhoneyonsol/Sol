@@ -193,8 +193,10 @@ media (max-width: 600px) {
 
 .outcome {
     
+    margin-top: 6vh!important;
+    margin-left: 4vh!important;
     zoom: 50%!important;
-    
+   
 }
 }
 
