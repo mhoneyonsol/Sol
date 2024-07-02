@@ -41,7 +41,7 @@ export default {
     top: 5%;
     left: 3%;
     zoom: 70%;
-    z-index: 444;
+   
 }
 
 body {
@@ -66,8 +66,9 @@ background: none;
     outline: none;
     height: 200px;
     width: 200PX;
-    index: 444;
+    z-index: 444;
     opacity: 0;
+
 }
 button:before {
   content: "";
