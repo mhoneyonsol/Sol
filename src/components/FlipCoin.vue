@@ -187,11 +187,11 @@ button:hover {
 media (max-width: 600px) {
 
 
-div {
+.outcome {
     
     margin-top: 20px!important;
     margin-left: 20px!important;
-    zoom: 40%!important;
+    zoom: 20%!important;
     
 }
 }
