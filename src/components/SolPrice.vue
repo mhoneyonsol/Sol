@@ -28,11 +28,11 @@ onMounted(() => {
 
 <style scoped>
 .solana-price {
-  color: white;
+  color: #fff;
     font-family: monospace;
     font-weight: 100;
+    right: 10px;
     position: absolute;
-    bottom: 2%;
-    right: 3%;
+    margin-bottom: 10px;
 }
 </style>
