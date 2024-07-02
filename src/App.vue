@@ -97,7 +97,7 @@ onMounted(() => {
 
 
 <div id="google1" class="modaloverlayy">
-  <div class="modal" style="padding: 20px;"><a href="#close" class="close">&times;</a>
+  <div class="modal" style="padding: 20px;"><a href="#close" class="close"></a>
  
 <CreateTokenForm />
  
@@ -109,7 +109,7 @@ onMounted(() => {
       </div>
 
       <div id="google2" class="modaloverlay">
-  <div class="modal"><a href="#close" class="close">&times;</a>
+  <div class="modal"><a href="#close" class="close"></a>
 
   test2
       
@@ -119,7 +119,7 @@ onMounted(() => {
 
 
  <div id="google3" class="modaloverlayyy">
-  <div class="modal"><a href="#close" class="close">&times;</a>
+  <div class="modal"><a href="#close" class="close"></a>
 
 <div class="iframe-container">
  <iframe src="https://splgamble.vercel.app/" width="100%" height="500px" frameborder="0" allowfullscreen></iframe></div>
