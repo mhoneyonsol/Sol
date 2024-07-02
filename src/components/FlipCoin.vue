@@ -39,9 +39,7 @@ export default {
 .LF {
         position: absolute;
     bottom: 5%;
-    right: 3%;
-    zoom: 70%;
-   
+    right: 3%; 
 }
 
 body {
