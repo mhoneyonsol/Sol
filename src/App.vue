@@ -37,7 +37,7 @@ onMounted(() => {
 
 
 <template>
-<FlipCoin />
+
 <LoadingScreen />
 
 <div id="app">
@@ -130,6 +130,7 @@ onMounted(() => {
 
       <Car />
     </div>
+    <FlipCoin />
     <Chatbot />
 </div>
 
