@@ -127,7 +127,7 @@ a:hover {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   background-image: url('https://i.imgur.com/M8QOyi7.gif');
-  animation: border-transform 10s linear infinite alternate forwards;
+  animation: border-transform 20s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     animation-play-state: paused;
