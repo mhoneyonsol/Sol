@@ -114,7 +114,7 @@ button:hover {
     zoom: 70%;
     background-image: url(https://i.imgur.com/hjNeC8A.png);
     background-size: 70%;
-    background-position: center;
+    background-position: 50%;
     border: 15px solid #383838;
     background-repeat: no-repeat;
     filter: drop-shadow(2px 4px 6px black);
