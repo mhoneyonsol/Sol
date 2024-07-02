@@ -572,7 +572,7 @@ color: #fff;
     top: 10px;
     z-index: 1;
     border-radius: 23px;
-    background-image: url(https://i.imgur.com/OoszFCo.png);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/019/634/201/non_2x/3d-icon-of-cancel-free-png.png);
     background-size: 100%;
     background-position: center;
 }
@@ -645,7 +645,7 @@ color: #fff;
     top: 10px;
     z-index: 1;
     border-radius: 23px;
-    background-image: url(https://i.imgur.com/OoszFCo.png);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/019/634/201/non_2x/3d-icon-of-cancel-free-png.png);
     background-size: 100%;
     background-position: center;
 }
@@ -725,7 +725,7 @@ color: #fff;
     top: 10px;
     z-index: 1;
     border-radius: 23px;
-    background-image: url(https://i.imgur.com/OoszFCo.png);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/019/634/201/non_2x/3d-icon-of-cancel-free-png.png);
     background-size: 100%;
     background-position: center;
 }
