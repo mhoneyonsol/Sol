@@ -189,8 +189,8 @@ media (max-width: 600px) {
 
 .outcome {
     
-    margin-top: 20px!important;
-    margin-left: 20px!important;
+    margin-top: 1vh;
+    margin-left: 1vh;
     zoom: 20%!important;
     
 }
