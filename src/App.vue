@@ -37,7 +37,7 @@ onMounted(() => {
 
 
 <template>
-
+<FlipCoin />
 <LoadingScreen />
 
 <div id="app">
@@ -83,7 +83,7 @@ onMounted(() => {
         <wallet-multi-button />
 
         <SolPrice />
-        <FlipCoin />
+        
         
       </div>
     </div>

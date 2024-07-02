@@ -1,9 +1,5 @@
 <template>
-  <div style="position: absolute;
-    position: absolute;
-    top: 0;
-    left: 0;
-    zoom: 70%;">
+  <div class="LF">
     <div class="outcome" ref="outcome"></div>
     <button @click="FlipP">Flip Coin</button>
   </div>
@@ -38,6 +34,14 @@ export default {
 <style scoped>
 * {
   box-sizing: border-box;
+}
+
+.LF {
+position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    zoom: 70%;
 }
 
 body {
