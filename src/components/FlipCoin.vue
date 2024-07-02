@@ -53,7 +53,7 @@ body {
 }
 
 button {
- background: none;
+background: none;
     border: 2px solid green;
     padding: 12px 30px 11px;
     text-transform: uppercase;
@@ -61,16 +61,12 @@ button {
     letter-spacing: 5px;
     position: relative;
     color: #fff;
-    z-index: 0;
     font-size: 12px;
     outline: none;
     height: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
+    width: 200PX;
+    index: 444;
     opacity: 0;
-        z-index: 444;
 }
 button:before {
   content: "";
