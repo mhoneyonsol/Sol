@@ -1,6 +1,6 @@
 <template>
   <div class="chatbot">
-    <div class="chatbot-header">
+    <div class="chatbot-header" v-if="messages.length > 0">
       <button class="clear-button" @click="clearMessages">✖</button>
     </div>
     <div class="messages">
