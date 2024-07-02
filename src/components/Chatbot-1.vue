@@ -69,4 +69,9 @@ axios.post('https://api.openai.com/v1/completions', {
 .message {
   margin-bottom: 5px;
 }
+
+button {
+    margin-left: 5%!important;
+    padding-bottom: 5px!important;
+}
 </style>
