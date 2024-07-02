@@ -92,8 +92,7 @@ a:hover {
   position: relative;
   width: 80%;
   display: block;
-      scale: 1.07;
-    margin-top: 9%;
+     
     margin-right: 10%;
 }
 .full-height{
@@ -159,24 +158,27 @@ a:hover {
   0%, 100% { 
     border-radius: 63% 37% 54% 46% / 55% 45% 55% 45%; 
   } 
-  14% { 
-    border-radius: 40% 60% 54% 46% / 49% 51% 49% 51%; 
-  } 
-  28% { 
-    border-radius: 54% 46% 38% 62% / 49% 51% 49% 51%; 
-  } 
-  42% { 
-    border-radius: 61% 39% 55% 45% / 61% 39% 61% 39%; 
-  } 
-  56% { 
-    border-radius: 61% 39% 67% 33% / 70% 30% 70% 30%; 
-  } 
-  70% { 
-    border-radius: 50% 50% 34% 66% / 56% 44% 56% 44%; 
-  } 
+  12% { 
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; 
+  }
+  24% { 
+    border-radius: 40% 60% 60% 40% / 60% 40% 40% 60%; 
+  }
+  36% { 
+    border-radius: 55% 45% 45% 55% / 55% 45% 55% 45%; 
+  }
+  48% { 
+    border-radius: 70% 30% 50% 50% / 50% 50% 70% 30%; 
+  }
+  60% { 
+    border-radius: 50% 50% 70% 30% / 30% 70% 50% 50%; 
+  }
+  72% { 
+    border-radius: 60% 40% 40% 60% / 40% 60% 60% 40%; 
+  }
   84% { 
-    border-radius: 46% 54% 50% 50% / 35% 65% 35% 65%; 
-  } 
+    border-radius: 45% 55% 55% 45% / 55% 45% 45% 55%; 
+  }
 }
 .slider-height-padding {
   padding-top: 440px;
