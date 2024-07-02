@@ -560,10 +560,11 @@ background-color: #121212;
   
 }
 .modaloverlay .close {
-background-color: #ff000000;
-    color: #fff;
+color: #fff;
     font-size: 24px;
-    padding: 8px 18px;
+    width: 30px;
+    height: 30px;
+    padding: 4px 4px;
     position: absolute;
     right: 10px;
     text-align: center;
@@ -571,6 +572,9 @@ background-color: #ff000000;
     top: 10px;
     z-index: 1;
     border-radius: 23px;
+    background-image: url(https://i.imgur.com/OoszFCo.png);
+    background-size: 100%;
+    background-position: center;
 }
 
 
@@ -617,8 +621,9 @@ background-color: #ff000000;
 }
 @media (min-width: 60em) {
   .modaloverlayyy .modal {
-    height: 75%;
+    height: 85%;
         max-width: 90%;
+        margin-top:20px;
         
   }
 }
@@ -628,10 +633,11 @@ background-color: #ff000000;
   
 }
 .modaloverlayyy .close {
-background-color: #ff000000;
-    color: #fff;
+color: #fff;
     font-size: 24px;
-    padding: 8px 18px;
+    width: 30px;
+    height: 30px;
+    padding: 4px 4px;
     position: absolute;
     right: 10px;
     text-align: center;
@@ -639,6 +645,9 @@ background-color: #ff000000;
     top: 10px;
     z-index: 1;
     border-radius: 23px;
+    background-image: url(https://i.imgur.com/OoszFCo.png);
+    background-size: 100%;
+    background-position: center;
 }
 
 
@@ -704,10 +713,11 @@ background-color: #ff000000;
   
 }
 .modaloverlayy .close {
-background-color: #ff000000;
-    color: #fff;
+color: #fff;
     font-size: 24px;
-    padding: 8px 18px;
+    width: 30px;
+    height: 30px;
+    padding: 4px 4px;
     position: absolute;
     right: 10px;
     text-align: center;
@@ -715,6 +725,9 @@ background-color: #ff000000;
     top: 10px;
     z-index: 1;
     border-radius: 23px;
+    background-image: url(https://i.imgur.com/OoszFCo.png);
+    background-size: 100%;
+    background-position: center;
 }
 
 
