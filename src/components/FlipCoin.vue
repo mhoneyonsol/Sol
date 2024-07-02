@@ -40,7 +40,7 @@ export default {
 position: absolute;
     bottom: 1%;
     right: 2%;
-    zoom: 50%;
+    zoom: 70%;
 }
 
 body {
@@ -196,14 +196,9 @@ media (max-width: 600px) {
 }
 
 
-.LF {
-    position: fixed!important;
-    bottom: 1%!important;
-    right: 2%!important;
-    
+
 }
 
 
-}
 
 </style>
