@@ -37,9 +37,9 @@ export default {
 }
 
 .LF {
-    position: absolute;
-    top: 5%;
-    left: 3%;
+        position: absolute;
+    bottom: 5%;
+    right: 3%;
     zoom: 70%;
    
 }
@@ -205,8 +205,8 @@ media (max-width: 600px) {
 
 .LF {
   zoom: 50% !important;
-        top: 5% !important;
-        left: 4% !important;
+        position: relative;
+        margin-left: 40%;
 }
 }
 
