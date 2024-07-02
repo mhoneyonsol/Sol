@@ -3236,6 +3236,13 @@ SMART
         left: 1% !important;
 }
 
+.outcome {
+  
+    margin-top: inherit!important;
+    margin-left: inherit!important;
+    
+}
+
 div#google1:hover {
     
     transform: none;
