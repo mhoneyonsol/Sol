@@ -1,5 +1,8 @@
 <template>
   <div class="chatbot">
+    <div class="chatbot-header">
+      <button class="clear-button" @click="clearMessages">✖</button>
+    </div>
     <div class="messages">
       <div v-for="(message, index) in messages" :key="index" class="message">
         <strong>{{ message.user ? 'You' : 'Bot' }}:</strong> {{ message.text }}
@@ -53,6 +56,9 @@ export default {
       } finally {
         this.input = '';
       }
+    },
+    clearMessages() {
+      this.messages = [];
     }
   }
 };
@@ -70,6 +76,23 @@ export default {
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     border-radius: 12px 12px 0px 0px;
+}
+
+.chatbot-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clear-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.clear-button:hover {
+    color: #ff0000;
 }
 
 .messages {
