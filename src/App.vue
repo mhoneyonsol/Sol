@@ -3232,8 +3232,8 @@ SMART
 
 .LF {
   zoom: 50% !important;
-        top: 2% !important;
-        left: 1% !important;
+        top: 4% !important;
+        left: 3% !important;
 }
 
 .outcome {
