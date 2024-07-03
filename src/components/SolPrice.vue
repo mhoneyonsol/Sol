@@ -122,4 +122,10 @@ onMounted(() => {
   text-decoration: none;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+.close {
+margin-right: 0% !important;
+  }
+    }
 </style>
