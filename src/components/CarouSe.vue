@@ -233,7 +233,7 @@ ul li {
   writing-mode: vertical-rl;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: all 2s ease;
+  -webkit-transition: all 2s linear;
   transition: all 2s ease;
   cursor: e-resize;
 animation: myyAnim 1s ease 0s 1 reverse forwards;
