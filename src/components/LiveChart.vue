@@ -1,73 +1,43 @@
 <template>
-  <div>
-    <Line :data="chartData" :options="chartOptions" />
+  <div style="width: 60%; height: 90vh; margin-left: auto; margin-right: auto;">
+    <div class="tradingview-widget-container" style="height:700px;width:80%">
+      <div class="tradingview-widget-container__widget" style="width:50%!important"></div>
+      <div class="tradingview-widget-copyright">
+        <a href="https://fr.tradingview.com/" rel="noopener nofollow" target="_blank">
+          <span class="blue-text">Suivre tous les marchés sur TradingView</span>
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
-<script setup lang="ts">
-import { ref, onMounted } from 'vue';
-import { Line } from 'vue-chartjs';
-import { Chart as ChartJS, Title, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement, TimeScale } from 'chart.js';
-import 'chartjs-adapter-date-fns';
-
-ChartJS.register(Title, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement, TimeScale);
-
-const chartData = ref({
-  labels: [],
-  datasets: [
-    {
-      label: 'Solana Price',
-      data: [],
-      borderColor: 'rgba(75, 192, 192, 1)',
-      backgroundColor: 'rgba(75, 192, 192, 0.2)',
-    }
-  ]
-});
-
-const chartOptions = ref({
-  responsive: true,
-  maintainAspectRatio: false,
-  scales: {
-    x: {
-      type: 'time',
-      time: {
-        unit: 'minute',
-        displayFormats: {
-          minute: 'HH:mm',
-        },
-      },
-    },
-    y: {
-      beginAtZero: false,
-    },
-  },
-});
-
-const fetchLiveData = async () => {
-  try {
-    const response = await fetch('https://api.coingecko.com/api/v3/coins/solana/market_chart?vs_currency=usd&days=1');
-    const data = await response.json();
-    console.log('Fetched data:', data); // Log the fetched data
-    const prices = data.prices;
-    chartData.value.labels = prices.map(price => new Date(price[0]));
-    chartData.value.datasets[0].data = prices.map(price => price[1]);
-    console.log('Chart labels:', chartData.value.labels); // Log the chart labels
-    console.log('Chart data:', chartData.value.datasets[0].data); // Log the chart data
-  } catch (error) {
-    console.error('Error fetching live data:', error);
+<script>
+export default {
+  mounted() {
+    const script = document.createElement('script');
+    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+    script.async = true;
+    script.innerHTML = JSON.stringify({
+      autosize: true,
+      symbol: "CRYPTO:SOLUSD",
+      interval: "D",
+      timezone: "Etc/UTC",
+      theme: "dark",
+      style: "1",
+      locale: "fr",
+      hide_side_toolbar: false,
+      allow_symbol_change: true,
+      calendar: false,
+      support_host: "https://www.tradingview.com"
+    });
+    this.$el.querySelector('.tradingview-widget-container__widget').appendChild(script);
   }
 };
-
-onMounted(() => {
-  fetchLiveData();
-  setInterval(fetchLiveData, 60000); // Update every minute
-});
 </script>
 
 <style scoped>
-canvas {
-  width: 100% !important;
-  height: 400px !important;
-  z-index: 99999;
+.tradingview-widget-container {
+  height: 700px;
+  width: 80%;
 }
 </style>
