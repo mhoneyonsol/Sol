@@ -132,6 +132,7 @@ a:hover {
     -moz-animation-play-state: paused;
     animation-play-state: paused;
     filter:drop-shadow (2px 2px black);
+    box-shadow: 4px 4px 4px inset #bfbfbf !important;
     
 }
 .checkbox.scnd + label{
@@ -259,12 +260,12 @@ ul li span {
     font-weight: 900;
     font-family: Sora;
     color: #fff;
-    text-shadow: 5px 5px 5px #ffffff70;
     line-height: 10px;
     background: #000;
     padding: 10px;
     border-radius: 13px;
     animation-delay: 6s;
+    box-shadow: 4px 4px 4px inset #676666 !important;
     
 }
 ul li:nth-child(2) {
