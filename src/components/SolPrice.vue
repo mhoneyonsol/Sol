@@ -56,6 +56,11 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
+p {
+cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
+{
+
 .solana-price {
   color: #fff;
   font-family: monospace;
@@ -68,10 +73,12 @@ onMounted(() => {
 
 .positive {
   color: green;
+  cursor: url(https://i.imgur.com/mu9r8sc.png) 0 0, auto !important;
 }
 
 .negative {
   color: red;
+  cursor: url(https://i.imgur.com/mu9r8sc.png) 0 0, auto !important;
 }
 
 .modal {

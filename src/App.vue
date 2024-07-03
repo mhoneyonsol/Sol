@@ -59,7 +59,7 @@ onMounted(() => {
     <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
       <!--ring div starts here-->
 
-<div style="z-index:222;position: absolute;top: 5%;margin-left: 20%;"><input class="closeflag" id="unique-id-for-box-1" type="checkbox"><div class="msgbox" style="
+<div style="z-index:999;position: absolute;top: 5%;margin-left: 20%;"><input class="closeflag" id="unique-id-for-box-1" type="checkbox"><div class="msgbox" style="
         border: 2px solid black;
     border-radius: 4px;
     padding: 19px;
