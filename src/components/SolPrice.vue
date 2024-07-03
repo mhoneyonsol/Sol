@@ -90,12 +90,12 @@ onMounted(() => {
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  border-radius: 23px;
+  background-color: #fefefe00;
+    margin: 15% auto;
+    padding: 20;
+    border: 1px solid #8880;
+    width: 80%;
+    border-radius: 23px;
 }
 
 .close {

@@ -1,7 +1,7 @@
 <template>
   <div style="width: 60%; height: 90vh; margin-left: auto; margin-right: auto;">
     <div class="tradingview-widget-container" style="height:700px;width:80%">
-      <div class="tradingview-widget-container__widget" style="width:50%!important"></div>
+      <div class="tradingview-widget-container__widget"></div>
       <div class="tradingview-widget-copyright">
         <a href="https://fr.tradingview.com/" rel="noopener nofollow" target="_blank">
           <span class="blue-text">Suivre tous les marchés sur TradingView</span>
@@ -40,7 +40,18 @@ export default {
 
 <style scoped>
 .tradingview-widget-container {
-  height: 700px;
-  width: 80%;
+      height: 600px;
+    width: 100%;
+    margin-top: 10%;
+}
+
+iframe#tradingview-widget-script {
+    user-select: none;
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 23px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 </style>
