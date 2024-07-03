@@ -55,7 +55,7 @@
 
 
 label {
-    background-color: #fff;
+    background-color: #000;
     background-size: 60% !important;
     border: 2px solid hsl(0deg 0% 2.34%);
     filter: drop-shadow(2px 4px 6px white);
