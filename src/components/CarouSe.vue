@@ -220,7 +220,6 @@ ul li {
   left: 0;
   width: 100%;
   display: block;
-  z-index: 100;
   padding: 0;
   transition:2s;
   margin: 0;
