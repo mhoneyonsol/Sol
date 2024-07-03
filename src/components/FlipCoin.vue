@@ -1,5 +1,5 @@
 <template>
-  <div class="LF">
+  <div class="LF aflip">
     <div class="outcome" ref="outcome"></div>
     <button @click="FlipP">Flip Coin</button>
   </div>
