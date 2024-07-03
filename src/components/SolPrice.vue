@@ -1,8 +1,11 @@
 <template>
   <div class="solana-price">
-    <p>Solana Price: {{ price !== null ? `$${price}` : 'Loading...' }}</p>
-    <p :class="changeClass">
-      24h Change: {{ change24h !== null ? `${change24h}%` : 'Loading...' }}
+    <p>
+      Solana Price: 
+      <span>{{ price !== null ? `$${price}` : 'Loading...' }}</span>
+      <span :class="changeClass">
+        ({{ change24h !== null ? `${change24h}%` : 'Loading...' }})
+      </span>
     </p>
   </div>
 </template>
