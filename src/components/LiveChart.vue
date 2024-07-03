@@ -1,6 +1,6 @@
 <template>
   <div style="width: 60%; height: 90vh; margin-left: auto; margin-right: auto;">
-    <div class="tradingview-widget-container" style="height:700px;width:80%">
+    <div class="tradingview-widget-container" >
       <div class="tradingview-widget-container__widget"></div>
       
     </div>
