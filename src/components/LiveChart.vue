@@ -47,9 +47,12 @@ const fetchLiveData = async () => {
   try {
     const response = await fetch('https://api.coingecko.com/api/v3/coins/solana/market_chart?vs_currency=usd&days=1&interval=minute');
     const data = await response.json();
+    console.log('Fetched data:', data); // Log the fetched data
     const prices = data.prices;
     chartData.value.labels = prices.map(price => new Date(price[0]));
     chartData.value.datasets[0].data = prices.map(price => price[1]);
+    console.log('Chart labels:', chartData.value.labels); // Log the chart labels
+    console.log('Chart data:', chartData.value.datasets[0].data); // Log the chart data
   } catch (error) {
     console.error('Error fetching live data:', error);
   }
