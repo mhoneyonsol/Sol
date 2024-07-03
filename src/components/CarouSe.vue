@@ -55,10 +55,9 @@
 
 
 label {
-    background-color: #000;
+    
     background-size: 60% !important;
-    border: 2px solid hsl(0deg 0% 2.34%);
-    filter: drop-shadow(2px 4px 6px white);
+    
     cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
 
 }
