@@ -139,5 +139,11 @@ cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
 margin-right: 0% !important;
 margin-top: 50px !important;
   }
+
+.modal-content[data-v-449ea529] {
+    
+    margin-top: 100px;
+}
+
     }
 </style>
