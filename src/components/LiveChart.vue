@@ -39,7 +39,7 @@ export default {
     // Show the div after 5 seconds
     setTimeout(() => {
       this.isVisible = true;
-    }, 5000);
+    }, 3000);
   },
   methods: {
     applyIframeStyles() {
