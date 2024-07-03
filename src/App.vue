@@ -190,6 +190,15 @@ onMounted(() => {
 
 <style>
 
+.flex.lg\:px-36.lg\:flex-row.flex-col.justify-center.items-center.h-screen.relative {
+    overflow: hidden;
+}
+
+
+
+
+
+
 .aflip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
@@ -3312,6 +3321,9 @@ SMART
 @media (max-width: 600px) {
 
 
+.flex.lg\:px-36.lg\:flex-row.flex-col.justify-center.items-center.h-screen.relative {
+    overflow: inherit!important;
+}
 
 .outcome {
   
