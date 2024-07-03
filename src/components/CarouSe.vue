@@ -208,7 +208,7 @@ ul {
   left: 0;
   display: block;
   width: 100%;
-  z-index: 100;
+  z-index: auto;
   padding: 0;
   margin: 0;
   transition: 1s;
