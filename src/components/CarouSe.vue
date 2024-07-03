@@ -344,7 +344,7 @@ ul li span {
 
   
   
-    box-shadow: none!important;
+    
     
     
 
