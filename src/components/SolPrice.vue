@@ -105,7 +105,7 @@ onMounted(() => {
 .close {
     color: #ff000000 !important;
     float: right !important;
-    margin-top: 5% !important;
+    margin-top: 5%;
     font-size: 28px !important;
     font-weight: 700 !important;
     margin-right: 19% !important;
@@ -114,6 +114,7 @@ onMounted(() => {
     background-position: 50%;
     width: 30px;
     height: 30px;
+
 }
 
 .close:hover,
@@ -126,6 +127,7 @@ onMounted(() => {
 @media (max-width: 600px) {
 .close {
 margin-right: 0% !important;
+margin-top: 50px !important;
   }
     }
 </style>
