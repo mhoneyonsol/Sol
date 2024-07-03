@@ -203,7 +203,7 @@ ul {
   z-index: auto;
   padding: 0;
   margin: 0;
-  transition: 1s;
+  transition: 2s;
   list-style: none;
 }
 ul li {
@@ -233,8 +233,8 @@ ul li {
   writing-mode: vertical-rl;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
   cursor: e-resize;
 animation: myyAnim 1s ease 0s 1 reverse forwards;
   animation-delay:4.5s;
