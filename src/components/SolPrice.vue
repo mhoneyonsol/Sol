@@ -58,7 +58,7 @@ onMounted(() => {
 <style scoped>
 
 p {
-cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
+
 }
 
 .solana-price {
@@ -69,6 +69,7 @@ cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
   top: 1%;
   left: 1%;
   cursor: pointer;
+  cursor: url(https://i.imgur.com/iYjeohw.png) 0 0, auto !important;
 }
 
 .positive {
