@@ -3549,7 +3549,7 @@ display: none;
     border: 3px solid #fff;
     -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(9px);
-    box-shadow: 15px -11px 0px 9px rgb(35 35 35);
+    
     background-position: 100% 100%;
 }
 
