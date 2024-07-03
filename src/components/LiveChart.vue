@@ -66,6 +66,7 @@ width: 60%; height: 90vh; margin-left: auto; margin-right: auto;
 
 .om {
 width: 100%!important;
+height: inherit!important;
 }
 
 .tradingview-widget-container__widget {
