@@ -4,7 +4,7 @@
       Solana Price: 
       <span>{{ price !== null ? `$${price}` : 'Loading...' }}</span>
       <span :class="changeClass">
-        ({{ change24h !== null ? `${change24h}%` : 'Loading...' }})
+        {{ change24h !== null ? formatChange(change24h) : 'Loading...' }}
       </span>
     </p>
   </div>
@@ -35,6 +35,10 @@ const changeClass = computed(() => {
   }
   return change24h.value >= 0 ? 'positive' : 'negative';
 });
+
+const formatChange = (change: number) => {
+  return change >= 0 ? `+${change}%` : `${change}%`;
+};
 
 onMounted(() => {
   fetchPrice();
