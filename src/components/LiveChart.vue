@@ -50,4 +50,8 @@ iframe#tradingview-widget-script {
     border-radius: 23px;
     filter: drop-shadow(2px 4px 6px black);
 }
+
+.tradingview-widget-container__widget {
+    height: 600px;
+}
 </style>
