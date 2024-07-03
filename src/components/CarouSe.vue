@@ -133,6 +133,7 @@ a:hover {
     animation-play-state: paused;
     filter:drop-shadow (2px 2px black);
     box-shadow: 4px 4px 4px inset #bfbfbf !important;
+    -webkit-box-shadow: 4px 4px 4px inset #bfbfbf !important;
     
 }
 .checkbox.scnd + label{
@@ -266,6 +267,7 @@ ul li span {
     border-radius: 13px;
     animation-delay: 6s;
     box-shadow: 4px 4px 4px inset #676666 !important;
+    -webkit-box-shadow: 4px 4px 4px inset #676666 !important;
     
 }
 ul li:nth-child(2) {
