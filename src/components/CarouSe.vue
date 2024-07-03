@@ -147,7 +147,7 @@ a:hover {
 }
 
 .checkbox:checked + label{
-  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  
   transform: scale(1.3);
     -webkit-animation-play-state: running;
     -moz-animation-play-state: running;
