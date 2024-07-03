@@ -65,5 +65,6 @@ onMounted(() => {
 canvas {
   width: 100% !important;
   height: 400px !important;
+  z-index: 99999;
 }
 </style>
