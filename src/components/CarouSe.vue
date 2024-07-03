@@ -112,46 +112,37 @@ a:hover {
 .checkbox:checked + label,
 .checkbox:not(:checked) + label{
   position: relative;
-  cursor: pointer;
-  margin: 0 auto;
-  text-align: center;
-  margin-right: 1em;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    margin-right: 1em;
     margin-left: 1em;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-size: contain;
-  background-repeat:no-repeat;
-  background-position: center;
-  box-sizing: border-box;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  background-image: url('https://i.imgur.com/M8QOyi7.gif');
-  animation: border-transform 20s linear infinite alternate forwards;
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    animation-play-state: paused;
-    filter:drop-shadow (2px 2px black);
-    box-shadow: 4px 4px 4px inset #bfbfbf;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    box-sizing: border-box;
+    transition: all .2s ease;
+    background-image: url(https://i.imgur.com/uKGL9BF.png);
 
     
 }
 .checkbox.scnd + label{
-  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnR5b3I0M2x5NHdud3VobHRwZ3NrdnpzNTV2Zmh2b296OGV3OTY5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8MImqXjNcCSdaWcpOq/giphy.webp');
+  background-image: url(https://i.imgur.com/PfdVSvr.png);
 }
 .checkbox.thrd + label{
-  background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3Q0ZndheWc3cTVicnIwOGtmcjhzemowN205cTMwZjB0cHR4aHFheCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/JOSBoxT3dploPJ1ams/giphy.webp');
+  background-image: url(https://i.imgur.com/HlRhfGw.png);
 }
 .checkbox.foth + label{
-  background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHRjZTByZ2ZncHV1bWtuMWV5bGZ2bWg5c3c4Nmw1cGh5Z2JjOWd4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/n3mWEDAzMQJhDpGfvL/giphy.webp');
+  background-image: url('https://i.imgur.com/Qa9kTYj.png');
 }
 
 .checkbox:checked + label{
   
   transform: scale(1.3);
-    -webkit-animation-play-state: running;
-    -moz-animation-play-state: running;
-    animation-play-state: running;
+    
     background-size: 100%!important;
   
     
