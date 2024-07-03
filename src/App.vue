@@ -3384,7 +3384,7 @@ backdrop-filter: none !important;
 
 
 .glitch {
-    margin-top: 200px;
+    margin-top: 250px;
     /* font-size: 5rem !important; */
     line-height: 55px;
     margin-bottom: 40px;
