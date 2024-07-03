@@ -94,6 +94,7 @@ cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
+  cursor: url(https://i.imgur.com/mu9r8sc.png), auto;
 }
 
 .modal-content {
@@ -121,6 +122,7 @@ cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
     background-position: 50%;
     width: 30px;
     height: 30px;
+    cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
 
 }
 
