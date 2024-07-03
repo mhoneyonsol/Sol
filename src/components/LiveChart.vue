@@ -14,23 +14,26 @@
 <script>
 export default {
   mounted() {
-    const script = document.createElement('script');
-    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
-    script.async = true;
-    script.innerHTML = JSON.stringify({
-      autosize: true,
-      symbol: "CRYPTO:SOLUSD",
-      interval: "D",
-      timezone: "Etc/UTC",
-      theme: "dark",
-      style: "1",
-      locale: "fr",
-      hide_side_toolbar: false,
-      allow_symbol_change: true,
-      calendar: false,
-      support_host: "https://www.tradingview.com"
-    });
-    this.$el.querySelector('.tradingview-widget-container__widget').appendChild(script);
+    if (!document.querySelector('#tradingview-widget-script')) {
+      const script = document.createElement('script');
+      script.id = 'tradingview-widget-script';
+      script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+      script.async = true;
+      script.innerHTML = JSON.stringify({
+        autosize: true,
+        symbol: "CRYPTO:SOLUSD",
+        interval: "D",
+        timezone: "Etc/UTC",
+        theme: "dark",
+        style: "1",
+        locale: "fr",
+        hide_side_toolbar: false,
+        allow_symbol_change: true,
+        calendar: false,
+        support_host: "https://www.tradingview.com"
+      });
+      this.$el.querySelector('.tradingview-widget-container__widget').appendChild(script);
+    }
   }
 };
 </script>
