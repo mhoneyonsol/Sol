@@ -57,7 +57,7 @@ onMounted(() => {
 }
 
 .positive {
-  color: green;
+  color: lime;
 }
 
 .negative {
