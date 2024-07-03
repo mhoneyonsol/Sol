@@ -59,7 +59,7 @@ onMounted(() => {
 
 p {
 cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
-{
+}
 
 .solana-price {
   color: #fff;
