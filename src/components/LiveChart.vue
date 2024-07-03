@@ -69,7 +69,7 @@ width: 100%!important;
 }
 
 .tradingview-widget-container__widget {
-    height: 40px!important;
+    height: 350px!important;
 }
 
 .modal-content[data-v-5ea95aee] {
