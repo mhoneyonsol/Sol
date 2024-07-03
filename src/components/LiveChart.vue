@@ -47,11 +47,20 @@ iframe#tradingview-widget-script {
     display: block;
     height: 100%;
     width: 100%;
-    border-radius: 23px;
+    border-radius: 23px!important;
     filter: drop-shadow(2px 4px 6px black);
 }
 
 .tradingview-widget-container__widget {
     height: 600px;
+}
+
+.close {
+    color: #f00;
+    float: right;
+    margin-top: 5%;
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 19%;
 }
 </style>

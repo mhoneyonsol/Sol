@@ -96,6 +96,10 @@ onMounted(() => {
     border: 1px solid #8880;
     width: 80%;
     border-radius: 23px;
+    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2lxdHR2Z3E0aHNiZ2h6dDFvbWpzMG8yamlnbGZpNjZ4MHA5Zng2ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/R7q0rjwD1gRW9D1R8e/giphy.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
 }
 
 .close {
