@@ -679,10 +679,14 @@ color: #fff;
 }
 .modaloverlayy:target {
   display: block;
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 99999;
-  background-image: url(https://media-public.canva.com/z9gLc/MAEFHRz9gLc/1/s2.png);
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 99999;
+    background-image: url(https://i.imgur.com/6cmzcpu.png);
+    background-size: cover !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    background-position: right;
 }
 .modaloverlayy .modal {
 
