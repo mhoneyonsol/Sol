@@ -1,6 +1,6 @@
 <template>
   <div :class="{'om': true, 'hidden': !isVisible}">
-    <div class="tradingview-widget-container" >
+    <div class="tradingview-widget-container">
       <div class="tradingview-widget-container__widget"></div>
     </div>
   </div>
@@ -32,13 +32,22 @@ export default {
         calendar: false,
         support_host: "https://www.tradingview.com"
       });
+      script.onload = this.applyIframeStyles;
       this.$el.querySelector('.tradingview-widget-container__widget').appendChild(script);
     }
-    
+
     // Show the div after 5 seconds
     setTimeout(() => {
       this.isVisible = true;
     }, 5000);
+  },
+  methods: {
+    applyIframeStyles() {
+      const iframe = this.$el.querySelector('.tradingview-widget-container__widget iframe');
+      if (iframe) {
+        iframe.style.borderRadius = '23px';
+      }
+    }
   }
 };
 </script>
