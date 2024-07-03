@@ -1,14 +1,18 @@
 <template>
-  <div class="om">
+  <div :class="{'om': true, 'hidden': !isVisible}">
     <div class="tradingview-widget-container" >
       <div class="tradingview-widget-container__widget"></div>
-      
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      isVisible: false
+    };
+  },
   mounted() {
     if (!document.querySelector('#tradingview-widget-script')) {
       const script = document.createElement('script');
@@ -30,13 +34,18 @@ export default {
       });
       this.$el.querySelector('.tradingview-widget-container__widget').appendChild(script);
     }
+    
+    // Show the div after 5 seconds
+    setTimeout(() => {
+      this.isVisible = true;
+    }, 5000);
   }
 };
 </script>
 
 <style scoped>
 .tradingview-widget-container {
-      height: 600px;
+    height: 600px;
     width: 100%;
     margin-top: 10%;
 }
@@ -56,31 +65,32 @@ iframe#tradingview-widget-script {
 }
 
 .om {
-width: 60%; height: 90vh; margin-left: auto; margin-right: auto;
+    width: 60%; 
+    height: 90vh; 
+    margin-left: auto; 
+    margin-right: auto;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
 }
 
-
-
+.om.hidden {
+    opacity: 0;
+}
 
 @media only screen and (max-width: 600px) {
+    .om {
+        width: 100%!important;
+        height: inherit!important;
+    }
 
-.om {
-width: 100%!important;
-height: inherit!important;
+    .tradingview-widget-container__widget {
+        height: 350px!important;
+    }
+
+    .modal-content[data-v-5ea95aee] {
+        margin: inherit!important;
+        width: 92%!important;
+        margin-top: 60px!important;
+    }
 }
-
-.tradingview-widget-container__widget {
-    height: 350px!important;
-}
-
-.modal-content[data-v-5ea95aee] {
-    
-    margin: inherit!important;
-    width: 92%!important;
-    
-    margin-top: 60px!important;
-}
-
-}
-
 </style>
