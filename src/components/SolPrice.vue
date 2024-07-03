@@ -103,10 +103,12 @@ onMounted(() => {
 }
 
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #f00!important;
+    float: right!important;
+    margin-top: 5%!important;
+    font-size: 28px!important;
+    font-weight: 700!important;
+    margin-right: 19%!important;
 }
 
 .close:hover,

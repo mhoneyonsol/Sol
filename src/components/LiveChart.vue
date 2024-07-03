@@ -55,12 +55,5 @@ iframe#tradingview-widget-script {
     height: 600px;
 }
 
-.close {
-    color: #f00!important;
-    float: right!important;
-    margin-top: 5%!important;
-    font-size: 28px!important;
-    font-weight: 700!important;
-    margin-right: 19%!important;
-}
+
 </style>
