@@ -1,20 +1,29 @@
 <template>
   <div class="solana-price">
-    <p>
+    <p @click="showModal = true">
       Solana Price: 
       <span>{{ price !== null ? `$${price}` : 'Loading...' }}</span>
     </p>
     <p :class="changeClass">
       {{ change24h !== null ? formatChange(change24h) : 'Loading...' }}
     </p>
+
+    <div v-if="showModal" class="modal">
+      <div class="modal-content">
+        <span class="close" @click="showModal = false">&times;</span>
+        <LiveChart />
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue';
+import LiveChart from './LiveChart.vue'; 
 
 const price = ref<number | null>(null);
 const change24h = ref<number | null>(null);
+const showModal = ref(false);
 
 const fetchPrice = async () => {
   try {
@@ -54,13 +63,51 @@ onMounted(() => {
   position: absolute;
   top: 1%;
   left: 1%;
+  cursor: pointer;
 }
 
 .positive {
-  color: lime;
+  color: green;
 }
 
 .negative {
   color: red;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 </style>
