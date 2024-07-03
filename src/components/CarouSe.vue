@@ -102,6 +102,7 @@ a:hover {
 }
 .padding-tb{
   padding: 100px 0;
+  scale: 1.05;
 }
 [type="radio"]:checked,
 [type="radio"]:not(:checked){
