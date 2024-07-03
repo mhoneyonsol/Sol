@@ -140,7 +140,11 @@ margin-right: 0% !important;
 margin-top: 80px !important;
   }
 
-
+.modal-content {
+    
+    width: 90%;
+    
+}
 
     }
 </style>
