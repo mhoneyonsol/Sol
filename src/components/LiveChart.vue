@@ -45,7 +45,7 @@ const chartOptions = ref({
 
 const fetchLiveData = async () => {
   try {
-    const response = await fetch('https://api.coingecko.com/api/v3/coins/solana/market_chart?vs_currency=usd&days=1&interval=minute');
+    const response = await fetch('https://api.coingecko.com/api/v3/coins/solana/market_chart?vs_currency=usd&days=1');
     const data = await response.json();
     console.log('Fetched data:', data); // Log the fetched data
     const prices = data.prices;
