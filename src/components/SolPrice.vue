@@ -139,6 +139,7 @@ p {
 .close {
 margin-right: 0% !important;
 margin-top: 80px !important;
+margin-bottom: 10px;
   }
 
 .modal-content {
