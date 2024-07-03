@@ -103,12 +103,17 @@ onMounted(() => {
 }
 
 .close {
-    color: #f00!important;
-    float: right!important;
-    margin-top: 5%!important;
-    font-size: 28px!important;
-    font-weight: 700!important;
-    margin-right: 19%!important;
+    color: #ff000000 !important;
+    float: right !important;
+    margin-top: 5% !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    margin-right: 19% !important;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/019/634/201/non_2x/3d-icon-of-cancel-free-png.png);
+    background-size: 100%;
+    background-position: 50%;
+    width: 30px;
+    height: 30px;
 }
 
 .close:hover,

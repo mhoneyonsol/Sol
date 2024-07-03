@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 60%; height: 90vh; margin-left: auto; margin-right: auto;">
+  <div class="om">
     <div class="tradingview-widget-container" >
       <div class="tradingview-widget-container__widget"></div>
       
@@ -55,5 +55,24 @@ iframe#tradingview-widget-script {
     height: 600px;
 }
 
+.om {
+width: 60%; height: 90vh; margin-left: auto; margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+.om {
+width: 100%!important;
+}
+
+.modal-content[data-v-5ea95aee] {
+    
+    margin: inherit!important;
+    width: 92%!important;
+    
+    margin-top: 60px!important;
+}
+
+}
 
 </style>
