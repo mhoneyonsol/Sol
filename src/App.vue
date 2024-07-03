@@ -199,7 +199,7 @@ onMounted(() => {
   backface-visibility: visible;
   -webkit-animation-name: flip;
   animation-name: flip;
-  animation-delay:5s;
+  animation-delay:6s;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
