@@ -108,6 +108,7 @@ cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20%;
+    height: 100%;
 }
 
 .close {
