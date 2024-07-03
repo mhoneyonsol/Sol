@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue';
-import LiveChart from './components/LiveChart.vue'; // Adjust the path if needed
+import LiveChart from './LiveChart.vue'; // Adjust the path if needed
 
 const price = ref<number | null>(null);
 const change24h = ref<number | null>(null);
