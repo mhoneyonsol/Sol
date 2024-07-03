@@ -3353,7 +3353,7 @@ h1.tt.text-5xl.font-sans.text-slate-800.font-bold.text-center.text-transparent.b
 }
 
   .flex.justify-center.items-center.lg\:w-1\/2 {
-    z-index: 222;
+    
 }
 
 .mt-10 {
