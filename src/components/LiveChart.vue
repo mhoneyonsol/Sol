@@ -2,11 +2,7 @@
   <div style="width: 60%; height: 90vh; margin-left: auto; margin-right: auto;">
     <div class="tradingview-widget-container" style="height:700px;width:80%">
       <div class="tradingview-widget-container__widget"></div>
-      <div class="tradingview-widget-copyright">
-        <a href="https://fr.tradingview.com/" rel="noopener nofollow" target="_blank">
-          <span class="blue-text">Suivre tous les marchés sur TradingView</span>
-        </a>
-      </div>
+      
     </div>
   </div>
 </template>
