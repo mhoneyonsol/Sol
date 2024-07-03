@@ -132,8 +132,8 @@ a:hover {
     -moz-animation-play-state: paused;
     animation-play-state: paused;
     filter:drop-shadow (2px 2px black);
-    box-shadow: 4px 4px 4px inset #bfbfbf !important;
-    -webkit-box-shadow: 4px 4px 4px inset #bfbfbf !important;
+    box-shadow: 4px 4px 4px inset #bfbfbf;
+
     
 }
 .checkbox.scnd + label{
@@ -266,8 +266,8 @@ ul li span {
     padding: 10px;
     border-radius: 13px;
     animation-delay: 6s;
-    box-shadow: 4px 4px 4px inset #676666 !important;
-    -webkit-box-shadow: 4px 4px 4px inset #676666 !important;
+    box-shadow: 4px 4px 4px inset #676666;
+    
     
 }
 ul li:nth-child(2) {
@@ -327,6 +327,16 @@ li:hover {
   .slider-height-padding {
     padding-top: 340px;
   }
+
+
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+  
+    box-shadow: none!important;
+    
+    
+}
+
   ul li {
     height: 300px;
     font-size: 13px;
@@ -340,6 +350,12 @@ li:hover {
   }
 
 ul li span {
+
+  
+  
+    box-shadow: none!important;
+    
+    
 
 }
 
