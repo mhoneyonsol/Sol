@@ -59,10 +59,17 @@ iframe#tradingview-widget-script {
 width: 60%; height: 90vh; margin-left: auto; margin-right: auto;
 }
 
+
+
+
 @media only screen and (max-width: 600px) {
 
 .om {
 width: 100%!important;
+}
+
+.tradingview-widget-container__widget {
+    height: 40px!important;
 }
 
 .modal-content[data-v-5ea95aee] {
