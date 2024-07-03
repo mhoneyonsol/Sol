@@ -62,4 +62,8 @@ onMounted(() => {
 </script>
 
 <style scoped>
+canvas {
+  width: 100% !important;
+  height: 400px !important;
+}
 </style>
