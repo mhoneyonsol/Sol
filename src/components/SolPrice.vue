@@ -3,9 +3,9 @@
     <p>
       Solana Price: 
       <span>{{ price !== null ? `$${price}` : 'Loading...' }}</span>
-      <span :class="changeClass">
-        {{ change24h !== null ? formatChange(change24h) : 'Loading...' }}
-      </span>
+    </p>
+    <p :class="changeClass">
+      {{ change24h !== null ? formatChange(change24h) : 'Loading...' }}
     </p>
   </div>
 </template>
