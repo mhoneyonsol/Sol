@@ -40,6 +40,7 @@ export default {
         position: absolute;
     bottom: 5%;
     right: 3%; 
+    z-index:99999;
 }
 
 body {
