@@ -333,6 +333,7 @@ li:hover {
 .checkbox:not(:checked) + label{
   
     box-shadow: none!important;
+    filter:none!important;
     
     
 }
