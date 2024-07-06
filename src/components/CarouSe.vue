@@ -18,12 +18,11 @@
                         <input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
                         <label for="slider-4"></label>
                         <ul>
-                        <a href="#google1">
-                            <li >
+                        
+                            <li href="#google1">
                             
                                 <a href="#google1"><span>CREATE TOKEN 👆</span></a>
                             </li>
-                            </a>
 
                             
                             <li>
