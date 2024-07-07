@@ -133,6 +133,12 @@ export default {
       loadScript('https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js'),
       loadScript('https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js')
     ]).then(() => {
+      const gsap = window.gsap;
+      const ScrollTrigger = window.ScrollTrigger;
+      const MotionPathPlugin = window.MotionPathPlugin;
+      
+      gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+
       // GSAP animations
       const ballTL = gsap.timeline({ repeat: -1, defaults: { duration: 2, ease: 'none' } })
         .to('#b1', {
@@ -176,6 +182,7 @@ export default {
   }
 };
 </script>
+
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
