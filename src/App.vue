@@ -40,7 +40,6 @@ onMounted(() => {
 <template>
 
 <LoadingScreen />
-<SliDer />
 
 <div id="app">
     <Modal />
@@ -133,7 +132,10 @@ onMounted(() => {
       <Car />
     </div>
     <FlipCoin />
+    <SliDer />
+
     <Chatbot />
+
 </div>
 
 

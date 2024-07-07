@@ -139,7 +139,7 @@ export default {
 
       gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-      // GSAP animations
+      // Continuous ball animation
       const ballTL = gsap.timeline({ repeat: -1, defaults: { duration: 2, ease: 'none' } })
         .to('#b1', {
           scale: 0.75,
@@ -167,6 +167,7 @@ export default {
 
       window.onclick = () => ballTL.isActive() ? ballTL.pause() : ballTL.play();
 
+      // Scroll-triggered animations
       gsap.timeline({
         scrollTrigger: {
           trigger: '#s1',
@@ -178,10 +179,14 @@ export default {
       })
       .to('.ring2', { y: 99, scaleY: 1.08 }, 0)
       .fromTo('.ring1', { y: 2 }, { y: 60, skewY: 3 }, 0);
+
     }).catch(err => console.error('Script loading error:', err));
   }
 };
 </script>
+
+
+
 
 
 
