@@ -132,11 +132,11 @@ onMounted(() => {
       <Car />
     </div>
     <FlipCoin />
-    <SliDer />
-
+    
     <Chatbot />
 
 </div>
+<SliDer />
 
 
 </div>
