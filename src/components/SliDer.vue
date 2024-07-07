@@ -136,7 +136,7 @@ export default {
       const gsap = window.gsap;
       const ScrollTrigger = window.ScrollTrigger;
       const MotionPathPlugin = window.MotionPathPlugin;
-      
+
       gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
       // GSAP animations
@@ -163,25 +163,26 @@ export default {
         .add(() => document.querySelector('.mg-front').append(document.querySelector('#b1')), 3)
         .to('#b1-dark', { scaleY: 0.8, ease: 'sine.inOut', transformOrigin: '88% 80%', yoyo: true, repeat: 1 }, 0)
         .to('#b1 ellipse', { scale: 0.6, ease: 'sine.inOut', transformOrigin: '0 50%', yoyo: true, repeat: 1 }, 0)
-        .timeScale(0.25);
+        .timeScale(0.5);  // Adjust timeScale for smoothness
 
       window.onclick = () => ballTL.isActive() ? ballTL.pause() : ballTL.play();
 
       gsap.timeline({
         scrollTrigger: {
           trigger: '#s1',
-          start: '0 0',
+          start: 'top top',
           endTrigger: '#s2',
-          end: '0 0',
+          end: 'bottom top',
           scrub: 0.1
         }
       })
-        .to('.ring2', { y: 99, scaleY: 1.08 }, 0)
-        .fromTo('.ring1', { y: 2 }, { y: 60, skewY: 3 }, 0);
+      .to('.ring2', { y: 99, scaleY: 1.08 }, 0)
+      .fromTo('.ring1', { y: 2 }, { y: 60, skewY: 3 }, 0);
     }).catch(err => console.error('Script loading error:', err));
   }
 };
 </script>
+
 
 
 <style scoped>
