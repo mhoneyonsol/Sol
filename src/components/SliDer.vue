@@ -1,12 +1,6 @@
 <template>
   <main>
-    <section id="s1">
-      <h1>
-        <span class="radial">A new medium for</span>
-        <span class="radial">presenting ideas.</span>
-        <span class="smaller">(scroll further)</span>
-      </h1>
-    </section>
+    
 
     <svg xmlns="http://www.w3.org/2000/svg" fill="#1d0042" stroke="#1d0042" stroke-width="1.8" viewBox="10 0 970 200">
       <g class="ring3">
