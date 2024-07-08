@@ -10,7 +10,7 @@ import SolPrice from './components/SolPrice.vue';
 import Car from './components/CarOu.vue';
 import CarouSe from './components/CarouSe.vue'; 
 import LoadingScreen from './components/LoadingScreen.vue'; 
-import SliDer from './components/SliDer.vue'; 
+
 import { Analytics } from "@vercel/analytics/react"
 
 
@@ -138,7 +138,7 @@ onMounted(() => {
 </div>
 
 
-</div><SliDer />
+</div>
 
 
 
