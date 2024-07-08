@@ -90,13 +90,8 @@ onMounted(() => {
     </div>
     
     
-    
-    <FlipCoin />
-
-    <Chatbot />
-
-</div>
-
+   
+<FlipCoin />
 
 </div>
 
