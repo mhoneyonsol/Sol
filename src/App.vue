@@ -1848,27 +1848,11 @@ width: 100%;
     background-color: #ffffff00;
     background-repeat: no-repeat;
     background-position: bottom left;
-    animation: fadeInBackground 2s ease-in-out forwards;
-    animation-delay: 5.1s;
-    position:relative;
+   
     }
 
 
-    .bk::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(https://i.imgur.com/f7B6pf7.png);
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  animation: fadeInBackgroundImage 2s ease-in-out forwards;
-  z-index: -1; /* Ensure it stays behind the content of the .element */
-
-}
+  
 
 .accordion-item {
     margin-top: 16px;
