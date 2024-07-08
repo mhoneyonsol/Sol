@@ -1867,7 +1867,7 @@ width: 100%;
   opacity: 0;
   animation: fadeInBackgroundImage 2s ease-in-out forwards;
   z-index: -1; /* Ensure it stays behind the content of the .element */
-}
+
 }
 
 .accordion-item {
