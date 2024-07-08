@@ -1,7 +1,7 @@
 const axios = require("axios");
 const headers = {
   'content-type': 'application/json',
-  'X-RapidAPI-Key': '0134a6def4msh889f1a2f7af1ff4p11ab03jsn59ea9a7a4c53',
+  'X-RapidAPI-Key': '',
   'X-RapidAPI-Host': 'openai80.p.rapidapi.com'
 };
 const data = {
