@@ -44,7 +44,7 @@ export default {
           {
             headers: {
               'Content-Type': 'application/json',
-              'Authorization': ``
+              'Authorization': `Bearer ${process.env.VUE_APP_OPENAI_API_KEY}`
             }
           }
         );
