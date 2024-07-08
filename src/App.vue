@@ -194,6 +194,23 @@ onMounted(() => {
 
 <style>
 
+
+/* Define the keyframes for the animation */
+@keyframes fadeInBackground {
+  0% {
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 1); /* Fully opaque */
+  }
+}
+
+/* Apply the animation to the element */
+.element {
+  animation: fadeInBackground 2s ease-in-out forwards;
+}
+
+
 .flex.lg\:px-36.lg\:flex-row.flex-col.justify-center.items-center.h-screen.relative {
     overflow: hidden;
 }
@@ -1831,7 +1848,8 @@ width: 100%;
     background-color: #ffffff00;
     background-repeat: no-repeat;
     background-position: bottom left;
-    
+    animation: fadeInBackground 2s ease-in-out forwards;
+    animation-delay: 5.1s;
 }
 
 .accordion-item {
