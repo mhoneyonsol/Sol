@@ -3359,6 +3359,12 @@ body {
    
 }
 
+.text-center {
+    
+    FONT-SIZE: 3em!important;
+    
+}
+
 body {
     background-size: 500% !important;
 }
