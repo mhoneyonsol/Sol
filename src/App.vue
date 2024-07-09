@@ -71,12 +71,11 @@ onMounted(() => {
 "><label class="closebutton" for="unique-id-for-box-1"> ❌</label> To initiate token creation, ensure your wallet holds SOL for transaction fees.</div></div>
 
 
-      <div class="mt-10">
+     <div class="mt-10">
+     <h3 class="text-center">FAAAST &amp; SECURE<br></h3></div>
+    
 
 
-<h1>TEST</h1>
-
-      <h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="margin-top:-145px;margin-bottom:50px;font-size:5em;font-weight:100;color:#ffffff29 !important;">SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
       <div class="mt-5">
         <wallet-multi-button />
 
@@ -2674,6 +2673,11 @@ video {
 .text-center {
   text-align: center;
   color:white;
+  color: #fff;
+    FONT-FAMILY: 'Sora';
+    FONT-SIZE: 5em;
+    FONT-WEIGHT: 900;
+    filter: drop-shadow(2px 4px 6px black);
 }
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
