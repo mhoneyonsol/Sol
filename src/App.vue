@@ -3360,10 +3360,7 @@ body {
 }
 
 body {
-    cursor: url(https://i.imgur.com/mu9r8sc.png) 0 0, auto !important;
-    background-image: url(https://4kwallpapers.com/images/wallpapers/ipados-14-ipad-air-2020-green-dark-stock-1920x1080-2912.jpg);
-    background-size: 100%;
-    background-position: 0;
+    background-size: 500% !important;
 }
 
 .glitch {
