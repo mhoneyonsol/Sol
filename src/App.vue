@@ -7,7 +7,7 @@ import Popup from './components/PopUp.vue';
 import "./assets/add.css";
 import FlipCoin from './components/FlipCoin.vue';
 import SolPrice from './components/SolPrice.vue';
-; 
+
 import LoadingScreen from './components/LoadingScreen.vue'; 
 
 import { Analytics } from "@vercel/analytics/react"
