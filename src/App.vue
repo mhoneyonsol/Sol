@@ -1994,16 +1994,7 @@ html,
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 
-body {
-  margin: 0; /* 1 */
-  line-height: inherit; /* 2 */
-  background-image: url(https://i.imgur.com/Au3ROiu.jpeg);
-    background-size: 170%;
-    background-position: left;
-    backdrop-filter: blur(11px);
-    cursor: url(https://i.imgur.com/mu9r8sc.png) 0 0, auto !important;
-   
-}
+
 
 /*
 1. Add the correct height in Firefox.
@@ -3356,11 +3347,15 @@ div#google1:hover {
 
 body {
  
-background-image:url(https://i.imgur.com/6cmzcpu.png);
-background-size: cover !important;
--webkit-backdrop-filter: none !important;
-backdrop-filter: none !important;
-
+background-image: url(https://4kwallpapers.com/images/wallpapers/ipados-14-ipad-air-2020-green-dark-stock-1920x1080-2912.jpg);
+    background-size: 100%;
+    background-position: 0;
+    -webkit-backdrop-filter: blur(11px);
+    /* backdrop-filter: blur(11px); */
+    margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+    cursor: url(https://i.imgur.com/mu9r8sc.png) 0 0, auto !important;
+   
 }
 
 
