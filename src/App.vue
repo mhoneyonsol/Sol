@@ -72,7 +72,7 @@ onMounted(() => {
 
 
      <div class="mt-10">
-     <h3 class="text-center"><span>FAAAST</span></h3>
+     <h3 class="text-center"><span>F</span>AAAST</h3>
 <img src="https://media-public.canva.com/jfcFc/MAFHV_jfcFc/1/tl.png" style="
     position: absolute;
     bottom: 20%;
