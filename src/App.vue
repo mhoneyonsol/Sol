@@ -2679,11 +2679,9 @@ video {
   padding-right: 1rem;
 }
 .text-center {
-  text-align: center;
-  color:white;
   color: #fff;
-    FONT-FAMILY: 'Sora';
-    FONT-SIZE: 7em;
+    FONT-FAMILY: Jaro;
+    FONT-SIZE: 17em;
     FONT-WEIGHT: 900;
     filter: drop-shadow(2px 4px 6px black);
 }
