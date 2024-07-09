@@ -2688,7 +2688,7 @@ video {
     FONT-FAMILY: Jaro;
     FONT-SIZE: 17em;
     FONT-WEIGHT: 900;
-    filter: drop-shadow(2px 4px 2px grey);
+   
 }
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
