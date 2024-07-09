@@ -1616,7 +1616,6 @@ div#app:hover {
     background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXB5aW4wNjJnczkyYzNmYjNlYWg1cWtmbWc2N2tnanR2Nzl6dHE4dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Pn6bH7vXjF9ysXmzxP/giphy.webp);
     background-size: 30%;
     background-color: #00000078;
-    color: #fff;
     background-position: bottom !important;
     filter: drop-shadow(2px 4px 6px black);
     border: 2px solid black;
