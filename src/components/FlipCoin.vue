@@ -95,7 +95,7 @@ button:hover {
     margin-bottom: 50px;
     border-radius: 50%;
     border-style: dotted;
-    border-color: #1c1c1c;
+    border-color: #000000;
     border-width: 3px;
     display: flex;
     justify-content: center;
@@ -113,10 +113,10 @@ button:hover {
     margin-top: 7vh;
     margin-left: 7vh;
     zoom: 70%;
-    background-image: url(https://i.imgur.com/hjNeC8A.png);
-    background-size: 70%;
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDE4cHZwaXJmajVmejNrM3RlbWgzejQxemRtamZhaGpmbW95NWV1ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/wThU6KUHem379hoB3E/giphy.webp);
+    background-size: 100%;
     background-position: 50%;
-    border: 15px solid #383838;
+    border: 15px solid #161616;
     background-repeat: no-repeat;
     filter: drop-shadow(2px 4px 6px black);
 }

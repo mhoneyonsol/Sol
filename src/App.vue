@@ -74,11 +74,11 @@ onMounted(() => {
 
       <div class="mt-10"><div class="glitch-wrapper" style="
     /* font-size: 3rem; */
-"> <div class="glitch" data-text="SPL Forge" style="
+"> <div class="glitch" data-text="FAAAST" style="
     font-size: 6rem;
     font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-weight: 900;
-">SPL Forge</div> </div><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="position:absolute;margin-top:-145px;font-size:5em;font-weight:100;color:#ffffff29 !important;">SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
+">FAAAST</div> </div><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="margin-top:-145px;MARGIN-BOTTOM: 50px;font-size:5em;font-weight:100;color:#ffffff29 !important;">SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
       <div class="mt-5">
         <wallet-multi-button />
 
@@ -1804,11 +1804,11 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
 .bk {
 width: 100%;
     height: 100%;
-    background-image: url(https://i.imgur.com/f7B6pf7.png);
-    background-size: 40%;
+    background-image: url(https://media-public.canva.com/jfcFc/MAFHV_jfcFc/1/tl.png);
+    background-size: 30%;
     background-color: #ffffff00;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: 10% 80%;
    
     }
 
