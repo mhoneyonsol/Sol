@@ -59,16 +59,7 @@ onMounted(() => {
     <div class="flex flex-col lg:w-1/2 justify-center items-center w-full">
       <!--ring div starts here-->
 
-<div style="z-index:999;position: absolute;top: 5%;margin-left: 20%;"><input class="closeflag" id="unique-id-for-box-1" type="checkbox"><div class="msgbox" style="
-        border: 2px solid black;
-    border-radius: 4px;
-    padding: 19px;
-    
-    background-color: white;
-    color: white;
-  
-    
-"><label class="closebutton" for="unique-id-for-box-1"> ❌</label> To initiate token creation, ensure your wallet holds SOL for transaction fees.</div></div>
+<div style="z-index:999;position: absolute;top: 5%;margin-left: 20%;"><input class="closeflag" id="unique-id-for-box-1" type="checkbox"><div class="msgbox" ><label class="closebutton" for="unique-id-for-box-1"> ❌</label> To initiate token creation, ensure your wallet holds SOL for transaction fees.</div></div>
 
 
      <div class="mt-10">
@@ -1619,7 +1610,7 @@ div#app:hover {
     background-position: bottom !important;
     filter: drop-shadow(2px 4px 6px black);
     border: 2px solid black;
-    border-radius: 14px;
+    border-radius: 24px;
     padding: 19px;
     background-color: white;
     color: black;
