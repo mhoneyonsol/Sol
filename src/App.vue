@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
-import CreateTokenForm from "./components/CreateTokenForm.vue";
+
 import Chatbot from './components/Chatbot-1.vue';
 import Modal from './components/ModalTest.vue';
 import Popup from './components/PopUp.vue';
 import "./assets/add.css";
 import FlipCoin from './components/FlipCoin.vue';
 import SolPrice from './components/SolPrice.vue';
-import Car from './components/CarOu.vue';
-import CarouSe from './components/CarouSe.vue'; 
+; 
 import LoadingScreen from './components/LoadingScreen.vue'; 
 
 import { Analytics } from "@vercel/analytics/react"
