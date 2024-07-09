@@ -149,6 +149,8 @@ onMounted(() => {
 
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
 
 /* Define the keyframes for the animation */
 @keyframes fadeInBackground {
