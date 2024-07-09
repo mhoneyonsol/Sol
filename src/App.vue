@@ -63,22 +63,20 @@ onMounted(() => {
         border: 2px solid black;
     border-radius: 4px;
     padding: 19px;
-    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGlxNm1md2diMnkxMXdwazR3cHh5MXA4Y21ncGlwMG9rcjhndzhwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTniuHdUjpOlNo1q/giphy.gif);
-    background-size: 100%;
-    background-color: #00000078;
+    
+    background-color: white;
     color: white;
-    background-position: bottom!important;
+  
     
 "><label class="closebutton" for="unique-id-for-box-1"> ❌</label> To initiate token creation, ensure your wallet holds SOL for transaction fees.</div></div>
 
 
-      <div class="mt-10"><div class="glitch-wrapper" style="
-    /* font-size: 3rem; */
-"> <div class="glitch" data-text="FAAAST" style="
-    font-size: 6rem;
-    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-weight: 900;
-">FAAAST</div> </div><h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="margin-top:-145px;MARGIN-BOTTOM: 50px;font-size:5em;font-weight:100;color:#ffffff29 !important;">SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
+      <div class="mt-10">
+
+
+
+
+      <h1 class="tt text-5xl font-sans text-slate-800 font-bold text-center text-transparent bg-clip-text bg-gradient-to-l from-[#7928ca] to-[#ff0080]" style="margin-top:-145px;margin-bottom:50px;font-size:5em;font-weight:100;color:#ffffff29 !important;">SPL TOKEN CREATOR</h1><h3 class="text-center"> ONLY CHAIN FEE. FAST. SECURE<br><span></span></h3></div>
       <div class="mt-5">
         <wallet-multi-button />
 
