@@ -82,7 +82,7 @@ onMounted(() => {
     
 
 
-      <div class="mt-5">
+      <div style="margin-top:-50px!important;" class="mt-5">
         <wallet-multi-button />
 
         <SolPrice />
