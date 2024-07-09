@@ -72,7 +72,13 @@ onMounted(() => {
 
 
      <div class="mt-10">
-     <h3 class="text-center">FAAAST<br></h3></div>
+     <h3 class="text-center">FAAAST<br></h3>
+<img src="https://media-public.canva.com/jfcFc/MAFHV_jfcFc/1/tl.png" style="
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+">
+     </div>
     
 
 
@@ -1803,7 +1809,7 @@ col.mt-5.border.border-gray-300.p-10.rounded-lg.shadow-lg.shadow-gray-500.w-\[55
 .bk {
 width: 100%;
     height: 100%;
-    background-image: url(https://media-public.canva.com/jfcFc/MAFHV_jfcFc/1/tl.png);
+    background-image: url();
     background-size: 30%;
     background-color: #ffffff00;
     background-repeat: no-repeat;
