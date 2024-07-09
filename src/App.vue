@@ -72,7 +72,7 @@ onMounted(() => {
 
 
      <div class="mt-10">
-     <h3 class="text-center">FAAAST &amp; SECURE<br></h3></div>
+     <h3 class="text-center">FAAAST<br></h3></div>
     
 
 
@@ -2675,7 +2675,7 @@ video {
   color:white;
   color: #fff;
     FONT-FAMILY: 'Sora';
-    FONT-SIZE: 5em;
+    FONT-SIZE: 7em;
     FONT-WEIGHT: 900;
     filter: drop-shadow(2px 4px 6px black);
 }
@@ -3361,7 +3361,7 @@ body {
 
 .text-center {
     
-    FONT-SIZE: 3em!important;
+    FONT-SIZE: 4em!important;
     
 }
 
