@@ -265,10 +265,13 @@ label.closebutton {
 }
 
 .custom-cursor {
-    cursor: url(https://i.imgur.com/mu9r8sc.png), auto;
+    cursor: url(https://i.imgur.com/28rNwyq.png), auto;
     background-size: 100%;
     background-position: 0;
     background: #161616;
+    background-color: #e5e5f7;
+    background-size: 10px 10px;
+    background-image: radial-gradient(#6f6f6f 0.5px, #000000 0.5px);
 }
 
 button {
@@ -1608,15 +1611,19 @@ div#app:hover {
 
 /* For demonstration purposes: */
 .msgbox {
-    border: 2px solid black;
-    border-radius: 4px;
+    
     padding: 19px;
-    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGlxNm1md2diMnkxMXdwazR3cHh5MXA4Y21ncGlwMG9rcjhndzhwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTniuHdUjpOlNo1q/giphy.gif);
-    background-size: 100%;
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXB5aW4wNjJnczkyYzNmYjNlYWg1cWtmbWc2N2tnanR2Nzl6dHE4dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Pn6bH7vXjF9ysXmzxP/giphy.webp);
+    background-size: 30%;
     background-color: #00000078;
-    color: white;
+    color: #fff;
     background-position: bottom !important;
     filter: drop-shadow(2px 4px 6px black);
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 19px;
+    background-color: white;
+    color: black;
 }
 
 .accordion {
@@ -2682,7 +2689,7 @@ video {
     FONT-FAMILY: Jaro;
     FONT-SIZE: 17em;
     FONT-WEIGHT: 900;
-    filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(2px 4px 2px grey);
 }
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
