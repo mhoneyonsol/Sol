@@ -72,7 +72,7 @@ onMounted(() => {
 
 
      <div class="mt-10">
-     <h3 class="text-center">FAAAST<br></h3>
+     <h3 class="text-center"><span>FAAAST</span></h3>
 <img src="https://media-public.canva.com/jfcFc/MAFHV_jfcFc/1/tl.png" style="
     position: absolute;
     bottom: 20%;
@@ -2481,9 +2481,8 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
-.mt-10 {
-    margin-bottom: 50px;
-}
+
+
 .mt-2 {
   margin-top: 0.5rem;
 }
