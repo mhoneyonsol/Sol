@@ -256,7 +256,7 @@ label.closebutton {
 }
 
 .custom-cursor {
-    cursor: url(https://i.imgur.com/28rNwyq.png), auto;
+    cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
     background-size: 100%;
     background-position: 0;
     background: #161616;
