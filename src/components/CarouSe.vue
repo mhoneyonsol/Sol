@@ -202,7 +202,7 @@ body {
 }
 
 .blog {
-  background-color: #e9e6e4;
+  background-color: #000000;
     max-width: 100%;
     display: grid;
     height: 100vh;
@@ -212,6 +212,7 @@ body {
     width: 100%;
     padding: 40px 4px;
     position: relative;
+    color: white;
 }
 @media screen and (max-width: 1030px) {
   .blog {
@@ -302,12 +303,15 @@ body {
   }
 }
 .blog-big__title {
-  font-size: 132px;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
-  letter-spacing: -5px;
-  line-height: 1;
-  margin-bottom: 6px;
+  font-size: 7em;
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    letter-spacing: -5px;
+    line-height: 1;
+    margin-bottom: 6px;
+    background: -webkit-linear-gradient(#3f0 60%, #fff 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 1400px) {
   .blog-big__title {
@@ -344,16 +348,20 @@ body {
 
 .page-number {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-  font-size: 72px;
-  text-align: center;
-  letter-spacing: -3px;
-  font-weight: lighter;
-  font-family: "Space Grotesk", sans-serif;
-  border-right: 1px solid #94918f;
-  white-space: nowrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: -3px;
+    font-weight: lighter;
+    font-family: Space Grotesk, sans-serif;
+    border-right: 1px solid #94918f;
+    white-space: nowrap;
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTY2Ym96dnJrazY2OTg1cDM2dnBqbTM2ZjM1eTFvZTJsOWZ2a284ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RjpwS3HEFqgdALfARj/giphy.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 50px;
 }
 @media screen and (max-width: 1260px) {
   .page-number {
@@ -449,12 +457,14 @@ body {
 
 marquee {
   font-size: 20px;
-  background-color: #121418;
-  color: #e9e6e4;
-  padding: 6px 0;
-  width: calc(100% + 44px);
-  margin-left: -20px;
-  flex-shrink: 0;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 6px 0;
+    width: calc(100% + 44px);
+    margin-left: -20px;
+    flex-shrink: 0;
+    margin-top: 50px;
+    margin-bottom: -50px;
 }
 marquee span:before {
   display: inline-block;
