@@ -580,6 +580,15 @@ marquee span:before {
   padding: 20px;
   text-align: center;
   margin-top: 40px;
+  --circle-size: NONE;
+    position: relative;
+    height: var(--circle-size);
+    width: var(--circle-size);
+    border: 1px solid #fff;
+    border-radius: 100%;
+    top: calc(var(--circle-size) / 2* -1);
+    left: calc(var(--circle-size) / 2* -1);
+    pointer-events: none; 
 }
 .circle-title {
   font-size: 24px;
