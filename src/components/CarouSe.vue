@@ -32,12 +32,12 @@
    </div>
    <div class="blog-article">
     <img src="https://images.unsplash.com/photo-1496629062893-b0f566065d44?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-    <h2>Sharing The <span>Widespread</span> Acclaim About Motivation</h2>
+    <h2>Boost <span>Your Project:</span> Create Your Own Token on Solana</h2>
     <div class="blog-detail">
-     <span>By Richard Carnation</span>
-     <span>5 Min Read</span>
+     <span>By DEV</span>
+     <span>MAINNET</span>
     </div>
-    <p>Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional</p>
+    <p>Discover the power of token creation on the Solana blockchain. This guide walks you through the process of developing your unique digital asset, offering speed, security, and scalability. Unleash the potential of decentralized finance and enhance your project with custom tokens.</p>
     <a href="#">
      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right" viewBox="0 0 24 24">
       <path d="M15 10l5 5-5 5" />
@@ -54,12 +54,12 @@
    </div>
    <div class="blog-article">
     <img src="https://images.unsplash.com/photo-1529255484355-cb73c33c04bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-    <h2>Talking About <span>Vulnerability</span> During Quarantine</h2>
+    <h2>Turn <span>Your Art</span> into NFTs: Simplified on Solana</h2>
     <div class="blog-detail">
-     <span>By Tom Hiddleston</span>
-     <span>5 Min Read</span>
+     <span>By DEV</span>
+     <span>MAINNET</span>
     </div>
-    <p>Having traveled to Turkey multiple times, with critics praising Ocean's introspective lyrics and the album's unconventional</p>
+    <p>Learn how to transform your digital art into valuable NFTs on the Solana blockchain. This tutorial covers the essentials of NFT creation, showcasing the speed and low transaction costs of Solana. Join the digital art revolution and monetize your creativity with ease.</p>
     <a href="#">
      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right" viewBox="0 0 24 24">
       <path d="M15 10l5 5-5 5" />
@@ -76,7 +76,7 @@
    </div>
    <div class="blog-article">
     <img src="https://images.unsplash.com/photo-1616248249518-b16013cd4e42?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTkzfHxibGFjayUyMGFuZCUyMHdoaXRlfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-    <h2>How 2020 Changed <span>Understanding</span> Of Mental Health</h2>
+    <h2>Kickstart <span>Your Project</span>: Conduct a Presale on Solana</h2>
     <div class="blog-detail">
      <span>By Scarlett Witch</span>
      <span>5 Min Read</span>
