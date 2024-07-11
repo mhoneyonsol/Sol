@@ -78,10 +78,10 @@
     <img src="https://images.unsplash.com/photo-1616248249518-b16013cd4e42?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTkzfHxibGFjayUyMGFuZCUyMHdoaXRlfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
     <h2>Kickstart <span>Your Project</span>: Conduct a Presale on Solana</h2>
     <div class="blog-detail">
-     <span>By Scarlett Witch</span>
-     <span>5 Min Read</span>
+     <span>By DEV</span>
+     <span>MAINNET</span>
     </div>
-    <p>Time is defines ad the indefinete continued progress, with critics praising Ocean's introspective lyrics and the album's</p>
+    <p>Elevate your project's funding with a successful presale on the Solana blockchain. This section provides a step-by-step guide to organizing and launching a presale, leveraging Solana's high throughput and low fees. Attract early supporters and secure the capital you need to thrive.</p>
     <a href="#">
      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right" viewBox="0 0 24 24">
       <path d="M15 10l5 5-5 5" />
