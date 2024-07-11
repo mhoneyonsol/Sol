@@ -203,16 +203,15 @@ body {
 
 .blog {
   background-color: #e9e6e4;
-  max-width: 1350px;
-  display: grid;
-  height: 90vh;
-  max-height: 800px;
-  overflow: hidden;
-  grid-template-columns: 15% 20% 35% 30%;
-  grid-template-rows: 100%;
-  width: 100%;
-  padding: 40px 4px;
-  position: relative;
+    max-width: 100%;
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    grid-template-columns: 15% 20% 35% 30%;
+    grid-template-rows: 100%;
+    width: 100%;
+    padding: 40px 4px;
+    position: relative;
 }
 @media screen and (max-width: 1030px) {
   .blog {
