@@ -1,50 +1,166 @@
 <template>
   
 
-
-    
-
-    <div class="section full-height over-hide px-4 px-sm-0">
-        <div class="container">
-            <div class="row full-height justify-content-center">
-                <div class="col-lg-10 col-xl-8 align-self-center padding-tb">
-                    <div class="section mx-auto text-center slider-height-padding">
-                        <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked/>
-                        <label for="slide-1"></label>
-                        <input class="checkbox scnd" type="radio" name="slider" id="slider-2"/>
-                        <label for="slider-2"></label>
-                        <input class="checkbox thrd" type="radio" name="slider" id="slider-3"/>
-                        <label for="slider-3"></label>
-                        <input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
-                        <label for="slider-4"></label>
-                        <ul>
-                        
-                            <li href="#google1">
-                            
-                                <a href="#google1"><span>CREATE TOKEN 👆</span></a>
-                            </li>
-
-                            
-                            <li>
-                            <a href="#google2">
-                                <span>MINT NFT 👆</span>
-                                   </a>
-                            </li>
-                         
-                            <li>
-                            <a href="#google3">
-                                <span>SPL GAMBLE 👆</span>
-                                  </a>
-                            </li>
-                            <li>
-                                <span>WALLET/DEX 👆</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="blog">
+ <div class="blog-part is-menu">
+  <a href="#" class="blog-menu">
+   Work
+   <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" viewBox="0 0 24 24">
+    <path d="M7 17L17 7M7 7h10v10" />
+   </svg>
+  </a>
+  <a href="#" class="blog-menu">Studio</a>
+  <a href="#" class="blog-menu">Blog</a>
+  <a href="#" class="blog-menu">Contact</a>
+  <a href="#" class="blog-menu mention">@MagazineDope</a>
+  <a href="#" class="blog-menu subscribe">Subscribe</a>
+ </div>
+ <div class="blog-header blog-is-sticky">
+  <div class="blog-article header-article">
+   <div class="blog-big__title">Self</div>
+   <div class="blog-menu rounded small-title">Pinned Issue</div>
+  </div>
+  <div class="blog-article page-number">
+   NO. 01
+  </div>
+ </div>
+ <div class="blog-header-container">
+  <div class="blog-header">
+   <div class="blog-article header-article">
+    <div class="blog-big__title">Esteem</div>
+    <div class="blog-menu small-title date">12.06.2021</div>
+   </div>
+   <div class="blog-article">
+    <img src="https://images.unsplash.com/photo-1496629062893-b0f566065d44?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+    <h2>Sharing The <span>Widespread</span> Acclaim About Motivation</h2>
+    <div class="blog-detail">
+     <span>By Richard Carnation</span>
+     <span>5 Min Read</span>
     </div>
+    <p>Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional</p>
+    <a href="#">
+     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right" viewBox="0 0 24 24">
+      <path d="M15 10l5 5-5 5" />
+      <path d="M4 4v7a4 4 0 004 4h12" />
+     </svg>
+     See More
+    </a>
+   </div>
+  </div>
+  <div class="blog-header">
+   <div class="blog-article header-article">
+    <div class="blog-big__title">Love</div>
+    <div class="blog-menu small-title date">12.06.2021</div>
+   </div>
+   <div class="blog-article">
+    <img src="https://images.unsplash.com/photo-1529255484355-cb73c33c04bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+    <h2>Talking About <span>Vulnerability</span> During Quarantine</h2>
+    <div class="blog-detail">
+     <span>By Tom Hiddleston</span>
+     <span>5 Min Read</span>
+    </div>
+    <p>Having traveled to Turkey multiple times, with critics praising Ocean's introspective lyrics and the album's unconventional</p>
+    <a href="#">
+     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right" viewBox="0 0 24 24">
+      <path d="M15 10l5 5-5 5" />
+      <path d="M4 4v7a4 4 0 004 4h12" />
+     </svg>
+     See More
+    </a>
+   </div>
+  </div>
+  <div class="blog-header">
+   <div class="blog-article header-article">
+    <div class="blog-big__title">Control</div>
+    <div class="blog-menu small-title date">12.06.2021</div>
+   </div>
+   <div class="blog-article">
+    <img src="https://images.unsplash.com/photo-1616248249518-b16013cd4e42?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTkzfHxibGFjayUyMGFuZCUyMHdoaXRlfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+    <h2>How 2020 Changed <span>Understanding</span> Of Mental Health</h2>
+    <div class="blog-detail">
+     <span>By Scarlett Witch</span>
+     <span>5 Min Read</span>
+    </div>
+    <p>Time is defines ad the indefinete continued progress, with critics praising Ocean's introspective lyrics and the album's</p>
+    <a href="#">
+     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right" viewBox="0 0 24 24">
+      <path d="M15 10l5 5-5 5" />
+      <path d="M4 4v7a4 4 0 004 4h12" />
+     </svg>
+     See More
+    </a>
+   </div>
+  </div>
+ </div>
+ <div class="blog-part right-blog">
+  <marquee width="100%" direction="left">
+   <span>Now And Then You Miss It Sounds Make You Cry</span>
+   <span>Now In - MoMa Sharing Exhibition NOW</span>
+   <span>NYC Opens After Long Lockdown Check</span>
+  </marquee>
+  <div class="blog-right-title-container">
+   <div class="blog-right-title">
+    Featured Articles
+   </div>
+   <div class="blog-menu rounded">See All</div>
+  </div>
+  <div class="blog-right">
+   <div class="blog-right-container">
+    <div class="blog-title-date">
+     <div class="blog-right-page">1</div>
+     <div class="date">12.06.2021</div>
+    </div>
+    <div class="blog-right-page-title">Blonde - Widespread Acclaim</div>
+    <div class="blog-right-page-subtitle">Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's</div>
+   </div>
+   <div class="blog-right-container">
+    <div class="blog-title-date">
+     <div class="blog-right-page">2</div>
+     <div class="date">12.06.2021</div>
+    </div>
+    <div class="blog-right-page-title">Introspective Lyrics and Beats</div>
+    <div class="blog-right-page-subtitle">When we toured Scotland we stopped at several selft-sealing hpuses because hotels would</div>
+   </div>
+   <div class="blog-right-container">
+    <div class="blog-title-date">
+     <div class="blog-right-page">3</div>
+     <div class="date">12.06.2021</div>
+    </div>
+    <div class="blog-right-page-title">The Language Of Gris: Comples Beauty Of Monochrome</div>
+    <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
+   </div>
+   <div class="blog-right-container">
+    <div class="blog-title-date">
+     <div class="blog-right-page">4</div>
+     <div class="date">12.06.2021</div>
+    </div>
+    <div class="blog-right-page-title">A24 IS LAUNCHING ITS OWN BEAUTY BRAND</div>
+    <div class="blog-right-page-subtitle">Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's</div>
+   </div>
+   <div class="blog-right-container">
+    <div class="blog-title-date">
+     <div class="blog-right-page">5</div>
+     <div class="date">12.06.2021</div>
+    </div>
+    <div class="blog-right-page-title">Elon Musk's SpaceX is launching a moon satellite</div>
+    <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
+   </div>
+   <div class="blog-right-container">
+    <div class="blog-title-date">
+     <div class="blog-right-page">6</div>
+     <div class="date">12.06.2021</div>
+    </div>
+    <div class="blog-right-page-title">What Happens When You Leave Your Old life Behind</div>
+    <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
+   </div>
+   <div class="circle">
+    <div class="circle-title">Leave Your Old Life Behind</div>
+    <div class="circle-subtitle">Don't try to be like someone else, be yourself. Be secure with yourself.</div>
+    <div class="circle-footer">Explore</div>
+   </div>
+  </div>
+ </div>
+</div>
 </template>
 
 <script>
@@ -53,353 +169,465 @@
 
 <style scoped>
 
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
-
-label {
-    
-    background-size: 60% !important;
-    
-    cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
-
+* {
+ outline: none;
+ box-sizing: border-box;
 }
 
-/* Please ❤ this if you like it! */
-
-
-/* ========================================= * 
-                BEST VIEWED FULLSCREEN
-   https://codepen.io/ig_design/full/NWxwBvw
- * ========================================= */
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
-
-body{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 1.7;
-    color: #343434;
-    background-color: #f1f2f6;
-    overflow-x: hidden;
-}
-a {
-    cursor: pointer;
-}
-a:hover {
-    text-decoration: none;
+html {
+ box-sizing: border-box;
+ -webkit-font-smoothing: antialiased;
 }
 
-.section{
-  position: relative;
-  width: 80%;
-  display: block;
-     
-    margin-right: 10%;
-}
-.full-height{
-  
-}
-.over-hide{
-  overflow: hidden;
-}
-.padding-tb{
-  padding: 100px 0;
-  
-}
-[type="radio"]:checked,
-[type="radio"]:not(:checked){
-  position: absolute;
-  left: -9999px;
-}
-.checkbox:checked + label,
-.checkbox:not(:checked) + label{
-  position: relative;
-    cursor: pointer;
-    margin: 0 auto;
-    text-align: center;
-    margin-right: 1em;
-    margin-left: 1em;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    box-sizing: border-box;
-    transition: all .2s ease;
-    background-image: url(https://i.imgur.com/uKGL9BF.png);
-
-    
-}
-.checkbox.scnd + label{
-  background-image: url(https://i.imgur.com/PfdVSvr.png);
-}
-.checkbox.thrd + label{
-  background-image: url(https://i.imgur.com/HlRhfGw.png);
-}
-.checkbox.foth + label{
-  background-image: url('https://i.imgur.com/Qa9kTYj.png');
+img {
+ max-width: 100%;
 }
 
-.checkbox:checked + label{
-  
-  transform: scale(1.3);
-    
-    background-size: 100%!important;
-  
-    
-}
-@keyframes border-transform {
-  0%, 100% { 
-    border-radius: 63% 37% 54% 46% / 55% 45% 55% 45%; 
-  } 
-  7% { 
-    border-radius: 50% 50% 60% 40% / 50% 50% 40% 60%; 
-  }
-  14% { 
-    border-radius: 40% 60% 54% 46% / 49% 51% 49% 51%; 
-  } 
-  21% { 
-    border-radius: 45% 55% 50% 50% / 60% 40% 60% 40%; 
-  }
-  28% { 
-    border-radius: 54% 46% 38% 62% / 49% 51% 49% 51%; 
-  } 
-  35% { 
-    border-radius: 60% 40% 45% 55% / 40% 60% 40% 60%; 
-  }
-  42% { 
-    border-radius: 61% 39% 55% 45% / 61% 39% 61% 39%; 
-  } 
-  49% { 
-    border-radius: 55% 45% 50% 50% / 55% 45% 55% 45%; 
-  }
-  56% { 
-    border-radius: 61% 39% 67% 33% / 70% 30% 70% 30%; 
-  } 
-  63% { 
-    border-radius: 50% 50% 60% 40% / 50% 50% 40% 60%; 
-  }
-  70% { 
-    border-radius: 50% 50% 34% 66% / 56% 44% 56% 44%; 
-  } 
-  77% { 
-    border-radius: 55% 45% 50% 50% / 40% 60% 40% 60%; 
-  }
-  84% { 
-    border-radius: 46% 54% 50% 50% / 35% 65% 35% 65%; 
-  }
-  91% { 
-    border-radius: 50% 50% 60% 40% / 55% 45% 55% 45%; 
-  }
-}
-.slider-height-padding {
-  padding-top: 440px;
-}
+$title-font: "Space Grotesk", sans-serif;
+$subtitle-font: "Inter", sans-serif;
+$italic-font: "Playfair Display", serif;
+$blog-bg: #e9e6e4;
+$body-bg: #121418;
+$title-color: #121418;
+$subtitle-color: #161419;
+$border-color: #94918f;
 
-ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  z-index: auto;
+body {
+ background-color: $body-bg;
+ display: flex;
+ font-family: $subtitle-font;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 100%;
+ padding: 0 2em;
+ font-weight: 400;
+ height: 100vh;
+
+ @media screen and (max-width: 768px) {
   padding: 0;
-  margin: 0;
-  transition: 2s;
-  list-style: none;
+ }
 }
-ul li {
-  position: absolute;
-  top: 0;
-  left: 0;
+
+.blog {
+ background-color: $blog-bg;
+ max-width: 1350px;
+ display: grid;
+ height: 90vh;
+ max-height: 800px;
+ overflow: hidden;
+ grid-template-columns: 15% 20% 35% 30%;
+ grid-template-rows: 100%;
+ width: 100%;
+ padding: 40px 4px;
+ position: relative;
+
+ @media screen and (max-width: 1030px) {
+  grid-template-columns: 20% 50% 30%;
+ }
+
+ @media screen and (max-width: 768px) {
+  grid-template-columns: 25% 75%;
   width: 100%;
-  display: block;
-  padding: 0;
-  transition:2s;
-  margin: 0;
-  list-style: none;
-  height: 400px;
-  filter:drop-shadow(2px 4px 6px black);
-  background-size: contain;
-  background-repeat:no-repeat;
-  background-position: center;
-  background-image: url('https://i.imgur.com/stPqqFI.png');
+  max-width: none;
+ }
+
+ @media screen and (max-width: 560px) {
+  grid-template-columns: 100%;
+ }
+
+ &-part {
+  padding: 0 20px;
+
+  &:not(:last-child) {
+   border-right: 1px solid $border-color;
+  }
+ }
+
+ &-menu {
+  font-size: 22px;
+  text-decoration: none;
+  color: $subtitle-color;
+  display: flex;
+  letter-spacing: -0.5px;
+  align-items: center;
+
+  @media screen and (max-width: 1260px) {
+   font-size: 1.6vw;
+  }
+
+  svg {
+   width: 22px;
+   margin-left: 4px;
+  }
+
+  & + & {
+   margin-top: 24px;
+  }
+
+  &.mention {
+   margin-top: auto;
+   font-size: 19px;
+
+   @media screen and (max-width: 1260px) {
+    font-size: 1.4vw;
+   }
+  }
+
+  &.subscribe {
+   margin-top: 8px;
+   font-size: 19px;
+   position: relative;
+
+   @media screen and (max-width: 1260px) {
+    font-size: 1.4vw;
+   }
+
+   &:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: $subtitle-color;
+    left: 0;
+    border-radius: 1px;
+    margin-right: 14px;
+   }
+  }
+  &.rounded {
+   &:before {
+    content: "";
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: $subtitle-color;
+    margin-right: 12px;
+   }
+  }
+ }
+
+ .is-menu {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1030px) {
+   display: none;
+  }
+ }
+
+ &-big__title {
+  font-size: 132px;
+  font-family: $title-font;
+  font-weight: 700;
+  letter-spacing: -5px;
+  line-height: 1;
+  margin-bottom: 6px;
+
+  @media screen and (max-width: 1400px) {
+   font-size: 120px;
+  }
+
+  @media screen and (max-width: 1260px) {
+   font-size: 9vw;
+   letter-spacing: -2px;
+  }
+
+  @media screen and (max-width: 560px) {
+   font-size: 36px;
+   margin-bottom: 12px;
+  }
+ }
+
+ &-header {
+  display: flex;
+  flex-direction: column;
+ }
+
+ &-article {
+  padding: 0 20px;
+
+  img {
+   height: 260px;
+   max-height: 22vh;
+   width: 100%;
+   object-fit: cover;
+   filter: grayscale(1);
+  }
+ }
+}
+
+.page-number {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ height: 100%;
+ font-size: 72px;
+ text-align: center;
+ letter-spacing: -3px;
+ font-weight: lighter;
+ font-family: $title-font;
+ border-right: 1px solid $border-color;
+ white-space: nowrap;
+
+ @media screen and (max-width: 1260px) {
+  font-size: 5vw;
+ }
+}
+
+.small-title {
+ border-bottom: 1px solid $border-color;
+ margin-bottom: 20px;
+ padding-bottom: 20px;
+
+ @media screen and (max-width: 560px) {
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 24px;
+  border-bottom: 0;
+ }
+}
+
+.date {
+ display: flex;
+ justify-content: flex-end;
+}
+
+.blog-article {
+ h2 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 8px 0 8px;
+
+  span {
+   font-family: $italic-font;
+  }
+ }
+
+ p {
+  line-height: 1.5;
+  margin: 14px 0;
+ }
+
+ a {
+  color: $subtitle-color;
+  text-decoration: none;
+  font-size: 26px;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px solid $border-color;
+  padding-top: 14px;
+
+  svg {
+   width: 26px;
+   margin-right: 10px;
+  }
+ }
+}
+
+.blog-detail {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ font-size: 14px;
+
+ span {
+  font-family: $italic-font;
+ }
+}
+
+.blog-header-container {
+ overflow-y: auto;
+ overflow-x: hidden;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ scroll-snap-type: y mandatory;
+ border-right: 1px solid $border-color;
+
+ @media screen and (max-width: 768px) {
+  border-right: 0;
+ }
+
+ & > * {
+  flex-shrink: 0;
+  min-height: 100%;
+  scroll-snap-align: start;
+ }
+
+ .blog-article:not(.header-article) {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+ }
+}
+
+marquee {
+ font-size: 20px;
+ background-color: $body-bg;
+ color: $blog-bg;
+ padding: 6px 0;
+ width: calc(100% + 44px);
+ margin-left: -20px;
+ flex-shrink: 0;
+
+ span:before {
+  display: inline-block;
+  content: "";
   border-radius: 50%;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 900;
-  font-size: 16px;
-  letter-spacing: 2px;
-  line-height: 2.7;
-  color: #343434;
-  writing-mode: vertical-rl;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: all 2s linear;
-  transition: all 2s ease;
-  cursor: e-resize;
-animation: myyAnim 1s ease 0s 1 reverse forwards;
-  animation-delay:4.5s;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -1px;
+  vertical-align: baseline;
+  background-color: $blog-bg;
+  margin: 0 16px;
+ }
 }
 
-.checkbox:not(:checked)+label {
-    opacity: 0.5;
-    filter: drop-shadow(2px 4px 6px grey);
-}
-
-ul li span {
-  
-    font-size: 1em;
-    font-weight: 900;
-    font-family: Sora;
-    color: #fff;
-    line-height: 10px;
-    background: #000;
-    padding: 10px;
-    border-radius: 13px;
-    animation-delay: 6s;
-    box-shadow: 4px 4px 4px inset #676666;
-    
-    
-}
-ul li:nth-child(2) {
-  background-image: url('https://i.imgur.com/dBKrI4q.png');
-}
-ul li:nth-child(3) {
-  background-image: url('https://i.imgur.com/CdlytDl.png');
-}
-ul li:nth-child(4) {
-  background-image: url('https://i.imgur.com/LcecQpl.gif');
-}
-
-
-.checkbox.frst:checked ~ ul li:nth-child(1) {
-  opacity: 1;
-  pointer-events: auto;
-  border-radius: 16px;
-}
-.checkbox.scnd:checked ~ ul li:nth-child(2) {
-  opacity: 1;
-  pointer-events: auto;
-  border-radius: 16px;
-}
-.checkbox.thrd:checked ~ ul li:nth-child(3) {
-  opacity: 1;
-  pointer-events: auto;
-  border-radius: 16px;
-}
-.checkbox.foth:checked ~ ul li:nth-child(4) {
-  opacity: 1;
-  pointer-events: auto;
-  border-radius: 16px;
-}
-
-li:hover {
-    transition: 1s;
-    transform: scale(0.95);
-}
-
-.logo {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    display: block;
-    z-index: 100;
-    transition: all 250ms linear;
-}
-.logo img {
-    height: 26px;
-    width: auto;
-    display: block;
-}
-
-
-
-@media (max-width: 767px) {
-  .slider-height-padding {
-    padding-top: 340px;
+.blog-right {
+ overflow: auto;
+ height: calc(100% + 60px);
+ .rounded {
+  font-style: italic;
+  font-size: 18px;
+  &:before {
+   content: "";
+   border-radius: 50%;
+   width: 9px;
+   height: 9px;
+   background-color: rgb(22 20 25);
+   margin-right: 6px;
   }
-
-
-.checkbox:checked + label,
-.checkbox:not(:checked) + label{
-  
-   
-    filter:none!important;
-    
-    
+ }
 }
 
-  ul li {
-    height: 300px;
-    font-size: 13px;
-    letter-spacing: 1px;
-  }
+.blog-right-title {
+ font-size: 25px;
+ font-family: $italic-font;
 }
 
-@media (max-width: 575px) {
-  .slider-height-padding {
-    padding-top: 240px;
-  }
+.blog-right-title-container {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border-bottom: 1px solid $border-color;
+ margin-bottom: 20px;
+ padding-bottom: 20px;
+ margin-top: 100px;
+ letter-spacing: -1px;
 
-ul li span {
+ @media screen and (max-width: 1400px) {
+  margin-top: 88px;
+ }
 
-  
-  
-    
-    
-    
+ @media screen and (max-width: 1260px) {
+  margin-top: 6vw;
+ }
 
+ @media screen and (max-width: 1030px) {
+  margin-top: 5vw;
+ }
 }
 
-label {
-    
-    margin-top: 50px !important;
+.blog-title-date {
+ display: flex;
+ align-items: baseline;
+ justify-content: space-between;
 }
 
-  .section {
-    width:100%!important;
-     scale: inherit!important;
-    margin-top: inherit!important;
-    margin-right: inherit!important;
-  }
-  ul li {
-    height: 200px;
-    zoom:130%;
-  }
+.blog-right-page {
+ font-size: 56px;
+ margin-bottom: 16px;
+ font-family: $title-font;
+
+ &-title {
+  font-family: $title-font;
+  font-size: 28px;
+  font-weight: 600;
+  max-width: 16ch;
+  letter-spacing: -2px;
+ }
+
+ &-subtitle {
+  max-width: 33ch;
+  font-size: 15px;
+  margin-top: 12px;
+  line-height: 1.4;
+ }
 }
 
-@keyframes myyAnim {
-  0%,
-  100% {
-    transform: translateX(0%);
-    transform-origin: 50% 50%;
-  }
-
-  15% {
-    transform: translateX(-30px) rotate(-6deg);
-  }
-
-  30% {
-    transform: translateX(15px) rotate(6deg);
-  }
-
-  45% {
-    transform: translateX(-15px) rotate(-3.6deg);
-  }
-
-  60% {
-    transform: translateX(9px) rotate(2.4deg);
-  }
-
-  75% {
-    transform: translateX(-6px) rotate(-1.2deg);
-  }
+.blog-right-container + .blog-right-container {
+ margin-top: 40px;
 }
 
-ul:hover {
-    scale: 1.05;
-    transition: 1s;
+.right-blog {
+ display: flex;
+ flex-direction: column;
+
+ @media screen and (max-width: 768px) {
+  display: none;
+ }
+
+ .blog-menu {
+  @media screen and (max-width: 1030px) {
+   display: none;
+  }
+ }
 }
+
+::-webkit-scrollbar {
+ display: none;
+}
+
+.circle {
+ width: 100%;
+ aspect-ratio: 1/1;
+ border-radius: 50%;
+ background-color: $body-bg;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+ color: $blog-bg;
+ padding: 20px;
+ text-align: center;
+ margin-top: 40px;
+
+ &-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-family: $title-font;
+
+  @media screen and (max-width: 1030px) {
+   display: none;
+  }
+ }
+
+ &-subtitle {
+  max-width: 30ch;
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+ }
+
+ &-footer {
+  font-family: $italic-font;
+  font-size: 30px;
+ }
+}
+
+.blog-is-sticky {
+ @media screen and (max-width: 560px) {
+  display: none;
+ }
+}
+
 
 </style>
