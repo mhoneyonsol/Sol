@@ -574,6 +574,7 @@ marquee span:before {
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative!important;
   justify-content: center;
   color: #e9e6e4;
   padding: 20px;
