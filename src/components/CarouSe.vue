@@ -280,7 +280,7 @@ body {
   content: "";
   width: 16px;
   height: 16px;
-  background-color: #161419;
+  background-color: #3f0;
   left: 0;
   border-radius: 1px;
   margin-right: 14px;
@@ -344,6 +344,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   filter: grayscale(1);
+  border-radius:23px;
 }
 
 .page-number {
@@ -394,10 +395,11 @@ body {
   font-weight: 500;
   line-height: 1.2;
   margin: 8px 0 8px;
-  color: #3f0;
+
 }
 .blog-article h2 span {
   font-family: "Playfair Display", serif;
+  color: #3f0;
 }
 .blog-article p {
   line-height: 1.5;
