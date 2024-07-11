@@ -100,7 +100,7 @@
   </marquee>
   <div class="blog-right-title-container">
    <div class="blog-right-title">
-    Featured Apps
+    Why SOLANA
    </div>
    <div class="blog-menu rounded">See All</div>
   </div>
@@ -110,53 +110,53 @@
      <div class="blog-right-page">1</div>
      <div class="date">12.06.2021</div>
     </div>
-    <div class="blog-right-page-title">Blonde - Widespread Acclaim</div>
-    <div class="blog-right-page-subtitle">Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's</div>
+    <div class="blog-right-page-title">High Throughput</div>
+    <div class="blog-right-page-subtitle">Solana can process over 65,000 transactions per second (TPS), making it one of the fastest blockchains. This high throughput is essential for supporting large-scale decentralized applications and financial systems.</div>
    </div>
    <div class="blog-right-container">
     <div class="blog-title-date">
      <div class="blog-right-page">2</div>
      <div class="date">12.06.2021</div>
     </div>
-    <div class="blog-right-page-title">Introspective Lyrics and Beats</div>
-    <div class="blog-right-page-subtitle">When we toured Scotland we stopped at several selft-sealing hpuses because hotels would</div>
+    <div class="blog-right-page-title">Low Transaction Costs</div>
+    <div class="blog-right-page-subtitle">The network's efficient architecture ensures that transaction fees remain minimal, typically less than $0.01 per transaction. This affordability is crucial for widespread adoption and usage, particularly in microtransactions and high-frequency trading.</div>
    </div>
    <div class="blog-right-container">
     <div class="blog-title-date">
      <div class="blog-right-page">3</div>
      <div class="date">12.06.2021</div>
     </div>
-    <div class="blog-right-page-title">The Language Of Gris: Comples Beauty Of Monochrome</div>
-    <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
+    <div class="blog-right-page-title">Scalability</div>
+    <div class="blog-right-page-subtitle">Solana's unique consensus mechanism, Proof of History (PoH), combined with Proof of Stake (PoS), allows the network to scale seamlessly without compromising on performance. This scalability supports the growing demands of dApps and decentralized finance (DeFi) projects.</div>
    </div>
    <div class="blog-right-container">
     <div class="blog-title-date">
      <div class="blog-right-page">4</div>
      <div class="date">12.06.2021</div>
     </div>
-    <div class="blog-right-page-title">A24 IS LAUNCHING ITS OWN BEAUTY BRAND</div>
-    <div class="blog-right-page-subtitle">Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's</div>
+    <div class="blog-right-page-title">Decentralization</div>
+    <div class="blog-right-page-subtitle">With thousands of validators securing the network, Solana maintains a robust level of decentralization. This widespread validator network ensures security, transparency, and resistance to censorship.</div>
    </div>
    <div class="blog-right-container">
     <div class="blog-title-date">
      <div class="blog-right-page">5</div>
      <div class="date">12.06.2021</div>
     </div>
-    <div class="blog-right-page-title">Elon Musk's SpaceX is launching a moon satellite</div>
-    <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
+    <div class="blog-right-page-title">Interoperability</div>
+    <div class="blog-right-page-subtitle">Solana's cross-chain bridges and compatibility with other blockchains enable seamless asset transfers and interoperability. This feature is vital for integrating Solana with the broader blockchain ecosystem, fostering collaboration and innovation.</div>
    </div>
    <div class="blog-right-container">
     <div class="blog-title-date">
      <div class="blog-right-page">6</div>
      <div class="date">12.06.2021</div>
     </div>
-    <div class="blog-right-page-title">What Happens When You Leave Your Old life Behind</div>
-    <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
+    <div class="blog-right-page-title">Developer-Friendly Ecosystem</div>
+    <div class="blog-right-page-subtitle">Solana offers a comprehensive suite of developer tools, including the Solana SDK, Solana Beach Explorer, and multiple API integrations. These resources make it easier for developers to build, deploy, and scale their applications on the Solana network.</div>
    </div>
    <div class="circle">
     <div class="circle-title">Leave Your Old Life Behind</div>
     <div class="circle-subtitle">Don't try to be like someone else, be yourself. Be secure with yourself.</div>
-    <div class="circle-footer">Explore</div>
+    <div class="circle-footer">KEEP BUILDING</div>
    </div>
   </div>
  </div>
@@ -403,7 +403,7 @@ body {
 }
 .blog-article p {
   line-height: 1.5;
-  margin: 14px 0;
+  margin: 54px 0;
 }
 .blog-article a {
   color: #ffffff;
@@ -478,7 +478,7 @@ marquee span:before {
   position: relative;
   top: -1px;
   vertical-align: baseline;
-  background-color: #e9e6e4;
+  background-color: #3f0;
   margin: 0 16px;
 }
 
