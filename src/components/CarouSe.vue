@@ -17,7 +17,7 @@
  </div>
  <div class="blog-header blog-is-sticky">
   <div class="blog-article header-article">
-   <div class="blog-big__title">Self</div>
+   <div class="blog-big__title">Create</div>
    <div class="blog-menu rounded small-title">Pinned Issue</div>
   </div>
   <div class="blog-article page-number">
@@ -27,7 +27,7 @@
  <div class="blog-header-container">
   <div class="blog-header">
    <div class="blog-article header-article">
-    <div class="blog-big__title">Esteem</div>
+    <div class="blog-big__title">Token</div>
     <div class="blog-menu small-title date">12.06.2021</div>
    </div>
    <div class="blog-article">
@@ -49,7 +49,7 @@
   </div>
   <div class="blog-header">
    <div class="blog-article header-article">
-    <div class="blog-big__title">Love</div>
+    <div class="blog-big__title">NFT</div>
     <div class="blog-menu small-title date">12.06.2021</div>
    </div>
    <div class="blog-article">
@@ -71,7 +71,7 @@
   </div>
   <div class="blog-header">
    <div class="blog-article header-article">
-    <div class="blog-big__title">Control</div>
+    <div class="blog-big__title">Presale</div>
     <div class="blog-menu small-title date">12.06.2021</div>
    </div>
    <div class="blog-article">
@@ -240,7 +240,7 @@ body {
 .blog-menu {
   font-size: 22px;
   text-decoration: none;
-  color: #161419;
+  color: #ffffff;
   display: flex;
   letter-spacing: -0.5px;
   align-items: center;
@@ -403,7 +403,7 @@ body {
   margin: 14px 0;
 }
 .blog-article a {
-  color: #161419;
+  color: #ffffff;
   text-decoration: none;
   font-size: 26px;
   letter-spacing: -1px;
