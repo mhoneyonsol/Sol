@@ -4,21 +4,21 @@
 <div class="blog">
  <div class="blog-part is-menu">
   <a href="#" class="blog-menu">
-   Work
+   Home
    <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" viewBox="0 0 24 24">
     <path d="M7 17L17 7M7 7h10v10" />
    </svg>
   </a>
-  <a href="#" class="blog-menu">Studio</a>
-  <a href="#" class="blog-menu">Blog</a>
-  <a href="#" class="blog-menu">Contact</a>
-  <a href="#" class="blog-menu mention">@MagazineDope</a>
-  <a href="#" class="blog-menu subscribe">Subscribe</a>
+  <a href="#" class="blog-menu">Docs</a>
+  <a href="#" class="blog-menu">Telegram</a>
+  <a href="#" class="blog-menu">DexScreener</a>
+  <a href="#" class="blog-menu mention">FAAAST</a>
+  <a href="#" class="blog-menu subscribe">0.0013$</a>
  </div>
  <div class="blog-header blog-is-sticky">
   <div class="blog-article header-article">
    <div class="blog-big__title">Create</div>
-   <div class="blog-menu rounded small-title">Pinned Issue</div>
+   <div class="blog-menu rounded small-title">Solana Price: $141.04</div>
   </div>
   <div class="blog-article page-number">
    NO. 01
@@ -28,7 +28,7 @@
   <div class="blog-header">
    <div class="blog-article header-article">
     <div class="blog-big__title">Token</div>
-    <div class="blog-menu small-title date">12.06.2021</div>
+    <div class="blog-menu small-title date">11.07.2024</div>
    </div>
    <div class="blog-article">
     <img src="https://images.unsplash.com/photo-1496629062893-b0f566065d44?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
@@ -100,7 +100,7 @@
   </marquee>
   <div class="blog-right-title-container">
    <div class="blog-right-title">
-    Featured Articles
+    Featured Apps
    </div>
    <div class="blog-menu rounded">See All</div>
   </div>
@@ -394,6 +394,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   margin: 8px 0 8px;
+  color: #3f0;
 }
 .blog-article h2 span {
   font-family: "Playfair Display", serif;
@@ -537,6 +538,7 @@ marquee span:before {
   font-size: 56px;
   margin-bottom: 16px;
   font-family: "Space Grotesk", sans-serif;
+  color:#3f0;
 }
 .blog-right-page-title {
   font-family: "Space Grotesk", sans-serif;
