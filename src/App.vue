@@ -3367,7 +3367,7 @@ body {
 
 .text-center {
     
-    FONT-SIZE: 8em!important;
+    FONT-SIZE: 7em!important;
     
 }
 
