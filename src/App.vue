@@ -70,7 +70,7 @@ onMounted(() => {
     
 
 
-      <div style="margin-top:-50px!important;" class="mt-5">
+      <div class="mt-5">
         <wallet-multi-button />
 
         <SolPrice />
@@ -3299,6 +3299,11 @@ SMART
 
 @media (max-width: 600px) {
 
+img.thunder {
+    position: relative !important;
+    bottom: 0;
+    zoom: 80%;
+}
 
 .flex.lg\:px-36.lg\:flex-row.flex-col.justify-center.items-center.h-screen.relative {
     overflow: inherit!important;
@@ -3362,7 +3367,7 @@ body {
 
 .text-center {
     
-    FONT-SIZE: 4em!important;
+    FONT-SIZE: 8em!important;
     
 }
 
