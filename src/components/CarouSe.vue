@@ -1,6 +1,6 @@
 <template>
   
-
+<hr class="soften" />
 <div class="blog">
  <div class="blog-part is-menu">
   <a href="#" class="blog-menu">
@@ -161,7 +161,7 @@
   </div>
  </div>
 </div>
-<hr class="soften" />
+
 
 </template>
 
