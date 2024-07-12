@@ -205,7 +205,8 @@ media (max-width: 600px) {
 .LF {
   zoom: 50% !important;
         position: relative;
-        margin-left: 45%;
+        margin-left: 65%;
+        bottom: -100px;
        
 }
 
