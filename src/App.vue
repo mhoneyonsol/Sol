@@ -3373,7 +3373,7 @@ body {
 }
 
 body {
-    background-size: 500% !important;
+    
 }
 
 .glitch {
