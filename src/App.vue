@@ -258,12 +258,11 @@ label.closebutton {
 
 .custom-cursor {
     cursor: url(https://i.imgur.com/ek44f48.png), auto !important;
-    background-size: 100%;
     background-position: 0;
     background: #161616;
     background-color: #e5e5f7;
-    background-size: 10px 10px;
-    background-image: radial-gradient(#6f6f6f 0.5px, #000000 0.5px);
+    background-image: linear-gradient(#3f0 1px, transparent 1px), linear-gradient(to right, #3f0 1px, #000000 1px);
+    background-size: 150px 150px;
 }
 
 button {
