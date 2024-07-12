@@ -39,7 +39,7 @@ onMounted(() => {
 <template>
 
 <LoadingScreen />
-<CarouSe />
+
 
 <div id="app">
     <Modal />
@@ -93,7 +93,7 @@ onMounted(() => {
 
 </div>
 
-
+<CarouSe />
 
 
 <Analytics />
