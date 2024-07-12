@@ -391,7 +391,6 @@ body {
 @media screen and (max-width: 560px) {
   .small-title {
     font-size: 14px;
-    position: absolute;
     top: 10px;
     right: 24px;
     border-bottom: 0;
