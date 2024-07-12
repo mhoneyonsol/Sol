@@ -170,6 +170,7 @@ onMounted(() => {
 position: absolute;
     bottom: 20%;
     left: 10%;
+
 }
 
 
@@ -3302,7 +3303,7 @@ SMART
 img.thunder {
     position: relative !important;
     bottom: 0;
-    zoom: 80%;
+    zoom: 60%;
 }
 
 .flex.lg\:px-36.lg\:flex-row.flex-col.justify-center.items-center.h-screen.relative {
@@ -3367,7 +3368,7 @@ body {
 
 .text-center {
     
-    FONT-SIZE: 7em!important;
+    FONT-SIZE: 7.5em!important;
     
 }
 
