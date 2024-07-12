@@ -65,11 +65,7 @@ onMounted(() => {
 
      <div class="mt-10">
      <h3 class="text-center"><span>F</span>AAAST</h3>
-<img src="https://media-public.canva.com/jfcFc/MAFHV_jfcFc/1/tl.png" style="
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
-">
+<img class="thunder" src="https://media-public.canva.com/jfcFc/MAFHV_jfcFc/1/tl.png">
      </div>
     
 
@@ -170,8 +166,11 @@ onMounted(() => {
     overflow: hidden;
 }
 
-
-
+.thunder {
+position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
 
 
 
